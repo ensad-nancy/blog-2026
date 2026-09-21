@@ -27,7 +27,6 @@ jobs:
         run: |
           mkdir -p dist
           rsync -a --exclude='dist' --exclude='.git' --exclude='.github' --exclude='*.php' ./ dist/
-          php index.php > dist/index.html
           php build.php
 
       - uses: actions/upload-pages-artifact@v3
