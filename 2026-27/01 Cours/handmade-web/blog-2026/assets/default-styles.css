@@ -1,0 +1,15 @@
+/* #themes{
+    position: fixed;
+    bottom: 1em;
+}
+
+#themes div{
+    display: inline-block;
+}
+
+#themes{
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+} */
