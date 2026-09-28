@@ -9,26 +9,53 @@ preview: assets/images/7420442-728862511.jpg
 
 ## Presentation
 
-Mise en page et grille : grille horizontal de presentation du blog avec grille de photo
-grille en 2 colonnes ( droite : article de sa vie, gauche : categorie lien), bloc centre, fond gris 
+Cette situation entraîne des problèmes
+marécageuse environnante
+irriguées l'eau 
+proximité le long de la rivière Sourou
+rivière
+irriguées l'eau 
 
-Hierarchie de l'information : Titre avec sujet et date encadre , texte en couleur utilise pour donne ses penses ou mettre en avant des informations avec et sans parenthese
-, corps du texte (capital), liste ( etoile), poste par l'auteur avec l'heure, categorie, commentaire, permalien et tag, categorie : Newslatter, dernier commentaire, album photo, categorie, tag, lien article
+Bien qu'elle ne soit pas chef-lieu
+la province du Sourou 
+les cultures 
+environnante
+des 0-16 ans
+parasitoses 
+forte prévalence 
+environnante
+forte
 
-Typographie : Arial, typo marelle
+Guiédougou
+zones irriguées
+les principales activités de la commune
+Lanfièra
+vide, insuffisamment détaillée ou incomplète
+plus de 50 %
+l'eau captée
 
-Couleur : couleur texte, colonnes categorie en jaune
+Bienvenue 
+Comment faire 
+Cette situation entraîne des problèmes
+population 
+zones irriguées
+Burkina Faso
+la rivière Sourou
+maraîchères
+l'eau captée
 
-Image et illustration : Image personnelle de son quotidien qui la represente
+sanitaires
+Comment faire ?
+Comment faire 
+Comment faire 
+parasitoses 
+marécageuse environnante
+le long de la rivière
+la rivière Sourou
+plus importante
 
-element d'interface : lien souligne cliquable vers les categories
-
-
-## Second sous-tire
-
-Lien voyez vous avec cette époque contraintes techniques ou vos propres pratique :Canalblog Créée en 2003 par Jean-Baptiste Clot
-: portail création d'un blog (plateforme française gratuite de création et d'hébergement de blogs) pas de contrainte technique
 
 
 
-Extrait de *Manifeste Cyborg* de Donna Haraway
+
+
