@@ -24,7 +24,7 @@ principalemen par les prisonnièr.e.s.
 D'origine exploitée, 
 soumise, 
 conditionnée, 
-la Nouvelle dvient non rentable, 
+la Nouvelle devient non rentable, 
 l'exploitation est arretée. 
 
 ## 004 
