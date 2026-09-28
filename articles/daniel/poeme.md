@@ -7,8 +7,6 @@ preview:
 
 # Poeme exercise
 
-## Premier sous-tire
-
 we have been given
 a lot to live for
 a lot of worries 
@@ -34,5 +32,5 @@ industry of war
 a family tree in motion
 what is all this for
 
-## Second sous-tire
+
 
