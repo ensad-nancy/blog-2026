@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+@font-face{
+    font-family: "lithops";
+    font-weight: regular;
+    src: url(articles/sarah/assets/font/Lithops-Regular.otf) format("opentype");
+}

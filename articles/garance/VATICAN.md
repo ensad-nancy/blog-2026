@@ -2,7 +2,7 @@
 title: VATICAN
 date: 26-03-2013
 tags: pape, vatican, religion
-preview: assets/images/7420442-728862511.jpg
+preview: assets/images/queen.png
 ---
 
 # Titre de mon article
