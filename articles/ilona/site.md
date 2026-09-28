@@ -1,58 +1,58 @@
 ---
-title: Site
+title: La rivère
 date: 2026-09-28
-tags: blog
-preview: assets/images/7420442-728862511.jpg
+tags: Wikipédia 
+preview: 
 ---
 
-# Blog
 
-## Presentation
 
-Cette situation entraîne des problèmes
-marécageuse environnante
-irriguées l'eau 
-proximité le long de la rivière Sourou
-rivière
-irriguées l'eau 
+## La rivière
 
-Bien qu'elle ne soit pas chef-lieu
-la province du Sourou 
-les cultures 
-environnante
-des 0-16 ans
-parasitoses 
-forte prévalence 
-environnante
-forte
+Cette situation entraîne des problèmes<br>
+marécageuse environnante<br>
+irriguées l'eau <br>
+proximité le long de la rivière Sourou<br>
+rivière<br>
+irriguées l'eau <br>
 
-Guiédougou
-zones irriguées
-les principales activités de la commune
-Lanfièra
-vide, insuffisamment détaillée ou incomplète
-plus de 50 %
-l'eau captée
+Bien qu'elle ne soit pas chef-lieu<br>
+la province du Sourou <br>
+les cultures <br>
+environnante<br>
+des 0-16 ans<br>
+parasitoses <br>
+forte prévalence<br>
+environnante<br>
+forte<br>
 
-Bienvenue 
-Comment faire 
-Cette situation entraîne des problèmes
-population 
-zones irriguées
-Burkina Faso
-la rivière Sourou
-maraîchères
-l'eau captée
+Guiédougou<br>
+zones irriguées<br>
+les principales activités de la commune<br>
+Lanfièra<br>
+vide, insuffisamment détaillée ou incomplète<br>
+plus de 50 %<br>
+l'eau captée<br>
 
-sanitaires
-Comment faire ?
-Comment faire 
-Comment faire 
-parasitoses 
-marécageuse environnante
-le long de la rivière
-la rivière Sourou
-plus importante
+Bienvenue <br>
+Comment faire <br>
+Cette situation entraîne des problèmes<br>
+population <br>
+zones irriguées<br>
+Burkina Faso<br>
+la rivière Sourou<br>
+maraîchères<br>
+l'eau captée<br>
+
+sanitaires<br>
+Comment faire ?<br>
+Comment faire <br>
+Comment faire <br>
+parasitoses <br>
+marécageuse environnante<br>
+le long de la rivière<br>
+la rivière Sourou<br>
+plus importante<br>
 
 
 
