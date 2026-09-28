@@ -1,0 +1,214 @@
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    font-synthesis: none;
+    padding: initial;
+    margin: initial;
+    text-decoration: none;
+    color: unset;
+}
+
+/* Fonts: Lack */
+
+@font-face {
+    font-family: "Lack";
+    src: url("../../articles/adrien/assets/fonts/lack/Lack-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lack";
+    src: url("../fonts/lack/Lack-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Fonts: Spectral */
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Styles */
+
+:root {
+    --body-width: 800px;
+    --themes-width: 100px;
+}
+
+body {
+    font-family: "Spectral";
+    width: var(--body-width);
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    grid-gap: 8px 50px;
+}
+
+body>a {
+    grid-area: a;
+}
+
+#themes {
+    grid-area: c;
+}
+
+#themes legend {
+    font-feature-settings: "c2sc";
+}
+
+#themes input[type=radio] {
+    display: none;
+}
+
+#themes label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#themes label::before {
+    --circle-size: 8px;
+    content: "";
+    width: var(--circle-size);
+    height: var(--circle-size);
+    display: block;
+    border-radius: 100px;
+    box-shadow: 0 0 0 1.2px inset black;
+    margin-right: 5px;
+}
+
+#themes label:hover::before,
+#themes input[type=radio]:checked+label::before {
+    content: "";
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: black;
+    display: block;
+    border-radius: 100px;
+}
+
+header {
+    grid-area: b;
+}
+
+header .title {
+    font-size: 44px;
+    font-family: "Lack";
+}
+
+article {
+    grid-area: d;
+}
