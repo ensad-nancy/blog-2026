@@ -83,3 +83,33 @@ Stories, Actress.
 
 
 Comes and goes.
+
+
+
+
+import { useState } from 'react'
+import { Editor, Inputs, styled } from '@compai/css-gui'
+
+export const MyEditor = () => {
+  const [styles, setStyles] = useState({
+    fontSize: { value: 16, unit: 'px' },
+    lineHeight: { value: 1.4, unit: 'number' },
+    color: 'tomato',
+  })
+
+  return (
+    <>
+      <Editor styles={styles} onChange={setStyles}>
+        <Inputs.FontSize />
+        <Inputs.LineHeight />
+        <Inputs.Color />
+        <Fieldset type="pseudo-element" name="first-letter">
+          <Inputs.FontSize />
+          <Inputs.FontWeight />
+          <Inputs.Color />
+        </Fieldset>
+      </Editor>
+      <styled.p styles={styles}>Hello, world!</styled.p>
+    </>
+  )
+}
