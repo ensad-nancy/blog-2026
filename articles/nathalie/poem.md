@@ -16,13 +16,13 @@ Car lights come…
 Exciting, sexy, fun –
 
 
-	lust
+lust
 
 
 … and goes.
 
 
-	One-night stands.
+One-night stands.
 
 
 
@@ -38,13 +38,13 @@ Car lights come…
 Careful, smooth, kind –
 
 
-	love
+love
 
 
 … and goes.
 
 
-	Lovelorn.
+Lovelorn.
 
 
 
@@ -66,7 +66,7 @@ Goes and goes.
 
 
 
-	Can’t find somebody completely different. 
+Can’t find somebody completely different. 
 
 
 
@@ -79,37 +79,9 @@ Acteur, Stories,
 Stories, Actress.
 
 
-	Lights.
+Lights.
 
 
 Comes and goes.
 
 
-
-
-import { useState } from 'react'
-import { Editor, Inputs, styled } from '@compai/css-gui'
-
-export const MyEditor = () => {
-  const [styles, setStyles] = useState({
-    fontSize: { value: 16, unit: 'px' },
-    lineHeight: { value: 1.4, unit: 'number' },
-    color: 'tomato',
-  })
-
-  return (
-    <>
-      <Editor styles={styles} onChange={setStyles}>
-        <Inputs.FontSize />
-        <Inputs.LineHeight />
-        <Inputs.Color />
-        <Fieldset type="pseudo-element" name="first-letter">
-          <Inputs.FontSize />
-          <Inputs.FontWeight />
-          <Inputs.Color />
-        </Fieldset>
-      </Editor>
-      <styled.p styles={styles}>Hello, world!</styled.p>
-    </>
-  )
-}

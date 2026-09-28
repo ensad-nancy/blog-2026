@@ -1,10 +1,5 @@
-.poem1 {
-    background-image: url("YOUR-IMAGE-PATH.jpg");
-    background-size: cover;
-    background-position: center;
-
-    color: darkgreen;
-    text-align: center;
-
-    padding: 100px 50px;
+body {
+    color: #ff7c02;
+    /* background-image: url("../../articles/sahar/assets/images/kavir.jpg"); */
+    background-color: rgb(83, 79, 38);
 }

@@ -1,0 +1,27 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+  @import url(https://fonts.google.com/specimen/Monsieur+La+Doulaise?categoryFilters=Feeling:%2FExpressive%2FFancy&preview.script=Latn);
+
+
+body {
+  background-color: rgb(0, 255, 242);
+  margin: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Monsieur La Doulaise', cursive;
+  color: rgb(255, 3, 205);
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+  color: rgb(255, 3, 205);
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
