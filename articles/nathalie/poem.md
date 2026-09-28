@@ -16,7 +16,7 @@ Car lights come…
 Exciting, sexy, fun –
 
 
-	lust
+lust
 
 
 … and goes.
@@ -38,7 +38,7 @@ Car lights come…
 Careful, smooth, kind –
 
 
-	love
+love
 
 
 … and goes.
