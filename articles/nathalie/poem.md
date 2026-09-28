@@ -22,7 +22,7 @@ Exciting, sexy, fun –
 … and goes.
 
 
-	One-night stands.
+One-night stands.
 
 
 
@@ -44,7 +44,7 @@ Careful, smooth, kind –
 … and goes.
 
 
-	Lovelorn.
+Lovelorn.
 
 
 
@@ -66,7 +66,7 @@ Goes and goes.
 
 
 
-	Can’t find somebody completely different. 
+Can’t find somebody completely different. 
 
 
 
@@ -79,12 +79,9 @@ Acteur, Stories,
 Stories, Actress.
 
 
-	Lights.
+Lights.
 
 
 Comes and goes.
 
 
-
-
-i
