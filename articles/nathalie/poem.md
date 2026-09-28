@@ -1,7 +1,7 @@
 ---
 title: internetg111rl: poem
 date: 2026-09-28
-tags: 
+tags: poem
 preview: 
 ---
 
@@ -56,5 +56,3 @@ Stories, Actress.
 	Lights.
 
 Comes and goes.
-
-## Second sous-tire
