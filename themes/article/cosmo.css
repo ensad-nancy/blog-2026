@@ -4,6 +4,7 @@ body {
 
 article {
     background-color: rgb(250, 163, 163);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -13,3 +14,4 @@ header {
  #themes {
     background-color: rgb(144, 120, 120);
  }
+

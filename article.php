@@ -1,6 +1,10 @@
 <?php
 $base = "articles";
-$students = array_diff(scandir($base), [".", ".."]);
+
+// Ne garder que les dossiers dans "articles"
+$students = array_filter(array_diff(scandir($base), [".", ".."]), function ($item) use ($base) {
+    return is_dir("$base/$item");
+});
 
 require_once "assets/Parsedown.php";
 
@@ -14,7 +18,8 @@ if (!file_exists($path)) {
 }
 
 // Parse front matter
-function parseFrontMatter($path) {
+function parseFrontMatter($path)
+{
     $content = file_get_contents($path);
     $meta = [];
     if (preg_match('/^---\s*(.*?)\s*---/s', $content, $matches)) {
@@ -47,43 +52,57 @@ $mdContent = preg_replace(
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title><?= htmlspecialchars($title) ?></title>
+    <title>
+        <?= htmlspecialchars($title) ?>
+    </title>
     <script src="assets/script-article.js" defer></script>
     <link rel="stylesheet" href="themes/<?= htmlspecialchars($student) ?>.css">
 </head>
+
 <body>
 
-<a href="index.php">← Retour</a>
+    <a href="index.php">← Retour</a>
 
-<div id="themes">
-  <legend>Changer le thème :</legend>
-  <?php foreach ($students as $student): ?>
+    <div id="themes">
+        <legend>Changer le thème :</legend>
+        <?php foreach ($students as $student): $studentSlug = htmlspecialchars($student); ?>
             <div>
-                <input type="radio" name="theme" value="<?= htmlspecialchars($student) ?>" onChange="changeTheme()" checked/>
-                <label><?= ucfirst(htmlspecialchars($student)) ?></label>
+                <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
+                    onChange="changeTheme()" checked />
+                <label for="theme-<?= $studentSlug ?>">
+                    <?= ucfirst($studentSlug) ?>
+                </label>
             </div>
-    <?php endforeach; ?>
-  </div>
+        <?php endforeach; ?>
+    </div>
 
-<header>
-    <p class="title"><?= htmlspecialchars($title) ?></p>
-    <?php if ($date): ?>
-        <p class="date"><?= htmlspecialchars($date) ?></p>
-    <?php endif; ?>
-    <?php if ($tags): ?>
-        <p class="tags">
-            <?php foreach (explode(',', $tags) as $tag): ?>
-                <span class="tag"><?= htmlspecialchars(trim($tag)) ?></span>
-            <?php endforeach; ?>
+    <header>
+        <p class="title">
+            <?= htmlspecialchars($title) ?>
         </p>
-    <?php endif; ?>
-</header>
+        <?php if ($date): ?>
+            <p class="date">
+                <?= htmlspecialchars($date) ?>
+            </p>
+        <?php endif; ?>
+        <?php if ($tags): ?>
+            <p class="tags">
+                <?php foreach (explode(',', $tags) as $tag): ?>
+                    <span class="tag">
+                        <?= htmlspecialchars(trim($tag)) ?>
+                    </span>
+                <?php endforeach; ?>
+            </p>
+        <?php endif; ?>
+    </header>
 
-<article>
-    <?php echo $Parsedown->text($mdContent); ?>
-</article>
+    <article>
+        <?php echo $Parsedown->text($mdContent); ?>
+    </article>
 
 </body>
+
 </html>
