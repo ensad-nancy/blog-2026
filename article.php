@@ -14,7 +14,8 @@ if (!file_exists($path)) {
 }
 
 // Parse front matter
-function parseFrontMatter($path) {
+function parseFrontMatter($path)
+{
     $content = file_get_contents($path);
     $meta = [];
     if (preg_match('/^---\s*(.*?)\s*---/s', $content, $matches)) {
@@ -47,43 +48,57 @@ $mdContent = preg_replace(
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title><?= htmlspecialchars($title) ?></title>
+    <title>
+        <?= htmlspecialchars($title) ?>
+    </title>
     <script src="assets/script-article.js" defer></script>
     <link rel="stylesheet" href="themes/<?= htmlspecialchars($student) ?>.css">
 </head>
+
 <body>
 
-<a href="index.php">← Retour</a>
+    <a href="index.php">← Retour</a>
 
-<div id="themes">
-  <legend>Changer le thème :</legend>
-  <?php foreach ($students as $student): ?>
-            <div>
-                <input type="radio" name="theme" value="<?= htmlspecialchars($student) ?>" onChange="changeTheme()" checked/>
-                <label><?= ucfirst(htmlspecialchars($student)) ?></label>
-            </div>
-    <?php endforeach; ?>
-  </div>
+    <div id="themes">
+        <legend>Changer le thème :</legend>
+        <?php foreach ($students as $student): ?>
+        <div>
+            <input id="theme" type="radio" name="theme" value="<?= htmlspecialchars($student) ?>"
+                onChange="changeTheme()" checked />
+            <label>
+                <?= ucfirst(htmlspecialchars($student)) ?>
+            </label>
+        </div>
+        <?php endforeach; ?>
+    </div>
 
-<header>
-    <p class="title"><?= htmlspecialchars($title) ?></p>
-    <?php if ($date): ?>
-        <p class="date"><?= htmlspecialchars($date) ?></p>
-    <?php endif; ?>
-    <?php if ($tags): ?>
+    <header>
+        <p class="title">
+            <?= htmlspecialchars($title) ?>
+        </p>
+        <?php if ($date): ?>
+        <p class="date">
+            <?= htmlspecialchars($date) ?>
+        </p>
+        <?php endif; ?>
+        <?php if ($tags): ?>
         <p class="tags">
             <?php foreach (explode(',', $tags) as $tag): ?>
-                <span class="tag"><?= htmlspecialchars(trim($tag)) ?></span>
+            <span class="tag">
+                <?= htmlspecialchars(trim($tag)) ?>
+            </span>
             <?php endforeach; ?>
         </p>
-    <?php endif; ?>
-</header>
+        <?php endif; ?>
+    </header>
 
-<article>
-    <?php echo $Parsedown->text($mdContent); ?>
-</article>
+    <article>
+        <?php echo $Parsedown->text($mdContent); ?>
+    </article>
 
 </body>
+
 </html>
