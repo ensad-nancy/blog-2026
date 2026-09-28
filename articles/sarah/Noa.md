@@ -7,11 +7,11 @@ preview: assets/images/7420442-728862511.jpg
 
 # Réflexions diverses
 
-## Ce que personne ne voit
+## Ce que personne ne voit - 21/09/26
 
 Avez-vous déjà remarqué les couleurs aux dos des billets TER ? Personne ne les voit. Personne n’achète plus de billets au distributeur de toute façon… Moi, j’aime bien. Ça me donne envie de voyager.
 
-## Ce que j'écris
+## Ce que j'écris - 28/09/26
 
 Michael. Flea. Anthony. Chad. John. Josh. Jack. Arik. Cliff. Duane. Dave. D. H. Jack. Hillel. Jesse. Dix. Tobias. Marshall. Comment faire ?
 
