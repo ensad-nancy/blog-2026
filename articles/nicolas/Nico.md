@@ -8,6 +8,7 @@ preview: assets/images/7420442-728862511.jpg
 # Titre de mon article
 Il etait une fois..
 ## POÈME
+![alt text](velo.jpg)
 
 La vélosophie renvoie à la dimension spirituelle que permet la pratique du vélo, cela m’aide beaucoup a me canaliser après mes échanges houleux sur internet…
 
