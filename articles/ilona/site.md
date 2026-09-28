@@ -7,7 +7,7 @@ preview: assets/images/7420442-728862511.jpg
 
 # Blog
 
-## Premier sous-tire
+## Presentation
 
 Mise en page et grille : grille horizontal de presentation du blog avec grille de photo
 grille en 2 colonnes ( droite : article de sa vie, gauche : categorie lien), bloc centre, fond gris 
