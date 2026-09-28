@@ -1,7 +1,7 @@
 ---
-title: Exercice 1
+title: Décadences
 date: 2026-09-28
-tags: ecriture, exemple
+tags: fortification, avenir, no-future
 # preview: assets/images/7420442-728862511.jpg
 ---
 
@@ -12,3 +12,5 @@ Chaque nervure est garnie de crochets. Devant la vulnérabilité, une seconde po
 On l’élargit, on construit de fort mauvais goût la petite tour. La porte qui a perdu son couronnement faisait l’objet d’une cérémonie solennelle.
 
 Face aux directions les plus dangereuses, un soleil entouré de cornes d’abondance barrant le chenal entre les deux grosses tours rondes.
+
+Au bord de l’eau, de nombreux graffitis condamnés à mort emprisonnés sur les pilotis. Aucune muraille ne reliait l’enceinte à la terre ferme.
