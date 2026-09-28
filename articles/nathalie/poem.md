@@ -1,15 +1,11 @@
 ---
 title: internetg111rl: poem
 date: 2026-09-28
-tags: 
+tags: poem
 preview: 
 ---
 
-# Titre de mon article
-
-Lights
-
-## Premier sous-tire
+# Lights
 
 October comes
 Can’t find somebody
@@ -60,5 +56,3 @@ Stories, Actress.
 	Lights.
 
 Comes and goes.
-
-## Second sous-tire
