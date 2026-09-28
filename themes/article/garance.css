@@ -1,11 +1,40 @@
+
+
+@font-face {
+    font-family: "Chaloupée";
+    src: url("../../articles/garance/assets/fonts/Chaloupee-Regular.woff"), format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    background-image: image-set("../../articles/garance/assets/images/stores.png"), linear-gradient(black, blue, red, orange);
-    text-emphasis-color: (green);
     color: chartreuse;
-    font-family: 'Chaloupée-Regular';
-    text-align: center;
+    background-image:linear-gradient(black, blue, red, orange);
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-areas: 
+        "b a"
+        "d c";
     }
 
-#thèmes {
-    display: flow-root;
+body>a {
+    color: crimson;
 }
+
+header .title{ 
+    font-family: "Chaloupée";
+    font-size: 20pt;
+
+}
+
+h1 {
+    font-family: "Chaloupée";
+    font-size: 40pt;
+}
+
+ /*  image-set("../../articles/garance/assets/images/stores.png")*/
+ header {
+    display: inline-flexbox;
+    padding: 10%;
+    outline: solid red 6px;
+ }
