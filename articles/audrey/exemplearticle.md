@@ -5,40 +5,39 @@ tags: everygirl_is_aweirdgirl
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Titre de mon article
+# 5 poems 
 
-## Premier sous-tire
+## 001
 
-    L'exploitation mène 
-    à la création de conditions 
-    parfaites pour être soumise
-    aux déchets institutionnels.
+L'exploitation mène à la création, 
+création de conditions parfaites pour être soumise aux déchets institutionnels.
 
-## Second sous-tire
+## 002
 
-    Toujours en service pour les premiers
-    dans une proximité immédiate, 
-    le travail est effectué 
-    principalemen par les prisonnièr.e.s.
+Toujours en service pour les premiers
+dans une proximité immédiate, 
+le travail est effectué 
+principalemen par les prisonnièr.e.s.
 
-## Troisième sous-titre
+## 003
 
-    D'origine exploitée, 
-    soumise et conditionnée, 
-    la Nouvelle dvient non rentable, 
-    l'exploitation est arretée. 
+D'origine exploitée, 
+soumise, 
+conditionnée, 
+la Nouvelle dvient non rentable, 
+l'exploitation est arretée. 
 
-## Quatrième sous-titre 
+## 004 
 
-    Sous le nom de code "Complexe"
-    la reprise de l'exploitation 
-    prend à sa charge 
-    une série de désintégration 
-    de l'Ancienne. 
+Sous le nom de code "Complexe"
+la reprise de l'exploitation prend à sa charge 
+une série de désintégration et d'extraction de l'Ancienne. 
 
-## Cinquième sous-titre
+## 005
 
-    Les déchets radiactifs 
-    de la médecine, de l'industrie et de la recherche, 
-    mène une des premières propositions 
-    concernant l'utilisation du Complexe.
+Les déchets radiactifs 
+de la médecine, 
+de l'industrie 
+et de la recherche, 
+mène une des premières propositions 
+concernant l'utilisation du Complexe.
