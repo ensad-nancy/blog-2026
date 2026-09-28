@@ -1,6 +1,10 @@
 <?php
 $base = "articles";
-$students = array_diff(scandir($base), [".", ".."]);
+
+// Ne garder que les dossiers dans "articles"
+$students = array_filter(array_diff(scandir($base), [".", ".."]), function ($item) use ($base) {
+    return is_dir("$base/$item");
+});
 
 require_once "assets/Parsedown.php";
 
@@ -65,13 +69,13 @@ $mdContent = preg_replace(
     <div id="themes">
         <legend>Changer le thème :</legend>
         <?php foreach ($students as $student): $studentSlug = htmlspecialchars($student); ?>
-        <div>
-            <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
-                onChange="changeTheme()" checked />
-            <label for="theme-<?= $studentSlug ?>">
-                <?= ucfirst($studentSlug) ?>
-            </label>
-        </div>
+            <div>
+                <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
+                    onChange="changeTheme()" checked />
+                <label for="theme-<?= $studentSlug ?>">
+                    <?= ucfirst($studentSlug) ?>
+                </label>
+            </div>
         <?php endforeach; ?>
     </div>
 
@@ -80,18 +84,18 @@ $mdContent = preg_replace(
             <?= htmlspecialchars($title) ?>
         </p>
         <?php if ($date): ?>
-        <p class="date">
-            <?= htmlspecialchars($date) ?>
-        </p>
+            <p class="date">
+                <?= htmlspecialchars($date) ?>
+            </p>
         <?php endif; ?>
         <?php if ($tags): ?>
-        <p class="tags">
-            <?php foreach (explode(',', $tags) as $tag): ?>
-            <span class="tag">
-                <?= htmlspecialchars(trim($tag)) ?>
-            </span>
-            <?php endforeach; ?>
-        </p>
+            <p class="tags">
+                <?php foreach (explode(',', $tags) as $tag): ?>
+                    <span class="tag">
+                        <?= htmlspecialchars(trim($tag)) ?>
+                    </span>
+                <?php endforeach; ?>
+            </p>
         <?php endif; ?>
     </header>
 
