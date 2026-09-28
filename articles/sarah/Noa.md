@@ -23,4 +23,5 @@ une série est le groupe qui a lieu en 1999 et 2000 tour. Le tour est une séri
 
 Votre aide est la bienvenue ! Voir l’historique. Lire et Modifier le code par le groupe de cette section. une compilations de vidéographies.
 
-Mots extraits de la page Wikipedia *Californication Tour*
+
+*Mots extraits de la page Wikipedia* Californication Tour *: https://fr.wikipedia.org/wiki/Californication_Tour*
