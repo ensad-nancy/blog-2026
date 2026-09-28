@@ -6,15 +6,11 @@ preview: assets/images/7420442-728862511.jpg
 ---
 
 # Titre de mon article
-Il etait une fois
-## Premier sous-tire
 Il etait une fois..
 ## POÈME
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pretium turpis. Donec et ullamcorper velit. Donec nec dui facilisis, feugiat nibh eu, maximus odio. Praesent in lacus purus. Aenean aliquet varius eros, sagittis maximus nulla ornare et. Donec in turpis vel turpis porttitor ullamcorper. Donec lacinia nisi nec turpis sagittis, ac maximus quam sagittis. Ut pretium elit sed nisl fermentum blandit. Praesent eu diam eget libero fermentum consequat nec quis felis. Proin imperdiet ligula eu ante egestas auctor. Aliquam sit amet pellentesque felis. Donec orci justo, condimentum ut arcu eu, ornare sagittis ipsum. Morbi suscipit eros vel erat aliquet, eu sagittis dui scelerisque. Fusce tempor blandit dolor sed tristique. Proin tortor nulla, blandit ut nibh at, rutrum sollicitudin ante.
 La vélosophie renvoie à la dimension spirituelle que permet la pratique du vélo, cela m’aide beaucoup a me canaliser après mes échanges houleux sur internet…
 
-Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellentesque cursus elit pretium at. Vestibulum commodo tincidunt mi accumsan luctus. Nullam accumsan scelerisque quam at fermentum. Nunc blandit luctus quam ut auctor. Cras tellus magna, mattis ut consectetur nec, consectetur eu arcu. Nam ultrices, neque sit amet dictum rhoncus, diam turpis maximus odio, ut sagittis augue enim sed nisi. Nunc mattis egestas erat id ultricies. Morbi et ultrices nisi. Vivamus auctor tristique urna id maximus. Vestibulum euismod felis a mi ultricies aliquam. Aenean finibus porttitor tincidunt. Praesent interdum dapibus aliquet. Integer elementum pulvinar efficitur.
 les vélos disposent normalement d'une sonnette, ce qui avertie les véhicules automobiles.. même si jamais utilisé pour ma part car un peu ridicule et peu audible je trouve…
 
 À partir de 1912, Robert Peugeot organise des courses d'aviette, un vélo muni d'ailes avec ou sans hélices, franchement ce qui de mon point de vu, n,’est pas utiles dans l’usage…
