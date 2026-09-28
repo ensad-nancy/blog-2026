@@ -1,10 +1,7 @@
-.poem1 {
-    background-image: url("YOUR-IMAGE-PATH.jpg");
+body {
+    color: green;
+    background-image: url("blog-2026\articles\sahar\assets\images\kavir.jpg");
     background-size: cover;
     background-position: center;
-
-    color: darkgreen;
-    text-align: center;
-
-    padding: 100px 50px;
+    background-repeat: no-repeat;
 }
