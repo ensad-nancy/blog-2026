@@ -5,10 +5,13 @@ tags: cyberfeminisme, donna haraway
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Titre de mon article
-Il etait une fois..
-## POÈME
-![alt text](velo.jpg)
+# Sangoan_29
+Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on ne sait jamais..
+J’adore donner mon avis et être dans la contradiction, passe-temps favori..
+N’hésitez pas a lire ce que je raconte, c’est verdict. 🤫
+## il était une fois le vélo 🚲
+![alt text](articles/nicolas/assets/images/Bike.gif)
+
 
 La vélosophie renvoie à la dimension spirituelle que permet la pratique du vélo, cela m’aide beaucoup a me canaliser après mes échanges houleux sur internet…
 
