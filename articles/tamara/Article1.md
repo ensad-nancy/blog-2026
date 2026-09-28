@@ -1,6 +1,6 @@
 ---
-title: Manifeste Cyborg
-date: 2026-09-21
+title: Article
+date: 2026-09-28
 tags: cyberfeminisme, donna haraway
 preview: assets/images/7420442-728862511.jpg
 ---
@@ -18,4 +18,3 @@ Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellen
 Integer sodales sed arcu sed aliquam. Suspendisse rutrum tempus justo vel euismod. Etiam lacinia nibh mauris, a semper justo sodales maximus. Sed quis finibus mauris. Nunc mollis sit amet orci in placerat. Vestibulum ultricies risus nec lectus euismod, eget vestibulum nibh pulvinar. Donec imperdiet accumsan eleifend.
 
 Extrait de *Manifeste Cyborg* de Donna Haraway
-
