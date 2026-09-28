@@ -64,12 +64,11 @@ $mdContent = preg_replace(
 
     <div id="themes">
         <legend>Changer le thème :</legend>
-        <?php foreach ($students as $student): ?>
-        <?= $studentSlug = htmlspecialchars($student) ?>
+        <?php foreach ($students as $student): $studentSlug = htmlspecialchars($student); ?>
         <div>
             <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
                 onChange="changeTheme()" checked />
-            <label>
+            <label for="theme-<?= $studentSlug ?>">
                 <?= ucfirst($studentSlug) ?>
             </label>
         </div>
