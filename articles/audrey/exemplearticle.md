@@ -9,7 +9,7 @@ preview: assets/images/7420442-728862511.jpg
 
 ## 001
 
-L'exploitation mène à la création 
+L'exploitation mène à la création, 
 création de conditions parfaites pour être soumise aux déchets institutionnels.
 
 ## 002
