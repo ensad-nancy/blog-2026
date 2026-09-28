@@ -1,8 +1,8 @@
 ---
-title: Manifeste Cyborg
+title: A heritage 
 date: 2026-09-28
-tags: cyberfeminisme, donna haraway
-preview: assets/images/7420442-728862511.jpg
+tags: Poem
+preview: articles\sahar\assets\images\golden.jpg
 ---
 
 # Titre de mon article

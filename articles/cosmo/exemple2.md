@@ -6,7 +6,10 @@ tags: poèmes à ma galaxie
 
 ## 1 
 
-WBL693, White, Bliton et Ledlow 693, ce groupe est la Voie Lenticulaire, elliptique, céleste. Trois lettres, trois chiffres, ce groupe pourrait être cette galaxie.
+WBL693, White, Bliton et Ledlow 693, 
+ce groupe est la Voie Lenticulaire, elliptique, céleste. 
+Trois lettres, trois chiffres, 
+ce groupe pourrait être cette galaxie.
 
 ## 2 
 
