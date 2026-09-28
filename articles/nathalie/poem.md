@@ -1,20 +1,58 @@
 ---
-title: Manifeste Cyborg
-date: 2026-09-21
-tags: cyberfeminisme, donna haraway
-preview: assets/images/7420442-728862511.jpg
+title: internetg111rl: poem
+date: 2026-09-28
+tags: poem
+preview: 
 ---
 
-# Titre de mon article
+# Lights
 
-## Premier sous-tire
+October comes
+Can’t find somebody
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pretium turpis. Donec et ullamcorper velit. Donec nec dui facilisis, feugiat nibh eu, maximus odio. Praesent in lacus purus. Aenean aliquet varius eros, sagittis maximus nulla ornare et. Donec in turpis vel turpis porttitor ullamcorper. Donec lacinia nisi nec turpis sagittis, ac maximus quam sagittis. Ut pretium elit sed nisl fermentum blandit. Praesent eu diam eget libero fermentum consequat nec quis felis. Proin imperdiet ligula eu ante egestas auctor. Aliquam sit amet pellentesque felis. Donec orci justo, condimentum ut arcu eu, ornare sagittis ipsum. Morbi suscipit eros vel erat aliquet, eu sagittis dui scelerisque. Fusce tempor blandit dolor sed tristique. Proin tortor nulla, blandit ut nibh at, rutrum sollicitudin ante.
+Car lights come…
+Exciting, sexy, fun –
 
-Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellentesque cursus elit pretium at. Vestibulum commodo tincidunt mi accumsan luctus. Nullam accumsan scelerisque quam at fermentum. Nunc blandit luctus quam ut auctor. Cras tellus magna, mattis ut consectetur nec, consectetur eu arcu. Nam ultrices, neque sit amet dictum rhoncus, diam turpis maximus odio, ut sagittis augue enim sed nisi. Nunc mattis egestas erat id ultricies. Morbi et ultrices nisi. Vivamus auctor tristique urna id maximus. Vestibulum euismod felis a mi ultricies aliquam. Aenean finibus porttitor tincidunt. Praesent interdum dapibus aliquet. Integer elementum pulvinar efficitur.
+	lust
 
-## Second sous-tire
+… and goes.
 
-Integer sodales sed arcu sed aliquam. Suspendisse rutrum tempus justo vel euismod. Etiam lacinia nibh mauris, a semper justo sodales maximus. Sed quis finibus mauris. Nunc mollis sit amet orci in placerat. Vestibulum ultricies risus nec lectus euismod, eget vestibulum nibh pulvinar. Donec imperdiet accumsan eleifend.
+	One-night stands.
 
-Extrait de *Manifeste Cyborg* de Donna Haraway
+
+November comes
+Somebody different
+Completely different
+
+Car lights come…
+Careful, smooth, kind –
+
+	love
+
+… and goes.
+
+	Lovelorn.
+
+
+October, November, 
+Exciting, Careful,
+Sexy, Smooth, 
+Fun, Kind,
+
+One-night stands,
+Lovelorn.
+
+Goes and goes.
+
+
+	Can’t find somebody completely different. 
+
+
+Acteur, Stories,
+Stories, Actress,
+Acteur, Stories,
+Stories, Actress.
+
+	Lights.
+
+Comes and goes.
