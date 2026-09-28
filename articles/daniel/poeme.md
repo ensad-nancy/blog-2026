@@ -1,5 +1,5 @@
 ---
-title: Jack Scareow
+title: Poeme exercise
 date: 2026-09-28
 tags: 
 preview:
