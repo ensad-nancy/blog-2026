@@ -5,11 +5,7 @@ tags:
 preview: 
 ---
 
-# Titre de mon article
-
-Lights
-
-## Premier sous-tire
+# Lights
 
 October comes
 Can’t find somebody
