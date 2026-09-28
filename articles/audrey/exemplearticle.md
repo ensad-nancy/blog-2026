@@ -17,7 +17,7 @@ création de conditions parfaites pour être soumise aux déchets institutionnel
 Toujours en service pour les premiers
 dans une proximité immédiate, 
 le travail est effectué 
-principalemen par les prisonnièr.e.s.
+principalemen par les prisonnièr.e.s du centre.
 
 ## 003
 
