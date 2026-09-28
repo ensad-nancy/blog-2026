@@ -1,4 +1,11 @@
 body {
-    background-color: chartreuse;
-    background-image: url("article/garance/images/queen.png");
+    background-image: image-set("../../articles/garance/assets/images/stores.png"), linear-gradient(black, blue, red, orange);
+    text-emphasis-color: (green);
+    color: chartreuse;
+    font-family: 'Chaloupée-Regular';
+    text-align: center;
+    }
+
+#thèmes {
+    display: flow-root;
 }
