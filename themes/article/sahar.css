@@ -1,0 +1,10 @@
+.poem1 {
+    background-image: url("YOUR-IMAGE-PATH.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: darkgreen;
+    text-align: center;
+
+    padding: 100px 50px;
+}
