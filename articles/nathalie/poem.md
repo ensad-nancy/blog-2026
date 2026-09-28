@@ -16,13 +16,13 @@ Car lights come…
 Exciting, sexy, fun –
 
 
-	lust
+lust
 
 
 … and goes.
 
 
-	One-night stands.
+One-night stands.
 
 
 
@@ -38,13 +38,13 @@ Car lights come…
 Careful, smooth, kind –
 
 
-	love
+love
 
 
 … and goes.
 
 
-	Lovelorn.
+Lovelorn.
 
 
 
@@ -66,7 +66,7 @@ Goes and goes.
 
 
 
-	Can’t find somebody completely different. 
+Can’t find somebody completely different. 
 
 
 
@@ -79,7 +79,9 @@ Acteur, Stories,
 Stories, Actress.
 
 
-	Lights.
+Lights.
 
 
 Comes and goes.
+
+
