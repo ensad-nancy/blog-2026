@@ -212,3 +212,8 @@ header .title {
 article {
     grid-area: d;
 }
+
+article p {
+    line-height: 136%;
+    margin-bottom: 14px;
+}
