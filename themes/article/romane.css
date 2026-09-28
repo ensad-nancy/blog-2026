@@ -1,15 +1,21 @@
 body {
-  background-color: #9b68c5;
+  background-image: url("../../articles/romane/assets/images/fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
-    color :#f0d964
+    color :#ffffff
     }
 
 h2{
-    color :#f0d964
+    color :#fdfdfd
     }
 
 p{
-    color :#f0d964
+    color :#fffffe
     }
+
+#filtres{
+        color: #fdfdfd;
+}  
