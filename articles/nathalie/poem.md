@@ -8,51 +8,80 @@ preview:
 # Lights
 
 October comes
+
 Can’t find somebody
 
 Car lights come…
+
 Exciting, sexy, fun –
 
-	lust
+
+lust
+
 
 … and goes.
 
-	One-night stands.
+
+One-night stands.
+
 
 
 November comes
+
 Somebody different
+
 Completely different
 
+
 Car lights come…
+
 Careful, smooth, kind –
 
-	love
+
+love
+
 
 … and goes.
 
-	Lovelorn.
+
+Lovelorn.
+
 
 
 October, November, 
+
 Exciting, Careful,
+
 Sexy, Smooth, 
+
 Fun, Kind,
 
+
 One-night stands,
+
 Lovelorn.
+
 
 Goes and goes.
 
 
-	Can’t find somebody completely different. 
+
+Can’t find somebody completely different. 
+
 
 
 Acteur, Stories,
+
 Stories, Actress,
+
 Acteur, Stories,
+
 Stories, Actress.
 
-	Lights.
+
+Lights.
+
 
 Comes and goes.
+
+

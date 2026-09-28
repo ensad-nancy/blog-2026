@@ -1,28 +1,39 @@
 ---
 title: 5 poèmes de Tony
 date: 2026-09-28
-tags: cyberfeminisme, donna haraway
-preview: assets/images/7420442-728862511.jpg 
+tags: poèmes à ma galaxie
 --- 
 
-# titre 
+## 1 
 
-## premier sous titre 
+WBL693, White, Bliton et Ledlow 693,<br>
+ce groupe est la Voie Lenticulaire, elliptique, céleste. <br>
+Trois lettres, trois chiffres, <br>
+ce groupe pourrait être cette galaxie.<br>
 
-WBL693, White, Bliton et Ledlow 693, ce groupe est la Voie Lenticulaire, elliptique, céleste. Trois lettres, trois chiffres, ce groupe pourrait être cette galaxie.
+## 2 
 
-## deuxième sous titre 
+Et permet de trouver aisément les constellations des galaxies, <br>
+et me permet de le faire à l'aide des coordonnées de la galaxie. <br>
+Ascension droite et trois déclinaisons. <br> 
 
-Et permet de trouver aisément les constellations des galaxies, et me permet de le faire à l'aide des coordonnées de la galaxie. Ascension droite et trois déclinaisons. 
+## 3
 
-## troisième sous titre
+Les incertitudes commencent toujours absentes. <br>
+Fort malheureusement, d'incertitudes employées, <br>
+les membres ne sont pas identifiés. <br>
+Incertitudes et distances. <br>
 
-Les incertitudes commencent toujours absentes. Fort malheureusement, d'incertitudes employées, les membres ne sont pas identifiés. Incertitudes et distances. 
+## 4 
 
-## quatrième sous titre 
+Caractéristiques physiques, identification, 22h 59mn 22,473s. <br>
+ Découverte 22h 59mn 29,0308s. <br>
+ Désignation des septs publieurs, 22h 59 mn 37,6639s. <br>
+ Vitesse. <br>
+ Fort.<br>
 
-Caractéristiques physiques, identification, 22h 59mn 22,473s. Découverte 22h 59mn 29,0308s. Désignation des septs publieurs, 22h 59 mn 37,6639s. Vitesse. Fort.
+## 5 
 
-## cinquième sous titre 
-
-Ci-dessous, environ, la distance moyenne comprend au moins, dans un catalogue, considérant les incertitudes. On peut déduire aisément sauf indication contraire. 
+Ci-dessous, environ, la distance moyenne comprend au moins, <br>
+dans un catalogue, considérant les incertitudes. <br>
+On peut déduire aisément sauf indication contraire. <br>

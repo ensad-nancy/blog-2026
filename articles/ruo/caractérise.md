@@ -7,7 +7,7 @@ preview: assets/images/7420442-728862511.jpg
 
 # Moi
 
-## C'est ma petite habitude
+## Ma Petite Habitude
 
 J'ai toujours un petit carnet de format A6 dans ma poche. Je n'utilise que des pages toutes blanches, sans lignes ni carreaux, parce que je n'aime pas que mes pensées soient bloquées par un cadre. Ce carnet est comme un filet pour attraper les petits moments du quotidien. Si je suis dans une rue bruyante ou un métro bondé et que j'entends un bout de phrase intéressant ou un peu poétique, je le note très vite. C'est aussi mon aide-mémoire visuel. Quand je vois une posture intéressante, une belle lumière ou un visage fatigué, je fais un croquis rapide en quelques coups de crayon. Mon monde est fait de ces petits morceaux de mots et de dessins. 
 
