@@ -1,3 +1,15 @@
-body{
-    background-color: red;
+body {
+    background-color: greenyellow;
 }
+
+article {
+    background-color: rgb(250, 163, 163);
+}
+
+header {
+    background-color: hotpink;
+}
+
+ #themes {
+    background-color: rgb(144, 120, 120);
+ }
