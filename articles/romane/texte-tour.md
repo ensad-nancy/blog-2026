@@ -1,17 +1,15 @@
 ---
-title: Tour d’Albinhac
+title: Le mythe de la Tour d’Albinhac
 date: 2026-09-28
 tags: wikepedia, Tour d’Albinhac
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Titre de mon article
-
-Le myhte de la Tour d’Albinhac
+# Le myhte de la Tour d’Albinhac
 
 ## Premier sous-tire
 
-    La cité médiévale de Lectoure comptait plusieurs maisons fortes, ultimes refuges en cas d’invasion ou de prise de la ville. Ainsi, après sa
+La cité médiévale de Lectoure comptait plusieurs maisons fortes, ultimes refuges en cas d’invasion ou de prise de la ville. Ainsi, après sa
 possession des comtes d’Armagnac). C’est alors que la « maison sive tour » prend son nom. La maison est alors totalement entourée d’autres constructions
 dans son angle nord-est d’une tourelle ronde en encorbellement. Une fenêtre arasée témoigne que la tour était plus haute et qu’elle a été arasée
 grandes demeures médiévales, elle était séparée de la rue principale par des bâtiments de faible hauteur, souvent ouverts par des arcades,
