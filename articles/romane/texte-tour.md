@@ -1,13 +1,11 @@
 ---
-title: Tour d’Albinhac
+title: Le mythe de la Tour d’Albinhac
 date: 2026-09-28
 tags: wikepedia, Tour d’Albinhac
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Titre de mon article
-
-Tour d’Albinhac
+# Le myhte de la Tour d’Albinhac
 
 ## Premier sous-tire
 
