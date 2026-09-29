@@ -13,8 +13,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     grid-template-areas: 
-        "b a"
-        "d c";
+        "b a d"
+        "c";
     grid-gap: 5%;
 }
 
@@ -24,8 +24,7 @@ body>a {
 
 header .title{ 
     font-family: "Chaloupée";
-    font-size: 20pt;
-
+    font-size: 20pt
 }
 
 h1 {
