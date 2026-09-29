@@ -1,3 +1,7 @@
+/* NOTES
+    - Start local server: php -S localhost:8000 -t .
+*/
+
 /* Reset styles */
 
 * {
@@ -142,31 +146,71 @@
 /* Styles */
 
 :root {
-    --body-width: 800px;
+    --body-width: 700px;
     --themes-width: 100px;
+}
+
+* {
+    user-select: none;
 }
 
 body {
     font-family: "Spectral";
+    font-size: 15px;
     width: var(--body-width);
     margin: 20px auto;
     display: grid;
     grid-template-areas:
         "a b"
         "c d";
-    grid-gap: 8px 50px;
+    grid-template-columns: var(--themes-width) 1fr;
+    grid-gap: 30px 50px;
+    line-height: 100%;
 }
 
 body>a {
     grid-area: a;
+    font-family: "Lack";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 12px;
 }
+
+body>a:hover {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* THEMES */
 
 #themes {
     grid-area: c;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.4;
+}
+
+#themes:hover {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
 }
 
 #themes legend {
-    font-feature-settings: "c2sc";
+    /*font-feature-settings: "c2sc";*/
+    font-family: "Lack";
+    text-transform: uppercase;
+    letter-spacing: 7%;
+    font-size: 85%;
+    margin-bottom: 7px;
 }
 
 #themes input[type=radio] {
@@ -177,6 +221,12 @@ body>a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    padding: 3px 0;
+}
+
+#themes label:hover {
+    font-weight: 700;
 }
 
 #themes label::before {
@@ -200,20 +250,131 @@ body>a {
     border-radius: 100px;
 }
 
+#themes:has(label:hover) label:not(:hover) {
+    opacity: 0.4;
+}
+
+/* HEADER */
+
 header {
     grid-area: b;
+    display: grid;
+    grid-template-areas:
+        "a a"
+        "b c";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 110px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid black;
 }
 
 header .title {
     font-size: 44px;
     font-family: "Lack";
+    line-height: 110%;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 18%;
+    text-decoration-skip-ink: none;
+    grid-area: a;
 }
+
+header .title:hover {
+    text-decoration-thickness: 2px;
+}
+
+header .date {
+    grid-area: b;
+    font-feature-settings: "onum";
+    letter-spacing: 8%;
+    font-weight: 100;
+    width: fit-content;
+}
+
+header .date:hover {
+    font-weight: 400;
+}
+
+header .tags {
+    grid-area: c;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-weight: 400;
+}
+
+header .tags .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .tags .tag:not(:last-child)::after {
+    content: "/";
+    font-weight: 100;
+    margin: 0 5px;
+}
+
+/* ARTICLE */
 
 article {
     grid-area: d;
+    font-size: 17px;
 }
 
+/* Paragraphs  */
+
 article p {
+    /*--text-indent: 18px;*/
+    --text-indent: 0px;
     line-height: 136%;
     margin-bottom: 14px;
+    counter-increment: paragraph 1;
+    position: relative;
+    padding-left: 18px;
+    text-indent: var(--text-indent);
+}
+
+article p::before {
+    content: counter(paragraph);
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--text-indent));
+    font-weight: 100;
+    font-size: 15px;
+    opacity: 0.4;
+}
+
+article p:first-child {
+    --text-indent: 0px;
+}
+
+article p:first-child:first-letter {
+    font-size: 300%;
+    float: left;
+    padding: 12px 0 6px;
+    margin-right: 3px;
+    font-weight: 100;
+}
+
+article p:first-child::first-line {
+    font-feature-settings: "smcp";
+}
+
+/* Titles */
+
+article h1 {
+    margin: 28px 0 20px;
+    letter-spacing: -2%;
+    line-height: 100%;
+}
+
+article h1:first-child {
+    margin-top: initial;
+}
+
+article h2 {
+    margin-bottom: 14px;
+    letter-spacing: -1%;
+    line-height: 100%;
 }
