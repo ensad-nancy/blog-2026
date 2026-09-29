@@ -2,12 +2,15 @@
 
 ---
 
-# IMPORTANT!
+
+# Ultracrépidarianisme
 Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on ne sait jamais..
 J’adore donner mon avis et être dans la contradiction, passe-temps favori..
-N’hésitez pas a lire ce que je raconte, c’est verdict. 🤫
-## il était une fois le vélo 🚲
-![alt text](articles/nicolas/assets/images/Bike.gif)
+N’hésitez pas a lire ce que je raconte, c’est verdict. 
+## il était une fois le vélo 
+
+
+
 
 
 Le vélo de ville est conçu pour les déplacements en ville, ce qui est plutôt logique… Cela inclut notamment le roadster et le vélo hollandais..

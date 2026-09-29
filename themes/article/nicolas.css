@@ -1,28 +1,52 @@
 @font-face {
-  font-family: "Compagnon";
-  src: url("../../articles/nicolas/assets/fonts/Compagnon-Bold.woff");
+  font-family: "Redaction-Inclusive";
+  src: url("../../articles/nicolas/assets/fonts/Redaction-Inclusive-Regular.woff") format("woff");
 }
 
+
 body{
-  background-color:rgb(255, 255, 255);
-  font-family: 'Compagnon';
+ 
+  background-color:rgb(173, 173, 173);
+  font-family: 'Redaction-Inclusive';
   text-align: left;
   image-orientation: left;
 
 }
-h1 {
-  background: rgb(207, 206, 203);
+
+
+div {
+  border: solid 2px rgb(11, 11, 11);
+  height: 40px;
+  width: 30%;
+  box-sizing: border-box;  /* la bordure est comprise dans les 30% */
 }
+
+
+h1 {
+
+  text-align: justify;
+  position: relative;
+  background: rgb(83, 83, 83);
+  top: 30px;
+  left:10%;
+}
+h2 {
+  text-align: justify;
+  position: relative;
+  top: 30px;
+  left:10%;
+
+}
+
+p {
+  position: relative;
+  background: rgba(141, 141, 138, 0);
+   top: 30px;
+  left:10%;
+}
+
 h1.has-width {
   width: auto;
 }
 
-div {
 
-  width: 100px;         
-  height: 10px;       
-  background-color: #f0f0f0; 
-  border: 1px solid #000000;
-  padding: 40px;        
-
-}
