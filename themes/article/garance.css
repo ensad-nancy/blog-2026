@@ -9,16 +9,17 @@
 
 body {
     color: chartreuse;
-    background-image:linear-gradient(black, blue, red, orange);
+    background-image:repeating-linear-gradient(black, blue, red, orange);
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     grid-template-areas: 
         "b a"
         "d c";
-    }
+    grid-gap: 5%;
+}
 
 body>a {
-    color: crimson;
+    color: green;
 }
 
 header .title{ 
@@ -30,11 +31,14 @@ header .title{
 h1 {
     font-family: "Chaloupée";
     font-size: 40pt;
+    text-orientation:sideways;
 }
 
  /*  image-set("../../articles/garance/assets/images/stores.png")*/
+
  header {
     display: inline-flexbox;
     padding: 10%;
-    outline: solid red 6px;
+    outline: paleturquoise, 6px;
+    outline-style: inset;
  }
