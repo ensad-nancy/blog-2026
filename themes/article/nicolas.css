@@ -4,21 +4,25 @@
 }
 
 body{
-background-color:rgb(12, 255, 133);
-font-family: 'Compagnon';
-text-align: left;
-image-orientation: left;
+  background-color:rgb(255, 255, 255);
+  font-family: 'Compagnon';
+  text-align: left;
+  image-orientation: left;
 
 }
-h1 
-{text-align : left }
+h1 {
+  background: rgb(207, 206, 203);
+}
+h1.has-width {
+  width: auto;
+}
 
 div {
-  direction: right;
-width: 100px;         /* Largeur du bloc */
-  height: 30px;        /* Hauteur du bloc */
-  background-color: #f0f0f0; /* Couleur de fond */
-  border: 1px solid #000000;    /* Bordure du bloc */
-  padding: 40px;        /* Espace intérieur pour le texte */
+
+  width: 100px;         
+  height: 10px;       
+  background-color: #f0f0f0; 
+  border: 1px solid #000000;
+  padding: 40px;        
 
 }

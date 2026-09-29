@@ -1,8 +1,5 @@
 ---
-title: coucou 
-date: 2026-09-21
-tags: cyberfeminisme, donna haraway
-preview: assets/images/7420442-728862511.jpg
+
 ---
 
 # IMPORTANT!
@@ -23,8 +20,3 @@ les vélos disposent normalement d'une sonnette, ce qui avertie les véhicules a
 
 Le vol, vraiment trop fréquent dans les villes..Les antivols seraient évalués et les données des tests mises à disposition, au vu de ma dernière expérience j’y crois pas trop …
 
-## Second sous-tire
-
-Integer sodales sed arcu sed aliquam. Suspendisse rutrum tempus justo vel euismod. Etiam lacinia nibh mauris, a semper justo sodales maximus. Sed quis finibus mauris. Nunc mollis sit amet orci in placerat. Vestibulum ultricies risus nec lectus euismod, eget vestibulum nibh pulvinar. Donec imperdiet accumsan eleifend.
-
-Extrait de *Manifeste Cyborg* de Donna Haraway
