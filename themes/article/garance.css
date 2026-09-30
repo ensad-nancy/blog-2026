@@ -9,35 +9,67 @@
 
 body {
     color: chartreuse;
-    background-image:repeating-linear-gradient(black, blue, red, orange);
-    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient( black, blue, red, rgb(255, 102, 0), red, blue, black);
     display: grid;
     grid-template-areas: 
-        "b a d"
-        "c";
+        "a a a"
+        "d e f";
     grid-gap: 5%;
+    margin: 20px;
+}
+
+#article {
+    grid-area: e;
+}
+
+article p {
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3%;
+    line-height: 12 px;
+    left: 100px;
+    right: 100px;
 }
 
 body>a {
-    color: green;
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+    grid-area: d;
 }
 
-header .title{ 
-    font-family: "Chaloupée";
-    font-size: 20pt
+#themes {
+    grid-area: f;
+    top: inherit;
+    outline: chartreuse 6px;
+    outline-style: inset;
+    background-color: black;
+    padding: 20px;
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {
+article h1 {
     font-family: "Chaloupée";
-    font-size: 40pt;
-    text-orientation:sideways;
+    font-size: 50pt;
+    text-align: center;
 }
 
  /*  image-set("../../articles/garance/assets/images/stores.png")*/
 
- header {
-    display: inline-flexbox;
-    padding: 10%;
-    outline: paleturquoise, 6px;
+header .title{ 
+    font-family: "Chaloupée";
+    color: chartreuse;
+    font-size: 40pt ;
+}
+
+header {
+    grid-area: a;
+    outline: chartreuse 6px;
     outline-style: inset;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: sticky;
+    top: 5%;
+    line-height: 5px;
  }
