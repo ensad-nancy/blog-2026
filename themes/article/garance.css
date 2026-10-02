@@ -1,65 +1,144 @@
-
+/* FONT FACE */
 
 @font-face {
     font-family: "Chaloupée";
-    src: url("../../articles/garance/assets/fonts/Chaloupee-Regular.woff"), format(woff);
+    src: url("../../articles/garance/assets/fonts/Chaloupee-Regular.otf"), format(woff);
     font-weight: 400;
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Chaloupée Bold";
+    src: url("../../articles/garance/assets/fonts/Chaloupee-Black.otf"), format(woff);
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "NCS";
+    src: url("../../articles/garance/assets/fonts/NotCourierSans.otf"), format(otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NCSB";
+    src: url("../../articles/garance/assets/fonts/NotCourierSans-Bold.otf"), format(otf);
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Guilt Wafer";
+    src: url("../../articles/garance/assets/fonts/SansGuiltWafer.otf"), format(otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*BODY*/
+
 body {
-    color: chartreuse;
-    background-image: linear-gradient( black, blue, red, rgb(255, 102, 0), red, blue, black);
+    font-family: "Chaloupée";
+    font-style: normal;
+    background-image: linear-gradient(black, blue, red, rgb(255, 102, 0));
+    background-attachment: fixed;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "a a a"
         "d e f";
     grid-gap: 5%;
-    margin: 20px;
+    margin: 0px 200px 0px 200px
 }
 
-#article {
+/*article*/
+
+article {
     grid-area: e;
-}
-
-article p {
-    color: chartreuse;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 3%;
-    line-height: 12 px;
-    left: 100px;
-    right: 100px;
-}
-
-body>a {
-    color: chartreuse;
-    font-family: 'Courier New', Courier, monospace;
-    grid-area: d;
-}
-
-#themes {
-    grid-area: f;
-    top: inherit;
-    outline: chartreuse 6px;
-    outline-style: inset;
     background-color: black;
-    padding: 20px;
     color: chartreuse;
-    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    outline: 6px;
+    outline-style: inset;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 40px;
 }
 
 article h1 {
     font-family: "Chaloupée";
-    font-size: 50pt;
+    font-size: 40pt;
+    text-align: center;
+    outline: 6px;
+    outline-style: inset;
+    padding: 5%;
+}
+
+article h2 {
+    font-family: "Chaloupée";
+}
+
+article p {
+    font-family: "NCS";
+    margin: 3%;
+    line-height: 12px;
+}
+
+/*a*/
+
+a {
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+    grid-area: d;
+    background-color: black;
+    outline: 6px;
+    outline-style: inset;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    position: sticky;
+    top: 220px;
+}
+
+/*themes*/
+
+#themes {
+    grid-area: f;
+    position: sticky;
+    top: 220px;
+    outline: 6px;
+    outline-style: inset;
+    background-color: black;
+    padding: 5%;
+    color: chartreuse;
+    font-family: "NCS";
+    height: fit-content;
+    width: fit-content;
     text-align: center;
 }
 
- /*  image-set("../../articles/garance/assets/images/stores.png")*/
+#themes label:hover {
+    background-color: chartreuse;
+    color: black;
+    font-family: "NCSB";
+}
 
-header .title{ 
-    font-family: "Chaloupée";
+#themes legend {
+    font-family: "NCSB";
+}
+
+#themes input[type="radio"] {
+    display : none;
+}
+
+/* header*/
+
+header .title {
+    font-family: "Chaloupée Bold";
     color: chartreuse;
-    font-size: 40pt ;
+    font-size: 40pt;
+    padding: none;
 }
 
 header {
@@ -71,5 +150,9 @@ header {
     font-family: 'Courier New', Courier, monospace;
     position: sticky;
     top: 5%;
-    line-height: 5px;
- }
+    line-height: 2%;
+}
+
+
+
+/*  image-set("../../articles/garance/assets/images/stores.png")*/
