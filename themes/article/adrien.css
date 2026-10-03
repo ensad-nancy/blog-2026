@@ -2,17 +2,6 @@
     - Start local server: php -S localhost:8000 -t .
 */
 
-/* Reset styles */
-
-* {
-    box-sizing: border-box;
-    font-synthesis: none;
-    padding: initial;
-    margin: initial;
-    text-decoration: none;
-    color: unset;
-}
-
 /* Fonts: Lack */
 
 @font-face {
@@ -143,238 +132,239 @@
     font-style: italic;
 }
 
-/* Styles */
+/* Reset styles */
 
-:root {
-    --body-width: 700px;
-    --themes-width: 100px;
+* {
+    box-sizing: border-box;
+    font-synthesis: none;
+    padding: initial;
+    margin: initial;
+    text-decoration: none;
+    color: unset;
+    max-width: initial !important;
+    line-height: initial !important;
 }
+
+/* Styles */
 
 * {
     user-select: none;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Spectral";
-    font-size: 15px;
-    width: var(--body-width);
-    margin: 20px auto;
-    display: grid;
-    grid-template-areas:
-        "a b"
-        "c d";
-    grid-template-columns: var(--themes-width) 1fr;
-    grid-gap: 30px 50px;
-    line-height: 100%;
+    font-feature-settings: "onum";
 }
 
 body>a {
-    grid-area: a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.3);
     font-family: "Lack";
-    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 12px;
+    font-size: 90%;
+    width: min-content;
+    text-align: center;
+    word-break: break-all;
+    padding: 22px;
+    transition: color .2s ease-in-out;
+    z-index: 6;
+}
+
+body>a::first-letter {
+    color: white;
 }
 
 body>a:hover {
-    background-color: black;
     color: white;
-    align-items: center;
-    justify-content: center;
 }
-
-/* THEMES */
-
-#themes {
-    grid-area: c;
-    display: flex;
-    flex-direction: column;
-    opacity: 0.4;
-}
-
-#themes:hover {
-    grid-area: c;
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-}
-
-#themes legend {
-    /*font-feature-settings: "c2sc";*/
-    font-family: "Lack";
-    text-transform: uppercase;
-    letter-spacing: 7%;
-    font-size: 85%;
-    margin-bottom: 7px;
-}
-
-#themes input[type=radio] {
-    display: none;
-}
-
-#themes label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    padding: 3px 0;
-}
-
-#themes label:hover {
-    font-weight: 700;
-}
-
-#themes label::before {
-    --circle-size: 8px;
-    content: "";
-    width: var(--circle-size);
-    height: var(--circle-size);
-    display: block;
-    border-radius: 100px;
-    box-shadow: 0 0 0 1.2px inset black;
-    margin-right: 5px;
-}
-
-#themes label:hover::before,
-#themes input[type=radio]:checked+label::before {
-    content: "";
-    width: var(--circle-size);
-    height: var(--circle-size);
-    background-color: black;
-    display: block;
-    border-radius: 100px;
-}
-
-#themes:has(label:hover) label:not(:hover) {
-    opacity: 0.4;
-}
-
-/* HEADER */
 
 header {
-    grid-area: b;
-    display: grid;
-    grid-template-areas:
-        "a a"
-        "b c";
-    grid-template-columns: 1fr 1fr;
-    row-gap: 110px;
-    padding-bottom: 10px;
-    border-bottom: 5px solid black;
+    --title-margin-bottom: -158px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+    z-index: 4;
 }
 
-header .title {
-    font-size: 44px;
-    font-family: "Lack";
-    line-height: 110%;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 18%;
-    text-decoration-skip-ink: none;
-    grid-area: a;
-}
-
-header .title:hover {
-    text-decoration-thickness: 2px;
-}
-
-header .date {
-    grid-area: b;
-    font-feature-settings: "onum";
-    letter-spacing: 8%;
-    font-weight: 100;
-    width: fit-content;
-}
-
-header .date:hover {
-    font-weight: 400;
+header:not(:has(.tags)) {
+    height: fit-content;
+    padding-top: 100px;
 }
 
 header .tags {
-    grid-area: c;
+    height: 100%;
     display: flex;
-    justify-content: end;
-    width: 100%;
-    font-weight: 400;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header .tags .tag {
+    --blur: 0px;
+    filter: blur(var(--blur));
+    transition:
+        font-weight .2s ease-in-out,
+        filter .2s ease-in-out,
+        letter-spacing 6s cubic-bezier(0.76, -0.01, 0.21, 1);
+}
+
+header .tags .tag:nth-last-child(1) {
+    --blur: 2px;
+    font-weight: 900;
+}
+
+header .tags .tag:nth-last-child(2) {
+    --blur: 0.8px;
+    font-weight: 600;
+}
+
+header .tags:has(> :last-child:nth-child(1)) .tag {
+    /* 1 element */
+    --blur: 0px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(1) {
+    /* 2 elements */
+    --blur: 1px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(2) {
+    /* 2 elements */
+    --blur: 0px;
+}
+
+header .tags .tag:hover {
+    --blur: 0px !important;
+    font-weight: 400;
+    letter-spacing: 100%;
+}
+
+header .title {
+    --hue-rotate: 0deg;
+    order: 1;
+    height: fit-content;
+    font-family: "Lack";
+    font-size: 80px;
+    line-height: 106%;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 90px;
+    margin-bottom: var(--title-margin-bottom);
+    margin-top: -50px;
+    letter-spacing: 5%;
+    /* effect  */
+    -webkit-text-stroke: 9px white;
+    text-shadow: initial;
+    filter: url(../../articles/adrien/assets/images/filters.svg#title) blur(3.8px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    transition: filter 3s ease-in-out;
+}
+
+header .title:hover {
+    --hue-rotate: 140deg;
+}
+
+header .date {
+    order: 2;
+    z-index: 2;
+    position: absolute;
+    bottom: calc((var(--title-margin-bottom)) + 72px);
+    color: black;
+    font-weight: 500;
+    letter-spacing: 15%;
+}
+
+#themes {
+    --title-width: 24ch;
+    --width: var(--title-width);
+    --margin: 26px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: calc(-50% - var(--margin)) 0;
+    width: var(--width);
+    max-width: 90vw;
+    overflow: scroll;
     align-items: center;
+    background-color: yellow;
+    border-radius: 100px;
+    /*padding: 5px 12px;*/
+    padding: 0 4px;
+    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow;
+    transition: width .2s ease-in-out;
+    margin: var(--margin);
 }
 
-header .tags .tag:not(:last-child)::after {
-    content: "/";
-    font-weight: 100;
-    margin: 0 5px;
+#themes div {
+    opacity: 0;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: all .2s ease-in-out;
 }
 
-/* ARTICLE */
+#themes:hover {
+    --width: 80vw;
+}
+
+#themes legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 8%;
+}
+
+#themes:hover legend {
+    flex: 0 0 var(--title-width);
+}
+
+#themes:hover div {
+    opacity: 1;
+    /*display: block;*/
+    /*visibility: visible;*/
+}
+
+#themes div input {
+    display: none;
+}
+
+#themes div label {
+    cursor: pointer;
+    display: block;
+    padding: 4px 6px;
+    transition: all .1s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20%;
+    text-decoration-skip-ink: none;
+}
+
+#themes div label:hover {
+    /*font-weight: 700;*/
+    transform-origin: bottom right;
+    scale: 1.1;
+    rotate: 7deg;
+    text-decoration-color: black;
+}
 
 article {
-    grid-area: d;
-    font-size: 17px;
-}
-
-/* Paragraphs  */
-
-article p {
-    /*--text-indent: 18px;*/
-    --text-indent: 0px;
-    line-height: 136%;
-    margin-bottom: 14px;
-    counter-increment: paragraph 1;
-    position: relative;
-    padding-left: 18px;
-    text-indent: var(--text-indent);
-}
-
-article p::before {
-    content: counter(paragraph);
-    position: absolute;
-    top: 0;
-    left: calc(-1 * var(--text-indent));
-    font-weight: 100;
-    font-size: 15px;
-    opacity: 0.4;
-}
-
-article p:first-child {
-    --text-indent: 0px;
-}
-
-article p:first-child:first-letter {
-    font-size: 300%;
-    float: left;
-    padding: 12px 0 6px;
-    margin-right: 3px;
-    font-weight: 100;
-}
-
-article p:first-child::first-line {
-    font-feature-settings: "smcp";
-}
-
-/* Titles */
-
-article h1 {
-    margin: 28px 0 20px;
-    letter-spacing: -2%;
-    line-height: 100%;
-}
-
-article h1:first-child {
-    margin-top: initial;
-}
-
-article h2 {
-    margin-bottom: 14px;
-    letter-spacing: -1%;
-    line-height: 100%;
+    --width: 575px;
+    width: var(--width);
+    margin: 0 auto;
+    border-top: 4px solid black;
+    margin-top: 170px;
+    padding: 20px 0 150px;
 }
