@@ -9,6 +9,8 @@ article {
 
 }
 
+article 
+
 header {
     background-color: hotpink;
 }
@@ -17,9 +19,10 @@ header {
     background-color: rgb(144, 120, 120);
  }
 
-article + h {
+:heading(2) {
     background:  blue;
     border: 3px solid orange;
     padding: 10px;
     margin: 10px;
 }
+
