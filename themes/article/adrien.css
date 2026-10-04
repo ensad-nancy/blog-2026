@@ -1,0 +1,370 @@
+/* NOTES
+    - Start local server: php -S localhost:8000 -t .
+*/
+
+/* Fonts: Lack */
+
+@font-face {
+    font-family: "Lack";
+    src: url("../../articles/adrien/assets/fonts/lack/Lack-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lack";
+    src: url("../fonts/lack/Lack-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Fonts: Spectral */
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    font-synthesis: none;
+    padding: initial;
+    margin: initial;
+    text-decoration: none;
+    color: unset;
+    max-width: initial !important;
+    line-height: initial !important;
+}
+
+/* Styles */
+
+* {
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Spectral";
+    font-feature-settings: "onum";
+}
+
+body>a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 90%;
+    width: min-content;
+    text-align: center;
+    word-break: break-all;
+    padding: 22px;
+    transition: color .2s ease-in-out;
+    z-index: 6;
+}
+
+body>a::first-letter {
+    color: white;
+}
+
+body>a:hover {
+    color: white;
+}
+
+header {
+    --title-margin-bottom: -158px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+    z-index: 4;
+}
+
+header:not(:has(.tags)) {
+    height: fit-content;
+    padding-top: 100px;
+}
+
+header .tags {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .tags .tag {
+    --blur: 0px;
+    filter: blur(var(--blur));
+    transition:
+        font-weight .2s ease-in-out,
+        filter .2s ease-in-out,
+        letter-spacing 6s cubic-bezier(0.76, -0.01, 0.21, 1);
+}
+
+header .tags .tag:nth-last-child(1) {
+    --blur: 2px;
+    font-weight: 900;
+}
+
+header .tags .tag:nth-last-child(2) {
+    --blur: 0.8px;
+    font-weight: 600;
+}
+
+header .tags:has(> :last-child:nth-child(1)) .tag {
+    /* 1 element */
+    --blur: 0px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(1) {
+    /* 2 elements */
+    --blur: 1px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(2) {
+    /* 2 elements */
+    --blur: 0px;
+}
+
+header .tags .tag:hover {
+    --blur: 0px !important;
+    font-weight: 400;
+    letter-spacing: 100%;
+}
+
+header .title {
+    --hue-rotate: 0deg;
+    order: 1;
+    height: fit-content;
+    font-family: "Lack";
+    font-size: 80px;
+    line-height: 106%;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 90px;
+    margin-bottom: var(--title-margin-bottom);
+    margin-top: -50px;
+    letter-spacing: 5%;
+    /* effect  */
+    -webkit-text-stroke: 9px white;
+    text-shadow: initial;
+    filter: url(../../articles/adrien/assets/images/filters.svg#title) blur(3.8px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    transition: filter 3s ease-in-out;
+}
+
+header .title:hover {
+    --hue-rotate: 140deg;
+}
+
+header .date {
+    order: 2;
+    z-index: 2;
+    position: absolute;
+    bottom: calc((var(--title-margin-bottom)) + 72px);
+    color: black;
+    font-weight: 500;
+    letter-spacing: 15%;
+}
+
+#themes {
+    --title-width: 24ch;
+    --width: var(--title-width);
+    --margin: 26px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: calc(-50% - var(--margin)) 0;
+    width: var(--width);
+    max-width: 90vw;
+    overflow: scroll;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 100px;
+    /*padding: 5px 12px;*/
+    padding: 0 4px;
+    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow;
+    transition: width .2s ease-in-out;
+    margin: var(--margin);
+}
+
+#themes div {
+    opacity: 0;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: all .2s ease-in-out;
+}
+
+#themes:hover {
+    --width: 80vw;
+}
+
+#themes legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 8%;
+}
+
+#themes:hover legend {
+    flex: 0 0 var(--title-width);
+}
+
+#themes:hover div {
+    opacity: 1;
+    /*display: block;*/
+    /*visibility: visible;*/
+}
+
+#themes div input {
+    display: none;
+}
+
+#themes div label {
+    cursor: pointer;
+    display: block;
+    padding: 4px 6px;
+    transition: all .1s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20%;
+    text-decoration-skip-ink: none;
+}
+
+#themes div label:hover {
+    /*font-weight: 700;*/
+    transform-origin: bottom right;
+    scale: 1.1;
+    rotate: 7deg;
+    text-decoration-color: black;
+}
+
+article {
+    --width: 575px;
+    width: var(--width);
+    margin: 0 auto;
+    border-top: 4px solid black;
+    margin-top: 170px;
+    padding: 20px 0 150px;
+}

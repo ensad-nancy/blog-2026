@@ -1,0 +1,542 @@
+/* NOTES
+    - Start local server: php -S localhost:8000 -t .
+*/
+
+/* Fonts: Lack */
+
+@font-face {
+    font-family: "Lack";
+    src: url("../../articles/adrien/assets/fonts/lack/Lack-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lack";
+    src: url("../fonts/lack/Lack-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LackLine";
+    src: url("../../articles/adrien/assets/fonts/lack/LackLine-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Fonts: Spectral */
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spectral";
+    src: url("../../articles/adrien/assets/fonts/spectral/Spectral-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    font-synthesis: none;
+    padding: initial;
+    margin: initial;
+    text-decoration: none;
+    color: unset;
+    max-width: initial !important;
+    line-height: initial !important;
+}
+
+*:focus-visible {
+    outline: initial;
+}
+
+/* Styles */
+
+* {
+    user-select: none;
+}
+
+body {
+    --col-width: 550px;
+    --col-gap: 54px;
+    font-family: "Spectral";
+    font-feature-settings: "onum";
+    display: grid;
+    grid-template-columns: var(--col-width) var(--col-width);
+    gap: 20px var(--col-gap);
+    padding: 30px calc((100vw - (var(--col-width) * 2 + var(--col-gap))) / 2) 130px;
+    grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+}
+
+main {
+    grid-area: d;
+    display: grid;
+    grid-template-columns: var(--col-width) var(--col-width);
+    width: fit-content;
+    margin: 0 auto;
+    gap: 45px var(--col-gap);
+}
+
+main a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 26px;
+    /*overflow: hidden;*/
+}
+
+/*main a:hover div {
+    background-color: black;
+}
+
+main a:hover footer {
+    color: white;
+}*/
+
+main a div img.thumb {
+    --size: 250px;
+    width: var(--size);
+    height: var(--size);
+    object-position: top;
+    object-fit: contain;
+    order: 1;
+    margin-top: -65px;
+    z-index: 1;
+}
+
+main a div h3 {
+    --hue-rotate: 0deg;
+    font-family: "Lack";
+    font-size: 38px;
+    line-height: 106%;
+    text-align: center;
+    /*width: fit-content;*/
+    width: 100%;
+    color: white;
+    padding: 90px;
+    /*margin-bottom: -158px;
+    margin-top: -50px;*/
+    letter-spacing: 7%;
+    /* effect  */
+    -webkit-text-stroke: 7px white;
+    text-shadow: initial;
+    filter: url(../../articles/adrien/assets/images/filters.svg#title) blur(3.2px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    order: 0;
+    margin-top: -15px;
+    /*transition: all .2s ease-in-out;*/
+}
+
+main a:hover div h3 {
+    --hue-rotate: 140deg;
+}
+
+main a:hover div footer {
+    font-weight: 700;
+}
+
+/*main a:hover div h3 {
+    filter: initial;
+    -webkit-text-stroke: initial;
+    letter-spacing: initial;
+    padding: 24px;
+}*/
+
+main a div footer {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+main a div footer p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+main a div footer p:not(:last-child) {
+    border-bottom: 0.6px solid black;
+}
+
+/*main a:hover div footer p {
+    border-color: white;
+}*/
+
+main a div footer p strong {
+    flex: 1;
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 5%;
+    position: relative;
+}
+
+/*main a div footer p strong::after {
+    content: "";
+    background-color: white;
+    height: 1em;
+    width: 1ch;
+    position: absolute;
+    right: 0;
+    top: 0;
+}*/
+
+main a div footer p:nth-child(2) {
+    letter-spacing: 5%;
+}
+
+main a div footer p span.tag {
+    display: flex;
+}
+
+main a div footer p span.tag:not(:last-child)::after {
+    content: "/";
+    margin: 0 6px;
+}
+
+#themes {
+    --title-width: 24ch;
+    --width: var(--title-width);
+    --margin: 26px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: calc(-50% - var(--margin)) 0;
+    width: var(--width);
+    max-width: 90vw;
+    overflow: scroll;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 100px;
+    /*padding: 5px 12px;*/
+    padding: 0 4px;
+    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow;
+    transition: width .2s ease-in-out;
+    margin: var(--margin);
+    z-index: 4;
+}
+
+#themes div {
+    opacity: 0;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: all .2s ease-in-out;
+}
+
+#themes:hover {
+    --width: 80vw;
+}
+
+#themes legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 8%;
+}
+
+#themes:hover legend {
+    flex: 0 0 var(--title-width);
+}
+
+#themes:hover div {
+    opacity: 1;
+    /*display: block;*/
+    /*visibility: visible;*/
+}
+
+#themes div input {
+    display: none;
+}
+
+#themes div label {
+    cursor: pointer;
+    display: block;
+    padding: 4px 6px;
+    transition: all .1s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20%;
+    text-decoration-skip-ink: none;
+}
+
+#themes div label:hover {
+    /*font-weight: 700;*/
+    transform-origin: bottom right;
+    scale: 1.1;
+    rotate: 7deg;
+    text-decoration-color: black;
+}
+
+#date {
+    --padX: 34px;
+    --padY: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padX) var(--padY);
+    padding-left: calc(var(--padX) + 20px);
+}
+
+#date p {
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: 7%;
+    margin-bottom: -2px;
+}
+
+#date label {
+    letter-spacing: 6%;
+    font-feature-settings: "onum", "tnum";
+    display: block;
+}
+
+#date input {
+    --thumb-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vh - (2 * var(--padY)));
+    transform-origin: right bottom;
+    transform: rotate(270deg);
+    /*translate: var(--padX) calc(-100% + var(--padY));*/
+    translate: calc(-100% + var(--padX)) var(--padY);
+    appearance: none;
+    height: 2px;
+    background-color: black;
+    outline: none;
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: none;
+}
+
+#date input::-webkit-slider-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: black;
+    border-radius: 100px;
+    appearance: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+#date input::-moz-range-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: black;
+    border-radius: 100px;
+    appearance: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+#date input::-webkit-slider-thumb:hover {
+    scale: 1.2;
+}
+
+#date input::-moz-range-thumb:hover {
+    scale: 1.2;
+}
+
+#date input::-webkit-slider-thumb:active {
+    scale: 0.95;
+}
+
+#date input::-moz-range-thumb:hover {
+    scale: 0.95;
+}
+
+/*body>p,
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}*/
+
+body>p {
+    grid-area: b;
+    text-align: center;
+    max-width: initial;
+    font-weight: 300;
+    letter-spacing: 1%;
+}
+
+body>p,
+body>p span {
+    line-height: 124% !important;
+}
+
+body>p span {
+    /*font-weight: 500;*/
+    font-family: "Lack";
+    font-size: 90%;
+}
+
+#title {
+    grid-area: a;
+}
+
+#title h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-feature-settings: "smcp", "c2sc";
+    line-height: 100% !important;
+}
+
+#filtres {
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+}
+
+#filtres h2 {
+    display: none;
+}
+
+#auteurices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#auteurices p {
+    font-family: "Lack";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 5%;
+}
+
+#authors {
+    appearance: none;
+    background-color: black;
+    padding: 5px 12px;
+    color: white;
+    border-radius: 100px;
+    border: initial;
+    font-family: "Spectral";
+    font-weight: 600;
+    font-size: 101%;
+    text-align: center;
+}

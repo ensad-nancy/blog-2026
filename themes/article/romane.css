@@ -1,15 +1,21 @@
 body {
-  background-color: #9b68c5;
+  background-image: url("../../articles/romane/assets/images/lace-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
-    color :#f0d964
+    color :#000000;
     }
 
 h2{
-    color :#f0d964
+    color :#000000;
     }
 
 p{
-    color :#f0d964
+    color :#140404;
     }
+
+#filtres{
+        color: #000000;
+}  

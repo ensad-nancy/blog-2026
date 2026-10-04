@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Compagnon";
+  src: url("../../articles/nicolas/assets/fonts/Compagnon-Bold.woff");
+}
+
+body{
+background-color:rgb(12, 255, 133);
+font-family: 'Compagnon';
+text-align: left;
+image-orientation: left;
+
+}
+h1 
+{text-align : left }
+
+div {
+  direction: right;
+width: 100px;         /* Largeur du bloc */
+  height: 30px;        /* Hauteur du bloc */
+  background-color: #f0f0f0; /* Couleur de fond */
+  border: 1px solid #000000;    /* Bordure du bloc */
+  padding: 40px;        /* Espace intérieur pour le texte */
+
+}
