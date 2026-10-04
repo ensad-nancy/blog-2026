@@ -4,12 +4,27 @@ body {
 
 article {
     background-color: rgb(250, 163, 163);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
 }
+
+article.h2 {
+    background-color:  blue;
+    border: 3px solid orange;
+    padding: 10px;
+    margin: 10px;
+}
+
 
 header {
     background-color: hotpink;
 }
 
- #themes {
+
+#themes {
     background-color: rgb(144, 120, 120);
  }
+
+
+
