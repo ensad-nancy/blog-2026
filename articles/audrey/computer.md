@@ -4,6 +4,9 @@ date: 2026-10-02
 tags: everygirl_is_aweirdgirl
 preview: 
 ---
+
+# hello computer 
+
 enter password,
 <br>no, not your fingerprint this time, the REAL password 
 <br>ok, this bitch didn’t forget it yet, good
