@@ -2,7 +2,6 @@
 title: Blog de Noa
 date: 2026-09-21
 tags: billets, train, couleurs, détails
-preview: assets/images/7420442-728862511.jpg
 ---
 
 # Blog de Noa #1
