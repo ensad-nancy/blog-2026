@@ -5,11 +5,11 @@ body{
 
 @font-face {
     font-family:"bbbsprat";
-    src: url("/articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-Regular.woff");
+    src: url(articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-Regular.woff);
 }
 @font-face {
     font-family:"azeret";
-    src: url("/articles/audrey/assets/fonts/AzeretMono-Lightcopie.otf");
+    src: url(articles/audrey/assets/fonts/AzeretMono-Lightcopie.otf);
 }
 
 h1{
