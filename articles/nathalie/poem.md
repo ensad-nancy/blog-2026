@@ -1,87 +1,128 @@
----
-title: internetg111rl: poem
-date: 2026-09-28
-tags: poem
-preview: 
----
+<!DOCTYPE html>
+<html lang="en">
 
-# Lights
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-October comes
+  <title>Lights</title>
 
-Can’t find somebody
+  <link rel="stylesheet" href="style.css">
+</head>
 
-Car lights come…
+<body>
 
-Exciting, sexy, fun –
+  <h1>Lights</h1>
 
+  <div class="poem">
 
-lust
+    <p>
+      October comes
+      <br><br>
 
+      Can’t find somebody
+      <br><br>
 
-… and goes.
+      Car lights come…
+      <br><br>
 
+      Exciting, sexy, fun –
+    </p>
 
-One-night stands.
+    <div class="lust">
+      lust
+    </div>
 
+    <p>
+      … and goes.
+      <br><br>
 
-
-November comes
-
-Somebody different
-
-Completely different
-
-
-Car lights come…
-
-Careful, smooth, kind –
-
-
-love
-
-
-… and goes.
+      One-night stands.
+      <br><br><br>
 
 
-Lovelorn.
+      November comes
+      <br><br>
+
+      Somebody different
+      <br><br>
+
+      Completely different
+      <br><br>
+
+      Car lights come…
+      <br><br>
+
+      Careful, smooth, kind –
+    </p>
+
+    <div class="love">
+      love
+    </div>
+
+    <p>
+      … and goes.
+      <br><br>
+
+      Lovelorn.
+      <br><br><br>
 
 
+      October, November,
+      <br><br>
 
-October, November, 
+      Exciting, Careful,
+      <br>
 
-Exciting, Careful,
+      Sexy, Smooth,
+      <br>
 
-Sexy, Smooth, 
+      Fun, Kind,
+      <br><br>
 
-Fun, Kind,
+      One-night stands,
+      <br>
 
+      Lovelorn.
+      <br><br>
 
-One-night stands,
-
-Lovelorn.
-
-
-Goes and goes.
-
-
-
-Can’t find somebody completely different. 
-
-
-
-Acteur, Stories,
-
-Stories, Actress,
-
-Acteur, Stories,
-
-Stories, Actress.
+      Goes and goes.
+      <br><br><br>
 
 
-Lights.
+      Can’t find somebody completely different.
+      <br><br><br>
 
 
-Comes and goes.
+      Acteur, Stories,
+      <br>
+
+      Stories, Actress,
+      <br>
+
+      Acteur, Stories,
+      <br>
+
+      Stories, Actress.
+      <br><br><br>
 
 
+      Lights.
+      <br><br>
+
+      Comes and goes.
+    </p>
+
+  </div>
+
+
+  <img class="photo" src="bild.jpg" alt="">
+
+
+  <div class="small-light">
+    Lights
+  </div>
+
+</body>
+
+</html>

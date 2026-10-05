@@ -1,27 +1,106 @@
- @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-  @import url(https://fonts.google.com/specimen/Monsieur+La+Doulaise?categoryFilters=Feeling:%2FExpressive%2FFancy&preview.script=Latn);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Monsieur+La+Doulaise&display=swap');
 
 
 body {
-  background-color: rgb(0, 255, 242);
-  margin: 40px;
+  margin: 0;
+  padding: 40px;
+
+  background: white;
+  color: black;
+
+  font-family: 'DM Sans', sans-serif;
+
+  position: relative;
+
+  min-height: 1800px;
 }
+
+
+/* große Überschrift */
 
 h1 {
-  font-size: 50px;
+  margin: 0;
+
   font-family: 'Monsieur La Doulaise', cursive;
-  color: rgb(255, 3, 205);
-  text-align: center;
+
+  font-size: 130px;
+  font-weight: normal;
+
+  line-height: 1;
 }
 
-p {
-  font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 1.5;
-  color: rgb(255, 3, 205);
-  text-align: center;
+
+/* Gedicht */
+
+.poem {
+  width: 320px;
+
+  margin-top: 60px;
+  margin-left: 140px;
 }
 
-img {
-  width: 200px;
+
+.poem p {
+  font-size: 16px;
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+
+/* lust */
+
+.lust {
+  position: absolute;
+
+  top: 300px;
+  left: 600px;
+
+  font-family: 'Monsieur La Doulaise', cursive;
+
+  font-size: 70px;
+}
+
+
+/* love */
+
+.love {
+  position: absolute;
+
+  top: 700px;
+  left: 40px;
+
+  font-family: 'Monsieur La Doulaise', cursive;
+
+  font-size: 85px;
+}
+
+
+/* Bild */
+
+.photo {
+  position: absolute;
+
+  top: 210px;
+  right: 80px;
+
+  width: 280px;
+
+  z-index: -1;
+}
+
+
+/* zweites kleines Lights */
+
+.small-light {
+  position: absolute;
+
+  top: 1180px;
+  right: 100px;
+
+  font-family: 'Monsieur La Doulaise', cursive;
+
+  font-size: 100px;
+
+  transform: rotate(-8deg);
 }
