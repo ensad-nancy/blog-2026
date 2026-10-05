@@ -1,0 +1,33 @@
+{
+glyphname = d_u_d_e_l_a;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = d;
+},
+{
+pos = (1248,0);
+ref = l;
+},
+{
+pos = (1529,0);
+ref = a;
+},
+{
+pos = (565,0);
+ref = e;
+},
+{
+pos = (501,440);
+ref = u;
+}
+);
+width = 2030;
+}
+);
+metricLeft = d;
+metricRight = a;
+unicode = 988976;
+}

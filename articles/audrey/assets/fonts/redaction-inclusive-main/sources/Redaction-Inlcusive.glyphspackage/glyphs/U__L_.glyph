@@ -1,0 +1,31 @@
+{
+glyphname = U_L;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = U;
+},
+{
+closed = 1;
+nodes = (
+(596,0,l),
+(1037,0,l),
+(1069,249,l),
+(1036,249,l),
+(1019,188,ls),
+(991,87,o),
+(940,41,o),
+(859,41,cs),
+(638,41,l)
+);
+}
+);
+width = 1095;
+}
+);
+metricLeft = U;
+metricRight = L;
+unicode = 1003600;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hungarumlaut" format="2">
+	<advance width="500"/>
+	<unicode hex="02DD"/>
+	<note>
+		hungarumlaut
+	</note>
+	<outline>
+		<contour>
+			<point x="189" y="670" type="curve" smooth="yes"/>
+			<point x="110" y="535" type="line"/>
+			<point x="114" y="535" type="line"/>
+			<point x="268" y="637" type="line" smooth="yes"/>
+			<point x="286.667" y="649"/>
+			<point x="298" y="667"/>
+			<point x="298" y="683" type="curve" smooth="yes"/>
+			<point x="298" y="704.333"/>
+			<point x="281.667" y="720"/>
+			<point x="255" y="720" type="curve" smooth="yes"/>
+			<point x="228.333" y="720"/>
+			<point x="210.333" y="706"/>
+		</contour>
+		<contour>
+			<point x="270" y="535" type="line"/>
+			<point x="274" y="535" type="line"/>
+			<point x="428" y="637" type="line" smooth="yes"/>
+			<point x="446.667" y="649"/>
+			<point x="458" y="667"/>
+			<point x="458" y="683" type="curve" smooth="yes"/>
+			<point x="458" y="704.333"/>
+			<point x="441.667" y="720"/>
+			<point x="415" y="720" type="curve" smooth="yes"/>
+			<point x="388.333" y="720"/>
+			<point x="370.333" y="706"/>
+			<point x="349" y="670" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:50:20 +0000</string>
+		</dict>
+	</lib>
+</glyph>

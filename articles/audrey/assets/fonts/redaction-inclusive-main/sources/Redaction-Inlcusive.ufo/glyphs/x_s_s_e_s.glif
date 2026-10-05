@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="x_s_s_e_s" format="2">
+	<advance width="1677"/>
+	<unicode hex="F57F0"/>
+	<outline>
+		<component base="x_s_s_e"/>
+		<component base="demi_s" xOffset="1086"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-08 13:41:46 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=s</string>
+		</dict>
+	</lib>
+</glyph>

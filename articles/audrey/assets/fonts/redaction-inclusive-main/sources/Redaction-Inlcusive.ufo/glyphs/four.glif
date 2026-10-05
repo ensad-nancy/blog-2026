@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="four" format="2">
+	<advance width="601"/>
+	<unicode hex="0034"/>
+	<note>
+		four
+	</note>
+	<outline>
+		<contour>
+			<point x="25" y="214" type="curve"/>
+			<point x="355" y="214" type="line"/>
+			<point x="355" y="95" type="line" smooth="yes"/>
+			<point x="355" y="52.333"/>
+			<point x="341.667" y="32"/>
+			<point x="299" y="28" type="curve" smooth="yes"/>
+			<point x="278" y="26" type="line"/>
+			<point x="278" y="0" type="line"/>
+			<point x="523" y="0" type="line"/>
+			<point x="523" y="26" type="line"/>
+			<point x="502" y="28" type="line" smooth="yes"/>
+			<point x="459.333" y="32"/>
+			<point x="446" y="51"/>
+			<point x="446" y="95" type="curve" smooth="yes"/>
+			<point x="446" y="196" type="line"/>
+			<point x="413" y="196" type="line"/>
+			<point x="413" y="214" type="line"/>
+			<point x="553" y="214" type="line"/>
+			<point x="579" y="385" type="line"/>
+			<point x="547" y="385" type="line"/>
+			<point x="535" y="354" type="line" smooth="yes"/>
+			<point x="519.667" y="314.667"/>
+			<point x="490" y="291"/>
+			<point x="446" y="283" type="curve"/>
+			<point x="446" y="469" type="line"/>
+			<point x="355" y="416" type="line"/>
+			<point x="355" y="280" type="line"/>
+			<point x="123" y="280" type="line"/>
+			<point x="184.333" y="349.333"/>
+			<point x="246.333" y="421"/>
+			<point x="309" y="495" type="curve" smooth="yes"/>
+			<point x="358.333" y="553.667"/>
+			<point x="391.167" y="599.667"/>
+			<point x="407.5" y="633" type="curve" smooth="yes"/>
+			<point x="423.833" y="666.333"/>
+			<point x="431" y="695"/>
+			<point x="429" y="719" type="curve"/>
+			<point x="313" y="698" type="line"/>
+			<point x="315.667" y="634"/>
+			<point x="294.667" y="572.667"/>
+			<point x="228" y="478" type="curve" smooth="yes"/>
+			<point x="164.667" y="387.333"/>
+			<point x="97" y="299.333"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:37:10 +0000</string>
+		</dict>
+	</lib>
+</glyph>
