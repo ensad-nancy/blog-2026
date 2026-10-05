@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="s_l_l" format="2">
+	<advance width="981"/>
+	<unicode hex="F4770"/>
+	<outline>
+		<component base="l" xOffset="691"/>
+		<component base="s_l"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-08 13:57:04 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=s</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=l</string>
+		</dict>
+	</lib>
+</glyph>

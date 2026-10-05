@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ugrave" format="2">
+  <advance width="494"/>
+  <unicode hex="00D9"/>
+  <unicode hex="00F9"/>
+  <note>
+Ugrave
+</note>
+  <outline>
+    <contour>
+      <point x="412" y="763" type="curve"/>
+      <point x="412" y="764" type="line"/>
+      <point x="377" y="753"/>
+      <point x="329" y="774"/>
+      <point x="293" y="839" type="curve"/>
+      <point x="254" y="799" type="line"/>
+      <point x="312" y="743"/>
+      <point x="381" y="741"/>
+    </contour>
+    <component base="U.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-03 14:47:26 +0000</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>I</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,3 +1,9 @@
 body{
     background-color: rgb(175, 238, 183);
 }
+title{
+ @font-face {
+    font-family: bbb-sprat-main;
+    src: url(articles/audrey/assets/fonts/bbb-sprat-main);
+ }
+}
