@@ -1,0 +1,37 @@
+{
+glyphname = exclam;
+kernLeft = exclam;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(119,187,l),
+(121,187,l),
+(173,641,ls),
+(178.333,682.333,o),
+(152,712,o),
+(120,712,cs),
+(88,712,o),
+(61.667,682.333,o),
+(67,641,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(176,0,l),
+(176,113,l),
+(64,113,l),
+(64,0,l)
+);
+}
+);
+width = 240;
+}
+);
+note = exclam;
+unicode = 33;
+}

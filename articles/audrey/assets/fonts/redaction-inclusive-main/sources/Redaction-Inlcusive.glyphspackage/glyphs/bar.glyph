@@ -1,0 +1,22 @@
+{
+glyphname = bar;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(208,700,l),
+(162,700,l),
+(162,-231,l),
+(208,-231,l)
+);
+}
+);
+width = 370;
+}
+);
+note = bar;
+unicode = 124;
+}

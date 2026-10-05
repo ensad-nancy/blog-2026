@@ -1,10 +1,62 @@
 body{
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(198, 205, 210);
+    color: black;
+    font-family: "tiny100";
+}
+
+#themes div {
+  position: relative;
+  width: 10%;
+  height: 60px;
+  border-radius: 70px;
+  background-color: #001F59;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  column-count: 3;
+  column-gap: 14px;
 }
 
 @font-face{
-    font-family: "lithops";
+    font-family: "tiny60";
     font-weight: regular;
-    src: url(articles/sarah/assets/font/Lithops-Regular.otf) format("opentype");
+    src: url(../../articles/sarah/assets/font/TINY5x3-60.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny80";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-80.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny100";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-100.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny120";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-120.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny140";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-140.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny160";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-160.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny180";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-180.otf) format("opentype");
 }

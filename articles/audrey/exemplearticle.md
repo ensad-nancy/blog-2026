@@ -1,33 +1,33 @@
 ---
-title: 5 poems
+title: 5 poems of exploitation
 date: 2026-09-28
 tags: everygirl_is_aweirdgirl
-preview: assets/images/7420442-728862511.jpg
+preview: 
 ---
 
-# 5 poems 
+# 5 poems of exploitation 
 
 L'exploitation mène à la création, 
-création de conditions parfaites pour être soumise aux déchets institutionnels.
+<br>création de conditions parfaites pour être soumise aux déchets institutionnels.
 
 Toujours en service pour les premiers
-dans une proximité immédiate, 
-le travail est effectué 
-principalemen par les prisonnièr.e.s du centre.
+<br>dans une proximité immédiate, 
+<br>le travail est effectué 
+<br>principalemen par les prisonnièr.e.s du centre.
 
 D'origine exploitée, 
-soumise, 
-conditionnée, 
-la Nouvelle devient non rentable, 
-l'exploitation est arretée. 
+<br>soumise, 
+<br>conditionnée, 
+<br>la Nouvelle devient non rentable, 
+<br>l'exploitation est arretée. 
 
 Les déchets radiactifs 
-de la médecine, 
-de l'industrie 
-et de la recherche, 
-mène une des premières propositions 
-concernant l'utilisation du Complexe.
+<br>de la médecine, 
+<br>de l'industrie 
+<br>et de la recherche, 
+<br>mène une des premières propositions 
+<br>oncernant l'utilisation du Complexe.
 
 Sous le nom de code "Complexe"
-la reprise de l'exploitation prend à sa charge 
-une série de désintégration et d'extraction de l'Ancienne. 
+<br>la reprise de l'exploitation prend à sa charge 
+<br>une série de désintégration et d'extraction de l'Ancienne. 

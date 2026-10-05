@@ -1,0 +1,42 @@
+{
+glyphname = ellipsis;
+kernLeft = comma;
+kernRight = comma;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(64,113,l),
+(64,0,l),
+(176,0,l),
+(176,113,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(416,0,l),
+(416,113,l),
+(304,113,l),
+(304,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(656,0,l),
+(656,113,l),
+(544,113,l),
+(544,0,l)
+);
+}
+);
+width = 720;
+}
+);
+note = ellipsis;
+unicode = 8230;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="o_t_e" format="2">
+	<advance width="1142"/>
+	<unicode hex="F3950"/>
+	<outline>
+		<component base="t_e" xOffset="428"/>
+		<component base="o" xOffset="-20" yOffset="168"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-08 13:25:00 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=e</string>
+		</dict>
+	</lib>
+</glyph>

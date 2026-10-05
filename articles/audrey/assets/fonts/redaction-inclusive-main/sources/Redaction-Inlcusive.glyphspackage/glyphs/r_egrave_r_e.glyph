@@ -1,0 +1,25 @@
+{
+glyphname = r_egrave_r_e;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (906,0);
+ref = r_e;
+},
+{
+pos = (431,0);
+ref = emacron;
+},
+{
+ref = r;
+}
+);
+width = 1642;
+}
+);
+metricLeft = "=r";
+note = i_egrave_r_e;
+unicode = 1000768;
+}

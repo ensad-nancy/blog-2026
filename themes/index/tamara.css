@@ -6,3 +6,21 @@ footer{
 img{
     visibility: hidden;
 }
+
+#title{
+  color: #ae4444;
+}
+
+h1{
+    color: #ae4444;
+    text-align: center;
+}
+
+p{
+    color: #ae4444;
+    text-align: center;
+    max-width:initial ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+

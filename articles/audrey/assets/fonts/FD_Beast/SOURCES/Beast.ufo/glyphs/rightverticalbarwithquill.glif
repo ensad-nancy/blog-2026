@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rightverticalbarwithquill" format="2">
+	<advance width="560"/>
+	<unicode hex="2E21"/>
+	<outline>
+		<contour>
+			<point x="386" y="0" type="curve" smooth="yes"/>
+			<point x="454" y="0" type="line" smooth="yes"/>
+			<point x="474" y="0"/>
+			<point x="490" y="16"/>
+			<point x="490" y="36" type="curve" smooth="yes"/>
+			<point x="490" y="664" type="line" smooth="yes"/>
+			<point x="490" y="684"/>
+			<point x="474" y="700"/>
+			<point x="454" y="700" type="curve" smooth="yes"/>
+			<point x="386" y="700" type="line" smooth="yes"/>
+			<point x="366" y="700"/>
+			<point x="350" y="684"/>
+			<point x="350" y="664" type="curve" smooth="yes"/>
+			<point x="350" y="456" type="line" smooth="yes"/>
+			<point x="350" y="436"/>
+			<point x="334" y="420"/>
+			<point x="314" y="420" type="curve" smooth="yes"/>
+			<point x="106" y="420" type="line" smooth="yes"/>
+			<point x="86" y="420"/>
+			<point x="70" y="404"/>
+			<point x="70" y="384" type="curve" smooth="yes"/>
+			<point x="70" y="316" type="line" smooth="yes"/>
+			<point x="70" y="296"/>
+			<point x="86" y="280"/>
+			<point x="106" y="280" type="curve" smooth="yes"/>
+			<point x="314" y="280" type="line" smooth="yes"/>
+			<point x="334" y="280"/>
+			<point x="350" y="264"/>
+			<point x="350" y="244" type="curve" smooth="yes"/>
+			<point x="350" y="36" type="line" smooth="yes"/>
+			<point x="350" y="16"/>
+			<point x="366" y="0"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2024-01-26 15:35:26 +0000</string>
+			<key>public.markColor</key>
+			<string>0.25,0.25,0.25,1</string>
+		</dict>
+	</lib>
+</glyph>

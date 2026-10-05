@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="r_egrave_r_e" format="2">
+	<advance width="1642"/>
+	<unicode hex="F4540"/>
+	<note>
+		i_egrave_r_e
+	</note>
+	<outline>
+		<component base="r_e" xOffset="906"/>
+		<component base="emacron" xOffset="431"/>
+		<component base="r"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-03 15:04:24 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=r</string>
+		</dict>
+	</lib>
+</glyph>
