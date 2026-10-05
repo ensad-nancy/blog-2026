@@ -4,13 +4,13 @@ body{
 
 
 @font-face {
-    font-family: bbbsprat;
+    font-family: "bbbsprat";
     src: url(articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-Regular.woff);
 }
 
 
 h1{
-    font-family: bbbsprat;
+    font-family: "bbbsprat";
     font-size: 25pt;
     color: aquamarine;
 }
