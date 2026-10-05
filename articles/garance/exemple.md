@@ -1,20 +1,14 @@
 ---
-title: Manifeste Cyborg
-date: 2026-09-21
-tags: cyberfeminisme, donna haraway
+title: Novembre
+date: 2026-10-05
+tags: Dystopie, ordinateur
 preview: assets/images/queen.png
 ---
 
-# Titre de mon article
+## Samedi soir - Novembre
 
-## Premier sous-tire
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pretium turpis. Donec et ullamcorper velit. Donec nec dui facilisis, feugiat nibh eu, maximus odio. Praesent in lacus purus. Aenean aliquet varius eros, sagittis maximus nulla ornare et. Donec in turpis vel turpis porttitor ullamcorper. Donec lacinia nisi nec turpis sagittis, ac maximus quam sagittis. Ut pretium elit sed nisl fermentum blandit. Praesent eu diam eget libero fermentum consequat nec quis felis. Proin imperdiet ligula eu ante egestas auctor. Aliquam sit amet pellentesque felis. Donec orci justo, condimentum ut arcu eu, ornare sagittis ipsum. Morbi suscipit eros vel erat aliquet, eu sagittis dui scelerisque. Fusce tempor blandit dolor sed tristique. Proin tortor nulla, blandit ut nibh at, rutrum sollicitudin ante.
-
-Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellentesque cursus elit pretium at. Vestibulum commodo tincidunt mi accumsan luctus. Nullam accumsan scelerisque quam at fermentum. Nunc blandit luctus quam ut auctor. Cras tellus magna, mattis ut consectetur nec, consectetur eu arcu. Nam ultrices, neque sit amet dictum rhoncus, diam turpis maximus odio, ut sagittis augue enim sed nisi. Nunc mattis egestas erat id ultricies. Morbi et ultrices nisi. Vivamus auctor tristique urna id maximus. Vestibulum euismod felis a mi ultricies aliquam. Aenean finibus porttitor tincidunt. Praesent interdum dapibus aliquet. Integer elementum pulvinar efficitur.
-
-## Second sous-tire
-
-Integer sodales sed arcu sed aliquam. Suspendisse rutrum tempus justo vel euismod. Etiam lacinia nibh mauris, a semper justo sodales maximus. Sed quis finibus mauris. Nunc mollis sit amet orci in placerat. Vestibulum ultricies risus nec lectus euismod, eget vestibulum nibh pulvinar. Donec imperdiet accumsan eleifend.
-
-Extrait de *Manifeste Cyborg* de Donna Haraway
+la température annoncée est de 13,4°C, il fait moche, un temps à ne pas mettre son chien mécanique dehors (ça rouille vite ces saloperies, et ça coûte cher. Mais bon, y a plus de chiens organiques maintenant, faut bien un truc baveux pour consoler les humains), enfin ça c'est la théorie. Moi je m'en fous, mes circuits fonctionnent par -20. Vieux mais irremplaçable, enfin ça c'est ce qu'il dit. Moi je la connais la vérité, il a juste plus un rond depuis que reddit a remplacé les détectives privés. J'en ai vu des affaires de moeurs, des tromperies, des meurtres (pas beaucoup, y avait une police à l'époque, elle avait tendance à prendre rapidement le relais, à résultats variables), des gens à qui ont avait volé quelque chose, d'autres, beaucoup d'autres, qui n'avait rien perdu mais qui voulaient juste parler à quelqu'un. <br>
+Lui il sait pas trop faire, parler à quelqu'un. Il a jamais su. Il avait une femme à un moment, il est parlait souvent pendant ses affaires et surtout dans ses rapports, ça l'aidait à mettre les choses en perspective. <br>
+Maintenant il est là, il m'a allumé il y a quelques minutes et se prépare une camomille (je sais ce que c'est, j'ai lu des descriptions sur www.amisduthé.com avant que le site ferme. que tous les sites ne ferment). Je sais comment il va passer la soirée, il est programmé comme une horloge (y a plus d'horloges depuis longtemps, Y a plus de quartz, y a plus de temps, mais moi je me souviens, j'ai vu les photos). <br>
+D'abord il va trier ses dossiers, un bazard appliqué, une cascade de fichiers perdus. Puis il va éplucher les DigiPresses, les derniers restes d'internet, en quête d'une nouvelle affaire. Bredouille, il va alors se tourner vers son passe-temps favoris, Le saint graal, la gemme de mon disque dur, le SOLTAIRE. <br>
+Il y restera jusqu'aux alentours de la nuit noire et un peu au delà. La température sera de -7°C, mais peu importe, je dégage assez de chaleur pour son 8m2. <br>
