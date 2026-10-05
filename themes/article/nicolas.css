@@ -1,52 +1,64 @@
 @font-face {
-  font-family: "Redaction-Inclusive";
-  src: url("../../articles/nicolas/assets/fonts/Redaction-Inclusive-Regular.woff") format("woff");
+  font-family: "karrik";
+  src: url("../../assets/fonts/karrik-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-body{
- 
-  background-color:rgb(173, 173, 173);
-  font-family: 'Redaction-Inclusive';
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: "Karrik", serif;
   text-align: left;
-  image-orientation: left;
 
 }
-
 
 div {
   border: solid 2px rgb(11, 11, 11);
   height: 40px;
   width: 30%;
-  box-sizing: border-box;  /* la bordure est comprise dans les 30% */
+  box-sizing: border-box;
 }
 
 
-h1 {
+.box {
+  border: solid 2px rgb(11, 11, 11);
+  padding: 1rem;
+  margin: 20vh;
+  left:20vh;
+  box-sizing: border-box;
+}
 
+h1 {
   text-align: justify;
   position: relative;
   background: rgb(83, 83, 83);
   top: 30px;
-  left:10%;
+  left:20vh;
 }
+
 h2 {
   text-align: justify;
   position: relative;
   top: 30px;
-  left:10%;
-
+  left: 20vh;
 }
 
+h3 {
+  text-align: justify;
+  position: relative;
+  top: 30px;
+  left: 20vh;
+}
 p {
   position: relative;
   background: rgba(141, 141, 138, 0);
-   top: 30px;
-  left:10%;
+  top: 30px;
+    left:20vh;
 }
 
 h1.has-width {
   width: auto;
 }
-
-
