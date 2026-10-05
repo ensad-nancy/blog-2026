@@ -1,7 +1,7 @@
 body {
   background-image: url("../../articles/romane/assets/images/fond-lace-4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-top: 10%;
   margin-bottom: 10%;
 }
