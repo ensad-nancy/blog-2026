@@ -9,7 +9,7 @@ article {
 
 }
 
-article.h2 {
+h2 {
     background-color:  blue;
     border: 3px solid orange;
     padding: 10px;
