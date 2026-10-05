@@ -1,5 +1,5 @@
 ---
-title: Moment sur Internet
+title: Historique 
 date: 2026-10-05
 tags: vie passé, écran
 preview: 
