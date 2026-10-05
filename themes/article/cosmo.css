@@ -24,6 +24,8 @@ header {
 
 #themes {
     background-color: rgb(144, 120, 120);
+    display: flex;
+    flex: 1;
  }
 
 
