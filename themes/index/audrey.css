@@ -4,6 +4,6 @@ body{
 title{
  @font-face {
     font-family: bbb-sprat-main;
-    src: url(articles/audrey/assets/fonts/bbb-sprat-main);
+    src: url(articles/audrey/assets/fonts/bbb-sprat-main/otf/BBBSprat-Regular.otf);
  }
 }
