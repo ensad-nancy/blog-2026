@@ -1,21 +1,19 @@
 body {
-  background-image: url("../../articles/romane/assets/images/fond.jpg");
+  background-image: url("../../articles/romane/assets/images/lace-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 h1{
-    color :#ffffff
+    color :#000000;
     }
 
 h2{
-    color :#fdfdfd
+    color :#000000;
     }
 
 p{
-    color :#fffffe
+    color :#140404;
+    font-family:'Courier New', Courier, monospace;
     }
 
-#filtres{
-        color: #fdfdfd;
-}  
