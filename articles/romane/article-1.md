@@ -1,11 +1,11 @@
 ---
-title: Le mythe de la Tour d’Albinhac
+title: Plat salé et l'Odyssée
 date: 2026-09-28
-tags: wikepedia, Tour d’Albinhac
+tags: arte, odyssée, repas 
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Le myhte de la Tour d’Albinhac
+# Plat salé et l'Odyssée 
 
 ## Premier sous-tire
 
