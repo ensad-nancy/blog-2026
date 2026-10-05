@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eacute_e_s" format="2">
+	<advance width="1097"/>
+	<unicode hex="F1930"/>
+	<outline>
+		<component base="eacute_e"/>
+		<component base="s" xOffset="688"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-03 14:58:21 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=s</string>
+		</dict>
+	</lib>
+</glyph>

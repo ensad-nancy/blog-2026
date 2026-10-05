@@ -1,0 +1,2079 @@
+{
+.appVersion = "3151";
+.formatVersion = 3;
+classes = (
+{
+code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AE Lslash Oslash OE Eth Thorn Aacute Acircumflex Adieresis Agrave Aring Atilde Ccedilla Eacute Ecircumflex Edieresis Egrave Iacute Icircumflex Idieresis Igrave Ntilde Oacute Ocircumflex Odieresis Ograve Otilde Scaron Uacute Ucircumflex Udieresis Ugrave Yacute Ydieresis Zcaron Abreve Amacron Aogonek Cacute Ccaron Ccircumflex Cdotaccent Dcaron Dcroat Ebreve Ecaron Edotaccent Emacron Eng Eogonek Gbreve Gcircumflex uni0122 Gdotaccent Hbar Hcircumflex Ibreve Idotaccent IJ Imacron Iogonek Itilde Jcircumflex uni0136 Lacute Lcaron uni013B Ldot Nacute Ncaron uni0145 Obreve Ohungarumlaut Omacron Racute Rcaron uni0156 Sacute Scedilla Scircumflex uni0218 Tbar Tcaron uni0162 uni021A Ubreve Uhungarumlaut Umacron Uogonek Uring Utilde Wacute Wdieresis Wgrave Wcircumflex Ycircumflex Ygrave Zacute Zdotaccent I_e A_E A_O A_U_L_A C_H C_Q D_E D_U_D_E_L_A E_A Eacute_E E_T E_S E_U F_F_E F_V G_U I_E L_E L_L L_U M_P N_E N_N O_F O_Idieresis O_T P_M P_E R_E R_I R_S S_C S_E S_L S_S S_T T_E T_T U_E U_L X_C X_L X_L_L X_S
+";
+name = Uppercase;
+},
+{
+code = "a b c d e f g h i j k l m n o p q r s t u v w x y z fi fl ae dotlessi lslash oslash oe germandbls thorn eth aacute acircumflex adieresis agrave aring atilde ccedilla eacute ecircumflex edieresis egrave iacute icircumflex idieresis igrave ntilde oacute ocircumflex odieresis ograve otilde scaron uacute ucircumflex udieresis ugrave yacute ydieresis zcaron abreve amacron aogonek cacute ccaron ccircumflex cdotaccent dcaron dcroat ebreve ecaron edotaccent emacron eng eogonek gbreve gcircumflex uni0123 gdotaccent hbar hcircumflex ibreve i.loclTRK ij imacron iogonek itilde jcircumflex uni0137 kgreenlandic lacute lcaron uni013C ldot nacute ncaron uni0146 obreve ohungarumlaut omacron racute rcaron uni0157 sacute scedilla scircumflex uni0219 tbar tcaron uni0163 uni021B ubreve uhungarumlaut umacron uogonek uring utilde wacute wdieresis wgrave wcircumflex ycircumflex ygrave zacute zdotaccent f_f_e_two o_idieresis_two x_c_two x_s_two a_e a_u_l_a d_u_d_e_l_a e_s_two g_u l_e_s l_l_e_u_x l_u n_n_e_s_two n_n_e_s_three o_t o_t_e_two p_e p_m r_i_c s_c s_l s_tige t_t x_l_l e_t_t_e.001 x_c_e.001 x_c_e_s.001
+a_e a_o a_u_l_a c_h c_q d_e d_u_d_e_l_a eacute_e e_a e_s e_t ecircumflex_t_e e_t_t e_t_t_e e_u e_s e_s_s_e f_e f_f_e f_v g_u h_o_f_e i_e i_l l_e l_l l_u l_u_i m_p n_a n_e  n_n o_f o_t o_idieresis o_t_e r_e r_egrave_r_e r_i r_s s_c s_c_e s_e s_e s_l s_l_l s_s s_t t_e t_t u_e u_l u_n_e x_c x_l x_l_l x_s
+";
+name = Lowercase;
+}
+);
+customParameters = (
+{
+name = vendorID;
+value = MCKL;
+},
+{
+name = panose;
+value = (
+2,
+10,
+5,
+3,
+6,
+5,
+4,
+6,
+3,
+3
+);
+},
+{
+name = unicodeRanges;
+value = (
+0,
+1,
+2,
+60
+);
+},
+{
+name = codePageRanges;
+value = (
+"1252",
+"1250",
+"1254",
+"1257",
+"bit 29"
+);
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = glyphOrder;
+value = (
+.notdef,
+.null,
+CR,
+space,
+exclam,
+quotedbl,
+numbersign,
+dollar,
+percent,
+ampersand,
+quoteright,
+parenleft,
+parenright,
+asterisk,
+plus,
+comma,
+hyphen,
+period,
+slash,
+zero,
+one,
+two,
+three,
+four,
+five,
+six,
+seven,
+eight,
+nine,
+colon,
+semicolon,
+equal,
+question,
+at,
+A,
+B,
+C,
+D,
+E,
+F,
+G,
+H,
+I,
+J,
+K,
+L,
+M,
+N,
+O,
+P,
+Q,
+R,
+S,
+T,
+U,
+V,
+W,
+X,
+Y,
+Z,
+bracketleft,
+backslash,
+bracketright,
+asciicircum,
+underscore,
+quoteleft,
+a,
+b,
+c,
+d,
+e,
+f,
+g,
+h,
+i,
+j,
+k,
+l,
+m,
+n,
+o,
+p,
+q,
+r,
+s,
+t,
+u,
+v,
+w,
+x,
+y,
+z,
+braceleft,
+bar,
+braceright,
+asciitilde,
+exclamdown,
+cent,
+sterling,
+fraction,
+yen,
+section,
+quotesingle,
+quotedblleft,
+guillemotleft,
+guilsinglleft,
+guilsinglright,
+fi,
+fl,
+endash,
+dagger,
+daggerdbl,
+periodcentered,
+paragraph,
+bullet,
+quotesinglbase,
+quotedblbase,
+quotedblright,
+guillemotright,
+ellipsis,
+questiondown,
+grave,
+acute,
+circumflex,
+tilde,
+macron,
+breve,
+dotaccent,
+dieresis,
+ring,
+cedilla,
+hungarumlaut,
+ogonek,
+caron,
+emdash,
+AE,
+Lslash,
+Oslash,
+OE,
+ae,
+dotlessi,
+lslash,
+oslash,
+oe,
+germandbls,
+uni00B9,
+trademark,
+Eth,
+onehalf,
+Thorn,
+onequarter,
+degree,
+thorn,
+threequarters,
+uni00B2,
+registered,
+minus,
+eth,
+multiply,
+uni00B3,
+copyright,
+Aacute,
+Acircumflex,
+Adieresis,
+Agrave,
+Aring,
+Atilde,
+Ccedilla,
+Eacute,
+Ecircumflex,
+Edieresis,
+Egrave,
+Iacute,
+Icircumflex,
+Idieresis,
+Igrave,
+Ntilde,
+Oacute,
+Ocircumflex,
+Odieresis,
+Ograve,
+Otilde,
+Scaron,
+Uacute,
+Ucircumflex,
+Udieresis,
+Ugrave,
+Yacute,
+Ydieresis,
+Zcaron,
+aacute,
+acircumflex,
+adieresis,
+agrave,
+aring,
+atilde,
+ccedilla,
+eacute,
+ecircumflex,
+edieresis,
+egrave,
+iacute,
+icircumflex,
+idieresis,
+igrave,
+ntilde,
+oacute,
+ocircumflex,
+odieresis,
+ograve,
+otilde,
+scaron,
+uacute,
+ucircumflex,
+udieresis,
+ugrave,
+yacute,
+ydieresis,
+zcaron,
+uni00A0,
+Abreve,
+Amacron,
+Aogonek,
+Cacute,
+Ccaron,
+Ccircumflex,
+Cdotaccent,
+Dcaron,
+Dcroat,
+Ebreve,
+Ecaron,
+Edotaccent,
+Emacron,
+Eng,
+Eogonek,
+Gbreve,
+Gcircumflex,
+uni0122,
+Gdotaccent,
+Hbar,
+Hcircumflex,
+Ibreve,
+Idotaccent,
+IJ,
+Imacron,
+Iogonek,
+Itilde,
+Jcircumflex,
+uni0136,
+Lacute,
+Lcaron,
+uni013B,
+Ldot,
+Nacute,
+Ncaron,
+uni0145,
+Obreve,
+Ohungarumlaut,
+Omacron,
+Racute,
+Rcaron,
+uni0156,
+Sacute,
+Scedilla,
+Scircumflex,
+uni0218,
+Tbar,
+Tcaron,
+uni0162,
+uni021A,
+Ubreve,
+Uhungarumlaut,
+Umacron,
+Uogonek,
+Uring,
+Utilde,
+Wacute,
+Wdieresis,
+Wgrave,
+Wcircumflex,
+Ycircumflex,
+Ygrave,
+Zacute,
+Zdotaccent,
+abreve,
+amacron,
+aogonek,
+cacute,
+ccaron,
+ccircumflex,
+cdotaccent,
+dcaron,
+dcroat,
+uniF6BE,
+ebreve,
+ecaron,
+edotaccent,
+emacron,
+eng,
+eogonek,
+gbreve,
+gcircumflex,
+uni0123,
+gdotaccent,
+hbar,
+hcircumflex,
+ibreve,
+i.loclTRK,
+ij,
+imacron,
+iogonek,
+itilde,
+jcircumflex,
+uni0137,
+kgreenlandic,
+lacute,
+lcaron,
+uni013C,
+ldot,
+nacute,
+ncaron,
+uni0146,
+obreve,
+ohungarumlaut,
+omacron,
+racute,
+rcaron,
+uni0157,
+sacute,
+scedilla,
+scircumflex,
+uni0219,
+tbar,
+tcaron,
+uni0163,
+uni021B,
+ubreve,
+uhungarumlaut,
+umacron,
+uogonek,
+uring,
+utilde,
+wacute,
+wdieresis,
+wgrave,
+wcircumflex,
+ycircumflex,
+ygrave,
+zacute,
+zdotaccent,
+caronSlovak,
+uniF6C3,
+reversequoteleft,
+reversequotedblleft,
+uni2002,
+uni2003,
+uni2009,
+uni200A,
+uni200B,
+Euro,
+uni2157,
+I_E,
+I_e,
+a_o,
+c_h,
+c_q,
+e_a,
+e_s,
+e_t,
+e_u,
+eacute_e,
+f_f_e,
+f_f_e_two,
+f_v,
+h_o_f,
+i_e,
+i_egrave_r_e,
+l_e,
+l_l,
+m_p,
+n_e,
+n_n,
+o_idieresis,
+o_idieresis_two,
+r_e,
+r_i,
+r_s,
+s_e,
+s_s,
+s_t,
+t_e,
+u_l,
+x_c,
+x_c_two,
+x_l,
+x_s,
+x_s_two,
+demi_e,
+demi_x,
+demi_x_2,
+demi_x_3,
+demi_x_4
+);
+}
+);
+date = "2020-05-12 10:40:32 +0000";
+familyName = "Redaction Inclusive";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature locl;
+feature frac;
+feature numr;
+feature sups;
+feature case;
+";
+tag = aalt;
+},
+{
+code = "script latn;
+language AZE;
+lookup SUB_1 {
+	sub i by i.loclTRK;
+} SUB_1;
+lookup SUB_1;
+language CRT;
+lookup SUB_1;
+lookup SUB_1;
+language TRK;
+lookup SUB_1;
+lookup SUB_1;
+language ROM;
+lookup SUB_2 {
+	sub Scedilla by uni0218;
+	sub uni0162 by uni021A;
+	sub scedilla by uni0219;
+	sub uni0163 by uni021B;
+} SUB_2;
+";
+tag = locl;
+},
+{
+code = "script DFLT;
+language dflt;
+lookup SUB_3 {
+	sub zero slash zero by percent;
+	sub one slash two by onehalf;
+	sub one slash four by onequarter;
+	sub three slash four by threequarters;
+	sub three slash five by uni2157;
+} SUB_3;
+script latn;
+language dflt;
+lookup SUB_3;
+language AZE;
+lookup SUB_3;
+language CRT;
+lookup SUB_3;
+language ROM;
+lookup SUB_3;
+language TRK;
+lookup SUB_3;
+";
+tag = frac;
+},
+{
+code = "script DFLT;
+language dflt;
+lookup SUB_4 {
+	sub one by uni00B9;
+	sub two by uni00B2;
+	sub three by uni00B3;
+} SUB_4;
+script latn;
+language dflt;
+lookup SUB_4;
+language AZE;
+lookup SUB_4;
+language CRT;
+lookup SUB_4;
+language ROM;
+lookup SUB_4;
+language TRK;
+lookup SUB_4;
+";
+tag = numr;
+},
+{
+code = "script DFLT;
+language dflt;
+lookup SUB_5 {
+	sub one by uni00B9;
+	sub two by uni00B2;
+	sub three by uni00B3;
+} SUB_5;
+script latn;
+language dflt;
+lookup SUB_5;
+language AZE;
+lookup SUB_5;
+language CRT;
+lookup SUB_5;
+language ROM;
+lookup SUB_5;
+language TRK;
+lookup SUB_5;
+";
+tag = sups;
+},
+{
+code = "script DFLT;
+language dflt;
+lookup SUB_6 {
+	sub fi by f i;
+	sub fl by f l;
+} SUB_6;
+script latn;
+language dflt;
+lookup SUB_6;
+language AZE;
+lookup SUB_6;
+language CRT;
+lookup SUB_6;
+language ROM;
+lookup SUB_6;
+language TRK;
+lookup SUB_6;
+";
+tag = ccmp;
+},
+{
+code = "  # on s’occupe d’abord des ligatures standards (non-inclusives):
+
+  # pour faciliter la saisie sans passer par le point médian, on remplace les .. par des points médians. On cherche donc toutes les suites de 2 points pour les remplacer par un point médian (et les suites de 3 points par une ellipse):
+  lookup point2 {
+      sub period period by periodcentered;
+      sub period period period by ellipsis;
+      } point2;
+
+  # on remplace le point médian bas-de-casse par un point médian des capitales ‘periodcentered.case’ quand il est entouré de capitales:
+
+# marqué comme problème mais je comprends pas pourquoi????  
+#lookup pointcap { sub @Uppercase periodcentered' by periodcentered.case; sub periodcentered' @Uppercase by periodcentered.case; } pointcap; 
+
+
+  # on remplace le e ou egrave par un emacron dans les mots boulangēr·e, ouvriēr·e, sēc·he, poēte·sse
+lookup macron2 {
+	sub e' r periodcentered by emacron;
+	sub egrave' r periodcentered by emacron;
+	sub E' R periodcentered by Emacron;
+	sub Egrave' R periodcentered by Emacron;
+	sub e' c periodcentered h by emacron;
+	sub egrave' c periodcentered h by emacron;
+	sub E' C periodcentered H by Emacron;
+	sub Egrave' C periodcentered H by Emacron;
+	sub eacute' t e periodcentered s s by emacron;
+	sub egrave' t e periodcentered s s by emacron;
+	sub Eacute' T E periodcentered S S by Emacron;
+	sub Egrave' T E periodcentered S S by Emacron;
+	} macron2;
+
+
+ # AJOUTEZ VOS LIGATURES INCLUSIVES ICI ♥ ♥ : (voir en haut pour l'ordre/cascade et le lien vers la syntaxe/tableau QUNI)
+
+
+lookup ligaturesinclusives2 {
+sub I periodcentered E by I_E;
+sub I periodcentered e by I_E;
+
+sub A periodcentered E by A_E;
+sub A periodcentered O by A_O;
+sub A U periodcentered Agrave space L A by A_U_L_A;
+sub Agrave space L A periodcentered A U by A_U_L_A;
+sub C periodcentered H by C_H;
+sub C periodcentered Q by C_Q;
+sub D periodcentered E by D_E;
+sub D U periodcentered D E space L A by D_U_D_E_L_A;
+sub E periodcentered A by E_A;
+sub E periodcentered S by E_S;
+sub E periodcentered T by E_T;
+sub E periodcentered U by E_U;
+sub Eacute periodcentered E by Eacute_E;
+sub F periodcentered F E by F_F_E;
+sub F periodcentered V by F_V;
+sub G periodcentered U by G_U;
+sub O periodcentered F by O_F;
+sub L periodcentered E by L_E;
+sub L periodcentered L by L_L;
+sub L periodcentered U by L_U;
+sub M periodcentered P by M_P;
+sub N periodcentered E by N_E;
+sub N periodcentered N by N_N;
+sub O N periodcentered A by O_F;
+sub O periodcentered Idieresis by O_Idieresis;
+sub O periodcentered I by O_Idieresis;
+sub O periodcentered F by O_F;
+sub O periodcentered T by O_T;
+sub P periodcentered M by P_M;
+sub P periodcentered E by P_E;
+sub R periodcentered E by R_E;
+sub R periodcentered I by R_I;
+sub R periodcentered R I by R_I;
+sub R periodcentered S by R_S;
+sub S periodcentered C by S_C;
+sub S periodcentered E by S_E;
+sub S periodcentered L by S_L;
+sub S periodcentered S by S_S;
+sub S periodcentered T by S_T;
+sub T periodcentered E by T_E;
+sub T periodcentered T by T_T;
+sub U periodcentered E by U_E;
+sub U periodcentered L by U_L;
+sub X periodcentered C by X_C;
+sub X periodcentered L by X_L;
+sub X periodcentered L L by X_L_L;
+sub X periodcentered S by X_S;
+
+
+
+		sub a u periodcentered agrave space l a by a_u_l_a;
+		sub agrave space l a periodcentered a u by a_u_l_a;
+		sub a periodcentered e by a_e;
+		sub a periodcentered o by a_o;
+		sub c periodcentered h by c_h;
+sub c periodcentered h e by c_h_e;
+sub c periodcentered h e s by c_h_e_s;
+		sub c periodcentered q by c_q;
+sub c periodcentered q u by c_q_u;
+sub c periodcentered q u e by c_q_u_e;
+sub c periodcentered q u e s by c_q_u_e_s;
+		sub d periodcentered e by d_e;
+sub d periodcentered e s by d_e_s;
+		sub d u periodcentered d e space l a by d_u_d_e_l_a;
+		sub eacute periodcentered e by eacute_e;
+sub eacute periodcentered e s by eacute_e_s;
+		sub e periodcentered a by e_a;
+		sub e periodcentered t by e_t;
+		sub ecircumflex t periodcentered e by ecircumflex_t_e;
+		sub e periodcentered t t by e_t_t;
+		sub e periodcentered t t e by e_t_t_e;
+		sub e periodcentered s by e_s;
+		sub e periodcentered s s e by e_s_s_e;
+sub e periodcentered s s e s by e_s_s_e_s;
+		sub e periodcentered u by e_u;
+sub e periodcentered u x by e_u_x;
+		sub f periodcentered e by f_e;
+		sub f periodcentered v by f_v;
+sub f periodcentered v e by f_v_e;
+sub f periodcentered v e s by f_v_e_s;
+		sub f periodcentered f e by f_f_e;
+sub f periodcentered f e s by f_f_e_s;
+		sub g periodcentered u by g_u;
+sub h o periodcentered f by h_o_f;
+		sub h o periodcentered f e by h_o_f_e;
+		sub i periodcentered e by i_e;
+sub i periodcentered e l by i_e_l;
+sub i periodcentered e s by i_e_s;
+		sub i periodcentered l by i_l;
+		sub l periodcentered e by l_e;
+		sub l periodcentered l by l_l;
+sub l periodcentered l e by l_l_e;
+sub l periodcentered l e s by l_l_e_s;
+		sub l periodcentered u by l_u;
+		sub l periodcentered u i by l_u_i;
+		sub m periodcentered p by m_p;
+		sub n periodcentered a  by n_a;
+		sub n periodcentered e by n_e;
+sub n periodcentered e s by n_e_s;
+sub n periodcentered n e by n_n_e;
+sub n periodcentered n e s by n_n_e_s;
+		sub n periodcentered n by n_n;
+		sub o periodcentered f by o_f;
+sub o periodcentered f by o_f;
+sub o periodcentered f by o_f_e;
+		sub o periodcentered idieresis by o_idieresis;
+		sub o periodcentered t by o_t;
+		sub o periodcentered t e by o_t_e;
+sub o periodcentered t e s by o_t_e_s;
+		sub p periodcentered e by p_e;
+		sub p periodcentered m by p_m;
+		sub r periodcentered e by r_e;
+		sub r periodcentered egrave r e by r_egrave_r_e;
+sub r periodcentered egrave r e s by r_egrave_r_e_s;
+sub r periodcentered e s by r_e_s;
+		sub r periodcentered i by r_i;
+		sub r periodcentered s by r_s;
+sub r periodcentered s e by r_s_e;
+sub r periodcentered s e s by r_s_e_s;
+		sub s periodcentered c by s_c;
+sub s periodcentered c e by s_c_e;
+sub s periodcentered c e s by s_c_e_s;
+		sub s periodcentered s by s_s;
+		sub s periodcentered c e by s_c_e;
+		sub s periodcentered e by s_e;
+		sub s periodcentered l l by s_l_l;
+sub s periodcentered l l e by s_l_l_e;
+		sub periodcentered s s by s_s;
+sub s periodcentered s e by s_s_e;
+sub s periodcentered s e s by s_s_e_s;
+		sub s periodcentered t by s_t;
+sub s periodcentered t e by s_t_e;
+sub s periodcentered t e s by s_t_e_s;
+		sub s periodcentered l by s_l;
+		sub t periodcentered e by t_e;
+sub t periodcentered e s by t_e_s;
+		sub t periodcentered t by t_t;
+		sub u periodcentered e by u_e;
+sub u periodcentered e s by u_e_s;
+		sub u periodcentered l by u_l;
+sub u periodcentered l l e by u_l_l_e;
+sub u periodcentered l l e s by u_l_l_e_s; 
+sub u n periodcentered e by u_n_e;
+sub u n periodcentered e s by u_n_e_s;
+sub u n periodcentered e by u_n_e;
+		sub x periodcentered c by x_c;
+sub x periodcentered c e by x_c_e;
+sub x periodcentered c e s by x_c_e_s;
+		sub x periodcentered l by x_l;
+sub x periodcentered l e by x_l_e;
+sub x periodcentered l e s by x_l_e_s;
+sub x periodcentered l l e by x_l_l_e;
+sub x periodcentered l l e s by x_l_l_e_s;
+sub x periodcentered l l by x_l_l;
+		sub x periodcentered s by x_s;
+sub x periodcentered s e s by x_s_e_s;
+sub x periodcentered s s e by x_s_s_e;
+sub x periodcentered s s e s by x_s_s_e_s;
+
+
+	    } ligaturesinclusives2;
+
+
+
+";
+tag = dlig;
+},
+{
+code = "  # on s’occupe d’abord des ligatures standards (non-inclusives):
+
+  # pour faciliter la saisie sans passer par le point médian, on remplace les .. par des points médians. On cherche donc toutes les suites de 2 points pour les remplacer par un point médian (et les suites de 3 points par une ellipse):
+  lookup point {
+      sub period period by periodcentered;
+      sub period period period by ellipsis;
+      } point;
+
+  # on remplace le point médian bas-de-casse par un point médian des capitales ‘periodcentered.case’ quand il est entouré de capitales:
+
+# marqué comme problème mais je comprends pas pourquoi????  
+#lookup pointcap { sub @Uppercase periodcentered' by periodcentered.case; sub periodcentered' @Uppercase by periodcentered.case; } pointcap; 
+
+
+  # on remplace le e ou egrave par un emacron dans les mots boulangēr·e, ouvriēr·e, sēc·he, poēte·sse
+lookup macron {
+	sub e' r periodcentered by emacron;
+	sub egrave' r periodcentered by emacron;
+	sub E' R periodcentered by Emacron;
+	sub Egrave' R periodcentered by Emacron;
+	sub e' c periodcentered h by emacron;
+	sub egrave' c periodcentered h by emacron;
+	sub E' C periodcentered H by Emacron;
+	sub Egrave' C periodcentered H by Emacron;
+	sub eacute' t e periodcentered s s by emacron;
+	sub egrave' t e periodcentered s s by emacron;
+	sub Eacute' T E periodcentered S S by Emacron;
+	sub Egrave' T E periodcentered S S by Emacron;
+	} macron;
+
+
+ # AJOUTEZ VOS LIGATURES INCLUSIVES ICI ♥ ♥ : (voir en haut pour l'ordre/cascade et le lien vers la syntaxe/tableau QUNI)
+
+
+lookup ligaturesinclusives {
+sub I periodcentered E by I_E;
+sub I periodcentered e by I_E;
+
+sub A periodcentered E by A_E;
+sub A periodcentered O by A_O;
+sub A U periodcentered Agrave space L A by A_U_L_A;
+sub Agrave space L A periodcentered A U by A_U_L_A;
+sub C periodcentered H by C_H;
+sub C periodcentered Q by C_Q;
+sub D periodcentered E by D_E;
+sub D U periodcentered D E space L A by D_U_D_E_L_A;
+sub E periodcentered A by E_A;
+sub E periodcentered S by E_S;
+sub E periodcentered T by E_T;
+sub E periodcentered U by E_U;
+sub Eacute periodcentered E by Eacute_E;
+sub F periodcentered F E by F_F_E;
+sub F periodcentered V by F_V;
+sub G periodcentered U by G_U;
+sub O periodcentered F by O_F;
+sub L periodcentered E by L_E;
+sub L periodcentered L by L_L;
+sub L periodcentered U by L_U;
+sub M periodcentered P by M_P;
+sub N periodcentered E by N_E;
+sub N periodcentered N by N_N;
+sub O N periodcentered A by O_F;
+sub O periodcentered Idieresis by O_Idieresis;
+sub O periodcentered I by O_Idieresis;
+sub O periodcentered F by O_F;
+sub O periodcentered T by O_T;
+sub P periodcentered M by P_M;
+sub P periodcentered E by P_E;
+sub R periodcentered E by R_E;
+sub R periodcentered I by R_I;
+sub R periodcentered R I by R_I;
+sub R periodcentered S by R_S;
+sub S periodcentered C by S_C;
+sub S periodcentered E by S_E;
+sub S periodcentered L by S_L;
+sub S periodcentered S by S_S;
+sub S periodcentered T by S_T;
+sub T periodcentered E by T_E;
+sub T periodcentered T by T_T;
+sub U periodcentered E by U_E;
+sub U periodcentered L by U_L;
+sub X periodcentered C by X_C;
+sub X periodcentered L by X_L;
+sub X periodcentered L L by X_L_L;
+sub X periodcentered S by X_S;
+
+
+
+		sub a u periodcentered agrave space l a by a_u_l_a;
+		sub agrave space l a periodcentered a u by a_u_l_a;
+		sub a periodcentered e by a_e;
+		sub a periodcentered o by a_o;
+		sub c periodcentered h by c_h;
+sub c periodcentered h e by c_h_e;
+sub c periodcentered h e s by c_h_e_s;
+		sub c periodcentered q by c_q;
+sub c periodcentered q u by c_q_u;
+sub c periodcentered q u e by c_q_u_e;
+sub c periodcentered q u e s by c_q_u_e_s;
+		sub d periodcentered e by d_e;
+sub d periodcentered e s by d_e_s;
+		sub d u periodcentered d e space l a by d_u_d_e_l_a;
+		sub eacute periodcentered e by eacute_e;
+sub eacute periodcentered e s by eacute_e_s;
+		sub e periodcentered a by e_a;
+		sub e periodcentered t by e_t;
+		sub ecircumflex t periodcentered e by ecircumflex_t_e;
+		sub e periodcentered t t by e_t_t;
+		sub e periodcentered t t e by e_t_t_e;
+		sub e periodcentered s by e_s;
+		sub e periodcentered s s e by e_s_s_e;
+sub e periodcentered s s e s by e_s_s_e_s;
+		sub e periodcentered u by e_u;
+sub e periodcentered u x by e_u_x;
+		sub f periodcentered e by f_e;
+		sub f periodcentered v by f_v;
+sub f periodcentered v e by f_v_e;
+sub f periodcentered v e s by f_v_e_s;
+		sub f periodcentered f e by f_f_e;
+sub f periodcentered f e s by f_f_e_s;
+		sub g periodcentered u by g_u;
+sub h o periodcentered f by h_o_f;
+		sub h o periodcentered f e by h_o_f_e;
+		sub i periodcentered e by i_e;
+sub i periodcentered e l by i_e_l;
+sub i periodcentered e s by i_e_s;
+		sub i periodcentered l by i_l;
+		sub l periodcentered e by l_e;
+		sub l periodcentered l by l_l;
+sub l periodcentered l e by l_l_e;
+sub l periodcentered l e s by l_l_e_s;
+		sub l periodcentered u by l_u;
+		sub l periodcentered u i by l_u_i;
+		sub m periodcentered p by m_p;
+		sub n periodcentered a  by n_a;
+		sub n periodcentered e by n_e;
+sub n periodcentered e s by n_e_s;
+sub n periodcentered n e by n_n_e;
+sub n periodcentered n e s by n_n_e_s;
+		sub n periodcentered n by n_n;
+		sub o periodcentered f by o_f;
+sub o periodcentered f by o_f;
+sub o periodcentered f by o_f_e;
+		sub o periodcentered idieresis by o_idieresis;
+		sub o periodcentered t by o_t;
+		sub o periodcentered t e by o_t_e;
+sub o periodcentered t e s by o_t_e_s;
+		sub p periodcentered e by p_e;
+		sub p periodcentered m by p_m;
+		sub r periodcentered e by r_e;
+		sub r periodcentered egrave r e by r_egrave_r_e;
+sub r periodcentered egrave r e s by r_egrave_r_e_s;
+sub r periodcentered e s by r_e_s;
+		sub r periodcentered i by r_i;
+		sub r periodcentered s by r_s;
+sub r periodcentered s e by r_s_e;
+sub r periodcentered s e s by r_s_e_s;
+		sub s periodcentered c by s_c;
+sub s periodcentered c e by s_c_e;
+sub s periodcentered c e s by s_c_e_s;
+		sub s periodcentered s by s_s;
+		sub s periodcentered c e by s_c_e;
+		sub s periodcentered e by s_e;
+		sub s periodcentered l l by s_l_l;
+sub s periodcentered l l e by s_l_l_e;
+		sub periodcentered s s by s_s;
+sub s periodcentered s e by s_s_e;
+sub s periodcentered s e s by s_s_e_s;
+		sub s periodcentered t by s_t;
+sub s periodcentered t e by s_t_e;
+sub s periodcentered t e s by s_t_e_s;
+		sub s periodcentered l by s_l;
+		sub t periodcentered e by t_e;
+sub t periodcentered e s by t_e_s;
+		sub t periodcentered t by t_t;
+		sub u periodcentered e by u_e;
+sub u periodcentered e s by u_e_s;
+		sub u periodcentered l by u_l;
+sub u periodcentered l l e by u_l_l_e;
+sub u periodcentered l l e s by u_l_l_e_s; 
+sub u n periodcentered e by u_n_e;
+sub u n periodcentered e s by u_n_e_s;
+sub u n periodcentered e by u_n_e;
+		sub x periodcentered c by x_c;
+sub x periodcentered c e by x_c_e;
+sub x periodcentered c e s by x_c_e_s;
+		sub x periodcentered l by x_l;
+sub x periodcentered l e by x_l_e;
+sub x periodcentered l e s by x_l_e_s;
+sub x periodcentered l l e by x_l_l_e;
+sub x periodcentered l l e s by x_l_l_e_s;
+sub x periodcentered l l by x_l_l;
+		sub x periodcentered s by x_s;
+sub x periodcentered s e s by x_s_e_s;
+sub x periodcentered s s e by x_s_s_e;
+sub x periodcentered s s e s by x_s_s_e_s;
+
+
+	    } ligaturesinclusives;
+
+
+
+";
+tag = liga;
+},
+{
+code = "  # on s’occupe d’abord des ligatures standards (non-inclusives):
+
+  # pour faciliter la saisie sans passer par le point médian, on remplace les .. par des points médians. On cherche donc toutes les suites de 2 points pour les remplacer par un point médian (et les suites de 3 points par une ellipse):
+  lookup point3 {
+      sub period period by periodcentered;
+      sub period period period by ellipsis;
+      } point3;
+
+  # on remplace le point médian bas-de-casse par un point médian des capitales ‘periodcentered.case’ quand il est entouré de capitales:
+
+# marqué comme problème mais je comprends pas pourquoi????  
+#lookup pointcap { sub @Uppercase periodcentered' by periodcentered.case; sub periodcentered' @Uppercase by periodcentered.case; } pointcap; 
+
+
+  # on remplace le e ou egrave par un emacron dans les mots boulangēr·e, ouvriēr·e, sēc·he, poēte·sse
+lookup macron3 {
+	sub e' r periodcentered by emacron;
+	sub egrave' r periodcentered by emacron;
+	sub E' R periodcentered by Emacron;
+	sub Egrave' R periodcentered by Emacron;
+	sub e' c periodcentered h by emacron;
+	sub egrave' c periodcentered h by emacron;
+	sub E' C periodcentered H by Emacron;
+	sub Egrave' C periodcentered H by Emacron;
+	sub eacute' t e periodcentered s s by emacron;
+	sub egrave' t e periodcentered s s by emacron;
+	sub Eacute' T E periodcentered S S by Emacron;
+	sub Egrave' T E periodcentered S S by Emacron;
+	} macron3;
+
+
+ # AJOUTEZ VOS LIGATURES INCLUSIVES ICI ♥ ♥ : (voir en haut pour l'ordre/cascade et le lien vers la syntaxe/tableau QUNI)
+
+
+lookup ligaturesinclusives3 {
+sub I periodcentered E by I_E;
+sub I periodcentered e by I_E;
+
+sub A periodcentered E by A_E;
+sub A periodcentered O by A_O;
+sub A U periodcentered Agrave space L A by A_U_L_A;
+sub Agrave space L A periodcentered A U by A_U_L_A;
+sub C periodcentered H by C_H;
+sub C periodcentered Q by C_Q;
+sub D periodcentered E by D_E;
+sub D U periodcentered D E space L A by D_U_D_E_L_A;
+sub E periodcentered A by E_A;
+sub E periodcentered S by E_S;
+sub E periodcentered T by E_T;
+sub E periodcentered U by E_U;
+sub Eacute periodcentered E by Eacute_E;
+sub F periodcentered F E by F_F_E;
+sub F periodcentered V by F_V;
+sub G periodcentered U by G_U;
+sub O periodcentered F by O_F;
+sub L periodcentered E by L_E;
+sub L periodcentered L by L_L;
+sub L periodcentered U by L_U;
+sub M periodcentered P by M_P;
+sub N periodcentered E by N_E;
+sub N periodcentered N by N_N;
+sub O N periodcentered A by O_F;
+sub O periodcentered Idieresis by O_Idieresis;
+sub O periodcentered I by O_Idieresis;
+sub O periodcentered F by O_F;
+sub O periodcentered T by O_T;
+sub P periodcentered M by P_M;
+sub P periodcentered E by P_E;
+sub R periodcentered E by R_E;
+sub R periodcentered I by R_I;
+sub R periodcentered R I by R_I;
+sub R periodcentered S by R_S;
+sub S periodcentered C by S_C;
+sub S periodcentered E by S_E;
+sub S periodcentered L by S_L;
+sub S periodcentered S by S_S;
+sub S periodcentered T by S_T;
+sub T periodcentered E by T_E;
+sub T periodcentered T by T_T;
+sub U periodcentered E by U_E;
+sub U periodcentered L by U_L;
+sub X periodcentered C by X_C;
+sub X periodcentered L by X_L;
+sub X periodcentered L L by X_L_L;
+sub X periodcentered S by X_S;
+
+
+
+		sub a u periodcentered agrave space l a by a_u_l_a;
+		sub agrave space l a periodcentered a u by a_u_l_a;
+		sub a periodcentered e by a_e;
+		sub a periodcentered o by a_o;
+		sub c periodcentered h by c_h;
+sub c periodcentered h e by c_h_e;
+sub c periodcentered h e s by c_h_e_s;
+		sub c periodcentered q by c_q;
+sub c periodcentered q u by c_q_u;
+sub c periodcentered q u e by c_q_u_e;
+sub c periodcentered q u e s by c_q_u_e_s;
+		sub d periodcentered e by d_e;
+sub d periodcentered e s by d_e_s;
+		sub d u periodcentered d e space l a by d_u_d_e_l_a;
+		sub eacute periodcentered e by eacute_e;
+sub eacute periodcentered e s by eacute_e_s;
+		sub e periodcentered a by e_a;
+		sub e periodcentered t by e_t;
+		sub ecircumflex t periodcentered e by ecircumflex_t_e;
+		sub e periodcentered t t by e_t_t;
+		sub e periodcentered t t e by e_t_t_e;
+		sub e periodcentered s by e_s;
+		sub e periodcentered s s e by e_s_s_e;
+sub e periodcentered s s e s by e_s_s_e_s;
+		sub e periodcentered u by e_u;
+sub e periodcentered u x by e_u_x;
+		sub f periodcentered e by f_e;
+		sub f periodcentered v by f_v;
+sub f periodcentered v e by f_v_e;
+sub f periodcentered v e s by f_v_e_s;
+		sub f periodcentered f e by f_f_e;
+sub f periodcentered f e s by f_f_e_s;
+		sub g periodcentered u by g_u;
+sub h o periodcentered f by h_o_f;
+		sub h o periodcentered f e by h_o_f_e;
+		sub i periodcentered e by i_e;
+sub i periodcentered e l by i_e_l;
+sub i periodcentered e s by i_e_s;
+		sub i periodcentered l by i_l;
+		sub l periodcentered e by l_e;
+		sub l periodcentered l by l_l;
+sub l periodcentered l e by l_l_e;
+sub l periodcentered l e s by l_l_e_s;
+		sub l periodcentered u by l_u;
+		sub l periodcentered u i by l_u_i;
+		sub m periodcentered p by m_p;
+		sub n periodcentered a  by n_a;
+		sub n periodcentered e by n_e;
+sub n periodcentered e s by n_e_s;
+sub n periodcentered n e by n_n_e;
+sub n periodcentered n e s by n_n_e_s;
+		sub n periodcentered n by n_n;
+		sub o periodcentered f by o_f;
+sub o periodcentered f by o_f;
+sub o periodcentered f by o_f_e;
+		sub o periodcentered idieresis by o_idieresis;
+		sub o periodcentered t by o_t;
+		sub o periodcentered t e by o_t_e;
+sub o periodcentered t e s by o_t_e_s;
+		sub p periodcentered e by p_e;
+		sub p periodcentered m by p_m;
+		sub r periodcentered e by r_e;
+		sub r periodcentered egrave r e by r_egrave_r_e;
+sub r periodcentered egrave r e s by r_egrave_r_e_s;
+sub r periodcentered e s by r_e_s;
+		sub r periodcentered i by r_i;
+		sub r periodcentered s by r_s;
+sub r periodcentered s e by r_s_e;
+sub r periodcentered s e s by r_s_e_s;
+		sub s periodcentered c by s_c;
+sub s periodcentered c e by s_c_e;
+sub s periodcentered c e s by s_c_e_s;
+		sub s periodcentered s by s_s;
+		sub s periodcentered c e by s_c_e;
+		sub s periodcentered e by s_e;
+		sub s periodcentered l l by s_l_l;
+sub s periodcentered l l e by s_l_l_e;
+		sub periodcentered s s by s_s;
+sub s periodcentered s e by s_s_e;
+sub s periodcentered s e s by s_s_e_s;
+		sub s periodcentered t by s_t;
+sub s periodcentered t e by s_t_e;
+sub s periodcentered t e s by s_t_e_s;
+		sub s periodcentered l by s_l;
+		sub t periodcentered e by t_e;
+sub t periodcentered e s by t_e_s;
+		sub t periodcentered t by t_t;
+		sub u periodcentered e by u_e;
+sub u periodcentered e s by u_e_s;
+		sub u periodcentered l by u_l;
+sub u periodcentered l l e by u_l_l_e;
+sub u periodcentered l l e s by u_l_l_e_s; 
+sub u n periodcentered e by u_n_e;
+sub u n periodcentered e s by u_n_e_s;
+sub u n periodcentered e by u_n_e;
+		sub x periodcentered c by x_c;
+sub x periodcentered c e by x_c_e;
+sub x periodcentered c e s by x_c_e_s;
+		sub x periodcentered l by x_l;
+sub x periodcentered l e by x_l_e;
+sub x periodcentered l e s by x_l_e_s;
+sub x periodcentered l l e by x_l_l_e;
+sub x periodcentered l l e s by x_l_l_e_s;
+sub x periodcentered l l by x_l_l;
+		sub x periodcentered s by x_s;
+sub x periodcentered s e s by x_s_e_s;
+sub x periodcentered s s e by x_s_s_e;
+sub x periodcentered s s e s by x_s_s_e_s;
+
+
+	    } ligaturesinclusives3;
+
+
+
+";
+tag = rlig;
+},
+{
+code = "sub eacute_e by Eacute_E;";
+tag = case;
+}
+);
+fontMaster = (
+{
+customParameters = (
+{
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 900;
+},
+{
+name = winDescent;
+value = 300;
+},
+{
+name = hheaAscender;
+value = 900;
+},
+{
+name = hheaDescender;
+value = -300;
+},
+{
+name = strikeoutPosition;
+value = 282;
+},
+{
+name = strikeoutSize;
+value = 50;
+}
+);
+id = m01;
+metricValues = (
+{
+pos = 750;
+},
+{
+pos = 700;
+},
+{
+pos = 470;
+},
+{
+},
+{
+pos = -250;
+},
+{
+}
+);
+name = Regular;
+}
+);
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+properties = (
+{
+key = postscriptFullName;
+value = "Redaction Inclusive";
+},
+{
+key = postscriptFontName;
+value = "Redaction-Inclusive-Regular";
+}
+);
+}
+);
+kerningLTR = {
+m01 = {
+"@MMK_L_A" = {
+"@MMK_R_A" = 10;
+"@MMK_R_C" = -40;
+"@MMK_R_T" = -110;
+"@MMK_R_U" = -60;
+"@MMK_R_V" = -160;
+"@MMK_R_Y" = -140;
+"@MMK_R_asterisk" = -150;
+"@MMK_R_b" = -20;
+"@MMK_R_c" = -20;
+"@MMK_R_plus" = -50;
+"@MMK_R_quotedbl" = -140;
+"@MMK_R_slash" = 20;
+"@MMK_R_t" = -30;
+"@MMK_R_u" = -40;
+"@MMK_R_v" = -100;
+};
+"@MMK_L_B" = {
+"@MMK_R_A" = -60;
+"@MMK_R_T" = -20;
+"@MMK_R_U" = -30;
+"@MMK_R_V" = -70;
+"@MMK_R_X" = -50;
+"@MMK_R_Y" = -90;
+"@MMK_R_Z" = -20;
+"@MMK_R_asterisk" = -60;
+"@MMK_R_comma" = -40;
+"@MMK_R_quotedbl" = -40;
+"@MMK_R_u" = -20;
+"@MMK_R_v" = -30;
+"@MMK_R_x" = -30;
+};
+"@MMK_L_C" = {
+"@MMK_R_A" = -70;
+"@MMK_R_J" = -20;
+"@MMK_R_Y" = -20;
+"@MMK_R_comma" = -40;
+};
+"@MMK_L_D" = {
+"@MMK_R_A" = -40;
+"@MMK_R_C" = 10;
+"@MMK_R_J" = -30;
+"@MMK_R_S" = 10;
+"@MMK_R_V" = -40;
+"@MMK_R_X" = -60;
+"@MMK_R_Y" = -80;
+"@MMK_R_asterisk" = -40;
+"@MMK_R_c" = 10;
+"@MMK_R_colon" = 10;
+"@MMK_R_comma" = -60;
+"@MMK_R_g" = 10;
+"@MMK_R_plus" = 20;
+"@MMK_R_quotedbl" = -10;
+"@MMK_R_s" = 10;
+"@MMK_R_slash" = -30;
+"@MMK_R_t" = 10;
+};
+"@MMK_L_E" = {
+"@MMK_R_A" = -20;
+"@MMK_R_V" = -20;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -40;
+"@MMK_R_asterisk" = -20;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -20;
+"@MMK_R_u" = -20;
+};
+"@MMK_L_F" = {
+"@MMK_R_A" = -140;
+"@MMK_R_C" = -10;
+"@MMK_R_J" = -160;
+"@MMK_R_U" = -20;
+"@MMK_R_V" = -10;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -30;
+"@MMK_R_Z" = -30;
+"@MMK_R_a" = -50;
+"@MMK_R_ampersand" = -80;
+"@MMK_R_at" = -70;
+"@MMK_R_c" = -80;
+"@MMK_R_comma" = -150;
+"@MMK_R_g" = -60;
+"@MMK_R_h" = -30;
+"@MMK_R_i" = -30;
+"@MMK_R_m" = -30;
+"@MMK_R_p" = -30;
+"@MMK_R_s" = -50;
+"@MMK_R_slash" = -120;
+"@MMK_R_u" = -30;
+"@MMK_R_z" = -40;
+};
+"@MMK_L_G" = {
+"@MMK_R_A" = -40;
+"@MMK_R_C" = 10;
+"@MMK_R_T" = -30;
+"@MMK_R_U" = -20;
+"@MMK_R_V" = -60;
+"@MMK_R_X" = -30;
+"@MMK_R_Y" = -70;
+"@MMK_R_Z" = -30;
+"@MMK_R_asterisk" = -50;
+"@MMK_R_comma" = -50;
+"@MMK_R_quotedbl" = -40;
+};
+"@MMK_L_H" = {
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -20;
+};
+"@MMK_L_J" = {
+"@MMK_R_A" = -80;
+"@MMK_R_J" = -90;
+"@MMK_R_S" = -20;
+"@MMK_R_Y" = -20;
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -20;
+"@MMK_R_at" = -30;
+"@MMK_R_colon" = -20;
+"@MMK_R_comma" = -70;
+"@MMK_R_f" = -10;
+"@MMK_R_g" = -20;
+"@MMK_R_i" = -20;
+"@MMK_R_m" = -10;
+"@MMK_R_p" = -20;
+"@MMK_R_plus" = -20;
+"@MMK_R_s" = -10;
+"@MMK_R_slash" = -50;
+"@MMK_R_u" = -30;
+"@MMK_R_v" = -30;
+"@MMK_R_x" = -30;
+"@MMK_R_z" = -30;
+};
+"@MMK_L_K" = {
+"@MMK_R_C" = -60;
+"@MMK_R_J" = -30;
+"@MMK_R_T" = -50;
+"@MMK_R_U" = -60;
+"@MMK_R_V" = -50;
+"@MMK_R_Y" = -50;
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -20;
+"@MMK_R_asterisk" = -30;
+"@MMK_R_at" = -30;
+"@MMK_R_b" = -30;
+"@MMK_R_c" = -50;
+"@MMK_R_colon" = -20;
+"@MMK_R_comma" = -10;
+"@MMK_R_plus" = -70;
+"@MMK_R_quotedbl" = -50;
+"@MMK_R_t" = -50;
+"@MMK_R_u" = -70;
+"@MMK_R_v" = -120;
+};
+"@MMK_L_L" = {
+"@MMK_R_A" = -20;
+"@MMK_R_C" = -10;
+"@MMK_R_S" = -10;
+"@MMK_R_T" = -150;
+"@MMK_R_U" = -80;
+"@MMK_R_V" = -200;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -190;
+"@MMK_R_Z" = -20;
+"@MMK_R_ampersand" = 10;
+"@MMK_R_asterisk" = -160;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -150;
+"@MMK_R_u" = -20;
+"@MMK_R_v" = -80;
+"@MMK_R_x" = -20;
+};
+"@MMK_L_N" = {
+"@MMK_R_A" = -60;
+"@MMK_R_J" = -50;
+"@MMK_R_a" = -20;
+"@MMK_R_at" = -10;
+"@MMK_R_c" = -10;
+"@MMK_R_comma" = -40;
+"@MMK_R_i" = -10;
+"@MMK_R_m" = -10;
+"@MMK_R_p" = -10;
+"@MMK_R_t" = -10;
+"@MMK_R_u" = -20;
+"@MMK_R_v" = -20;
+"@MMK_R_x" = -20;
+};
+"@MMK_L_P" = {
+"@MMK_R_A" = -150;
+"@MMK_R_J" = -190;
+"@MMK_R_U" = -40;
+"@MMK_R_V" = -50;
+"@MMK_R_X" = -60;
+"@MMK_R_Y" = -60;
+"@MMK_R_a" = -50;
+"@MMK_R_ampersand" = -70;
+"@MMK_R_at" = -60;
+"@MMK_R_c" = -60;
+"@MMK_R_comma" = -160;
+"@MMK_R_g" = -50;
+"@MMK_R_h" = -20;
+"@MMK_R_m" = -10;
+"@MMK_R_p" = -10;
+"@MMK_R_s" = -40;
+"@MMK_R_slash" = -130;
+"@MMK_R_u" = -20;
+"@MMK_R_z" = -30;
+};
+"@MMK_L_R" = {
+"@MMK_R_C" = -50;
+"@MMK_R_J" = -30;
+"@MMK_R_T" = -70;
+"@MMK_R_U" = -80;
+"@MMK_R_V" = -100;
+"@MMK_R_Y" = -110;
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -10;
+"@MMK_R_asterisk" = -100;
+"@MMK_R_at" = -20;
+"@MMK_R_b" = -30;
+"@MMK_R_c" = -30;
+"@MMK_R_colon" = -20;
+"@MMK_R_plus" = -60;
+"@MMK_R_quotedbl" = -70;
+"@MMK_R_slash" = 10;
+"@MMK_R_t" = -40;
+"@MMK_R_u" = -60;
+"@MMK_R_v" = -80;
+};
+"@MMK_L_S" = {
+"@MMK_R_A" = -30;
+"@MMK_R_S" = 10;
+"@MMK_R_T" = -20;
+"@MMK_R_U" = -20;
+"@MMK_R_V" = -30;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -50;
+"@MMK_R_ampersand" = 20;
+"@MMK_R_asterisk" = -40;
+"@MMK_R_c" = 10;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -20;
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -10;
+"@MMK_R_x" = -10;
+};
+"@MMK_L_T" = {
+"@MMK_R_A" = -110;
+"@MMK_R_J" = -140;
+"@MMK_R_a" = -30;
+"@MMK_R_ampersand" = -50;
+"@MMK_R_at" = -50;
+"@MMK_R_c" = -60;
+"@MMK_R_comma" = -120;
+"@MMK_R_g" = -60;
+"@MMK_R_plus" = -20;
+"@MMK_R_quotedbl" = 10;
+"@MMK_R_s" = -50;
+"@MMK_R_slash" = -70;
+"@MMK_R_u" = -20;
+"@MMK_R_z" = -20;
+};
+"@MMK_L_V" = {
+"@MMK_R_A" = -160;
+"@MMK_R_C" = -40;
+"@MMK_R_J" = -170;
+"@MMK_R_S" = -30;
+"@MMK_R_V" = 10;
+"@MMK_R_Z" = -30;
+"@MMK_R_a" = -90;
+"@MMK_R_ampersand" = -70;
+"@MMK_R_at" = -110;
+"@MMK_R_c" = -90;
+"@MMK_R_colon" = -50;
+"@MMK_R_comma" = -130;
+"@MMK_R_f" = -30;
+"@MMK_R_g" = -60;
+"@MMK_R_i" = -40;
+"@MMK_R_m" = -70;
+"@MMK_R_p" = -70;
+"@MMK_R_plus" = -50;
+"@MMK_R_quotedbl" = -10;
+"@MMK_R_s" = -70;
+"@MMK_R_slash" = -90;
+"@MMK_R_t" = -40;
+"@MMK_R_u" = -80;
+"@MMK_R_v" = -60;
+"@MMK_R_x" = -60;
+"@MMK_R_z" = -70;
+};
+"@MMK_L_Y" = {
+"@MMK_R_A" = -140;
+"@MMK_R_C" = -80;
+"@MMK_R_J" = -180;
+"@MMK_R_S" = -50;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -10;
+"@MMK_R_Z" = -40;
+"@MMK_R_a" = -120;
+"@MMK_R_ampersand" = -90;
+"@MMK_R_at" = -130;
+"@MMK_R_c" = -110;
+"@MMK_R_colon" = -70;
+"@MMK_R_comma" = -140;
+"@MMK_R_f" = -70;
+"@MMK_R_g" = -110;
+"@MMK_R_h" = -20;
+"@MMK_R_i" = -60;
+"@MMK_R_m" = -100;
+"@MMK_R_p" = -100;
+"@MMK_R_plus" = -70;
+"@MMK_R_quotedbl" = -30;
+"@MMK_R_s" = -100;
+"@MMK_R_slash" = -120;
+"@MMK_R_t" = -70;
+"@MMK_R_u" = -120;
+"@MMK_R_v" = -110;
+"@MMK_R_x" = -100;
+"@MMK_R_z" = -90;
+};
+"@MMK_L_Z" = {
+"@MMK_R_T" = -30;
+"@MMK_R_V" = -20;
+"@MMK_R_Y" = -30;
+"@MMK_R_Z" = -20;
+"@MMK_R_ampersand" = 30;
+"@MMK_R_c" = 20;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -50;
+"@MMK_R_s" = 20;
+"@MMK_R_u" = -20;
+"@MMK_R_v" = -60;
+};
+"@MMK_L_a" = {
+"@MMK_R_asterisk" = -130;
+"@MMK_R_p" = -15;
+"@MMK_R_quotedbl" = -60;
+"@MMK_R_slash" = 10;
+"@MMK_R_t" = -10;
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -30;
+};
+"@MMK_L_ampersand" = {
+"@MMK_R_A" = 20;
+"@MMK_R_T" = -30;
+"@MMK_R_U" = -40;
+"@MMK_R_V" = -100;
+"@MMK_R_Y" = -120;
+"@MMK_R_c" = -10;
+"@MMK_R_five" = -20;
+"@MMK_R_four" = -20;
+"@MMK_R_seven" = -50;
+"@MMK_R_three" = -10;
+"@MMK_R_v" = -20;
+};
+"@MMK_L_asterisk" = {
+"@MMK_R_A" = -150;
+"@MMK_R_C" = -30;
+"@MMK_R_J" = -140;
+"@MMK_R_S" = -10;
+"@MMK_R_X" = -20;
+"@MMK_R_Z" = -20;
+"@MMK_R_c" = -90;
+"@MMK_R_f" = -40;
+"@MMK_R_five" = -50;
+"@MMK_R_four" = -100;
+"@MMK_R_g" = -120;
+"@MMK_R_h" = -20;
+"@MMK_R_i" = -30;
+"@MMK_R_m" = -70;
+"@MMK_R_one" = -20;
+"@MMK_R_p" = -70;
+"@MMK_R_s" = -110;
+"@MMK_R_seven" = 20;
+"@MMK_R_t" = -40;
+"@MMK_R_u" = -70;
+"@MMK_R_v" = -30;
+"@MMK_R_x" = -70;
+"@MMK_R_z" = -70;
+"@MMK_R_zero" = -40;
+};
+"@MMK_L_at" = {
+"@MMK_R_A" = -50;
+"@MMK_R_C" = 20;
+"@MMK_R_V" = -80;
+"@MMK_R_X" = -50;
+"@MMK_R_Y" = -100;
+"@MMK_R_Z" = -30;
+};
+"@MMK_L_b" = {
+"@MMK_R_ampersand" = 20;
+"@MMK_R_asterisk" = -100;
+"@MMK_R_c" = 5;
+"@MMK_R_comma" = -20;
+"@MMK_R_plus" = 10;
+"@MMK_R_quotedbl" = -40;
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -20;
+"@MMK_R_x" = -20;
+};
+"@MMK_L_backslash" = {
+"@MMK_R_C" = -40;
+"@MMK_R_T" = -90;
+"@MMK_R_U" = -70;
+"@MMK_R_V" = -130;
+"@MMK_R_Y" = -120;
+"@MMK_R_Z" = 20;
+"@MMK_R_g" = 110;
+"@MMK_R_p" = 100;
+"@MMK_R_t" = -30;
+"@MMK_R_u" = -30;
+"@MMK_R_v" = -100;
+"@MMK_R_x" = 20;
+"@MMK_R_z" = 20;
+};
+"@MMK_L_c" = {
+"@MMK_R_a" = -10;
+};
+"@MMK_L_colon" = {
+"@MMK_R_C" = 10;
+"@MMK_R_U" = -20;
+"@MMK_R_V" = -50;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -70;
+"@MMK_R_four" = -30;
+"@MMK_R_g" = -20;
+"@MMK_R_x" = -10;
+};
+"@MMK_L_comma" = {
+"@MMK_R_C" = -60;
+"@MMK_R_J" = -20;
+"@MMK_R_S" = -10;
+"@MMK_R_T" = -120;
+"@MMK_R_U" = -70;
+"@MMK_R_V" = -130;
+"@MMK_R_X" = -10;
+"@MMK_R_Y" = -140;
+"@MMK_R_Z" = -20;
+"@MMK_R_c" = -20;
+"@MMK_R_five" = -40;
+"@MMK_R_four" = -50;
+"@MMK_R_g" = -20;
+"@MMK_R_p" = -40;
+"@MMK_R_s" = -20;
+"@MMK_R_seven" = -60;
+"@MMK_R_t" = -60;
+"@MMK_R_three" = -30;
+"@MMK_R_u" = -60;
+"@MMK_R_v" = -100;
+"@MMK_R_z" = -10;
+"@MMK_R_zero" = -60;
+};
+"@MMK_L_d" = {
+"@MMK_R_a" = -10;
+"@MMK_R_asterisk" = -50;
+"@MMK_R_quotedbl" = -20;
+"@MMK_R_slash" = 20;
+"@MMK_R_v" = -20;
+};
+"@MMK_L_e" = {
+"@MMK_R_a" = -20;
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -10;
+"@MMK_R_x" = -20;
+};
+"@MMK_L_f" = {
+"@MMK_R_a" = -30;
+"@MMK_R_asterisk" = 90;
+"@MMK_R_at" = -30;
+"@MMK_R_c" = -20;
+"@MMK_R_comma" = -60;
+"@MMK_R_exclam" = 60;
+"@MMK_R_plus" = -20;
+"@MMK_R_question" = 90;
+"@MMK_R_quotedbl" = 70;
+"@MMK_R_s" = -20;
+"@MMK_R_slash" = -30;
+"@MMK_R_z" = -20;
+};
+"@MMK_L_four" = {
+"@MMK_R_ampersand" = 20;
+"@MMK_R_comma" = -30;
+"@MMK_R_five" = -20;
+"@MMK_R_one" = -10;
+"@MMK_R_plus" = 20;
+"@MMK_R_quotedbl" = -30;
+"@MMK_R_seven" = -30;
+"@MMK_R_zero" = 10;
+};
+"@MMK_L_g" = {
+"@MMK_R_c" = 10;
+"@MMK_R_colon" = 30;
+"@MMK_R_g" = 30;
+"@MMK_R_quotedbl" = 50;
+"@MMK_R_slash" = 90;
+};
+"@MMK_L_j" = {
+"@MMK_R_a" = -10;
+"@MMK_R_asterisk" = -30;
+"@MMK_R_at" = -20;
+"@MMK_R_colon" = -20;
+"@MMK_R_comma" = -20;
+"@MMK_R_slash" = 20;
+"@MMK_R_u" = -20;
+"@MMK_R_x" = -10;
+};
+"@MMK_L_k" = {
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -20;
+"@MMK_R_asterisk" = -70;
+"@MMK_R_at" = -30;
+"@MMK_R_c" = -20;
+"@MMK_R_colon" = -20;
+"@MMK_R_comma" = -20;
+"@MMK_R_plus" = -30;
+"@MMK_R_slash" = 10;
+"@MMK_R_u" = -10;
+"@MMK_R_v" = -20;
+};
+"@MMK_L_one" = {
+"@MMK_R_five" = -40;
+"@MMK_R_four" = -50;
+"@MMK_R_plus" = -40;
+"@MMK_R_quotedbl" = -50;
+"@MMK_R_seven" = -30;
+"@MMK_R_slash" = 20;
+"@MMK_R_three" = -30;
+"@MMK_R_zero" = -30;
+};
+"@MMK_L_plus" = {
+"@MMK_R_A" = -50;
+"@MMK_R_C" = 20;
+"@MMK_R_T" = -20;
+"@MMK_R_U" = -20;
+"@MMK_R_V" = -50;
+"@MMK_R_X" = -70;
+"@MMK_R_Y" = -70;
+"@MMK_R_Z" = -30;
+"@MMK_R_c" = 10;
+"@MMK_R_one" = -40;
+"@MMK_R_seven" = -30;
+"@MMK_R_two" = -30;
+"@MMK_R_x" = -30;
+};
+"@MMK_L_q" = {
+"@MMK_R_asterisk" = -90;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -40;
+"@MMK_R_slash" = 120;
+"@MMK_R_u" = -30;
+"@MMK_R_v" = -30;
+"@MMK_R_x" = -20;
+};
+"@MMK_L_quotedbl" = {
+"@MMK_R_A" = -140;
+"@MMK_R_C" = -10;
+"@MMK_R_J" = -160;
+"@MMK_R_T" = 10;
+"@MMK_R_V" = -10;
+"@MMK_R_X" = -30;
+"@MMK_R_Y" = -20;
+"@MMK_R_Z" = -20;
+"@MMK_R_a" = -30;
+"@MMK_R_c" = -40;
+"@MMK_R_f" = -20;
+"@MMK_R_four" = -100;
+"@MMK_R_g" = -70;
+"@MMK_R_m" = -20;
+"@MMK_R_p" = -10;
+"@MMK_R_s" = -50;
+"@MMK_R_t" = -10;
+"@MMK_R_three" = -10;
+"@MMK_R_u" = -20;
+"@MMK_R_x" = -20;
+"@MMK_R_z" = -30;
+};
+"@MMK_L_r" = {
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -20;
+"@MMK_R_asterisk" = -70;
+"@MMK_R_at" = -20;
+"@MMK_R_b" = -20;
+"@MMK_R_c" = -20;
+"@MMK_R_comma" = -120;
+"@MMK_R_g" = -20;
+"@MMK_R_h" = -20;
+"@MMK_R_slash" = -80;
+};
+"@MMK_L_s" = {
+"@MMK_R_ampersand" = 10;
+"@MMK_R_asterisk" = -90;
+"@MMK_R_comma" = -20;
+"@MMK_R_quotedbl" = -20;
+"@MMK_R_u" = -10;
+};
+"@MMK_L_seven" = {
+"@MMK_R_ampersand" = -80;
+"@MMK_R_colon" = -40;
+"@MMK_R_comma" = -100;
+"@MMK_R_five" = -50;
+"@MMK_R_four" = -120;
+"@MMK_R_plus" = -50;
+"@MMK_R_seven" = 20;
+"@MMK_R_slash" = -80;
+"@MMK_R_three" = -20;
+"@MMK_R_zero" = -30;
+};
+"@MMK_L_t" = {
+"@MMK_R_asterisk" = -60;
+"@MMK_R_c" = -10;
+"@MMK_R_comma" = -20;
+"@MMK_R_g" = -10;
+"@MMK_R_h" = -10;
+"@MMK_R_plus" = -20;
+};
+"@MMK_L_three" = {
+"@MMK_R_ampersand" = 30;
+"@MMK_R_comma" = -20;
+"@MMK_R_five" = -20;
+"@MMK_R_one" = -20;
+"@MMK_R_quotedbl" = -30;
+"@MMK_R_two" = -20;
+};
+"@MMK_L_two" = {
+"@MMK_R_ampersand" = 30;
+"@MMK_R_comma" = -20;
+"@MMK_R_five" = -20;
+"@MMK_R_four" = -50;
+"@MMK_R_quotedbl" = -20;
+};
+"@MMK_L_v" = {
+"@MMK_R_a" = -20;
+"@MMK_R_ampersand" = -40;
+"@MMK_R_asterisk" = -40;
+"@MMK_R_at" = -30;
+"@MMK_R_c" = -20;
+"@MMK_R_comma" = -90;
+"@MMK_R_g" = -20;
+"@MMK_R_h" = -20;
+"@MMK_R_slash" = -70;
+"@MMK_R_v" = 10;
+"@MMK_R_x" = 10;
+};
+"@MMK_L_z" = {
+"@MMK_R_ampersand" = 20;
+"@MMK_R_asterisk" = -80;
+"@MMK_R_comma" = -10;
+"@MMK_R_plus" = -20;
+"@MMK_R_z" = -10;
+};
+"@MMK_L_zero" = {
+"@MMK_R_comma" = -50;
+"@MMK_R_five" = -20;
+"@MMK_R_one" = -20;
+"@MMK_R_two" = -20;
+};
+comma = {
+y = -70;
+};
+ellipsis = {
+y = -70;
+};
+period = {
+y = -70;
+};
+quotedblbase = {
+y = -70;
+};
+quotesinglbase = {
+y = -70;
+};
+};
+};
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+}
+);
+properties = (
+{
+key = copyrights;
+values = (
+{
+language = ENG;
+value = "© 2019 MCKL. All Rights Reserved.";
+}
+);
+},
+{
+key = manufacturers;
+values = (
+{
+language = ENG;
+value = MCKL;
+}
+);
+},
+{
+key = designers;
+values = (
+{
+language = ENG;
+value = "Jeremy Mickel / Forest Young";
+},
+{
+language = FRA;
+value = "Marie Godefroy";
+}
+);
+},
+{
+key = trademarks;
+values = (
+{
+language = ENG;
+value = "Redaction is either a registered trademark or a trademark of MCKL";
+}
+);
+},
+{
+key = licenseURL;
+value = "http://www.mckltype.com";
+},
+{
+key = licenses;
+values = (
+{
+language = ENG;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+}
+);
+},
+{
+key = manufacturerURL;
+value = "http://www.mckltype.com";
+},
+{
+key = designerURL;
+value = "http://www.redaction.us";
+}
+);
+settings = {
+disablesAutomaticAlignment = 1;
+disablesNiceNames = 1;
+};
+unitsPerEm = 1000;
+userData = {
+GSDimensionPlugin.Dimensions = {
+m01 = {
+};
+};
+};
+versionMajor = 2;
+versionMinor = 1;
+}

@@ -1,0 +1,22 @@
+{
+glyphname = dotaccent;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(201,575,l),
+(299,575,l),
+(299,674,l),
+(201,674,l)
+);
+}
+);
+width = 500;
+}
+);
+note = dotaccent;
+unicode = 729;
+}

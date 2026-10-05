@@ -1,0 +1,61 @@
+<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="article-title" filterUnits="objectBoundingBox">
+
+        <feMorphology in="SourceGraphic" radius="90 64" operator="dilate" result="morph3" />
+        <feGaussianBlur in="morph3" stdDeviation="25" result="blur3" />
+        <feComponentTransfer in="blur3" result="color3">
+            <feFuncB type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMorphology in="SourceGraphic" radius="34 26" operator="dilate" result="morph2" />
+        <feGaussianBlur in="morph2" stdDeviation="17" result="blur2" />
+        <feComponentTransfer in="blur2" result="color2">
+            <feFuncG type="table" tableValues="0" />
+            <feFuncR type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMorphology in="SourceGraphic" radius="61 47" operator="dilate" result="morph1" />
+        <feGaussianBlur in="morph1" stdDeviation="23" result="blur1" />
+        <feComponentTransfer in="blur1" result="color1">
+            <feFuncG type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMerge>
+            <feMergeNode in="color3" />
+            <feMergeNode in="color1" />
+            <feMergeNode in="color2" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+
+    </filter>
+
+    <filter id="index-title" filterUnits="objectBoundingBox">
+
+        <feMorphology in="SourceGraphic" radius="42 31" operator="dilate" result="morph3" />
+        <feGaussianBlur in="morph3" stdDeviation="12" result="blur3" />
+        <feComponentTransfer in="blur3" result="color3">
+            <feFuncB type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMorphology in="SourceGraphic" radius="16 12" operator="dilate" result="morph2" />
+        <feGaussianBlur in="morph2" stdDeviation="8" result="blur2" />
+        <feComponentTransfer in="blur2" result="color2">
+            <feFuncG type="table" tableValues="0" />
+            <feFuncR type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMorphology in="SourceGraphic" radius="29 22" operator="dilate" result="morph1" />
+        <feGaussianBlur in="morph1" stdDeviation="11" result="blur1" />
+        <feComponentTransfer in="blur1" result="color1">
+            <feFuncG type="table" tableValues="0" />
+        </feComponentTransfer>
+
+        <feMerge>
+            <feMergeNode in="color3" />
+            <feMergeNode in="color1" />
+            <feMergeNode in="color2" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+
+    </filter>
+</svg>

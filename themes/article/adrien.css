@@ -1,13 +1,6 @@
-/* Reset styles */
-
-* {
-    box-sizing: border-box;
-    font-synthesis: none;
-    padding: initial;
-    margin: initial;
-    text-decoration: none;
-    color: unset;
-}
+/* NOTES
+    - Start local server: php -S localhost:8000 -t .
+*/
 
 /* Fonts: Lack */
 
@@ -139,81 +132,495 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Compagnon";
+    src: url("../../articles/adrien/assets/fonts/compagnon/Compagnon-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    font-synthesis: none;
+    padding: initial;
+    margin: initial;
+    text-decoration: none;
+    color: unset;
+    max-width: initial !important;
+    line-height: initial !important;
+}
+
 /* Styles */
 
-:root {
-    --body-width: 800px;
-    --themes-width: 100px;
+* {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+::selection {
+    background-color: black;
+    color: yellow;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Spectral";
-    width: var(--body-width);
-    margin: 20px auto;
-    display: grid;
-    grid-template-areas:
-        "a b"
-        "c d";
-    grid-gap: 8px 50px;
+    font-feature-settings: "onum";
 }
 
 body>a {
-    grid-area: a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 90%;
+    width: min-content;
+    text-align: center;
+    word-break: break-all;
+    padding: 22px;
+    transition: color .2s ease-in-out;
+    z-index: 6;
 }
 
-#themes {
-    grid-area: c;
+body>a::first-letter {
+    color: white;
 }
 
-#themes legend {
-    font-feature-settings: "c2sc";
-}
-
-#themes input[type=radio] {
-    display: none;
-}
-
-#themes label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#themes label::before {
-    --circle-size: 8px;
-    content: "";
-    width: var(--circle-size);
-    height: var(--circle-size);
-    display: block;
-    border-radius: 100px;
-    box-shadow: 0 0 0 1.2px inset black;
-    margin-right: 5px;
-}
-
-#themes label:hover::before,
-#themes input[type=radio]:checked+label::before {
-    content: "";
-    width: var(--circle-size);
-    height: var(--circle-size);
-    background-color: black;
-    display: block;
-    border-radius: 100px;
+body>a:hover {
+    color: white;
 }
 
 header {
-    grid-area: b;
+    --title-margin-bottom: -158px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+    z-index: 4;
+    position: relative;
+}
+
+header:not(:has(.tags)) {
+    height: fit-content;
+    padding-top: 100px;
+}
+
+header .tags {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .tags .tag {
+    --blur: 0px;
+    filter: blur(var(--blur));
+    transition:
+        font-weight .2s ease-in-out,
+        filter .2s ease-in-out,
+        letter-spacing 6s cubic-bezier(0.76, -0.01, 0.21, 1);
+}
+
+header .tags .tag:nth-last-child(1) {
+    --blur: 2px;
+    font-weight: 900;
+}
+
+header .tags .tag:nth-last-child(2) {
+    --blur: 0.8px;
+    font-weight: 600;
+}
+
+header .tags:has(> :last-child:nth-child(1)) .tag {
+    /* 1 element */
+    --blur: 0px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(1) {
+    /* 2 elements */
+    --blur: 1px;
+}
+
+header .tags:has(> :last-child:nth-child(2)) .tag:nth-last-child(2) {
+    /* 2 elements */
+    --blur: 0px;
+}
+
+header .tags .tag:hover {
+    --blur: 0px !important;
+    font-weight: 400;
+    letter-spacing: 100%;
 }
 
 header .title {
-    font-size: 44px;
+    --hue-rotate: 0deg;
+    order: 1;
+    height: fit-content;
     font-family: "Lack";
+    font-size: 80px;
+    line-height: 106%;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 90px;
+    margin-bottom: var(--title-margin-bottom);
+    margin-top: -50px;
+    letter-spacing: 5%;
+    /* effect  */
+    -webkit-text-stroke: 9px white;
+    filter: url(../../articles/adrien/assets/images/filters.svg#article-title) blur(3.8px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    /*transition: filter 3s ease-in-out;*/
+}
+
+@supports (font: -apple-system-body) {
+
+    /* Target Safari only */
+    header .title {
+        --blur-factor: 1.5;
+        --dist-factor: 1;
+        --dist1: 0px;
+        --dist1-n: calc(-1 * var(--dist1));
+        --blur1: 8px;
+        --dist2: calc(var(--dist1) * var(--dist-factor));
+        --dist2-n: calc(-1 * var(--dist2));
+        --blur2: calc(var(--blur1) * var(--blur-factor));
+        --dist3: calc(var(--dist2) * var(--dist-factor));
+        --dist3-n: calc(-1 * var(--dist3));
+        --blur3: calc(var(--blur2) * var(--blur-factor));
+        filter:
+            drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3) var(--dist3-n) calc(var(--blur3) * 2) yellow) blur(5px) hue-rotate(var(--hue-rotate));
+        -webkit-text-stroke: 11px white;
+    }
+}
+
+header .title:hover {
+    --hue-rotate: 140deg;
+}
+
+header .date {
+    order: 2;
+    z-index: 2;
+    position: absolute;
+    bottom: calc((var(--title-margin-bottom)) + 72px);
+    color: black;
+    font-weight: 500;
+    letter-spacing: 15%;
+}
+
+#themes {
+    --title-width: 20ch;
+    --width: calc(var(--title-width) * 1.05);
+    --margin: 26px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: calc(-50% - var(--margin)) 0;
+    width: var(--width);
+    max-width: 90vw;
+    overflow: scroll;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 100px;
+    /*padding: 5px 12px;*/
+    padding: 0 8px;
+    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow;
+    transition: width .2s ease-in-out;
+    margin: var(--margin);
+    text-wrap: nowrap;
+    overscroll-behavior: none;
+    z-index: 1;
+}
+
+#themes div {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+#themes:hover {
+    --width: 80vw;
+}
+
+#themes legend {
+    flex: 0 0 var(--title-width);
+    text-align: center;
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 8%;
+    overflow: hidden;
+    position: sticky;
+    left: 0;
+    background-color: inherit;
+    padding-right: 15px;
+    margin-right: 10px;
+    box-shadow: 0 0 20px 10px yellow, 0 0 10px 3px yellow;
+    z-index: 1;
+}
+
+#themes:hover div {
+    opacity: 1;
+}
+
+#themes div input[type=radio] {
+    display: none;
+}
+
+#themes div input[type=radio]:checked+label {
+    font-weight: 700;
+}
+
+#themes div label {
+    cursor: pointer;
+    display: block;
+    padding: 4px 6px;
+    transition: all .1s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20%;
+    text-decoration-skip-ink: none;
+}
+
+#themes div label:hover {
+    /*font-weight: 700;*/
+    transform-origin: bottom right;
+    scale: 1.1;
+    rotate: 7deg;
+    text-decoration-color: black;
 }
 
 article {
-    grid-area: d;
+    --font-size: 17px;
+    --text-indent: 35px;
+    --width: 575px;
+    --base-margin: 16px;
+    width: var(--width);
+    margin: 0 auto;
+    border-top: 4px solid black;
+    margin-top: 170px;
+    padding: 26px 0 150px;
+    font-size: var(--font-size);
+    line-height: 138% !important;
+    /*z-index: -1;*/
+}
+
+article * {
+    user-select: text;
+    -webkit-user-select: text;
 }
 
 article p {
-    line-height: 136%;
-    margin-bottom: 14px;
+    line-height: inherit !important;
+    margin-bottom: var(--base-margin);
+    text-indent: var(--text-indent);
+    hyphens: auto;
+}
+
+article h1 {
+    font-family: "Lack";
+    font-size: 38px;
+    line-height: 110% !important;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+}
+
+article h1:not(:first-child) {
+    margin-top: 30px;
+}
+
+article h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 106% !important;
+    margin-bottom: 16px;
+    /*letter-spacing: -1%;*/
+}
+
+article h2:not(:first-child) {
+    margin-top: 24px;
+}
+
+article h3 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 106% !important;
+    margin-bottom: 12px;
+    padding-right: 10%;
+}
+
+article h3:not(:first-child) {
+    margin-top: 19px;
+}
+
+article h4 {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 106% !important;
+    margin-bottom: 9px;
+    padding-right: 10%;
+}
+
+article h4:not(:first-child) {
+    margin-top: 14px;
+}
+
+article h5 {
+    font-family: "Lack";
+    font-size: inherit;
+    line-height: 112% !important;
+    padding-right: 10%;
+    letter-spacing: 2%;
+    margin-bottom: 4px;
+}
+
+article h5:not(:first-child) {
+    margin-top: 9px;
+}
+
+article h6 {
+    font-weight: 100;
+    font-size: inherit;
+    line-height: inherit !important;
+    padding-right: 10%;
+    letter-spacing: 1%;
+}
+
+article blockquote {
+    position: relative;
+    width: calc(100% - (var(--text-indent) * 2));
+    margin: 28px auto;
+    line-height: inherit !important;
+}
+
+article blockquote p {
+    --base-margin: 15px;
+    text-indent: initial;
+}
+
+article blockquote::after {
+    --extraX: 10%;
+    --extraY: 15%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + var(--extraX));
+    height: calc(100% + var(--extraY));
+    translate: calc(-1 * (var(--extraX) / 2)) calc(-1 * (var(--extraY) / 2));
+    background-color: rgba(255, 0, 255, 0.4);
+    border-radius: 100px;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+article blockquote *::selection {
+    background-color: magenta;
+    color: white;
+}
+
+/*article blockquote blockquote::after {
+    display: none;
+}*/
+
+article code {
+    font-family: "Compagnon";
+}
+
+article pre {
+    background-color: black;
+    color: white;
+    text-indent: initial;
+    padding: 8px 14px;
+    margin: 0 0 var(--base-margin) var(--text-indent);
+    width: calc(100% - var(--text-indent));
+    font-family: "Compagnon";
+    counter-increment: pre-count;
+    position: relative;
+}
+
+article pre::after {
+    content: "c" counter(pre-count);
+    position: absolute;
+    bottom: 0;
+    left: calc(-1 * var(--text-indent));
+    width: calc(100% + var(--text-indent));
+}
+
+article pre::after,
+article p:has(img:only-child)::after,
+article p:has(img+em) em::before {
+    font-size: 14px;
+    font-family: "Spectral";
+    font-feature-settings: "smcp";
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+    font-style: normal;
+    height: 100%;
+}
+
+article p:has(img) {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--text-indent);
+    counter-increment: figure-count;
+    position: relative;
+    text-indent: initial;
+    width: 100%;
+}
+
+article p:has(img:only-child)::after,
+article p:has(img+em) em::before {
+    content: "f" counter(figure-count);
+    position: absolute;
+}
+
+article p:has(img:only-child)::after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+article p:has(img+em) em {
+    position: relative;
+}
+
+article p:has(img+em) em::before {
+    left: calc(-1 * var(--text-indent));
+    top: -100%;
+    width: calc(100% + var(--text-indent));
+}
+
+article p:has(img) img+em {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 3px 8px;
+    line-height: 130% !important;
+}
+
+article img {
+    width: 100%;
+    user-select: none !important;
+}
+
+article hr {
+    border: initial;
+    border-bottom: 2.5px solid black;
 }

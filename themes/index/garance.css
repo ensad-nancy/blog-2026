@@ -1,3 +1,148 @@
+@font-face {
+    font-family: "Chaloupée";
+    src: url("../../articles/garance/assets/fonts/Chaloupee-Regular.otf"), format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Chaloupée Bold";
+    src: url("../../articles/garance/assets/fonts/Chaloupee-Black.otf"), format(woff);
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "NCS";
+    src: url("../../articles/garance/assets/fonts/NotCourierSans.otf"), format(otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NCS";
+    src: url("../../articles/garance/assets/fonts/NotCourierSans-Bold.otf"), format(otf);
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Guilt Wafer";
+    src: url("../../articles/garance/assets/fonts/SansGuiltWafer.otf"), format(otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*BODY*/
+
 body {
+    font-family: "NCS";
+    font-style: normal;
+    color: chartreuse;
+    background-image: linear-gradient(black, blue, red, rgb(255, 102, 0));
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas: 
+        "a a j"
+        "g h i"
+        "e e i";
+    margin: 0px 200px 0px 200px;
+}
+
+#title {
+    grid-area: g;
+    font-family: "Chaloupée";
+}
+
+body p{
+    grid-area: h;
+    height: fit-content;
+}
+
+#themes {
+    grid-area: i;
+    position: sticky;
+    top: 0;
+    outline: 6px;
+    outline-style: inset;
+    background-color: black;
+    padding: 10%;
+    color: hsl(90, 100%, 50%);
+    font-family: "NCS";
+    height: fit-content;
+    max-width: 150%;
+    text-align: center;
+}
+
+#themes label:hover {
     background-color: chartreuse;
+    color: black;
+    font-family: "NCS";
+    font-style: bold;
+}
+
+#themes legend {
+    display: none;
+}
+
+#themes input[type="radio"] {
+    display : none;
+}
+
+body .auteurices{
+    grid-area: j;
+}
+
+main {
+    grid-area: e;
+
+}
+
+main a div{
+    display: grid;
+    grid-template-areas: 
+        "k l"
+        "m l" ;
+    width : 400px;
+}
+
+main a {
+    display: inline-flex ;
+    outline: solid 6px chartreuse;
+    margin: 2%;
+    color: chartreuse;
+    background-color: black;
+    height: 250px;
+    width: 400px;
+}
+
+main a h3{
+    grid-area: k;
+    font-family: "Chaloupée";
+    font-size: 15pt;
+    text-align: center;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+main a .footer{
+    grid-area: m;
+        width: 200px;
+}
+
+main a p{
+    font-size: 10pt;
+    margin: 6px;
+}
+
+main a img{
+    grid-area: l;
+    padding: 3%;
+    height: 200px;
+}
+
+body .date {
+    grid-area: a;
 }
