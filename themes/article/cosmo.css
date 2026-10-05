@@ -1,5 +1,7 @@
 body {
     background-color: greenyellow;
+    grid-template-columns: repeat(3,3fr);
+    display: flex;
 }
 
 article {
@@ -19,6 +21,7 @@ h2 {
 
 header {
     background-color: hotpink;
+    text-align: center;
 }
 
 
