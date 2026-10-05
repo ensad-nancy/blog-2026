@@ -1,7 +1,7 @@
 @font-face {
   font-family: "tremplin";
-  src: url("");
+  src: url("articles/maxence/assets/fonts/Tremplin-Regular.otf");
 }
 body{
-background-color: rgb(146, 165, 168);
+background-color: rgb(131, 143, 145);
 }
