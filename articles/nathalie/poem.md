@@ -1,128 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+date: 2026-09-28
+tags: poem
+preview:
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+# Lights
 
-  <title>Lights</title>
+<div class="poem">
 
-  <link rel="stylesheet" href="style.css">
-</head>
+October comes
 
-<body>
+Can’t find somebody
 
-  <h1>Lights</h1>
+Car lights come…
 
-  <div class="poem">
+Exciting, sexy, fun –
 
-    <p>
-      October comes
-      <br><br>
+<div class="lust">lust</div>
 
-      Can’t find somebody
-      <br><br>
+… and goes.
 
-      Car lights come…
-      <br><br>
-
-      Exciting, sexy, fun –
-    </p>
-
-    <div class="lust">
-      lust
-    </div>
-
-    <p>
-      … and goes.
-      <br><br>
-
-      One-night stands.
-      <br><br><br>
+One-night stands.
 
 
-      November comes
-      <br><br>
 
-      Somebody different
-      <br><br>
+November comes
 
-      Completely different
-      <br><br>
+Somebody different
 
-      Car lights come…
-      <br><br>
+Completely different
 
-      Careful, smooth, kind –
-    </p>
+Car lights come…
 
-    <div class="love">
-      love
-    </div>
+Careful, smooth, kind –
 
-    <p>
-      … and goes.
-      <br><br>
+<div class="love">love</div>
 
-      Lovelorn.
-      <br><br><br>
+… and goes.
+
+Lovelorn.
 
 
-      October, November,
-      <br><br>
 
-      Exciting, Careful,
-      <br>
+October, November,
 
-      Sexy, Smooth,
-      <br>
+Exciting, Careful,
 
-      Fun, Kind,
-      <br><br>
+Sexy, Smooth,
 
-      One-night stands,
-      <br>
-
-      Lovelorn.
-      <br><br>
-
-      Goes and goes.
-      <br><br><br>
+Fun, Kind,
 
 
-      Can’t find somebody completely different.
-      <br><br><br>
+One-night stands,
+
+Lovelorn.
 
 
-      Acteur, Stories,
-      <br>
-
-      Stories, Actress,
-      <br>
-
-      Acteur, Stories,
-      <br>
-
-      Stories, Actress.
-      <br><br><br>
+Goes and goes.
 
 
-      Lights.
-      <br><br>
 
-      Comes and goes.
-    </p>
-
-  </div>
+Can’t find somebody completely different.
 
 
-  <img class="photo" src="bild.jpg" alt="">
+
+Acteur, Stories,
+
+Stories, Actress,
+
+Acteur, Stories,
+
+Stories, Actress.
 
 
-  <div class="small-light">
-    Lights
-  </div>
+<div class="lights-small">Lights.</div>
 
-</body>
+Comes and goes.
 
-</html>
+</div>
