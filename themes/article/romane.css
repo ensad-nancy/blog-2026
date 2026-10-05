@@ -15,5 +15,6 @@ h2{
 p{
     color :#140404;
     font-family:'Courier New', Courier, monospace;
+    grid-template-areas: initial;
     }
 
