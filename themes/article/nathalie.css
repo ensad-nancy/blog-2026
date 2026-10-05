@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Monsieur+La+Doulaise&display=swap');
 
-
 body {
   margin: 0;
   padding: 40px;
@@ -11,95 +10,70 @@ body {
   font-family: 'DM Sans', sans-serif;
 
   position: relative;
-
   min-height: 1800px;
 }
 
 
-/* große Überschrift */
+/* Überschrift */
 
 h1 {
-  margin: 0;
-
   font-family: 'Monsieur La Doulaise', cursive;
-
   font-size: 130px;
   font-weight: normal;
 
-  line-height: 1;
+  margin: 0 0 50px 0;
 }
 
 
-/* Gedicht */
+/* normaler Gedichttext */
 
-.poem {
+p {
   width: 320px;
 
-  margin-top: 60px;
-  margin-left: 140px;
-}
+  margin-left: 180px;
 
-
-.poem p {
   font-size: 16px;
-  line-height: 1.4;
-
-  margin: 0;
+  line-height: 1.5;
 }
 
 
 /* lust */
 
-.lust {
+strong {
   position: absolute;
 
-  top: 300px;
-  left: 600px;
+  top: 350px;
+  left: 650px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-
-  font-size: 70px;
+  font-size: 80px;
+  font-weight: normal;
 }
 
 
 /* love */
 
-.love {
+em {
   position: absolute;
 
   top: 700px;
-  left: 40px;
+  left: 70px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-
-  font-size: 85px;
+  font-size: 90px;
+  font-style: normal;
 }
 
 
-/* Bild */
+/* Lights unten */
 
-.photo {
+strong em {
   position: absolute;
 
-  top: 210px;
-  right: 80px;
-
-  width: 280px;
-
-  z-index: -1;
-}
-
-
-/* zweites kleines Lights */
-
-.small-light {
-  position: absolute;
-
-  top: 1180px;
-  right: 100px;
+  top: 1250px;
+  left: 700px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-
   font-size: 100px;
 
   transform: rotate(-8deg);

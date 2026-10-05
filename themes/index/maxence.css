@@ -1,4 +1,7 @@
+@font-face {
+  font-family: "tremplin";
+  src: url("");
+}
 body{
-background-color: rgb(157, 245, 255);
-
+background-color: rgb(146, 165, 168);
 }
