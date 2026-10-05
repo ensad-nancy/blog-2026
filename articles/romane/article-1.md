@@ -7,7 +7,6 @@ preview: assets/images/7420442-728862511.jpg
 
 # Plat salé et l'Odyssée 
 
-## Premier sous-tire
 
 Comme toute personne vivant seule, manger face à un mur semble ennuyeux, alors elle profite de ce moment pour regarder un film, une vidéo ou la télé. Ainsi, elle se retrouve nez à nez avec moi, tentant désespérément de trouver de quoi alimenter sa culture du vide. Mais apparemment l’algorithme YouTube en a décidé autrement. Celui-ci lui propose une playlist de vidéos réalisée par Arte, il s’agit d’une série de plusieurs épisodes consacrée aux mythes de l’Odyssée et de l’Iliade.
 
