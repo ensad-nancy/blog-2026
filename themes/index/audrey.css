@@ -7,10 +7,21 @@ body{
     font-family: "bbbsprat";
     src: url(articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-Regular.woff);
 }
-
+@font-face {
+    font-family: "azeret";
+    src: url(articles/audrey/assets/fonts/AzeretMono-Lightcopie.otf);
+}
 
 h1{
     font-family: "bbbsprat";
-    font-size: 25pt;
+    font-size: 45pt;
     color: aquamarine;
+}
+
+legend{
+    font-family: "azeret";
+    color: white;
+    text-decoration: underline;
+    background-color: black;
+    font-size: 15pt;
 }
