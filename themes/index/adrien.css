@@ -164,7 +164,7 @@
 body {
     --banner-height: 0px;
     --col-width: 550px;
-    --col-gap: 54px;
+    --col-gap: 50px;
     font-family: "Spectral";
     font-feature-settings: "onum";
     display: grid;
@@ -209,7 +209,7 @@ main {
     grid-template-columns: var(--col-width) var(--col-width);
     width: fit-content;
     margin: 0 auto;
-    gap: 45px var(--col-gap);
+    gap: 40px var(--col-gap);
 }
 
 main a div {
@@ -232,7 +232,7 @@ main a:hover footer {
 }*/
 
 main a div img.thumb {
-    --size: 250px;
+    --size: 235px;
     width: var(--size);
     height: var(--size);
     object-position: top;
@@ -257,7 +257,7 @@ main a div h3 {
     -webkit-text-stroke: 5.6px white;
     filter: url(../../articles/adrien/assets/images/filters.svg#index-title) blur(2.5px) saturate(1.2) hue-rotate(var(--hue-rotate));
     order: 0;
-    margin-top: -15px;
+    margin-top: -60px;
     /*transition: all .2s ease-in-out;*/
 }
 
@@ -516,7 +516,7 @@ main a div footer p span.tag:not(:last-child)::after {
     scale: 0.95;
 }
 
-#date input::-moz-range-thumb:hover {
+#date input::-moz-range-thumb:active {
     scale: 0.95;
 }
 
@@ -598,4 +598,51 @@ body>p span {
     font-weight: 600;
     font-size: 101%;
     text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1365px) {
+    body {
+        --col-width: 400px;
+    }
+
+    main a div h3 {
+        font-size: 30px;
+        padding: 45px;
+        margin-top: -20px;
+    }
+
+    main a div img.thumb {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    body {
+        --col-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    body {
+        /*--col-width: calc(100vw - 600px);*/
+        --padX: 125px;
+        display: flex;
+        flex-direction: column;
+        padding-left: var(--padX);
+        padding-right: var(--padX);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main a div h3 {
+        font-size: 38px;
+    }
 }

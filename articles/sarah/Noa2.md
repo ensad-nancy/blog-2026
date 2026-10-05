@@ -1,10 +1,10 @@
 ---
 title: Blog de Noa
 date: 2026-09-21
-tags: billets, train, couleurs, détails
+tags: poème, liste, hasard
 ---
 
-# Blog de Noa #1
+# Blog de Noa #2
 
 ## Ce que j'écris - 28/09/26
 
