@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L_L" format="2">
+	<advance width="1087"/>
+	<unicode hex="F3220"/>
+	<outline>
+		<component base="L" xOffset="442"/>
+		<contour>
+			<point x="681" y="41" type="line"/>
+			<point x="476" y="36"/>
+			<point x="431" y="41"/>
+			<point x="184" y="41" type="curve"/>
+			<point x="184" y="61" type="line"/>
+			<point x="220" y="61" type="line"/>
+			<point x="220" y="595" type="line" smooth="yes"/>
+			<point x="220" y="640"/>
+			<point x="244" y="665"/>
+			<point x="291" y="669" type="curve" smooth="yes"/>
+			<point x="314" y="671" type="line"/>
+			<point x="314" y="700" type="line"/>
+			<point x="20" y="700" type="line"/>
+			<point x="20" y="671" type="line"/>
+			<point x="43" y="669" type="line" smooth="yes"/>
+			<point x="90" y="665"/>
+			<point x="114" y="640"/>
+			<point x="114" y="595" type="curve" smooth="yes"/>
+			<point x="114" y="105" type="line" smooth="yes"/>
+			<point x="114" y="60"/>
+			<point x="90" y="35"/>
+			<point x="43" y="31" type="curve" smooth="yes"/>
+			<point x="20" y="29" type="line"/>
+			<point x="20" y="0" type="line"/>
+			<point x="587" y="0" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2026-03-10 14:13:16 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>L</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>L</string>
+		</dict>
+	</lib>
+</glyph>

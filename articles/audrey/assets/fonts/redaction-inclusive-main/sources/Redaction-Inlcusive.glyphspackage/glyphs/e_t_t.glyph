@@ -1,0 +1,20 @@
+{
+glyphname = e_t_t;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = e_t;
+},
+{
+pos = (666,0);
+ref = t;
+}
+);
+width = 994;
+}
+);
+metricRight = "=t";
+unicode = 989552;
+}

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="O" format="2">
+  <advance width="521"/>
+  <unicode hex="004F"/>
+  <unicode hex="006F"/>
+  <note>
+O
+</note>
+  <outline>
+    <contour>
+      <point x="260" y="-25" type="curve" smooth="yes"/>
+      <point x="379" y="-25"/>
+      <point x="500" y="72"/>
+      <point x="501" y="345" type="curve" smooth="yes"/>
+      <point x="502" y="610"/>
+      <point x="379" y="716"/>
+      <point x="260" y="716" type="curve" smooth="yes"/>
+      <point x="141" y="716"/>
+      <point x="20" y="610"/>
+      <point x="20" y="341" type="curve" smooth="yes"/>
+      <point x="20" y="72"/>
+      <point x="141" y="-25"/>
+    </contour>
+    <contour>
+      <point x="260" y="10" type="curve" smooth="yes"/>
+      <point x="167" y="10"/>
+      <point x="85" y="102"/>
+      <point x="85" y="341" type="curve" smooth="yes"/>
+      <point x="85" y="580"/>
+      <point x="167" y="681"/>
+      <point x="260" y="681" type="curve" smooth="yes"/>
+      <point x="353" y="681"/>
+      <point x="437" y="580"/>
+      <point x="436" y="344" type="curve" smooth="yes"/>
+      <point x="435" y="102"/>
+      <point x="353" y="10"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-03 14:47:26 +0000</string>
+    </dict>
+  </lib>
+</glyph>

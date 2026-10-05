@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Igrave" format="2">
+	<advance width="334"/>
+	<unicode hex="00CC"/>
+	<note>
+		Igrave
+	</note>
+	<outline>
+		<contour>
+			<point x="220" y="105" type="curve" smooth="yes"/>
+			<point x="220" y="595" type="line" smooth="yes"/>
+			<point x="220" y="640.333"/>
+			<point x="243.667" y="665"/>
+			<point x="291" y="669" type="curve" smooth="yes"/>
+			<point x="314" y="671" type="line"/>
+			<point x="314" y="700" type="line"/>
+			<point x="20" y="700" type="line"/>
+			<point x="20" y="671" type="line"/>
+			<point x="43" y="669" type="line" smooth="yes"/>
+			<point x="90.333" y="665"/>
+			<point x="114" y="640.333"/>
+			<point x="114" y="595" type="curve" smooth="yes"/>
+			<point x="114" y="105" type="line" smooth="yes"/>
+			<point x="114" y="59.667"/>
+			<point x="90.333" y="35"/>
+			<point x="43" y="31" type="curve" smooth="yes"/>
+			<point x="20" y="29" type="line"/>
+			<point x="20" y="0" type="line"/>
+			<point x="314" y="0" type="line"/>
+			<point x="314" y="29" type="line"/>
+			<point x="291" y="31" type="line" smooth="yes"/>
+			<point x="243.667" y="35"/>
+			<point x="220" y="59.667"/>
+		</contour>
+		<contour>
+			<point x="65" y="858" type="curve" smooth="yes"/>
+			<point x="238" y="765" type="line"/>
+			<point x="242" y="765" type="line"/>
+			<point x="149" y="901" type="line" smooth="yes"/>
+			<point x="123.667" y="937"/>
+			<point x="107.667" y="950"/>
+			<point x="81" y="950" type="curve" smooth="yes"/>
+			<point x="51.667" y="950"/>
+			<point x="33" y="930"/>
+			<point x="33" y="906" type="curve" smooth="yes"/>
+			<point x="33" y="887.333"/>
+			<point x="45" y="868.667"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:37:10 +0000</string>
+		</dict>
+	</lib>
+</glyph>
