@@ -32,7 +32,19 @@ body>a {
   width: 120px;
   grid-area: c;
 }
+#index.php a{
+   border: solid 2px rgb(203, 253, 0);
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+#themes legend {
+  border: solid 2px rgb(11, 11, 11);
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
 #themes div {
   border: solid 2px rgb(11, 11, 11);
   height: 40px;
