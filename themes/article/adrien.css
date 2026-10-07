@@ -404,7 +404,7 @@ header .date {
 article {
     --font-size: 17px;
     --text-indent: 35px;
-    --width: 575px;
+    --width: 560px;
     --base-margin: 16px;
     width: var(--width);
     margin: 0 auto;
@@ -539,6 +539,7 @@ article blockquote *::selection {
 
 article code {
     font-family: "Compagnon";
+    white-space: break-spaces;
 }
 
 article pre {
@@ -561,19 +562,31 @@ article pre::after {
     width: calc(100% + var(--text-indent));
 }
 
-article pre::after,
-article p:has(img:only-child)::after,
-article p:has(img+em) em::before {
-    font-size: 14px;
+article p:has(img+em) {
+    position: relative;
+    margin-bottom: calc(var(--base-margin) + 6px);
+}
+
+article p:has(img+em) em {
+    font-size: 15px;
     font-family: "Spectral";
-    font-feature-settings: "smcp";
     color: black;
     display: flex;
     align-items: flex-end;
-    border-bottom: 1px solid black;
-    font-style: normal;
+    /*border-bottom: 1px solid black;*/
     height: 100%;
+    width: fit-content;
+    margin-top: 10px;
+    line-height: 122% !important;
+    transition: filter 3s cubic-bezier(0.76, -0.01, 0.21, 1), color 3s cubic-bezier(0.76, -0.01, 0.21, 1);
 }
+
+/*article p:has(img+em):hover em {
+    position: relative;
+    top: 100%;
+    left: -50%;
+    z-index: 1;
+}*/
 
 article p:has(img) {
     display: flex;
@@ -585,39 +598,23 @@ article p:has(img) {
     width: 100%;
 }
 
-article p:has(img:only-child)::after,
-article p:has(img+em) em::before {
-    content: "f" counter(figure-count);
-    position: absolute;
+article p:has(img):hover img {
+    filter: blur(35px) saturate(250%);
 }
 
-article p:has(img:only-child)::after {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-article p:has(img+em) em {
-    position: relative;
-}
-
-article p:has(img+em) em::before {
-    left: calc(-1 * var(--text-indent));
-    top: -100%;
-    width: calc(100% + var(--text-indent));
-}
-
-article p:has(img) img+em {
-    background-color: black;
+/*article p:has(img+em):hover em {
     color: white;
-    width: fit-content;
-    padding: 3px 8px;
-    line-height: 130% !important;
-}
+    filter: blur(1px) saturate(200%) drop-shadow(0 0 30px blue) drop-shadow(0 0 20px blue) drop-shadow(0 0 10px blue);
+    translate: 0 -100%;
+}*/
 
-article img {
+article p img {
     width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    object-position: center;
     user-select: none !important;
+    transition: filter 3s cubic-bezier(0.76, -0.01, 0.21, 1);
 }
 
 article hr {
