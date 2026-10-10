@@ -29,8 +29,8 @@ article {
 
 }
 
-
 header {
+    position: fixed;
     background-color: hotpink;
     text-align: center;
     
