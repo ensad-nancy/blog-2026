@@ -9,8 +9,10 @@ body > a {
     padding: 0 400px;
 }
  #themes { 
-    position: fixed;
-    padding: 0 200px;
+    position: absolute;
+    
+    bottom: 1;
+    left: 1;
    
   } 
 
@@ -20,7 +22,7 @@ article {
     font-size: 72pt;
     overflow: scroll;
     width: 840px;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
    
