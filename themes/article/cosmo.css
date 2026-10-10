@@ -6,7 +6,11 @@ body {
 
 body > a {
     position: fixed;
-    padding: 0 400px;
+    width: 840px;
+    padding: 9em 1em;
+    background-color: aquamarine;
+    text-align: center;
+    
 }
  #themes { 
     position: absolute;
@@ -32,6 +36,7 @@ header {
     background-color: hotpink;
     text-align: center;
     padding: 0 0px;
+    width: 840px;
     
 }
 
