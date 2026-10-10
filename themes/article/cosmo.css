@@ -35,7 +35,9 @@ header {
     
 }
 
-
+article , header {
+    grid-column: 2;
+}
 
 
 
