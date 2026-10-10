@@ -10,14 +10,13 @@ body > a {
     padding: 9em 1em;
     background-color: aquamarine;
     text-align: center;
-    
 }
+
  #themes { 
     position: absolute;
     bottom: 0;
     left: 0;
-   
-  } 
+} 
 
 article {
     background-color: rgb(250, 163, 163);
@@ -28,7 +27,6 @@ article {
     position: absolute;
     right: 0;
     top: 0;
-   
 }
 
 header {
@@ -37,7 +35,6 @@ header {
     text-align: center;
     padding: 0 0px;
     width: 840px;
-    
 }
 
 
