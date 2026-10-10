@@ -20,8 +20,9 @@ article {
     font-size: 72pt;
     overflow: scroll;
     width: 840px;
-    display: flex;
-    justify-content: end;
+    position: fixed;
+    right: 0;
+    top: 0;
    
 }
 
