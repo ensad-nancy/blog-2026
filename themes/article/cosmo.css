@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto 1fr ;
+    display: flex;
+    flex-direction: row;
     
-
 }
 
+body > a {
+    position: fixed;
+}
 /* #themes {
     background-color: rgb(144, 120, 120);
     display: flex;
