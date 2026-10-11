@@ -92,9 +92,11 @@ $mdContent = preg_replace(
         <?php if ($tags): ?>
         <p class="tags">
             <?php foreach (explode(',', $tags) as $tag): ?>
+            <?php if (isset($tag) && $tag !== ''): ?>
             <span class="tag">
                 <?= htmlspecialchars(trim($tag)) ?>
             </span>
+            <?php endif; ?>
             <?php endforeach; ?>
         </p>
         <?php endif; ?>

@@ -131,9 +131,11 @@ function parseFrontMatter($path)
                     <?php if ($article['tags']): ?>
                     <p><strong>Tags :</strong>
                         <?php foreach (explode(',', $article['tags']) as $tag): ?>
+                        <?php if (isset($tag) && $tag !== ''): ?>
                         <span class="tag">
                             <?= htmlspecialchars(trim($tag)) ?>
                         </span>
+                        <?php endif; ?>
                         <?php endforeach; ?>
                     </p>
                     <?php endif; ?>
