@@ -48,13 +48,13 @@ function parseFrontMatter($path)
     <div id="themes">
         <legend>Changer le thème :</legend>
         <?php foreach ($students as $student): $studentSlug = htmlspecialchars($student); ?>
-            <div>
-                <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
-                    onChange="changeTheme()" checked />
-                <label for="theme-<?= $studentSlug ?>">
-                    <?= ucfirst($studentSlug) ?>
-                </label>
-            </div>
+        <div>
+            <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
+                onChange="changeTheme()" checked />
+            <label for="theme-<?= $studentSlug ?>">
+                <?= ucfirst($studentSlug) ?>
+            </label>
+        </div>
         <?php endforeach; ?>
     </div>
 
@@ -72,9 +72,9 @@ function parseFrontMatter($path)
             <select name="authors" id="authors">
                 <option value="all">Tous les auteurs</option>
                 <?php foreach ($students as $student): ?>
-                    <option value="<?= htmlspecialchars($student) ?>">
-                        <?= ucfirst(htmlspecialchars($student)) ?>
-                    </option>
+                <option value="<?= htmlspecialchars($student) ?>">
+                    <?= ucfirst(htmlspecialchars($student)) ?>
+                </option>
                 <?php endforeach; ?>
             </select>
         </div>
@@ -113,35 +113,35 @@ function parseFrontMatter($path)
         });
         ?>
         <?php foreach ($allArticles as $article): ?>
-            <a href="article.php?student=<?= urlencode($article['student']) ?>&file=<?= urlencode($article['file']) ?>&date=<?= urlencode($article['date']) ?>"
-                data-author="<?= htmlspecialchars($article['student']) ?>"
-                data-date="<?= htmlspecialchars($article['date']) ?>">
-                <div>
-                    <h3>
-                        <?= htmlspecialchars($article['title']) ?>
-                    </h3>
-                    <footer>
-                        <p><strong>Auteur·ice :</strong>
-                            <?= ucfirst(htmlspecialchars($article['student'])) ?>
-                        </p>
-                        <p><strong>Date :</strong>
-                            <?= htmlspecialchars($article['date']) ?>
-                        </p>
-                        <?php if ($article['tags']): ?>
-                            <p><strong>Tags :</strong>
-                                <?php foreach (explode(',', $article['tags']) as $tag): ?>
-                                    <span class="tag">
-                                        <?= htmlspecialchars(trim($tag)) ?>
-                                    </span>
-                                <?php endforeach; ?>
-                            </p>
-                        <?php endif; ?>
-                    </footer>
-                    <?php if ($article['preview']): ?>
-                        <img src="<?= htmlspecialchars($article['preview']) ?>" alt="" class="thumb">
+        <a href="article.php?student=<?= urlencode($article['student']) ?>&file=<?= urlencode($article['file']) ?>&date=<?= urlencode($article['date']) ?>"
+            data-author="<?= htmlspecialchars($article['student']) ?>"
+            data-date="<?= htmlspecialchars($article['date']) ?>">
+            <div>
+                <h3>
+                    <?= htmlspecialchars($article['title']) ?>
+                </h3>
+                <footer>
+                    <p><strong>Auteur·ice :</strong>
+                        <?= ucfirst(htmlspecialchars($article['student'])) ?>
+                    </p>
+                    <p><strong>Date :</strong>
+                        <?= htmlspecialchars($article['date']) ?>
+                    </p>
+                    <?php if ($article['tags']): ?>
+                    <p><strong>Tags :</strong>
+                        <?php foreach (explode(',', $article['tags']) as $tag): ?>
+                        <span class="tag">
+                            <?= htmlspecialchars(trim($tag)) ?>
+                        </span>
+                        <?php endforeach; ?>
+                    </p>
                     <?php endif; ?>
-                </div>
-            </a>
+                </footer>
+                <?php if ($article['preview']): ?>
+                <img src="<?= htmlspecialchars($article['preview']) ?>" alt="" class="thumb">
+                <?php endif; ?>
+            </div>
+        </a>
         <?php endforeach; ?>
     </main>
 
