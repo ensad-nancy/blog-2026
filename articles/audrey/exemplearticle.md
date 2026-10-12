@@ -1,7 +1,7 @@
 ---
 title: 5 poems of exploitation
 date: 2026-09-28
-tags: everygirl_is_aweirdgirl
+tags: /@everygirl_is_aweirdgirl
 preview: 
 ---
 

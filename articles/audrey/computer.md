@@ -1,7 +1,7 @@
 ---
 title: Hello Computer
 date: 2026-10-02
-tags: everygirl_is_aweirdgirl
+tags: /@everygirl_is_aweirdgirl
 preview: 
 ---
 
