@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030A.case" format="2">
+	<advance width="314"/>
+	<anchor x="159" y="460" name="_top"/>
+	<anchor x="159" y="887" name="top"/>
+	<outline>
+		<component base="uni030A" xOffset="27"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>uni030A</string>
+				</dict>
+			</array>
+		</dict>
+	</lib>
+</glyph>

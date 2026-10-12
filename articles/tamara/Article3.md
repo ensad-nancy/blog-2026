@@ -2,7 +2,7 @@
 title: Mommy
 date: 2026-10-12
 tags: 
-preview: articles/tamara/assets/images/188421-mommy-0-2000-0-3000-crop.jpg
+preview: assets/images/188421-mommy-0-2000-0-3000-crop.jpg
 ---
 
 # Mommy

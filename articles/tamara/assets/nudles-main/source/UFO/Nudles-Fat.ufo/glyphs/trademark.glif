@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="trademark" format="2">
+	<advance width="843"/>
+	<unicode hex="2122"/>
+	<outline>
+		<contour>
+			<point x="70" y="604" type="move"/>
+			<point x="109" y="653"/>
+			<point x="151" y="655"/>
+			<point x="213" y="655" type="curve" smooth="yes"/>
+			<point x="269" y="655"/>
+			<point x="349" y="595"/>
+			<point x="357" y="584" type="curve"/>
+		</contour>
+		<contour>
+			<point x="257" y="741" type="move"/>
+			<point x="198" y="658"/>
+			<point x="194" y="582"/>
+			<point x="194" y="476" type="curve" smooth="yes"/>
+			<point x="194" y="452"/>
+			<point x="191" y="428"/>
+			<point x="185" y="406" type="curve"/>
+		</contour>
+		<contour>
+			<point x="429" y="467" type="move"/>
+			<point x="429" y="486"/>
+			<point x="429" y="504"/>
+			<point x="429" y="522" type="curve" smooth="yes"/>
+			<point x="429" y="581"/>
+			<point x="436" y="692"/>
+			<point x="488" y="692" type="curve" smooth="yes"/>
+			<point x="538" y="692"/>
+			<point x="502" y="614"/>
+			<point x="552" y="614" type="curve" smooth="yes"/>
+			<point x="597" y="614"/>
+			<point x="580" y="707"/>
+			<point x="624" y="707" type="curve" smooth="yes"/>
+			<point x="721" y="707"/>
+			<point x="745" y="444"/>
+			<point x="682" y="395" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>superiors</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

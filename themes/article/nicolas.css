@@ -10,7 +10,6 @@
 body {
   font-family: "Karrik", serif;
   margin: 0;
-  padding: 0;
   background-color: rgb(255, 255, 255);
   text-align: left;
   display: grid;
@@ -19,25 +18,39 @@ body {
     "c d";
   
   grid-template-columns: repeat(1, 1fr); 
-  gap: 30px ;                    
+  column-gap: 30px ;                    
    padding: 0 30px 0 0;
+   
 
 }
-
+a {
+  border: solid 2px rgb(0, 0, 0);
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15pt;
+}
 body>a {
   grid-area: a;
 }
-
+header {
+  display: none;
+  
+}
 #themes {
  
   width: 120px;
   grid-area: c;
+      height: 100vh;
+  overflow: auto;
 }
 #index.php a{
    border: solid 2px rgb(0, 0, 0);
   height: 40px;
   width: 100%;
   box-sizing: border-box;
+    
 }
 
 #themes legend {
@@ -45,14 +58,29 @@ body>a {
   height: 60px;
   width: 100%;
   box-sizing: border-box;
+    font-size: 15pt;
 }
 #themes div {
   border: solid 2px rgb(11, 11, 11);
-  height: 40px;
+  height: 30px;
   width: 100%;
   box-sizing: border-box;
+  text-align: left;
+  text-align: center;
+  font-size: 15pt;
+
+  
+  
 
 }
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
 
 header {
   grid-area: b;
@@ -60,11 +88,24 @@ header {
 
 article {
   grid-area: d;
-  
+  height: 100vh;
+  overflow: auto;
+}
+h1+p {
+
+   border-bottom: solid 2px rgb(11, 11, 11);
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0%;
+
+
 }
 
 
-h2 {
+
+h2+p {
+ 
 
   text-align: justify;
   
