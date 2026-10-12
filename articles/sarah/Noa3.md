@@ -1,6 +1,6 @@
 ---
 title: Blog de Noa
-date: 2026-09-21
+date: 2026-10-05
 tags: ordinateur, soir, informations
 ---
 
