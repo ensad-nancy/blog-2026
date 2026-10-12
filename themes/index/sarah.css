@@ -1,10 +1,113 @@
 body{
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(198, 205, 210);
+    color: black;
+    display: grid;
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "e d";
+}
+
+
+
+#themes div {
+    grid-area: c;
+    font-size: 35px;
+    font-family: "tiny140";
+    position: sticky;
+    top: 250px;
+    width: 80px;
+    height: 40px;
+    border-radius: 70px;
+    background-color: #001F59;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1px) {
+  select#authors {
+    background-color: #001F59;
+    color: #ffffff;
+    border-radius: 10vh;
+    width: 13%;
+    height: 50%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    padding-left: 10px;
+    margin-left: 1%;
+    font-family: "tiny100";
+    font-size: 180%;
+  }
+}
+
+#filtres{
+    grid-area: e;
+    position: sticky;
+    top: 10px;
+}
+
+#filtres option {
+    font-family: "tiny100";
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #001F59;
+}
+
+main{
+    grid-area: d;
+    display: flex;
+    gap : 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width : 70%;
+    overflow-x: scroll;
+}
+
+#title {
+    grid-area: b;
+}
+
+body p{
+    grid-area: a;
+    position: sticky;
+    top: 10px;
 }
 
 @font-face{
-    font-family: "lithops";
+    font-family: "tiny80";
     font-weight: regular;
-    src: url(articles/sarah/assets/font/Lithops-Regular.otf) format("opentype");
+    src: url(../../articles/sarah/assets/font/TINY5x3-80.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny100";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-100.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny120";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-120.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny140";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-140.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny160";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-160.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "tiny180";
+    font-weight: regular;
+    src: url(../../articles/sarah/assets/font/TINY5x3-180.otf) format("opentype");
 }

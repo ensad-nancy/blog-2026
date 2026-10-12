@@ -9,9 +9,20 @@ preview: assets/images/7420442-728862511.jpg
 
 ## Premier sous-tire
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pretium turpis. Donec et ullamcorper velit. Donec nec dui facilisis, feugiat nibh eu, maximus odio. Praesent in lacus purus. Aenean aliquet varius eros, sagittis maximus nulla ornare et. Donec in turpis vel turpis porttitor ullamcorper. Donec lacinia nisi nec turpis sagittis, ac maximus quam sagittis. Ut pretium elit sed nisl fermentum blandit. Praesent eu diam eget libero fermentum consequat nec quis felis. Proin imperdiet ligula eu ante egestas auctor. Aliquam sit amet pellentesque felis. Donec orci justo, condimentum ut arcu eu, ornare sagittis ipsum. Morbi suscipit eros vel erat aliquet, eu sagittis dui scelerisque. Fusce tempor blandit dolor sed tristique. Proin tortor nulla, blandit ut nibh at, rutrum sollicitudin ante.
+Objectif irréaliste pour la plupart des gens. (De loin le meilleur choix.) Plus rapidement et plus efficacement. De nombreuses difficultés.!
 
-Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellentesque cursus elit pretium at. Vestibulum commodo tincidunt mi accumsan luctus. Nullam accumsan scelerisque quam at fermentum. Nunc blandit luctus quam ut auctor. Cras tellus magna, mattis ut consectetur nec, consectetur eu arcu. Nam ultrices, neque sit amet dictum rhoncus, diam turpis maximus odio, ut sagittis augue enim sed nisi. Nunc mattis egestas erat id ultricies. Morbi et ultrices nisi. Vivamus auctor tristique urna id maximus. Vestibulum euismod felis a mi ultricies aliquam. Aenean finibus porttitor tincidunt. Praesent interdum dapibus aliquet. Integer elementum pulvinar efficitur.
+
+Une jambe repliée sur le siège, l’autre pendante. (Délassement royal.) Toujours jeune. Plus rapidement et plus efficacement. (Toujours jeune)
+
+
+Ils sont souvent représentés assis. (Délassement royal.) Une jambe repliée sur le siège, l’autre pendante. De nombreuses difficultés.......
+
+
+Sous différentes formes, en différents endroits. (De loin le meilleur choix.) Tous les obstacles. Il ne sera pas le dernier. (Toujours jeune)
+
+
+Celle du centre a disparu. (Toujours jeune.) Il porte le glaive. Une grande finesse. De nombreuses difficultés. Tous les obstacles. !!!!!!!!
+
 
 ## Second sous-tire
 
