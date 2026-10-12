@@ -1,7 +1,7 @@
 ---
 title: Commentaire
 date: 2026-10-12
-tags: vie passé, écran
+tags: avis
 preview: 
 ---
 
