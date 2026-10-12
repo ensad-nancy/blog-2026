@@ -10,6 +10,7 @@ body > a {
     padding: 9em 1em;
     background-color: aquamarine;
     text-align: center;
+    display: flex;
 }
 
  #themes { 
@@ -26,9 +27,10 @@ article {
     font-size: 72pt;
     overflow: scroll;
     width: 840px;
-    position: absolute;
+   /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0;*/
+    align-items: center;
 }
 
 header {
