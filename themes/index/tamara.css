@@ -1,26 +1,28 @@
+@font-face{
+    font-family:'mini';
+    src: url("../../articles/tamara/assets/images/Mini7.ttf");
+}
 
 footer{
     visibility: hidden;
 }
 
-img{
-    visibility: hidden;
-}
 
-#title{
-  color: #ae4444;
-}
 
 h1{
-    color: #ae4444;
+    color: #4456ae;
     text-align: center;
 }
 
 p{
-    color: #ae4444;
+    color: #3163b3;
     text-align: center;
     max-width:initial ;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+body{
+    background-image: url("../../articles/tamara/assets/images/test2.jpg");
 }
 

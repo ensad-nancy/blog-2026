@@ -20,12 +20,6 @@ body{
 }
 
 @font-face{
-    font-family: "tiny60";
-    font-weight: regular;
-    src: url(../../articles/sarah/assets/font/TINY5x3-60.otf) format("opentype");
-}
-
-@font-face{
     font-family: "tiny80";
     font-weight: regular;
     src: url(../../articles/sarah/assets/font/TINY5x3-80.otf) format("opentype");
