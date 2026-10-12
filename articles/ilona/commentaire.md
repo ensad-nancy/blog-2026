@@ -1,11 +1,11 @@
 ---
-title: Commentaire
+title: Loop Switch™ 2 
 date: 2026-10-12
 tags: avis
 preview: 
 ---
 
-# Loop Switch™ 2 
+# Commentaire 
 
 ## Une inclusion dans un monde bruyant
 
