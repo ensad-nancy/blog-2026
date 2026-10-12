@@ -1,6 +1,6 @@
 ---
 title: Blog de Noa
-date: 2026-09-21
+date: 2026-09-28
 tags: poème, liste, hasard
 ---
 
