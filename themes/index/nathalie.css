@@ -1,0 +1,12 @@
+#themes{
+  background-color: red;
+  width:fit-content
+}
+
+#themes div{
+    border: 1px solid white;
+}
+
+#themes div label{
+    font-family: 'Arial', sans-serif;
+}
