@@ -1,0 +1,9 @@
+---
+title: Quelle histoire vous a marqué sans raison particulière ?
+date: 2026-09-28
+tags: arte, odyssée, repas 
+preview: assets/images/7420442-728862511.jpg
+---
+
+
+En lisant les commentaires ça m'a rappelé un truc, qui s’est passé quand j’étais plus petite. Pour mettre en contexte, mes grands-parents vivent dans un petit « manoir » à la campagne et donc, avec tout l’espace qu’ils ont, ils ont décidé de faire maison d’hôtes. Donc plus jeune, j’allais souvent chez eux même lorsqu’ils hébergeaient des gens, et une fois il y avait un couple dans la trentaine qui est resté juste pour une nuit. Évidemment je ne suis pas vraiment resté avec eux la journée, mais le soir on a tous dîné ensemble et honnêtement ils étaient très sympas dans mon souvenir et ils parlaient principalement avec mes grands-parents. Après tout, je n’avais que 10 ans, donc la conversation ne m’intéressait pas trop et je préférais, même encore aujourd’hui, rester dans mon coin. Mais pendant le repas, la femme regarde souvent dans ma direction et au bout d’un moment je comprends que ce n’est pas moi qu’elle regarde mais plutôt ce qu’il y a derrière moi, donc je finis par me retourner. Évidemment il n’y avait rien d’inhabituel, la femme se contente de me sourire quand je re-croise son regard et elle reprend la conversation avec mes grands-parents. Le lendemain, au moment où ils allaient partir, elle me dit au revoir et ajoute : « Tu lui diras que je suis repassée. » Je ne comprends pas de qui elle me parle et, avant même que j’aie le temps de lui demander, son copain l’appelle pour lui dire qu’ils doivent y aller. Encore aujourd’hui je ne sais pas de qui elle parlait, et je me questionne sur ce qu’elle regardait derrière moi au repas…

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="question" format="2">
+	<advance width="430"/>
+	<unicode hex="003F"/>
+	<note>
+		question
+	</note>
+	<outline>
+		<contour>
+			<point x="232" y="207" type="curve"/>
+			<point x="217.333" y="215.667"/>
+			<point x="210" y="230"/>
+			<point x="210" y="250" type="curve" smooth="yes"/>
+			<point x="210" y="275.333"/>
+			<point x="223" y="302"/>
+			<point x="247" y="318" type="curve" smooth="yes"/>
+			<point x="317" y="369" type="line" smooth="yes"/>
+			<point x="394.333" y="425"/>
+			<point x="426" y="476.333"/>
+			<point x="426" y="543" type="curve" smooth="yes"/>
+			<point x="426" y="635.09"/>
+			<point x="337.89" y="710"/>
+			<point x="208" y="710" type="curve" smooth="yes"/>
+			<point x="107.389" y="710"/>
+			<point x="19" y="647.644"/>
+			<point x="19" y="573" type="curve" smooth="yes"/>
+			<point x="19" y="543.667"/>
+			<point x="41.333" y="519"/>
+			<point x="68" y="519" type="curve" smooth="yes"/>
+			<point x="97.333" y="519"/>
+			<point x="115" y="541"/>
+			<point x="115" y="573" type="curve" smooth="yes"/>
+			<point x="115" y="577"/>
+			<point x="114.333" y="583"/>
+			<point x="113" y="591" type="curve"/>
+			<point x="93" y="591" type="line"/>
+			<point x="95.667" y="641.667"/>
+			<point x="136.667" y="672"/>
+			<point x="202" y="672" type="curve" smooth="yes"/>
+			<point x="278" y="672"/>
+			<point x="333" y="619"/>
+			<point x="333" y="547" type="curve" smooth="yes"/>
+			<point x="333" y="493.667"/>
+			<point x="311" y="448"/>
+			<point x="267" y="410" type="curve" smooth="yes"/>
+			<point x="214" y="364" type="line" smooth="yes"/>
+			<point x="180.667" y="334.667"/>
+			<point x="166" y="307.333"/>
+			<point x="166" y="274" type="curve" smooth="yes"/>
+			<point x="166" y="234"/>
+			<point x="193.333" y="208.333"/>
+		</contour>
+		<contour>
+			<point x="149" y="0" type="line"/>
+			<point x="261" y="0" type="line"/>
+			<point x="261" y="113" type="line"/>
+			<point x="149" y="113" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:40:02 +0000</string>
+		</dict>
+	</lib>
+</glyph>

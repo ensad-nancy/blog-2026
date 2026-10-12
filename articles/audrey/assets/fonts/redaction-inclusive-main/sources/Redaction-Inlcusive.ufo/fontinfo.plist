@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>750</integer>
+	<key>capHeight</key>
+	<integer>700</integer>
+	<key>copyright</key>
+	<string>© 2019 MCKL. All Rights Reserved.</string>
+	<key>descender</key>
+	<integer>-250</integer>
+	<key>familyName</key>
+	<string>Redaction Inclusive</string>
+	<key>openTypeHeadCreated</key>
+	<string>2020/05/12 10:40:32</string>
+	<key>openTypeHheaAscender</key>
+	<integer>900</integer>
+	<key>openTypeHheaDescender</key>
+	<integer>-300</integer>
+	<key>openTypeNameDesigner</key>
+	<string>Jeremy Mickel / Forest Young</string>
+	<key>openTypeNameDesignerURL</key>
+	<string>http://www.redaction.us</string>
+	<key>openTypeNameLicense</key>
+	<string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL</string>
+	<key>openTypeNameLicenseURL</key>
+	<string>http://www.mckltype.com</string>
+	<key>openTypeNameManufacturer</key>
+	<string>MCKL</string>
+	<key>openTypeNameManufacturerURL</key>
+	<string>http://www.mckltype.com</string>
+	<key>openTypeNamePreferredSubfamilyName</key>
+	<string>Regular</string>
+	<key>openTypeNameRecords</key>
+	<array>
+		<dict>
+			<key>encodingID</key>
+			<integer>1</integer>
+			<key>languageID</key>
+			<integer>1036</integer>
+			<key>nameID</key>
+			<integer>9</integer>
+			<key>platformID</key>
+			<integer>3</integer>
+			<key>string</key>
+			<string>Marie Godefroy</string>
+		</dict>
+	</array>
+	<key>openTypeOS2CodePageRanges</key>
+	<array>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>4</integer>
+		<integer>7</integer>
+		<integer>29</integer>
+	</array>
+	<key>openTypeOS2Panose</key>
+	<array>
+		<integer>2</integer>
+		<integer>10</integer>
+		<integer>5</integer>
+		<integer>3</integer>
+		<integer>6</integer>
+		<integer>5</integer>
+		<integer>4</integer>
+		<integer>6</integer>
+		<integer>3</integer>
+		<integer>3</integer>
+	</array>
+	<key>openTypeOS2StrikeoutPosition</key>
+	<integer>282</integer>
+	<key>openTypeOS2StrikeoutSize</key>
+	<integer>50</integer>
+	<key>openTypeOS2Type</key>
+	<array/>
+	<key>openTypeOS2TypoAscender</key>
+	<integer>750</integer>
+	<key>openTypeOS2TypoDescender</key>
+	<integer>-250</integer>
+	<key>openTypeOS2TypoLineGap</key>
+	<integer>0</integer>
+	<key>openTypeOS2UnicodeRanges</key>
+	<array>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>60</integer>
+	</array>
+	<key>openTypeOS2VendorID</key>
+	<string>MCKL</string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>openTypeOS2WinAscent</key>
+	<integer>900</integer>
+	<key>openTypeOS2WinDescent</key>
+	<integer>300</integer>
+	<key>postscriptBlueValues</key>
+	<array/>
+	<key>postscriptFontName</key>
+	<string>Redaction-Inclusive-Regular</string>
+	<key>postscriptOtherBlues</key>
+	<array/>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
+	<key>styleName</key>
+	<string>Regular</string>
+	<key>trademark</key>
+	<string>Redaction is either a registered trademark or a trademark of MCKL</string>
+	<key>unitsPerEm</key>
+	<integer>1000</integer>
+	<key>versionMajor</key>
+	<integer>2</integer>
+	<key>versionMinor</key>
+	<integer>1</integer>
+	<key>xHeight</key>
+	<integer>470</integer>
+</dict>
+</plist>

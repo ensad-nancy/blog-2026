@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="U_L" format="2">
+	<advance width="1095"/>
+	<unicode hex="F5050"/>
+	<outline>
+		<component base="U"/>
+		<contour>
+			<point x="638" y="41" type="line"/>
+			<point x="596" y="0" type="line"/>
+			<point x="1037" y="0" type="line"/>
+			<point x="1069" y="249" type="line"/>
+			<point x="1036" y="249" type="line"/>
+			<point x="1019" y="188" type="line" smooth="yes"/>
+			<point x="991" y="87"/>
+			<point x="940" y="41"/>
+			<point x="859" y="41" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2026-03-10 12:00:56 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>U</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>L</string>
+		</dict>
+	</lib>
+</glyph>

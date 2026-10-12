@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="D_E" format="2">
+	<advance width="1110"/>
+	<unicode hex="F1610"/>
+	<outline>
+		<component base="D"/>
+		<component base="demi_E" xOffset="15"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2026-03-10 11:48:55 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>D</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>E</string>
+		</dict>
+	</lib>
+</glyph>

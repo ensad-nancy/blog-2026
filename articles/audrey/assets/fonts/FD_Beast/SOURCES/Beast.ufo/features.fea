@@ -1,0 +1,423 @@
+@Uppercase = [ A Aacute Abreve Acaron Acircumflex Acircumflexdotbelow Adieresis Agrave Alpha-latin Amacron Aogonek Aring Atilde AE B Bdotbelow Bhook Bstroke C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Eth Dcaron Dcroat Ddotbelow Dhook Dmacronbelow Dtail E Eacute Ecaron Ecedilla Ecircumflex Ecircumflexdotbelow Edieresis Edotaccent Edotbelow Egrave Emacron Eogonek Eopen Ereversed Esh Etilde Schwa Ezh Ezhcaron F Fhook G Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Gmacron H Hbar Hcircumflex Hdotbelow I IJ Iacute Icaron Icircumflex Idieresis Idotaccent Idotbelow Igrave Imacron Iogonek Iota-latin Istroke Itilde J Jacute Jcircumflex K Kcaron Kcommaaccent Kmacronbelow L Lacute Lcaron Lcommaaccent Ldotbelow Ldotbelowmacron Lmacronbelow Lslash M Macute Mdotaccent Mdotbelow N Nacute Ncaron Ncommaaccent Ndotaccent Ndotbelow Nhookleft Nmacronbelow Ntilde Eng O Oacute Ocaron Ocircumflex Ocircumflexdotbelow Odieresis Odotbelow Ograve Ohungarumlaut Omacron Oslash Oslashacute Otilde OE P Phook Thorn Q R Racute Rcaron Rcommaaccent Rdotbelowmacron Rmacronbelow Rstroke Rtail S Sacute Saltillo Scaron Scedilla Scircumflex Scommaaccent Sdotbelow Germandbls T Tbar Tcaron Tcedilla Tcommaaccent Tdotbelow Thook Tmacronbelow Tretroflexhook U Uacute Ubar Ubreve Ucaron Ucircumflex Udieresis Udotbelow Ugrave Uhungarumlaut Umacron Uogonek Upsilon-latin Uring Utilde V Vturned W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ydotaccent Ygrave Ymacron Ytilde Z Zacute Zcaron Zdotaccent Zdotbelow Zmacronbelow A.ss01 B.ss01 D.ss01 O.ss01 OE.ss01 P.ss01 Thorn.ss01 Q.ss01 R.ss01 S_H D_E.ss01 Eacute_E.ss01 L_E.ss01 X_C.ss01 Eacute_E.ss02 A-cy Be-cy Ve-cy Ge-cy Gje-cy Geupturn-cy De-cy Ie-cy Iegrave-cy Io-cy Zhe-cy Ze-cy Ii-cy Iishort-cy Iigrave-cy Ka-cy Kje-cy El-cy Em-cy En-cy O-cy Pe-cy Er-cy Es-cy Te-cy U-cy Ushort-cy Ef-cy Ha-cy Che-cy Tse-cy Sha-cy Shcha-cy Dzhe-cy Softsign-cy Yeru-cy Hardsign-cy Lje-cy Nje-cy Dze-cy E-cy Ereversed-cy I-cy Yi-cy Je-cy Tshe-cy Iu-cy Ia-cy Dje-cy Yat-cy Yusbig-cy Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos Iotadieresis Upsilondieresis Heta Archaicsampi Pamphyliandigamma KoppaArchaic Stigma Digamma Koppa Sampi KaiSymbol Sho San Delta.ss01 Theta.ss01 A_E A_L A_O C_H C_Q D_E D_U_D_E_L_A E_A E_O E_S E_S_S_E E_S_S_E_S E_T E_U Eacute_E Ecircumflex_T_E F_E F_F_E F_V H_O_F I_E I_L L_E L_L_E L_U M_P N_A N_E N_N N_X O_F O_Idieresis O_N_A O_T P_M R_E R_Egrave R_I R_S R_X R_X_S_E S_C S_E S_H S_L S_S_E S_T T_E T_Egrave T_T_E U_E U_I_L U_L U_N_E X_C X_L X_L_L X_S X_S_S D_E.ss01 Eacute_E.ss01 L_E.ss01 X_C.ss01 Eacute_E.ss02 ];
+
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn NLD;
+
+languagesystem cyrl dflt;
+languagesystem cyrl BGR;
+languagesystem cyrl SRB;
+
+feature aalt {
+# automatic
+feature locl;
+feature frac;
+feature case;
+feature ss01;
+feature ss02;
+} aalt;
+
+feature ccmp {
+# automatic
+lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [cedillacomb ogonekcomb slashlongcomb strokeshortcomb];
+	sub [i]' @CombiningTopAccents by [idotless];
+	sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];
+	@Markscomb = [tonos];
+	@MarkscombCase = [tonos.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+} ccmp;
+
+feature locl {
+# automatic
+script latn;
+language AZE;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language NLD;
+lookup locl_latn_2 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_2;
+
+script cyrl;
+language BGR;
+lookup locl_cyrl_0 {
+	sub De-cy by De-cy.loclBGR;
+	sub El-cy by El-cy.loclBGR;
+	sub Ef-cy by Ef-cy.loclBGR;
+	sub ve-cy by ve-cy.loclBGR;
+	sub ge-cy by ge-cy.loclBGR;
+	sub de-cy by de-cy.loclBGR;
+	sub zhe-cy by zhe-cy.loclBGR;
+	sub ze-cy by ze-cy.loclBGR;
+	sub ii-cy by ii-cy.loclBGR;
+	sub iishort-cy by iishort-cy.loclBGR;
+	sub ka-cy by ka-cy.loclBGR;
+	sub el-cy by el-cy.loclBGR;
+	sub pe-cy by pe-cy.loclBGR;
+	sub te-cy by te-cy.loclBGR;
+	sub tse-cy by tse-cy.loclBGR;
+	sub sha-cy by sha-cy.loclBGR;
+	sub shcha-cy by shcha-cy.loclBGR;
+	sub softsign-cy by softsign-cy.loclBGR;
+	sub hardsign-cy by hardsign-cy.loclBGR;
+	sub yu-cy by yu-cy.loclBGR;
+} locl_cyrl_0;
+
+script cyrl;
+language SRB;
+lookup locl_cyrl_1 {
+	sub be-cy by be-cy.loclSRB;
+	sub ge-cy by ge-cy.loclSRB;
+	sub de-cy by de-cy.loclSRB;
+	sub pe-cy by pe-cy.loclSRB;
+	sub te-cy by te-cy.loclSRB;
+	sub sha-cy by sha-cy.loclSRB;
+} locl_cyrl_1;
+} locl;
+
+feature frac {
+# automatic
+sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+} frac;
+
+feature case {
+sub periodcentered by periodcentered.case;
+sub tonos by tonos.case;
+sub a_e by A_E;
+sub a_l by A_L;
+sub a_o by A_O;
+sub c_h by C_H;
+sub c_q by C_Q;
+sub d_e by D_E;
+sub d_u_d_e_l_a by D_U_D_E_L_A;
+sub e_a by E_A;
+sub e_o by E_O;
+sub e_s by E_S;
+sub e_s_s_e by E_S_S_E;
+sub e_s_s_e_s by E_S_S_E_S;
+sub e_t by E_T;
+sub e_u by E_U;
+sub eacute_e by Eacute_E;
+sub ecircumflex_t_e by Ecircumflex_T_E;
+sub f_e by F_E;
+sub f_f_e by F_F_E;
+sub f_v by F_V;
+sub h_o_f by H_O_F;
+sub i_e by I_E;
+sub i_l by I_L;
+sub l_e by L_E;
+sub l_l_e by L_L_E;
+sub l_u by L_U;
+sub m_p by M_P;
+sub n_a by N_A;
+sub n_e by N_E;
+sub n_n by N_N;
+sub n_x by N_X;
+sub o_f by O_F;
+sub o_idieresis by O_Idieresis;
+sub o_n_a by O_N_A;
+sub o_t by O_T;
+sub p_m by P_M;
+sub r_e by R_E;
+sub r_egrave by R_Egrave;
+sub r_i by R_I;
+sub r_s by R_S;
+sub r_x by R_X;
+sub r_x_s_e by R_X_S_E;
+sub s_c by S_C;
+sub s_e by S_E;
+sub s_h by S_H;
+sub s_l by S_L;
+sub s_s_e by S_S_E;
+sub s_t by S_T;
+sub t_e by T_E;
+sub t_egrave by T_Egrave;
+sub t_t_e by T_T_E;
+sub u_e by U_E;
+sub u_i_l by U_I_L;
+sub u_l by U_L;
+sub u_n_e by U_N_E;
+sub x_c by X_C;
+sub x_l by X_L;
+sub x_l_l by X_L_L;
+sub x_s by X_S;
+sub x_s_s by X_S_S;
+} case;
+
+feature liga {
+sub period period by periodcentered;
+sub period period period by ellipsis;
+sub periodcentered' @Uppercase by periodcentered.case;
+
+lookup macron {
+	sub e' r periodcentered by emacron;
+    sub egrave' r periodcentered by emacron;
+    sub E' R periodcentered.case by Emacron;
+    sub Egrave' R periodcentered.case by Emacron;
+	sub e' c periodcentered h by emacron;
+   	sub egrave' c periodcentered h by emacron;
+   	sub E' C periodcentered.case H by Emacron;
+   	sub Egrave' C periodcentered.case H by Emacron;
+   	sub eacute' t e periodcentered s s by emacron;
+   	sub egrave' t e periodcentered s s by emacron;
+    sub Eacute' T E periodcentered.case S S by Emacron;
+    sub Egrave' T E periodcentered.case S S by Emacron;
+} macron;
+
+lookup ligaturesinclusives{
+	sub A periodcentered.case E by A_E;
+	sub A periodcentered.case L by A_L;
+	sub A periodcentered.case O by A_O;
+	sub A U periodcentered.case Agrave space L A by A_U_L_A;
+	sub Agrave space L A periodcentered.case A U by A_U_L_A;
+	sub C periodcentered.case H by C_H;
+	sub C periodcentered.case Q by C_Q;
+	sub D periodcentered.case E by D_E;
+	sub D U periodcentered.case D E space L A by D_U_D_E_L_A;
+	sub E periodcentered.case A by E_A;
+	sub Eacute periodcentered.case E by Eacute_E;
+	sub E periodcentered.case O by E_O;
+	sub E periodcentered.case S by E_S;
+	sub E periodcentered.case T by E_T;
+	sub Ecircumflex T periodcentered.case E by Ecircumflex_T_E;
+	sub E periodcentered.case U by E_U;
+	sub E periodcentered.case S S E by E_S_S_E;
+	sub E periodcentered.case S S E S by E_S_S_E_S;
+	sub F periodcentered.case E by F_E;
+	sub F periodcentered.case F E by F_F_E;
+	sub F periodcentered.case V by F_V;
+	sub G periodcentered.case U by G_U;
+	sub H O periodcentered.case F by H_O_F;
+	sub I periodcentered.case E by I_E;
+	sub I periodcentered.case L by I_L;
+	sub L periodcentered.case E by L_E;
+	sub L periodcentered.case L by L_L;
+	sub L periodcentered.case L E by L_L_E;
+	sub L periodcentered.case U by L_U;
+	sub M periodcentered.case P by M_P;
+	sub N periodcentered.case A  by N_A;
+	sub N periodcentered.case E by N_E;
+	sub N periodcentered.case N by N_N;
+	sub N periodcentered.case X by N_X;
+    sub O periodcentered.case F by O_F;
+	sub O periodcentered.case Idieresis by O_Idieresis;
+	sub O N periodcentered.case A by O_N_A;
+	sub O periodcentered.case T by O_T;
+	sub P periodcentered.case E by P_E;
+	sub P periodcentered.case M by P_M;
+	sub R periodcentered.case E by R_E;
+	sub R periodcentered.case Egrave by R_Egrave;
+	sub R periodcentered.case I by R_I;
+	sub R periodcentered.case S by R_S;
+	sub R periodcentered.case X by R_X;
+	sub S periodcentered.case C by S_C;
+	sub S periodcentered.case E by S_E;
+	sub S periodcentered.case L by S_L;
+	sub S periodcentered.case S by S_S;
+	sub S periodcentered.case S E by S_S_E;
+	sub S periodcentered.case T by S_T;
+	sub T periodcentered.case E by T_E;
+	sub T periodcentered.case Egrave by T_Egrave;
+	sub T periodcentered.case T by T_T;
+	sub T periodcentered.case T E by T_T_E;
+	sub R periodcentered.case X S E by R_X_S_E;
+	sub U periodcentered.case E by U_E;
+	sub U I periodcentered.case L by U_I_L;
+	sub U periodcentered.case L by U_L;
+	sub U N periodcentered.case E by U_N_E;
+	sub X periodcentered.case C by X_C;
+	sub X periodcentered.case L by X_L;
+	sub X periodcentered.case L L by X_L_L;
+	sub X periodcentered.case S by X_S;
+	sub X periodcentered.case S S by X_S_S;
+	sub a periodcentered e by a_e;
+	sub a periodcentered l by a_l;
+	sub a periodcentered o by a_o;
+	sub a u periodcentered agrave space l a by a_u_l_a;
+	sub agrave space l a periodcentered a u by a_u_l_a;
+	sub c periodcentered h by c_h;
+	sub c periodcentered q by c_q;
+	sub d periodcentered e by d_e;
+	sub d u periodcentered d e space l a by d_u_d_e_l_a;
+	sub e periodcentered a by e_a;
+	sub eacute periodcentered e by eacute_e;
+	sub e periodcentered o by e_o;
+	sub e periodcentered s by e_s;
+	sub e periodcentered t by e_t;
+	sub ecircumflex t periodcentered e by ecircumflex_t_e;
+	sub e periodcentered u by e_u;
+	sub e periodcentered s s e by e_s_s_e;
+	sub e periodcentered s s e s by e_s_s_e_s;
+	sub f periodcentered e by f_e;
+	sub f periodcentered f e by f_f_e;
+	sub f periodcentered v by f_v;
+	sub g periodcentered u by g_u;
+	sub h o periodcentered f by h_o_f;
+	sub i periodcentered e by i_e;
+	sub i periodcentered l by i_l;
+	sub l periodcentered e by l_e;
+	sub l periodcentered l by l_l;
+	sub l periodcentered l e by l_l_e;
+	sub l periodcentered u by l_u;
+	sub m periodcentered p by m_p;
+	sub n periodcentered a  by n_a;
+	sub n periodcentered e by n_e;
+	sub n periodcentered n by n_n;
+	sub n periodcentered x by n_x;
+	sub o periodcentered f by o_f;
+	sub o n periodcentered a by o_n_a;
+	sub o periodcentered t by o_t;
+	sub o periodcentered idieresis by o_idieresis;
+	sub p periodcentered e by p_e;
+	sub p periodcentered m by p_m;
+	sub r periodcentered e by r_e;
+	sub r periodcentered egrave by r_egrave;
+	sub r periodcentered i by r_i;
+	sub r periodcentered s by r_s;
+	sub r periodcentered x by r_x;
+	sub s periodcentered e by s_e;
+	sub s periodcentered c by s_c;
+	sub s periodcentered l by s_l;
+	sub s periodcentered s e by s_s_e;
+	sub s periodcentered s by s_s;
+	sub s periodcentered t by s_t;
+	sub t periodcentered t by t_t;
+	sub t periodcentered e by t_e;
+	sub t periodcentered t e by t_t_e;
+	sub r periodcentered x s e by r_x_s_e;
+	sub u periodcentered e by u_e;
+	sub u i periodcentered l by u_i_l;
+	sub u periodcentered l by u_l;
+	sub u n periodcentered e by u_n_e;
+	sub x periodcentered c by x_c;
+	sub x periodcentered l by x_l;
+	sub x periodcentered l l by x_l_l;
+	sub x periodcentered s by x_s;
+	sub x periodcentered s s by x_s_s;
+}ligaturesinclusives;
+
+lookup ligaturesbasiques{
+    sub c t by c_t;
+	sub f i by f_i;
+	sub f l by f_l;
+    sub f f by f_f;
+    sub f f i by f_f_i;
+    sub f f l by f_f_l;
+	sub i j by i_j;
+	sub s h by s_h;
+    sub S H by S_H;
+	sub s s by s_s;
+	sub t t by t_t;
+} ligaturesbasiques;
+} liga;
+
+feature dlig {
+lookupflag IgnoreMarks;
+sub S H by S_H;
+sub c t by c_t;
+sub i j by i_j;
+sub s h by s_h;
+sub s s by s_s;
+sub t t by t_t;
+} dlig;
+
+feature ss01 {
+# automatic
+sub A by A.ss01;
+sub B by B.ss01;
+sub D by D.ss01;
+sub O by O.ss01;
+sub OE by OE.ss01;
+sub P by P.ss01;
+sub Thorn by Thorn.ss01;
+sub Q by Q.ss01;
+sub R by R.ss01;
+sub D_E by D_E.ss01;
+sub Eacute_E by Eacute_E.ss01;
+sub L_E by L_E.ss01;
+sub X_C by X_C.ss01;
+sub a by a.ss01;
+sub b by b.ss01;
+sub d by d.ss01;
+sub g by g.ss01;
+sub m by m.ss01;
+sub o by o.ss01;
+sub oe by oe.ss01;
+sub p by p.ss01;
+sub thorn by thorn.ss01;
+sub q by q.ss01;
+sub s by s.ss01;
+sub a_e by a_e.ss01;
+sub d_e by d_e.ss01;
+sub e_s by e_s.ss01;
+sub eacute_e by eacute_e.ss01;
+sub f_e by f_e.ss01;
+sub f_f_e by f_f_e.ss01;
+sub i_e by i_e.ss01;
+sub l_e by l_e.ss01;
+sub n_e by n_e.ss01;
+sub s_e by s_e.ss01;
+sub t_e by t_e.ss01;
+sub u_e by u_e.ss01;
+sub Delta by Delta.ss01;
+sub Theta by Theta.ss01;
+sub zero by zero.ss01;
+sub six by six.ss01;
+sub eight by eight.ss01;
+sub nine by nine.ss01;
+sub quotedblleft by quotedblleft.ss01;
+sub quotedblright by quotedblright.ss01;
+} ss01;
+
+feature ss02 {
+# automatic
+sub Eacute_E by Eacute_E.ss02;
+sub a by a.ss02;
+sub g by g.ss02;
+sub d_e by d_e.ss02;
+} ss02;
+

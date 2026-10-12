@@ -1,0 +1,24 @@
+{
+glyphname = backslash;
+kernLeft = asterisk;
+kernRight = backslash;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(17,700,l),
+(416,-231,l),
+(452,-231,l),
+(53,700,l)
+);
+}
+);
+width = 370;
+}
+);
+note = backslash;
+unicode = 92;
+}

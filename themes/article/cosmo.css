@@ -1,17 +1,86 @@
 body {
-    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body > a {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+body > a:before{
+    position: absolute;
+    content: "";
+    background-image: url("/articles/cosmo/assets/icones/fleche-retour.svg");
+    width: 300px;
+    aspect-ratio: 395/733;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ #themes { 
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    width: 50%;
+}
+
+#themes legend, #themes div{
+    line-height: 40%;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    font-style: italic;
+}
+
+#themes div:hover{
+    line-height: 200%;
+    font-style: normal;
+}
+
+#themes input{
+    display: none;
 }
 
 article {
     background-color: rgb(250, 163, 163);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 48pt;
+    overflow: auto;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    height: 100vh;
+}
+
+article p{
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 header {
-    background-color: hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36pt;
+    line-height: 9pt;
+    position: absolute; 
+    text-align: right;
+    padding: 0 0px;
+    width: 50%
 }
 
- #themes {
-    background-color: rgb(144, 120, 120);
- }
+header p{
+    margin: 10px;
+}
+
+
+
+
 

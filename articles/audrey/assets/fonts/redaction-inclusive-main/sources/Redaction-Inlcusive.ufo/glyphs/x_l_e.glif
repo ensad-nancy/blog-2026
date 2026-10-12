@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="x_l_e" format="2">
+	<advance width="979"/>
+	<unicode hex="F5750"/>
+	<outline>
+		<component base="x_l"/>
+		<component base="e" xOffset="506"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-08 13:22:36 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=e</string>
+		</dict>
+	</lib>
+</glyph>

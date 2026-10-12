@@ -1,0 +1,21 @@
+{
+glyphname = .notdef;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(60,-100,l),
+(454,-100,l),
+(454,750,l),
+(60,750,l)
+);
+}
+);
+width = 514;
+}
+);
+note = ".notdef";
+}

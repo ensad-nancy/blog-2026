@@ -1,0 +1,21 @@
+{
+glyphname = o_t_e;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (428,0);
+ref = t_e;
+},
+{
+pos = (-20,168);
+ref = o;
+}
+);
+width = 1142;
+}
+);
+metricRight = "=e";
+unicode = 997712;
+}

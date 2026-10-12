@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="x_s_two" format="2">
+	<advance width="559"/>
+	<note>
+		x_s_two
+	</note>
+	<outline>
+		<component base="demi_x_4"/>
+	</outline>
+</glyph>

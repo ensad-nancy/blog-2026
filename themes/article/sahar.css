@@ -1,5 +1,16 @@
-body {
-    color: #ff7c02;
-    /* background-image: url("../../articles/sahar/assets/images/kavir.jpg"); */
-    background-color: rgb(83, 79, 38);
+article p{
+    text-align: right;
+    direction: rtl;
+}
+#themes{
+    position: fixed;
+    top: 40%;
+
+}
+article{
+    display:grid;
+   margin: 25vw;
+   height: 150px;
+ /* overflow-y: auto; */ 
+ scrollbar-width: none; 
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bullet" format="2">
+	<advance width="279"/>
+	<unicode hex="2022"/>
+	<note>
+		bullet
+	</note>
+	<outline>
+		<contour>
+			<point x="215" y="426" type="line"/>
+			<point x="64" y="426" type="line"/>
+			<point x="64" y="274" type="line"/>
+			<point x="215" y="274" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:48:28 +0000</string>
+		</dict>
+	</lib>
+</glyph>

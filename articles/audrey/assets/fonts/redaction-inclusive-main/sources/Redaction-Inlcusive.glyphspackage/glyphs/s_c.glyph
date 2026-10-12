@@ -1,0 +1,21 @@
+{
+glyphname = s_c;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = s_tige;
+},
+{
+pos = (415,-1);
+ref = c;
+}
+);
+width = 857;
+}
+);
+metricLeft = s;
+metricRight = c;
+unicode = 1001232;
+}

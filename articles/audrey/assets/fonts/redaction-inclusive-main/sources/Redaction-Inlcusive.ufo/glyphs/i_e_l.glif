@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="i_e_l" format="2">
+	<advance width="690"/>
+	<unicode hex="F2720"/>
+	<outline>
+		<component base="i_e"/>
+		<component base="l" xOffset="400"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-05-04 07:35:02 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=l</string>
+		</dict>
+	</lib>
+</glyph>

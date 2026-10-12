@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="colon" format="2">
+	<advance width="240"/>
+	<unicode hex="003A"/>
+	<note>
+		colon
+	</note>
+	<outline>
+		<contour>
+			<point x="176" y="480" type="line"/>
+			<point x="64" y="480" type="line"/>
+			<point x="64" y="367" type="line"/>
+			<point x="176" y="367" type="line"/>
+		</contour>
+		<contour>
+			<point x="64" y="0" type="line"/>
+			<point x="176" y="0" type="line"/>
+			<point x="176" y="113" type="line"/>
+			<point x="64" y="113" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 16:39:44 +0000</string>
+		</dict>
+	</lib>
+</glyph>

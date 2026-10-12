@@ -1,0 +1,20 @@
+{
+glyphname = i_e_s;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = i_e;
+},
+{
+pos = (448,0);
+ref = s;
+}
+);
+width = 857;
+}
+);
+metricRight = "=s";
+unicode = 993072;
+}

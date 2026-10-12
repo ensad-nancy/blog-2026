@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="d_u_d_e_l_a" format="2">
+	<advance width="2030"/>
+	<unicode hex="F1730"/>
+	<outline>
+		<component base="d"/>
+		<component base="l" xOffset="1248"/>
+		<component base="a" xOffset="1529"/>
+		<component base="e" xOffset="565"/>
+		<component base="u" xOffset="501" yOffset="440"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2026-03-10 13:40:49 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>d</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>a</string>
+		</dict>
+	</lib>
+</glyph>

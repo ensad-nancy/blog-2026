@@ -1,0 +1,27 @@
+{
+glyphname = circumflex;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(95,535,l),
+(261,643,l),
+(297,643,l),
+(247,608,l),
+(405,535,l),
+(409,535,l),
+(305,685,l),
+(195,685,l),
+(91,535,l)
+);
+}
+);
+width = 500;
+}
+);
+note = circumflex;
+unicode = 710;
+}

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ellipsis" format="2">
+  <advance width="412"/>
+  <unicode hex="2026"/>
+  <outline>
+    <contour>
+      <point x="303" y="-5" type="curve"/>
+      <point x="324" y="1"/>
+      <point x="346" y="1"/>
+      <point x="367" y="-5" type="curve"/>
+      <point x="361" y="16"/>
+      <point x="361" y="38"/>
+      <point x="367" y="59" type="curve"/>
+      <point x="346" y="53"/>
+      <point x="324" y="53"/>
+      <point x="303" y="59" type="curve"/>
+      <point x="309" y="38"/>
+      <point x="309" y="16"/>
+    </contour>
+    <contour>
+      <point x="35" y="-5" type="curve"/>
+      <point x="56" y="1"/>
+      <point x="78" y="1"/>
+      <point x="99" y="-5" type="curve"/>
+      <point x="93" y="16"/>
+      <point x="93" y="38"/>
+      <point x="99" y="59" type="curve"/>
+      <point x="78" y="53"/>
+      <point x="56" y="53"/>
+      <point x="35" y="59" type="curve"/>
+      <point x="41" y="38"/>
+      <point x="41" y="16"/>
+    </contour>
+    <contour>
+      <point x="169" y="-5" type="curve"/>
+      <point x="190" y="1"/>
+      <point x="212" y="1"/>
+      <point x="233" y="-5" type="curve"/>
+      <point x="227" y="16"/>
+      <point x="227" y="38"/>
+      <point x="233" y="59" type="curve"/>
+      <point x="212" y="53"/>
+      <point x="190" y="53"/>
+      <point x="169" y="59" type="curve"/>
+      <point x="175" y="38"/>
+      <point x="175" y="16"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-03 14:41:05 +0000</string>
+    </dict>
+  </lib>
+</glyph>

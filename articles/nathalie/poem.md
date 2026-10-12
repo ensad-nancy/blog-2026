@@ -1,11 +1,11 @@
----
-title: internetg111rl: poem
 date: 2026-09-28
 tags: poem
-preview: 
+preview:
 ---
 
 # Lights
+
+<div class="poem">
 
 October comes
 
@@ -15,12 +15,9 @@ Car lights come…
 
 Exciting, sexy, fun –
 
-
-lust
-
+<div class="lust">lust</div>
 
 … and goes.
-
 
 One-night stands.
 
@@ -32,27 +29,23 @@ Somebody different
 
 Completely different
 
-
 Car lights come…
 
 Careful, smooth, kind –
 
-
-love
-
+<div class="love">love</div>
 
 … and goes.
-
 
 Lovelorn.
 
 
 
-October, November, 
+October, November,
 
 Exciting, Careful,
 
-Sexy, Smooth, 
+Sexy, Smooth,
 
 Fun, Kind,
 
@@ -66,7 +59,7 @@ Goes and goes.
 
 
 
-Can’t find somebody completely different. 
+Can’t find somebody completely different.
 
 
 
@@ -79,9 +72,8 @@ Acteur, Stories,
 Stories, Actress.
 
 
-Lights.
-
+<div class="lights-small">Lights.</div>
 
 Comes and goes.
 
-
+</div>

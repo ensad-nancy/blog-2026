@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="l_l_e" format="2">
+	<advance width="784"/>
+	<unicode hex="F3330"/>
+	<outline>
+		<component base="l_l"/>
+		<contour>
+			<point x="406" y="266" type="line"/>
+			<point x="406" y="247" type="line"/>
+			<point x="438" y="247" type="line"/>
+			<point x="439.996" y="133.226"/>
+			<point x="502.261" y="52"/>
+			<point x="589" y="52" type="curve" smooth="yes"/>
+			<point x="657.667" y="52"/>
+			<point x="707.333" y="79.667"/>
+			<point x="738" y="135" type="curve"/>
+			<point x="740" y="134" type="line"/>
+			<point x="722.667" y="47.333"/>
+			<point x="655" y="-10"/>
+			<point x="571" y="-10" type="curve" smooth="yes"/>
+			<point x="447.195" y="-10"/>
+			<point x="346" y="67.098"/>
+			<point x="346" y="229" type="curve" smooth="yes"/>
+			<point x="346" y="318.333"/>
+			<point x="383.167" y="400.667"/>
+			<point x="450.5" y="446" type="curve" smooth="yes"/>
+			<point x="484.167" y="468.667"/>
+			<point x="520.333" y="480"/>
+			<point x="559" y="480" type="curve" smooth="yes"/>
+			<point x="674.995" y="480"/>
+			<point x="753.1" y="393.091"/>
+			<point x="749" y="266" type="curve"/>
+		</contour>
+		<contour>
+			<point x="440" y="301" type="curve"/>
+			<point x="651" y="301" type="line"/>
+			<point x="651" y="382.333"/>
+			<point x="609.333" y="440"/>
+			<point x="552" y="440" type="curve" smooth="yes"/>
+			<point x="489.333" y="440"/>
+			<point x="449.333" y="390.333"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-10-03 17:27:26 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=e</string>
+		</dict>
+	</lib>
+</glyph>
