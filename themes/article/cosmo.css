@@ -1,11 +1,11 @@
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
 }
 
 body > a {
-    position: fixed;
+    position: absolute;
     width: 840px;
     padding: 9em 1em;
     background-color: aquamarine;
@@ -13,7 +13,7 @@ body > a {
 }
 
  #themes { 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     display: flex;
@@ -32,7 +32,7 @@ article {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     background-color: hotpink;
     text-align: center;
     padding: 0 0px;
