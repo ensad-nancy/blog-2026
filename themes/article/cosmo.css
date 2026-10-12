@@ -27,10 +27,15 @@ article {
     font-size: 72pt;
     overflow: scroll;
     width: 840px;
-   /* position: absolute;
+   position: absolute;
     right: 0;
-    top: 0;*/
+    top: 0;
     align-items: center;
+}
+
+article p{
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 header {
