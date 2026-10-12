@@ -27,7 +27,7 @@ function parseFrontMatter($path)
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">

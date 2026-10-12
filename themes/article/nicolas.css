@@ -29,7 +29,7 @@ body>a {
 }
 
 #themes {
-  position: sticky;
+ 
   width: 120px;
   grid-area: c;
 }
@@ -51,6 +51,7 @@ body>a {
   height: 40px;
   width: 100%;
   box-sizing: border-box;
+
 }
 
 header {
@@ -62,11 +63,6 @@ article {
   
 }
 
-h1 {
-  text-align: justify;
-  background: rgb(255, 255, 255);
-  border: solid 2px rgb(0, 0, 0);
-}
 
 h2 {
 
