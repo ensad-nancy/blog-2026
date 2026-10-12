@@ -66,10 +66,12 @@ img{
 
 #themes label {
     background-color: black;
+    font-size: 20pt;
 }
 
 #themes label:hover{
     background-color: aquamarine;
+    font-size: 25pt;
 }
 
 input[type="radio"] {
