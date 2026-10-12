@@ -1,22 +1,29 @@
 body{
     background-color: rgb(198, 205, 210);
     color: black;
-    font-family: "tiny180";
+    display: grid;
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "e d";
 }
 
+
+
 #themes div {
-  position: relative;
-  width: 10%;
-  height: 60px;
-  border-radius: 70px;
-  background-color: #001F59;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  column-count: 3;
-  column-gap: 14px;
+    grid-area: c;
+    font-size: 35px;
+    font-family: "tiny140";
+    position: sticky;
+    top: 250px;
+    width: 80px;
+    height: 40px;
+    border-radius: 70px;
+    background-color: #001F59;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 1px) {
@@ -35,6 +42,12 @@ body{
   }
 }
 
+#filtres{
+    grid-area: e;
+    position: sticky;
+    top: 10px;
+}
+
 #filtres option {
     font-family: "tiny100";
     font-size: 20px;
@@ -42,10 +55,25 @@ body{
     color: #001F59;
 }
 
-@font-face{
-    font-family: "tiny60";
-    font-weight: regular;
-    src: url(../../articles/sarah/assets/font/TINY5x3-60.otf) format("opentype");
+main{
+    grid-area: d;
+    display: flex;
+    gap : 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width : 70%;
+    overflow-x: scroll;
+}
+
+#title {
+    grid-area: b;
+}
+
+body p{
+    grid-area: a;
+    position: sticky;
+    top: 10px;
 }
 
 @font-face{
