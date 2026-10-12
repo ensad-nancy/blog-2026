@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arrowleft" format="2">
+	<advance width="915"/>
+	<unicode hex="2190"/>
+	<outline>
+		<component base="arrowright" xScale="-1" xOffset="924"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

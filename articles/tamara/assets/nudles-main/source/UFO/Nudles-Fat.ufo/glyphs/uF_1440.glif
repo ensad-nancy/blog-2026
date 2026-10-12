@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF1440" format="2">
+	<advance width="655"/>
+	<unicode hex="F1440"/>
+	<outline>
+		<component base="C"/>
+		<contour>
+			<point x="324" y="244" type="move"/>
+			<point x="341" y="217"/>
+			<point x="379" y="164"/>
+			<point x="396" y="130" type="curve" smooth="yes"/>
+			<point x="412" y="99"/>
+			<point x="417" y="75"/>
+			<point x="420" y="41" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>C</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=C</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=Q</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

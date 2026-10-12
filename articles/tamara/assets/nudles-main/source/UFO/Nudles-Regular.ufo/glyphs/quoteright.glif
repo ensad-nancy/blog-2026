@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quoteright" format="2">
+	<advance width="238"/>
+	<unicode hex="2019"/>
+	<outline>
+		<contour>
+			<point x="198" y="732" type="move"/>
+			<point x="156" y="691"/>
+			<point x="69" y="518"/>
+			<point x="58" y="440" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>quotes</string>
+				<key>R</key>
+				<string>quotes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
