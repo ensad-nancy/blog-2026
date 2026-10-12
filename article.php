@@ -55,6 +55,7 @@ $mdContent = preg_replace(
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?= htmlspecialchars($title) ?>
     </title>
@@ -69,13 +70,13 @@ $mdContent = preg_replace(
     <div id="themes">
         <legend>Changer le thème :</legend>
         <?php foreach ($students as $student): $studentSlug = htmlspecialchars($student); ?>
-            <div>
-                <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
-                    onChange="changeTheme()" checked />
-                <label for="theme-<?= $studentSlug ?>">
-                    <?= ucfirst($studentSlug) ?>
-                </label>
-            </div>
+        <div>
+            <input id="theme-<?= $studentSlug ?>" type="radio" name="theme" value="<?= $studentSlug ?>"
+                onChange="changeTheme()" checked />
+            <label for="theme-<?= $studentSlug ?>">
+                <?= ucfirst($studentSlug) ?>
+            </label>
+        </div>
         <?php endforeach; ?>
     </div>
 
@@ -84,18 +85,20 @@ $mdContent = preg_replace(
             <?= htmlspecialchars($title) ?>
         </p>
         <?php if ($date): ?>
-            <p class="date">
-                <?= htmlspecialchars($date) ?>
-            </p>
+        <p class="date">
+            <?= htmlspecialchars($date) ?>
+        </p>
         <?php endif; ?>
         <?php if ($tags): ?>
-            <p class="tags">
-                <?php foreach (explode(',', $tags) as $tag): ?>
-                    <span class="tag">
-                        <?= htmlspecialchars(trim($tag)) ?>
-                    </span>
-                <?php endforeach; ?>
-            </p>
+        <p class="tags">
+            <?php foreach (explode(',', $tags) as $tag): ?>
+            <?php if (isset($tag) && $tag !== ''): ?>
+            <span class="tag">
+                <?= htmlspecialchars(trim($tag)) ?>
+            </span>
+            <?php endif; ?>
+            <?php endforeach; ?>
+        </p>
         <?php endif; ?>
     </header>
 

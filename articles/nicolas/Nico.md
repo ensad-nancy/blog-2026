@@ -7,7 +7,16 @@ Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on 
 J’adore donner mon avis et être dans la contradiction, passe-temps favori..
 N’hésitez pas a lire ce que je raconte, c’est verdict. 
 
-## ANTI IZLY
+## PAS DE PLACES
+
+Bonsoir, 
+Hier, à ma plus grande surprise, il n’y avait aucune place de disponible à la médiathèque ; impossible de travailler alors que je suis un visiteur régulier, adepte de nouvelles connaissances. Il s’agirait peut-être de faire des listes de priorité pour les personnes venant dans ce lieu regorgeant de savoirs de toutes époques dont je compte en puiser le contenu. 
+Il m’est indispensable de pouvoir m’asseoir et lire les ouvrages à disposition, et le fait de ne pas pouvoir le faire il y a deux jours m’a mis dans un état second. J’ai demandé à une personne de me donner sa place, car j’ai estimé que la situation était bien plus urgente pour moi, et cette personne me l’a refusé ; incompréhension totale pour ma part, j’ai décidé d’aller voir la personne responsable de l’accueil. Racontant tout cet acharnement envers ma personne, la documentaliste m’a répondu qu’elle ne pouvait rien pour moi et de revenir ultérieurement.
+Senti humilié par la situation, il m’est raisonnable de vous écrire ce commentaire et de vous demander de prendre en compte cette remarque, en espérant que demain il y ait de la place pour que je puisse m’imprégner de tous ces savoirs. 
+
+★☆☆☆☆
+
+### ANTI IZLY
 
 7h47 :Première connexion sur son ordi, dès le matin, pas forcément conseillé directement au réveil mais bon..Il y met la radio et choisit la chronique qui va annoncer l'humeur de son petit déjeuner, aujourd'hui il est plutôt de bonne humeur car on est lundi et le lundi sort la rediffusion de sa chronique préférée, une vraie madeleine de Proust qu'il savoure avec sa tartine de madame Loick.. un régal.
 8h45 :Il n'a pas le temps de finir d'écouter sa chronique, dommage..Pas de nouvelles jusqu'à 9h12, il regarde ses mails, les trie, les supprime..Pas très passionnant mais bon..Hormis l'usage de GitHub, il passe quelques minutes sur Instagram, car oui, il s'est dit que supprimer Instagram de son téléphone lui permettrait d'arrêter de scroller, maintenant il scrolle les réels depuis son ordi, un peu ridicule.
@@ -24,7 +33,7 @@ En regardant son épisode de GTO il à l’air pris soudainement d’un élan de
 
 
 
-### il était une fois le vélo 
+#### il était une fois le vélo 
 
 
 
