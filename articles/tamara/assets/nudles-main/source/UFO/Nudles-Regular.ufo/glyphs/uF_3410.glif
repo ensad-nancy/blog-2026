@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF3410" format="2">
+	<advance width="1235"/>
+	<unicode hex="F3410"/>
+	<outline>
+		<contour>
+			<point x="696" y="674" type="move"/>
+			<point x="695" y="634"/>
+			<point x="701" y="620"/>
+			<point x="697" y="583" type="curve" smooth="yes"/>
+			<point x="690" y="521"/>
+			<point x="664" y="483"/>
+			<point x="612" y="452" type="curve" smooth="yes"/>
+			<point x="538" y="407"/>
+			<point x="388" y="370"/>
+			<point x="350" y="370" type="curve" smooth="yes"/>
+			<point x="327" y="370"/>
+			<point x="245" y="395"/>
+			<point x="223" y="407" type="curve"/>
+		</contour>
+		<contour>
+			<point x="54" y="658" type="move"/>
+			<point x="71" y="653"/>
+			<point x="85" y="649"/>
+			<point x="98" y="632" type="curve" smooth="yes"/>
+			<point x="117" y="607"/>
+			<point x="115" y="570"/>
+			<point x="126" y="541" type="curve" smooth="yes"/>
+			<point x="141" y="500"/>
+			<point x="166" y="458"/>
+			<point x="200" y="430" type="curve" smooth="yes"/>
+			<point x="221" y="412"/>
+			<point x="223" y="405"/>
+			<point x="213" y="379" type="curve" smooth="yes"/>
+			<point x="164" y="248"/>
+			<point x="132" y="150"/>
+			<point x="132" y="2" type="curve"/>
+		</contour>
+		<component base="P" xOffset="614"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>P</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=M</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=P</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

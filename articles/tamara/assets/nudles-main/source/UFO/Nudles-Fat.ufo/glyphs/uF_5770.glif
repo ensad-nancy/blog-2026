@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF5770" format="2">
+	<advance width="797"/>
+	<unicode hex="F5770"/>
+	<outline>
+		<contour>
+			<point x="153" y="428" type="move"/>
+			<point x="253" y="328"/>
+			<point x="276" y="314"/>
+			<point x="311" y="270" type="curve"/>
+			<point x="175" y="134"/>
+			<point x="107" y="69"/>
+			<point x="69" y="2" type="curve"/>
+		</contour>
+		<component base="uF3320" xOffset="249"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=x</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=l</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

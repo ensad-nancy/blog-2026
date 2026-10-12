@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="o" format="2">
+	<advance width="500"/>
+	<unicode hex="006F"/>
+	<anchor x="255" y="0" name="bottom"/>
+	<anchor x="255" y="250" name="center"/>
+	<anchor x="473" y="10" name="ogonek"/>
+	<anchor x="255" y="430" name="top"/>
+	<anchor x="508" y="500" name="topright"/>
+	<outline>
+		<contour>
+			<point x="229" y="399" type="move"/>
+			<point x="346" y="418"/>
+			<point x="429" y="286"/>
+			<point x="416" y="180" type="curve" smooth="yes"/>
+			<point x="408" y="114"/>
+			<point x="352" y="74"/>
+			<point x="301" y="40" type="curve" smooth="yes"/>
+			<point x="282" y="27"/>
+			<point x="262" y="9"/>
+			<point x="239" y="6" type="curve" smooth="yes"/>
+			<point x="188" y="-2"/>
+			<point x="122" y="45"/>
+			<point x="105" y="92" type="curve" smooth="yes"/>
+			<point x="69" y="194"/>
+			<point x="71" y="329"/>
+			<point x="196" y="378" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnName</key>
+			<string>o</string>
+		</dict>
+	</lib>
+</glyph>

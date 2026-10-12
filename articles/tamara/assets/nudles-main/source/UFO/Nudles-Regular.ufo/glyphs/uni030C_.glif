@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030C" format="2">
+	<advance width="514"/>
+	<unicode hex="030C"/>
+	<anchor x="253" y="500" name="_top"/>
+	<anchor x="253" y="702" name="top"/>
+	<outline>
+		<component base="uni0302" yScale="-1" yOffset="1479"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
