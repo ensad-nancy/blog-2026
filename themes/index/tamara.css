@@ -1,26 +1,123 @@
+@font-face{
+    font-family:'chubi';
+    src: url("articles/tamara/assets/Chubi_Trial/Chubi-Heavy.otf");
+}
+
+@font-face{
+    font-family:'nudles';
+    src: url("articles/tamara/assets/nudles-main/ttf/Nudles-Regular.ttf");
+}
 
 footer{
     visibility: hidden;
+    display: none;
 }
 
 img{
-    visibility: hidden;
+    
+    height: 50px;
+
 }
 
-#title{
-  color: #ae4444;
+body>p{
+    display: none;
+}
+
+main{
+    
+    background-image: url(../../articles/tamara/assets/images/grillepetite.jpg);
+    background-position: left -122px;;
+    background-size: 70em;
+    height: 100%;
+    
+    display: grid;
+    grid-auto-flow: column;         
+    grid-auto-columns: max-content;  
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 50vh;
+    order: 4;
+}
+
+a{
+    font-family: 'chubi';
+    font-size: smaller;
+    color:  #4456ae; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(91, 147, 51);  
 }
 
 h1{
-    color: #ae4444;
+    font-family: 'chubi';
+    font-size:200%;
+    color: #4456ae;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 p{
-    color: #ae4444;
+    color: #3163b3;
     text-align: center;
     max-width:initial ;
     padding-left: 10%;
     padding-right: 10%;
+    position: relative;
+    margin-top: 0%;
+   
 }
 
+
+body{
+    background-image: url(../../articles/tamara/assets/images/test2.jpg);
+    background-position: left top;
+    background-size: 70em;
+    display: flex;
+    flex-direction: column;
+    margin: initial;
+}
+
+legend{
+    display: none;
+}
+
+#themes{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 25vh;
+    font-family: 'nudles';
+    font-size :larger ;
+    padding-left: 10%;
+}
+
+#themes label{
+    color: #4456ae;
+}
+
+#themes label:hover{
+    font-size: xx-large; 
+    color: rgb(91, 147, 51);   
+}
+
+#filtres{
+    order: 5;
+    display: flex;
+}
+
+#filtres>p {
+    margin-bottom: 0%;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}

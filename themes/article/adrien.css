@@ -171,14 +171,11 @@ body {
     font-feature-settings: "onum";
 }
 
-body>a {
+/*body>a {
     position: fixed;
     top: 0;
     left: 0;
     color: rgba(255, 255, 255, 0.3);
-    font-family: "Lack";
-    text-transform: uppercase;
-    font-size: 90%;
     width: min-content;
     text-align: center;
     word-break: break-all;
@@ -193,6 +190,21 @@ body>a::first-letter {
 
 body>a:hover {
     color: white;
+}*/
+
+body>a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 22px;
+    transition: opacity .2s ease-in-out;
+    z-index: 6;
+    opacity: .3;
+}
+
+body>a:hover {
+    opacity: 1;
 }
 
 header {
@@ -335,7 +347,7 @@ header .date {
     border-radius: 100px;
     /*padding: 5px 12px;*/
     padding: 0 8px;
-    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow;
+    box-shadow: 0 0 30px 20px yellow, 0 0 20px 5px yellow, 0 0 10px 6px yellow;
     transition: width .2s ease-in-out;
     margin: var(--margin);
     text-wrap: nowrap;
@@ -355,10 +367,6 @@ header .date {
 #themes legend {
     flex: 0 0 var(--title-width);
     text-align: center;
-    font-family: "Lack";
-    text-transform: uppercase;
-    font-size: 85%;
-    letter-spacing: 8%;
     overflow: hidden;
     position: sticky;
     left: 0;
@@ -539,6 +547,7 @@ article blockquote *::selection {
 
 article code {
     font-family: "Compagnon";
+    white-space: break-spaces;
 }
 
 article pre {
@@ -619,4 +628,13 @@ article p img {
 article hr {
     border: initial;
     border-bottom: 2.5px solid black;
+}
+
+
+body>a,
+#themes legend {
+    font-family: "Lack";
+    font-size: 13.6px;
+    text-transform: uppercase;
+    letter-spacing: 7%;
 }

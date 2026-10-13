@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 395.77 733.13">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-family: HelveticaNeue-Italic, 'Helvetica Neue';
+        font-size: 65.52px;
+        font-style: italic;
+        letter-spacing: .2em;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 3.64px;
+      }
+    </style>
+  </defs>
+  <text class="st0" transform="translate(29.6 68.81) rotate(40)"><tspan x="0" y="0">RE-</tspan></text>
+  <text class="st0" transform="translate(108 159.55) rotate(40)"><tspan x="0" y="0">TOUR</tspan></text>
+  <polygon class="st1" points="393.2 366.05 392.62 366.78 393.2 367.27 363.17 403.07 288.78 494.72 288.76 491.74 88.36 730.56 2.56 658.57 247.59 366.56 2.56 74.56 88.36 2.56 393.2 365.86 393.11 365.94 393.2 366.05 393.2 366.05"/>
+</svg>

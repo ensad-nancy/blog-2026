@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="degree" format="2">
+	<advance width="374"/>
+	<unicode hex="00B0"/>
+	<outline>
+		<component base="bullet" xScale="-1" xyScale="-0.0017" yScale="-1" yxScale="0.0017" xOffset="291" yOffset="963"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>superiors</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

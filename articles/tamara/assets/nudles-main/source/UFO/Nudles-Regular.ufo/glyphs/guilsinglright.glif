@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guilsinglright" format="2">
+	<advance width="290"/>
+	<unicode hex="203A"/>
+	<outline>
+		<component base="guilsinglleft" xScale="-1" xOffset="300"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>quotes</string>
+				<key>R</key>
+				<string>quotes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
