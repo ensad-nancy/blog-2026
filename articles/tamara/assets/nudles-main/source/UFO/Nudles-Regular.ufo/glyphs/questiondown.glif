@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="questiondown" format="2">
+	<advance width="365"/>
+	<unicode hex="00BF"/>
+	<outline>
+		<component base="question" yScale="-1" xOffset="-23" yOffset="712"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>R</key>
+				<string>spaced-off</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
