@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0302" format="2">
+	<advance width="500"/>
+	<unicode hex="0302"/>
+	<anchor x="277" y="500" name="_top"/>
+	<anchor x="277" y="904" name="top"/>
+	<outline>
+		<component base="acutecomb" xOffset="23"/>
+		<component base="gravecomb" xOffset="133" yOffset="2"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>acutecomb</string>
+				</dict>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>gravecomb</string>
+				</dict>
+			</array>
+		</dict>
+	</lib>
+</glyph>

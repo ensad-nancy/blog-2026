@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bracketright" format="2">
+	<advance width="448"/>
+	<unicode hex="005D"/>
+	<outline>
+		<component base="bracketleft" xScale="-1" xOffset="448"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>parenthesis</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
