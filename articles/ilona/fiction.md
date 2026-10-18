@@ -20,13 +20,19 @@ Tu sais, je suis un point d’exclamation, utilisé dans une phrase exclamative,
 En quoi ça va m’aider ?<br>
 
 Je suis un signe de ponctuation qui influe sur l’émotion, j’extériorise la phrase, un cri pour lui donner une force, dit-il.<br>
+
 En quoi ça va m’aider ?<br>
+
 Je veux te soutenir et te rendre service, donc je vais m’insérer à chaque fin de tes phrases ! Dit-il.<br>
+
 Je répète, en quoi ça va m’aider ?<br>
+
 Je cligne des yeux et tout à coup je me retrouve dans la cour de l’école assis sur un banc. J’attrape mon téléphone et il est 13 h ? Je vais sur Doctolib, nouveau rendez-vous chez le psy le plus vite possible.
 Hey ! Comment ça va ? Faut trop que je te parle, dit Léna en criant à l’entrée de la porte et se dirigeant vers moi. Elle s’assoit à côté de moi, pose son sac par terre pour sortir son téléphone et me montre des messages échangés avec son mec, encore. Regarde ce qu’il a écrit, il m'a dit qu’il allait en boîte, je commence à psychoter, genre imagine il me trompe avec d’autres meufs ! Puis depuis ces messages sont froids à base de « ok », « dac », je te jure, imagine il va me quitter en plus la dernière fois, il a critiqué ma tenue alors que je portais juste un débardeur, dit Léna.<br>
 
 Bon, garde ton calme, c’est ta pote, elle se rend pas compte que c’est une merde. Comme d’habitude, hein ? Mon corps se lève de lui-même et je me place devant Léna, je la regarde dans les yeux.
 Bon, je suis désolé pour ce que je vais te dire mais ton mec pue la merde ! Il te mérite pas, il te rabaisse et il te contrôle ! Il se croit « mal alpha » de mes couilles mais c’est qu’une merde point ! Tu me rabâches ces conneries et je te soutiens de tout mon être mais là c’est plus possible ! Rends-toi compte, il te respecte pas et il t’aime pas ! Tu es une femme géniale et forte ! Il ne t’apporte rien à part te rendre malheureuse, colérique, jalouse ! Juste quitte-le, qu’il aille se faire foutre !<br>
+
 Léna me regarde les yeux grands ouverts, bouche ouverte.<br>
+
 Oh putain, je viens de parler. <br>
