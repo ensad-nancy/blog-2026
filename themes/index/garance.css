@@ -38,156 +38,139 @@
     to{background-color: red;}
 }
 
-/*BODY*/
-
 body {
-    font-family: "NCS";
-    font-style: normal;
-    color: chartreuse;
-    background-image:  linear-gradient( black, blue, red, rgb(255, 102, 0));
-    background-attachment: fixed;
     display: grid;
     grid-template-areas: 
-        "a a a"
-        "h h i"
-        "e e i";
-
-}
-
-/*  
- margin: 0px 200px 0px 200px;*/
-
-/*TITLE*/
-
-#title {
-    grid-area: h;
-    font-family: "Chaloupée";
-    display: flex;
-    align-items: center;
-    color: rgb(0, 255, 0);
-    opacity: 100%;
-}
-
-#title :hover{
-    opacity: 0%;
-}
-
-body p{
-    grid-area: h;
-    opacity: 50%;
-    width: 300px;
-    align-items: center;
-}
-
-
-
-
-/*THEMES*/
-
-#themes {
-    grid-area: i;
-    position: sticky;
-    top: 0;
-    outline: 6px;
-    outline-style: inset;
+        "a a"
+        "e e"
+        "b d"
+        "b d";
+    margin: 0;
+    grid-gap: 15px;
     background-color: black;
-    color: hsl(90, 100%, 50%);
-    font-family: "NCS";
-    height: fit-content;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
-#themes label:hover {
-    background-color: chartreuse;
-    color: black;
-    font-family: "NCS";
-    font-style: bold;
-}
-
-#themes legend {
-    display: none;
-}
-
-#themes input[type="radio"] {
-    display: none;
-}
-
-/*MAIN*/
-
-main {
-    grid-area: e;
-}
-
-main a div{
+main{
+    grid-area: b;
     display: grid;
-    grid-template-areas: 
-        "k l"
-        "m l" ;
-    width : 400px;
-            animation-name: "BOITE";
-    animation-duration: 4s;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%;
+    grid-gap: 10px;
+    height: 25%;
 }
 
-main a {
-    display: inline-flex ;
-    outline: inset 6px chartreuse;
-    margin: 2%;
-    color: chartreuse;
-    background-color: black;
-    height: 250px;
-    width: 400px;
-}
 
-main a h3{
-    grid-area: k;
-    font-family: "Chaloupée";
-    font-size: 15pt;
-    justify-self: center;
-    text-align: center;
-    width: 150px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-main a .footer{
-    grid-area: m;
-    width: 100px;
-}
-
-main a p{
-    font-size: 10pt;
-    margin: 6px;
-}
 
 main a img{
-    display: flex;
-    align-items: center;
-    grid-area: l;
-    height: 150px;
-    width: 150px;
+    width: 20%;
+    height: 20%;
     object-fit: cover;
 }
 
-/* DATES AUTEURS*/
+div#filtres h2{
+    display: none;
+}
 
-#filtres {
+div#filtres{
     grid-area: a;
     display: grid;
     grid-template-areas: 
-        "q q p";
+        "1 2";
     position: sticky;
     top: 0;
-    background: linear-gradient(black, rgba(0,0,0,0), rgba(0,0,0,0));
-    background-size: contain;
+    background-color: pink;
+    border-bottom: solid black 10px;
+    height: 100px;
 }
 
-#filtres .date{
-    grid-area: q;
+#date{
+    position: relative;
 }
 
-#filtres .auteurices{
-    grid-area: p;
+input[type="range"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: black;
+}
+
+input[type="range"]::-moz-range-progress {
+    background: black;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 100px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 100px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+div#filtres .auteurices{
+   grid-area: 1;
+}
+
+#themes{
+    grid-area: d;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    background-color: rgb(8, 173, 173);}
+
+
+div#title {
+    grid-area: e;
+    font-family: "Chaloupée";
+    size: 200pt;
+    color: aqua;
+}
+
+p{
+    grid-area: e;
+    color: brown;
+}
+
+
+/*div[data-author=] */
+
+main a[data-author="garance"]{
+    background-color: violet;
+}
+
+main a[data-author="adrien"]{
+    background-color: green;
+}
+
+main a[data-author="tamara"]{
+    background-color: rgb(139, 123, 20);
+}
+
+main a[data-author="ilona"]{
+    background-color: rgb(210, 201, 76);
+}
+
+main a[data-author="natasha"]{
+    background-color: rgb(16, 67, 186);
+}
+
+main a[data-author="sarah"]{
+    background-color: rgb(104, 48, 144);
 }
