@@ -1,12 +1,46 @@
-#themes{
-  background-color: red;
-  width:fit-content
+
+/* THEMENAUSWAHL */
+
+#themes {
+    background-color: white;
+
+    width: 145px;
+    padding: 12px;
+
+    border: 1px solid black;
+
+    position: absolute;
+    top: 180px;
+    left: 70px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    z-index: 10;
 }
 
-#themes div{
-    border: 1px solid white;
+/* EINZELNE NAMEN */
+
+#themes div {
+    border: none;
+    margin-bottom: 4px;
 }
 
-#themes div label{
-    font-family: 'Arial', sans-serif;
+/* BESCHRIFTUNG */
+
+#themes div label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+    color: black;
+    cursor: pointer;
+}
+
+/* RADIO BUTTONS */
+
+#themes input[type="radio"] {
+    accent-color: black;
+    margin-right: 5px;
+    cursor: pointer;
 }

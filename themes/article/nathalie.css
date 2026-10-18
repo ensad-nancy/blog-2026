@@ -1,10 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Monsieur+La+Doulaise&display=swap');
+
+/* GRUNDEINSTELLUNGEN */
 
 body {
   margin: 0;
   padding: 40px;
 
-  background: white;
+  background-color: white;
   color: black;
 
   font-family: 'DM Sans', sans-serif;
@@ -13,58 +16,67 @@ body {
   min-height: 1800px;
 }
 
-/* Überschrift */
+/* GROSSE ÜBERSCHRIFT */
 
 h1 {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 130px;
-  font-weight: normal;
 
-  margin: 0 0 50px 0;
+  font-size: 150px;
+  font-weight: normal;
+  line-height: 1.2;
+
+  margin: 30px 0 90px 80px;
+
+  color: black;
 }
 
-
-/* normaler Gedichttext */
+/* NORMALER GEDICHTTEXT */
 
 p {
   width: 320px;
 
-  margin-left: 180px;
+  margin: 0 0 24px 210px;
 
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.7;
+
+  color: black;
 }
 
-
-/* lust */
+/* LUST - RECHTS OBEN */
 
 strong {
   position: absolute;
 
-  top: 350px;
+  top: 430px;
   left: 650px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 80px;
+  font-size: 100px;
   font-weight: normal;
+  line-height: 1.3;
+
+  color: black;
 }
 
-
-/* love */
+/* LOVE - LINKS UNTEN */
 
 em {
   position: absolute;
 
-  top: 700px;
-  left: 70px;
+  top: 850px;
+  left: 90px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 90px;
+  font-size: 110px;
   font-style: normal;
+  line-height: 1.3;
+
+  color: black;
 }
 
-
-/* Lights unten */
+/* LIGHTS - UNTEN RECHTS */
 
 strong em {
   position: absolute;
@@ -73,7 +85,71 @@ strong em {
   left: 700px;
 
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 100px;
+  font-size: 120px;
+
+  font-style: normal;
+  font-weight: normal;
 
   transform: rotate(-8deg);
 }
+
+/* LINKS */
+
+a {
+  color: #ff3aa5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 750px) {
+
+  body {
+    padding: 20px;
+    min-height: 1400px;
+  }
+
+  h1 {
+    font-size: 90px;
+    margin-left: 10px;
+  }
+
+  p {
+    margin-left: 30px;
+    width: 250px;
+    font-size: 14px;
+  }
+
+  strong {
+    top: 500px;
+    left: 55%;
+    font-size: 65px;
+  }
+
+  em {
+    top: 850px;
+    left: 30px;
+    font-size: 75px;
+  }
+
+  strong em {
+    top: 1150px;
+    left: 55%;
+    font-size: 75px;
+  }
+}
+
+/* PHOTOSHOP-COLLAGE SPÄTER HINZUFÜGEN */
+
+/*
+body {
+  background-image: url("../../images/collage.png");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+*/
