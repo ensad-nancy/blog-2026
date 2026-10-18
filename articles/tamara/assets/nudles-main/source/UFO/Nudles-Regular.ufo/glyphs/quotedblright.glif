@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quotedblright" format="2">
+	<advance width="368"/>
+	<unicode hex="201D"/>
+	<outline>
+		<component base="quoteright" xOffset="-3"/>
+		<component base="quoteright" xOffset="127"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>quotes</string>
+				<key>R</key>
+				<string>quotes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

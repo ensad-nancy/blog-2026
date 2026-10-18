@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asterisk" format="2">
+	<advance width="416"/>
+	<unicode hex="002A"/>
+	<outline>
+		<contour>
+			<point x="47" y="694" type="move"/>
+			<point x="93" y="582"/>
+			<point x="124" y="587"/>
+			<point x="219" y="532" type="curve" smooth="yes"/>
+			<point x="277" y="496"/>
+			<point x="320" y="453"/>
+			<point x="364" y="403" type="curve"/>
+		</contour>
+		<contour>
+			<point x="31" y="418" type="move"/>
+			<point x="56" y="436"/>
+			<point x="93" y="477"/>
+			<point x="107" y="487" type="curve" smooth="yes"/>
+			<point x="203" y="556"/>
+			<point x="305" y="548"/>
+			<point x="384" y="651" type="curve"/>
+		</contour>
+		<contour>
+			<point x="249" y="708" type="move"/>
+			<point x="176" y="639"/>
+			<point x="221" y="452"/>
+			<point x="201" y="372" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>quotes</string>
+				<key>R</key>
+				<string>quotes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

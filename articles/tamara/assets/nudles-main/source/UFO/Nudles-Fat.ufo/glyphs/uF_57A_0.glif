@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF57A0" format="2">
+	<advance width="944"/>
+	<unicode hex="F57A0"/>
+	<outline>
+		<contour>
+			<point x="455" y="476" type="move"/>
+			<point x="319" y="340"/>
+			<point x="82" y="69"/>
+			<point x="44" y="2" type="curve"/>
+		</contour>
+		<contour>
+			<point x="128" y="428" type="move"/>
+			<point x="228" y="328"/>
+			<point x="524" y="79"/>
+			<point x="559" y="35" type="curve"/>
+		</contour>
+		<component base="s" xOffset="434"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>s</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=x</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=s</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

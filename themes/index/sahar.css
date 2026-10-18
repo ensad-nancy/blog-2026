@@ -1,0 +1,85 @@
+#themes {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; 
+
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#themes > div {
+  width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#date{ position: fixed;
+    top: 50%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;}
+
+h2 { position: fixed;
+    top: 50%;
+    right: 20px;
+}
+
+
+main {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+    max-height: 70vh;
+    overflow-x: auto;
+    overflow-y: auto;
+
+    box-sizing: border-box;
+   scrollbar-width: none; 
+}
+
+main > * {
+    flex: 0 0 120px;
+    height: 140px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+   }
+
+#auteurices{
+    position: fixed;
+    left: 0%;
+    top: 50%
+}
+#title{
+  display: none;
+}
+p{
+    display: none;
+}
+body{
+    background-color: brown;
+}

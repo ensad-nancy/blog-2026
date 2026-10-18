@@ -1,0 +1,10 @@
+---
+title: Un frigo 
+date: 2026-10-12
+tags: tunnel
+preview: 
+---
+
+# Anatomie d'un frigo
+
+Je me demande combien de temps ça a pris de réussir à tout faire rentrer là-dedans. Parce qu'à un moment, ça doit devenir un vrai Tetris. Tu déplaces un pot pour faire de la place, sauf qu'il bloque une bouteille, qui empêche de sortir un autre truc. Dix minutes plus tard, tu as tout sorti du frigo et tu dois réussir à reproduire la configuration initiale. Avec un peu de chance, tu gagnes même trois centimètres de place. J'imagine qu'il y a une organisation derrière tout ça, même si elle n'est plus forcément compréhensible par quelqu'un d'extérieur. Un peu comme ces gens qui savent exactement où se trouve chaque vêtements sur le sol, mais seraient incapables de l'expliquer à quelqu'un d'autre. Tu déplaces un aliment et tu risques de perturber tout un système dont tu ignorais l'existence. C'est aussi le genre de frigo où tu dois réfléchir avant de prendre quelque chose. Tu ouvres la porte avec une idée précise en tête et tu finis par déplacer trois aliments pour attraper celui du fond. Et évidemment, après tout cet effort, tu manges finalement des chips. Toute cette logistique pour abandonner... Je dis ça, mais je suis mal placé pour juger. J'ai déjà du mal à optimiser l'espace dans un sac de courses. Il y a toujours un moment où je dois choisir entre écraser les tomates ou prendre un deuxième sac, et je prends systématiquement la mauvaise décision. Du coup, vraie question ? Tu as une méthode ou tu fonctionnes uniquement à l'instinct ? Parce qu'à ce stade, j'imagine qu'on finit par s'y réparer sans carte. Tu sais quel pot sortir en premier et quel aliment ne surtout pas toucher sous peine de tout faire s'effondrer. En tout cas, sacrée performance. J'espère que tu as pris une photo pour pouvoir reproduire le rangement après avoir sorti le beurre. Ce serait dommage de devoir tout recommencer à chaque fois.
