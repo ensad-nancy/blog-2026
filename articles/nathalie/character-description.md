@@ -1,8 +1,8 @@
 ---
 title: internetg111rl
 date: 2026-09-28
-tags: descriprion, about me
-preview: 
+tags: #descriprion, #about me
+preview: assets/images/description.jpg
 ---
 
 # About me

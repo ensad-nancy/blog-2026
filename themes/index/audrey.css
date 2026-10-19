@@ -7,10 +7,21 @@
     font-family:"azeret";
     src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-Light.ttf);
 }
+@font-face {
+    font-family: "azeret italic";
+    src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-LightItalic.ttf);
+}
 
 body{
     margin:0;
+    /*background-image: url(/articles/audrey/assets/Plan-de-travail-1.jpg);
+    display: flex;*/
 }
+/*.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
 
 body > p{
     display: none;
@@ -29,12 +40,11 @@ h1{
 
 main{
     position: absolute;
-    width: 70%;
-    height: 30%;
+    width: 75%;
+    height: 35%;
     bottom: 0;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: red;
     display: flex;
 }
 img{
@@ -56,10 +66,12 @@ img{
 
 #themes label {
     background-color: black;
+    font-size: 20pt;
 }
 
 #themes label:hover{
-    background-color: #ff00cc;
+    background-color: aquamarine;
+    font-size: 25pt;
 }
 
 input[type="radio"] {
@@ -76,4 +88,17 @@ input[type="radio"] {
 
 #filtres{
     display: none;
+}
+
+a:any-link {
+    color: black;
+    text-decoration: none;
+    font-family: "azeret italic";
+    font-size: 10pt;
+}
+
+main a{
+    position: relative;
+    margin-right: 35px;
+    justify-content: center;
 }
