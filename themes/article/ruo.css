@@ -1,6 +1,3 @@
-/* =========================================
-   1. 載入本地自訂字體
-   ========================================= */
 @font-face {
     font-family: 'MyDidot';
     src: url('../../articles/ruo/assets/fonts/didot.ttc') format('truetype');
@@ -12,9 +9,6 @@
     font-size: 20px;
 }
 
-/* =========================================
-   2. 基礎設定
-   ========================================= */
 body {
     background-color: #ffffff; 
     color: #000000;            
@@ -22,9 +16,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* =========================================
-   3. 頂部導覽列 (Retour)
-   ========================================= */
 a[href="index.php"] {
     display: block;
     font-size: 0; 
@@ -38,23 +29,17 @@ a[href="index.php"]::before {
     color: #000000;
 }
 
-/* =========================================
-   4. 作者列表区块与黑线 
-   ========================================= */
 #themes {
     position: relative;
     display: flex;
     flex-wrap: wrap; 
     gap: 1.2rem 1.5rem; 
-    
-    /* 默认状态：没有额外高度，但保留长黑线 */
     padding-top: 0; 
     padding-bottom: 0; 
     margin-bottom: 3rem;  
-    border-bottom: 2px solid #000; /* 💡 让黑线常驻 */
+    border-bottom: 2px solid #000; 
 }
 
-/* 建立隐形桥梁 */
 #themes::before {
     content: "";
     position: absolute;
@@ -65,7 +50,6 @@ a[href="index.php"]::before {
     z-index: 1; 
 }
 
-/* 将 Theme 往上推到 Retour 右侧 */
 #themes legend {
     display: block;
     position: absolute;
@@ -79,174 +63,30 @@ a[href="index.php"]::before {
     z-index: 2;      
 }
 
-/* 默认状态：Theme 单词无下划线 */
 #themes legend::after {
     content: "Theme";
     font-size: 1.5rem;
     color: #000000;
-    text-decoration: none; /* 💡 默认不显示下划线 */
+    text-decoration: none; 
     text-underline-offset: 8px;     
     text-decoration-thickness: 2px; 
 }
 
-/* 默认隐藏所有作者名单 */
 #themes div {
     display: none; 
     align-items: center;
 }
 
-/* 悬停/点击时：展开作者名单 */
 #themes:hover div {
     display: flex; 
 }
 
-/* 悬停/点击时：撑开下方空间（黑线会被名单自动推下去） */
 #themes:hover {
     padding-top: 0.5rem;   
     padding-bottom: 2rem;  
 }
 
-/* 💡 仅在悬停/点击展开时，给 Theme 加上下划线 */
 #themes:hover legend::after {
     text-decoration: underline;
 }
 
-/* 作者名单细节排版 */
-#themes input[type="radio"] {
-    display: none; 
-}
-
-
-/* 作者名單細節排版 */
-#themes input[type="radio"] {
-    display: none; 
-}
-
-#themes label {
-    cursor: pointer;
-    font-size: 1.15rem;
-    color: #000000;
-    display: inline-block; /* 💡 必須設定為 inline-block，放大效果才能完美生效 */
-    
-    /* 💡 結合了顏色變化與放大的平滑過渡動畫 */
-    transition: color 0.2s, transform 0.3s cubic-bezier(0.15, 0.85, 0.3, 1); 
-}
-
-/* 💡 當滑鼠懸停在名字上時，文字順滑放大 1.15 倍 */
-#themes label:hover {
-    transform: scale(1.15);
-}
-
-#themes input[type="radio"]:checked + label {
-    color: #e53935; 
-}
-
-
-
-/* =========================================
-   5. 文章頭部 (中繼資料：標題 | 日期 | 標籤 橫排同行)
-   ========================================= */
-header {
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    margin-top: 2rem; 
-    margin-bottom: 3rem;
-    margin-left: 4em; /* 💡 整行一起縮排 4em，與下方正文完美對齊 */
-    font-family: 'MyDidot', serif;
-    font-style: italic;
-    color: #000000;
-    font-size: 1.15rem;
-    
-    /* 💡 整個中繼資料行一起從左側飛入 */
-    opacity: 0; 
-    animation: danmakuFromLeft 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) forwards;
-}
-
-/* 確保裡面的 p 標籤都橫向排列 */
-header p {
-    margin: 0;
-    display: inline-block;
-}
-
-/* 1. 小標題排第一 */
-header p.title {
-    order: 1;    
-    width: auto; 
-    margin-top: 0; 
-    font-weight: normal;     /* 取消粗體 */
-    font-size: inherit;      /* 繼承 1.15rem 大小 */
-    font-style: italic;      /* 恢復斜體 */
-    font-family: inherit !important; 
-    animation: none;         /* 取消獨立動畫，跟隨整行一起飛入 */
-    opacity: 1;
-}
-
-/* 2. 日期排第二 */
-header p.date {
-    order: 2;
-    margin-left: 0; /* 縮排已經交給外層的 header 了，這裡歸零 */
-}
-
-/* 💡 在小標題與日期後方加上 | 分隔符號 */
-header p.title::after,
-header p.date::after {
-    content: " | "; 
-    margin: 0 0.5rem;
-}
-
-/* 3. 標籤排第三 */
-header p.tags {
-    order: 3;
-}
-
-header p.tags span.tag {
-    margin-right: 0.5rem;
-}
-
-/* =========================================
-   6. 文章正文設定 (還原順滑動畫)
-   ========================================= */
-article {
-    margin-left: 4em;      
-    line-height: 1.6;      
-    max-width: 75ch;       
-    font-weight: normal;
-    font-style: italic;    
-    font-size: 1.15rem;
-    font-family: 'MyDidot', serif;
-    color: #111111;
-    
-    /* 💡 延遲 0.4 秒的左側飛入 */
-    opacity: 0; 
-    animation: danmakuFromLeft 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) 0.4s forwards;
-}
-
-article h1, article h2, article h3, article h4, article h5, article h6 {
-    margin-left: -2.5em; 
-    margin-bottom: 1.5rem; 
-    margin-top: 2rem;
-    font-weight: bold;     
-    font-size: 1.8rem;
-    font-style: normal;
-    font-family: 'MyTitleFont', serif;
-    
-    /* 💡 Markdown 標題右側飛入 */
-    opacity: 0;
-    animation: danmakuFromRight 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) forwards;
-}
-
-/* =========================================
-   7. 動畫 Keyframes (完全還原你最初的距離與時間軸)
-   ========================================= */
-@keyframes danmakuFromRight {
-    0% { opacity: 0; transform: translateX(120vw); }
-    15% { opacity: 1; }
-    100% { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes danmakuFromLeft {
-    0% { opacity: 0; transform: translateX(-120vw); }
-    15% { opacity: 1; }
-    100% { opacity: 1; transform: translateX(0); }
-}
