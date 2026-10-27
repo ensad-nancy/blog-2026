@@ -1,5 +1,20 @@
 body {
-  background-color: #ff0095;
+  background-color: rgb(255, 0, 149);
+}
+
+@font-face {
+  font-family: "BillaMount";
+  src: url(../../articles/ava/assets/fonts/BillaMount-Regular.ttf);
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
 }
 
 p{
@@ -8,6 +23,17 @@ p{
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "BillaMount";
     color: rgb(0, 251, 255);
 }
+
+
+  #themes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+
+}
+
