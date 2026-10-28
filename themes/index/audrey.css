@@ -95,10 +95,20 @@ a:any-link {
     text-decoration: none;
     font-family: "azeret italic";
     font-size: 10pt;
+    text-align: left;
 }
 
+h3{
+    font-family: "azeret";
+    font-size: 15pt;
+    text-align: center;
+}
+
+footer{
+    line-height: 90%;
+}
 main a{
     position: relative;
-    margin-right: 35px;
-    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
 }
