@@ -14,29 +14,35 @@ body{
     margin: 0;
 }
 
+
 article {
+    font-family: "azeret";
+    font-size: 20pt;
+    display: block;
     margin-left: 30%;
     margin-right: 3%;
-    position: absolute;
-    display: flex;
-}
-
-article > p{
-    font-family: "azeret";
-    font-size: 30pt;
+    margin-top: 7%;
+    text-align: left;
+    background-image:linear-gradient(to bottom, black, rgb(96, 206, 169) 70%, aquamarine 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h1 {
     font-family: "bbbsprat";
-    font-size: 40pt
+    font-size: 40pt;
+    color: aquamarine;
+    -webkit-text-stroke: 2px black;
 }
+
 #themes{
     margin-top: 1%;
-    position: absolute;
+    position:fixed;
     right: 0;
     top: 0;
     height: 100%;
-    width: 30%;
+    width: 175%;
     font-family:"azeret";
     color: white;
     text-align: center;
