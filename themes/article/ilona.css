@@ -94,10 +94,10 @@ article {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 2%;
-    margin-inline-end: 25%;
+    
+    margin-inline-end: 35%;
     margin-top: 10px;
-    margin-left: 33%;
+    margin-left: 27%;
     margin-bottom: 50%;
     width: 65%;
     transform: rotate(-1.5deg) translateY(-10px);
@@ -108,7 +108,9 @@ article {
     border-radius: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 1.5;
+    line-height: 2;
+    height: 780px;
+    scrollbar-width: none;
     
 }
 
