@@ -1,11 +1,11 @@
 ---
-title: didn't found peace 
+title: didn't find my peace 
 date: 2026-10-12
 tags: /@everygirl_is_aweirdgirl
 preview: 
 ---
 
-# didn't found peace
+# didn't find my peace
 
 It’s been 4 months since this yoga mat has entered my home. This purchase was made in hopes of finding a moment of calm and relief after long days of being pushed to the edge by the harsh reality of a world darkened by capitalism, patriarchy, and state fascism. 
 
