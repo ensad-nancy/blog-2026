@@ -1,7 +1,7 @@
 ---
 title: Mardi 22h15
 date: 2026-10-05
-tags: composition
+tags: routine , répétition
 preview: 
 ---
 

@@ -1,0 +1,569 @@
+body {
+  background: #000000;
+
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'DungGeunMo', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+#title {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #ff91ca;
+    font-family: 'DungGeunMo', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    width: max-content;
+
+   
+    text-shadow:
+        1px 1px 0 #e12080,
+        2px 2px 0 #e12e88,
+        3px 3px 0 #be1a6c,
+        4px 4px 0 #91094d,
+        5px 5px 0 rgba(90, 40, 70, 0.2);
+}
+
+body > p {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+
+
+#filtres {
+    display: contents;
+}
+
+#filtres > h2 {
+    display: none;
+}
+
+
+
+/* 작가 선택 영역 */
+#auteurices {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+
+/* 작가 선택 메뉴 - 레트로 픽셀 버튼 */
+#auteurices select#authors {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: max-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 8px 14px;
+    margin: 0 auto;
+
+    font-family: 'DungGeunMo', monospace;
+    font-size: 14px;
+    font-weight: normal;
+    color: #8a3565;
+    text-align: center;
+    text-align-last: center;
+
+    background: #ffe3f1;
+    border: 3px solid #fff5fa;
+    border-radius: 0;
+
+    box-shadow:
+        -3px -3px 0 #f7a8d0,
+         3px 3px 0 #a03875;
+
+    outline: none;
+    cursor: pointer;
+    transition: none;
+}
+
+/* Hover */
+#auteurices select#authors:hover {
+    color: #ffffff;
+    background: #f16caf;
+
+    box-shadow:
+        -3px -3px 0 #ffd5eb,
+         3px 3px 0 #a94379,
+         6px 6px 0 #792c59;
+}
+
+
+
+
+
+
+
+/* 별 이미지 배경 */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url("https://i.postimg.cc/wBj1GHhp/kkeongttang-3hagnyeon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    filter: sepia(1) saturate(5) hue-rotate(275deg);
+}
+
+
+main {
+    order: 2;
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+
+    margin: 15px auto;
+    padding: 15px 20px 25px;
+
+    width: 100%;
+    max-width: 1100px;
+    height: 375px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main > a {
+    flex: 0 0 135px;
+    width: 135px;
+    min-width: 0;
+    height: auto;
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    white-space: normal;
+}
+
+/* 카드 내부 레이아웃 */
+main > a > div:first-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto auto;
+
+    align-content: start;
+    justify-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 게시글 썸네일 */
+main > a img.thumb {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: block;
+    width: 120px;
+    height: 150px;
+    margin: 0;
+
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 게시글 제목 */
+main > a h3 {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: start;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    margin: 12px 0 8px;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 1.2;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+}
+
+/* 작성자, 날짜, 태그 영역 */
+main > a footer {
+    grid-row: 3;
+    grid-column: 1;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    white-space: normal;
+}
+
+/* 작성자·날짜·태그 사이 간격 */
+main > a footer p {
+    margin: 0 0 6px;
+    padding: 0;
+
+    font-size: 13px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+/* 태그 줄바꿈 */
+main > a .tag {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+
+main::-webkit-scrollbar {
+    height: 13px;
+}
+
+/* 얇고 깔끔한 트랙 */
+main::-webkit-scrollbar-track {
+    background: #fdade199;
+    border: none;}
+
+/* 입체적인 레트로 손잡이 */
+main::-webkit-scrollbar-thumb {
+    background-color: #ff72c9;
+    border: 2px solid #fff0f7;
+  
+
+    box-shadow:
+        0 2px 0 #969696,
+        0 3px 4px rgba(80, 30, 60, 0.25);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+}
+main::-webkit-scrollbar-thumb:hover {
+    background-color: #69f8ff;
+    box-shadow:
+        0 2px 0 #999a9a,
+        0 4px 6px rgba(80, 30, 60, 0.3);
+}
+
+
+#date {
+    order: 3;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 날짜 슬라이더 트랙 */
+#date input[type="range"] {
+    display: block;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 200px;
+    max-width: 80%;
+    height: 2px;
+
+    margin: 10px auto;
+    padding: 0;
+
+    background: #ff1596;
+    border: none;
+    border-radius: 10px;
+
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Chrome · Safari */
+#date input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+    background: #ffe3f1;
+    border: 2px solid #fff5fa;
+    border-radius: 2px;
+
+    box-shadow: 0 3px 0 #c86c9e;
+
+    cursor: pointer;
+}
+
+/* Hover */
+#date input[type="range"]::-webkit-slider-thumb:hover {
+    background: #f7b1d4;
+    box-shadow: 0 3px 0 #c86c9e;
+}
+
+/* Firefox */
+#date input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+
+    background: #ffe3f1;
+    border: 2px solid #fff5fa;
+    border-radius: 2px;
+
+    box-shadow: 0 3px 0 #c86c9e;
+
+    cursor: pointer;
+}
+
+/* Firefox Hover */
+#date input[type="range"]::-moz-range-thumb:hover {
+    background: #f7b1d4;
+}
+
+
+
+#themes {
+    order: 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Changer le thème 문구 */
+#themes > legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* 개별 테마 선택 항목 */
+#themes > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#themes {
+    order: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 테마 제목 */
+#themes > legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#themes input[type="radio"] + label {
+    position: relative;
+    top: 5px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;    
+
+    padding: 7px 10px;
+    min-height: 20px;
+
+    font-family: 'DungGeunMo', monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: nowrap;
+
+    color: #754563;
+    background: #fff0f7;
+    border: 2px solid #e58abb;
+    border-radius: 4px;
+
+    box-shadow: 3px 3px 0 #c86c9e;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease,
+                background 0.12s ease;
+}
+
+#themes input[type="radio"] + label:hover {
+    color: #754563;
+    background: #ffe0f0;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 #c86c9e;
+}
+
+#themes input[type="radio"]:checked + label {
+    color: #ffffff;
+    background: #e86eae;
+    border-color: #a83f7b;
+    box-shadow: inset 2px 2px 0 #c94e91,
+                3px 3px 0 #a83f7b;
+    transform: translate(1px, 1px);
+}
+
+
+/* 동그란 라디오 버튼 숨기기 */
+#themes input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+#themes > legend {
+    flex: 0 0 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    position: relative;
+    top: -15px;
+}
+
+/* 페이지 전체 스크롤 방지 */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* 세로 스크롤은 막고, 카드 가로 스크롤은 유지 */
+main {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#themes input[type="radio"] + label {
+    position: relative;
+    top: 5px;
+}
+
+/* 제목을 제외한 모든 콘텐츠 문구를 핫핑크로 */
+body > p,
+#auteurices,
+#date,
+#themes,
+main > a,
+main > a h3,
+main > a footer,
+main > a footer p,
+main > a .tag {
+    color: #ff1493;
+}
+
+/* 링크에 기본 색상이 별도로 적용되는 경우 */
+main > a:link,
+main > a:visited {
+    color: #ff1493;
+}
+
+/* 날짜 슬라이더 주변 문구 */
+#date label,
+#date p,
+#date span {
+    color: #ff1493;
+}
+
+/* 작가 선택 메뉴 */
+#auteurices select#authors {
+    color: #ff1493;
+}
+
+/* 테마 선택 문구 */
+#themes label,
+#themes legend {
+    color: #ff1493;
+}

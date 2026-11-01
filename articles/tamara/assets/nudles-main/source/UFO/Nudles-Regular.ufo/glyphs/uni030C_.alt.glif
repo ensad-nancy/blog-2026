@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030C.alt" format="2">
+	<advance width="157"/>
+	<anchor x="-93" y="800" name="_topright"/>
+	<outline>
+		<contour>
+			<point x="98" y="728" type="move"/>
+			<point x="81" y="684"/>
+			<point x="79" y="632"/>
+			<point x="79" y="602" type="curve" smooth="yes"/>
+			<point x="79" y="566"/>
+			<point x="72" y="521"/>
+			<point x="54" y="475" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

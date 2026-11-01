@@ -1,0 +1,175 @@
+h1{
+
+    font-size: 55px;
+    font-family: "Avara";
+    top: 0%s;
+}
+
+a{
+    position: absolute;
+    top : 90%;
+    font-size: 50px;
+    text-decoration: none;
+    color:rgb(82, 82, 82);
+    font-family: "Avara";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+a:hover{
+    background-color: rgb(241, 255, 205);
+    border-radius: 40px;
+    z-index: 100000000;
+    color: black;
+  
+}
+
+p.title{
+    z-index: 1;
+    position:absolute;
+    margin-top: 2%;
+    font-size: 60px;
+    font-family: "Avara";
+    margin-right: 1211px;;
+    color: rgb(227, 227, 227);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+p.title:hover{
+    background-color:rgb(183, 255, 0);
+    border-radius: 40px;
+    z-index: 100;
+    color: black;
+  
+}
+
+p.date{
+    z-index: 1;
+    position:absolute;
+    margin-top: 28%;
+    font-size: 50px;
+    font-family: "Avara";
+    margin-right: 1211px;
+    color:rgb(181, 181, 181);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+
+p.date:hover{
+    background-color: rgb(198, 255, 54);
+    border-radius: 40px;
+    z-index: 100;
+    color: black;
+  
+}
+
+p.tags{
+    z-index: 1;
+    position:absolute;
+    margin-top: 30%;
+    font-size: 50px;
+    font-family: "Avara";
+    margin-right: 1211px;
+    color: rgb(147, 146, 146);
+      padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+
+p.tags:hover{
+    background-color: rgb(211, 255, 100);
+    border-radius: 40px;
+    z-index: 100;
+    color: black;
+  
+}
+
+article {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-inline-end: 25%;
+    margin-top: 10px;
+    margin-left: 33%;
+    margin-bottom: 50%;
+    width: 65%;
+    transform: rotate(-1.5deg) translateY(-10px);
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 1;
+    font-family: "Avara";
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+    
+}
+
+article:hover{
+    background-color: rgb(219, 255, 127);
+    z-index: 100;
+    color: black;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
+
+#themes {
+    position: absolute;
+    margin-top: 37%;
+    margin-left: 11%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 202px;
+    color: rgb(66, 66, 66);
+    font-size: 35px;
+    z-index: 100;
+    font-family: "Avara";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  
+}
+
+#themes legend {
+    font-family: "Avara";
+    font-size: 30px;
+}
+
+#themes:hover{
+    background-color: rgb(230, 255, 167);
+    border-radius: 30px;
+    color: black;
+    z-index: 100;
+   
+    
+}
+
+@media (min-width: 1px) {
+  input[name="theme"] {
+    appearance: none;
+    border: 3px solid rgb(66, 66, 66);
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    
+  }
+}
+
+@media (min-width: 1px) {
+  input[name="theme"]:checked {
+    background-color: rgb(66, 66, 66);
+  }
+}

@@ -5,10 +5,132 @@
 
 body{
     font-family: "tremplin";    
-    background-color: rgb(151, 152, 152);
+    background-color: #DCEEFF;
 }
 
-title{
+* {
+  box-sizing: border-box;
+}
 
-    }
+body {
+  margin: 0;
+  padding-bottom: 4rem;  
+  font-family: "tremplin";
+  background: #DCEEFF;     
+  display: grid;
+  gap: 1.5rem;         
+  grid-template-areas:
+    "titre"
+    "intro"
+    "filtres"
+    "articles";
+}
 
+body > * {
+  margin: 0;
+  padding: 1.5rem;
+  background: #F3F8FF;
+  text-align: center;
+}
+
+#title   { grid-area: titre; }
+body > p { grid-area: intro; }
+#filtres { grid-area: filtres; text-align: left; }
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+p {
+  max-width: none;
+}
+
+#filtres input,
+#filtres select {
+  width: 100%;
+}
+
+main {
+  grid-area: articles;
+  padding: 0;
+  background: #DCEEFF;
+  display: grid;
+  gap: 1.5rem;           
+}
+
+main a {
+  padding: 2.5rem 1rem;
+  background: #A9D2FF;
+  color: #102D50;
+  text-decoration: none;
+}
+
+main a:hover {
+  background: #C5E7FF;
+}
+
+main h3 {
+  text-transform: uppercase;
+}
+
+main h3,
+main p {
+  margin: 0 0 1rem;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main h3::after,
+main p::after {
+  content: "";
+  display: block;
+  height: 0.4rem;
+  margin: 0.5rem auto 0; 
+  background: #102D50;
+}
+
+main h3::after             { width: 60%; }
+main p:nth-child(1)::after { width: 48%; }  
+main p:nth-child(2)::after { width: 36%; } 
+main p:nth-child(3)::after { width: 24%; }  
+
+#themes {
+  position: fixed;      
+  bottom: 0;
+  width: 100%;
+  display: flex;        
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;     
+  white-space: nowrap;
+  background: #DCEEFF;
+  color: #102D50;
+  opacity: 0.95;         
+}
+
+@media (min-width: 800px) {
+  body {
+    grid-template-columns: 3fr 1fr;  
+    grid-template-areas:
+      "titre    vide"
+      "intro    filtres"
+      "articles filtres";
+  }
+
+  body::before {
+    content: "";
+    grid-area: vide;
+    background: #F3F8FF;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  body > p {
+    padding: 2rem 8rem;
+  }
+}
