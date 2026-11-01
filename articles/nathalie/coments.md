@@ -1,11 +1,11 @@
 ---
-title: internetg111rl
+title: youtube comment
 date: 2026-10-12
-tags: descriprion, about me
+tags: #comment, #thoughts
 preview: 
 ---
 
-# youtube coment
+# youtube comment
 
 this video really hit me. i relate to what you said about feeling uncomfortable with your life and not knowing what’s supposed to happen next. i keep thinking i should have everything figured out by now, but honestly i don’t. some days i feel like i’m doing fine and then suddenly i wonder if i’m on the wrong path completely.
 
