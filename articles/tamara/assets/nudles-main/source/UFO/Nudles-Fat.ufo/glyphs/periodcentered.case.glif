@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="periodcentered.case" format="2">
+	<advance width="297"/>
+	<outline>
+		<component base="period" xOffset="-22" yOffset="330"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>period</string>
+				</dict>
+			</array>
+		</dict>
+	</lib>
+</glyph>

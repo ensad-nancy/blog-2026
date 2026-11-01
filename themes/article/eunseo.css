@@ -1,3 +1,467 @@
-body {
-  background-color: rgb(111, 173, 89);
+
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff')
+         format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 24px 20px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 180px;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 19px;
+    row-gap: 0;
+    align-items: start;
+
+    font-family: 'DungGeunMo', monospace;
+    color: #514453;
+
+    background: #000000;
+}
+
+/* ========================================
+   RETOUR BUTTON
+======================================== */
+
+body > a {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+
+    display: inline-block;
+    margin: 0 0 12px;
+    padding: 8px 13px;
+
+    color: #b84f8e;
+    background: #fff4fa;
+    border: 2px solid #f4a6d7;
+    box-shadow: 3px 3px 0 #ff30ac;
+    body > a:hover {
+    color: #3985b5;
+    background: #e7f5ff;
+    border-color: #8dcfff;
+    box-shadow: 3px 3px 0 #a8dfff;
+}
+
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+body > a:hover {
+    color: #3985b5;
+    background: #e7f5ff;
+    border-color: #8dcfff;
+    box-shadow: 3px 3px 0 #a8dfff;
+}
+
+
+
+/* ========================================
+   THEME SELECTOR — RIGHT SIDE
+======================================== */
+
+#themes {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+
+    position: relative;
+    top: 64px;
+    transform: translateX(-190px);
+
+    width: 270px;
+    height: 876px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+    color: #514453;
+    background: #fff0f8;
+    border: 4px solid #ff4ca0;
+    border-radius: 20px;
+}
+
+/* Theme selector heading */
+#themes legend {
+    margin: 0 0 1px;
+    color: #b84f8e;
+    line-height: 2.2;
+    padding-left: 18px;
+}
+#themes legend {
+    font-size: 0;
+}
+
+#themes legend::before {
+    content: "Changer le thème";
+    font-size: 28px;
+}
+
+/* Individual theme options */
+#themes > div {
+    width: 100%;
+    margin: 0;
+    padding-left:85px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+
+    font-size: 24.3px;
+    line-height: 1.4;
+}
+
+
+/* Hide radio buttons */
+#themes input {
+    display: none;
+}
+
+/* Theme names */
+#themes label {
+    display: inline-block;
+    position: relative;
+    padding: 5px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mint oval gradient on hover */
+#themes label:hover {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(143, 230, 220, 0.75) 0%,
+        rgba(190, 250, 235, 0.45) 45%,
+        rgba(190, 250, 235, 0) 75%
+    );
+    box-shadow: 0 0 14px rgba(143, 230, 220, 0.25);
+}
+
+/* Keep the selected theme highlighted */
+#themes input:checked + label {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(143, 230, 220, 0.65) 0%,
+        rgba(190, 250, 235, 0.35) 50%,
+        rgba(190, 250, 235, 0) 80%
+    );
+}
+
+
+/* ========================================
+   NOTEBOOK — HEADER
+======================================== */
+
+body > header {
+    grid-column: 1;
+    grid-row: 2;
+
+    position: relative;
+    margin-top: 20;
+    width: 80%;
+    min-width: 0;
+    margin: 20px 0 0 50px;
+    padding: 30px 32px 16px;
+    left: 50px;
+
+    background: #fff0f8;
+    border: 4px solid #ff4ca0;
+    border-bottom: 1px dashed #eab4d2;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+/* Article title */
+body > header .title {
+    margin: 0 0 8px;
+
+    color: #df70ad;
+    font-size: 24px;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+    text-shadow: 2px 2px 0 #f9d5e9;
+}
+
+/* Date */
+body > header .date {
+    display: inline-block;
+    margin: 0 0 8px;
+    padding: 5px 9px;
+
+    color: #578bb0;
+    background: #e7f5ff;
+    border: 1px dashed #8dcfff;
+
+    font-size: 12px;
+}
+
+
+
+/* 별 이미지 배경 */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image: url("https://i.postimg.cc/wBj1GHhp/kkeongttang-3hagnyeon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    opacity: 0.3;
+    filter: sepia(1) saturate(5) hue-rotate(275deg);
+}
+
+
+/* Tags */
+body > header .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 4px 0 0;
+}
+
+body > header .tag {
+    display: inline-block;
+    padding: 5px 9px;
+
+    color: #a34e83;
+    background: #fffafd;
+    border: 1px solid #f4b6dc;
+    border-radius: 3px;
+
+    font-size: 11px;
+}
+
+/* ========================================
+   NOTEBOOK — SCROLLABLE CONTENT
+======================================== */
+
+body > article {
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 80%;
+    min-width: 0;
+    height: calc(100vh - 230px);
+    min-height: 180px;
+    max-height: 724px;
+    left: 50px;
+   
+    position: relative;
+    top: 0;
+    margin: 0 0 20px 50px;
+    padding: 20px 32px;
+
+    background: #fffdfd;
+    border: 4px solid #ff4ca0;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+
+    color: #514453;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+
+    scrollbar-width: thin;
+    scrollbar-color: #8fe6e7 #f0feff;
+}
+
+/* Scrollbar — Chrome and Safari */
+body > article::-webkit-scrollbar {
+    width: 10px;
+}
+
+body > article::-webkit-scrollbar-track {
+    background: #fff0f8;
+    border-radius: 8px;
+}
+
+body > article::-webkit-scrollbar-thumb {
+    background: #e78fbe;
+    border: 2px solid #fff0f8;
+    border-radius: 8px;
+}
+
+/* Main heading */
+body > article h1 {
+    margin-top: 0;
+    padding-bottom: 12px;
+
+    color: #d967a7;
+    font-size: 23px;
+    line-height: 1.5;
+
+    border-bottom: 2px dashed #808080;
+}
+
+/* Subheadings */
+body > article h2 {
+    margin-top: 24px;
+    padding-left: 12px;
+
+    color: #5799c6;
+    font-size: 18px;
+
+    border-left: 4px solid #8dcfff;
+}
+
+/* Paragraphs */
+body > article p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* ========================================
+   RESPONSIVE — TABLET
+======================================== */
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: minmax(0, 1fr) 150px;
+        column-gap: 16px;
+        padding: 12px 16px 20px;
+    }
+
+    #themes {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    #themes > div {
+        font-size: 11px;
+    }
+
+    body > header {
+        padding: 28px 20px 14px;
+    }
+
+    body > article {
+        height: calc(100vh - 220px);
+        padding: 18px 20px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 12px 20px;
+    }
+
+    body > a {
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    #themes {
+        width: 100%;
+        margin: 0 0 18px;
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    #themes legend {
+        grid-column: 1 / -1;
+    }
+
+    #themes > div {
+        font-size: 11px;
+    }
+
+    body > header {
+        width: 100%;
+        padding: 28px 18px 16px;
+    }
+
+    body > header .title {
+        font-size: 20px;
+    }
+
+    body > article {
+        width: 100%;
+        height: calc(100vh - 300px);
+        min-height: 180px;
+        padding: 18px 16px;
+    }
+
+    body > article h1 {
+        font-size: 20px;
+    }
+
+    body > article h2 {
+        font-size: 16px;
+    }
+}
+
+
+/* ========================================
+   NOTEBOOK BINDING SPRINGS
+======================================== */
+
+#themes {
+    z-index: 2;
+}
+
+/* Four identical horizontal springs */
+#themes::before,
+#themes::after {
+    content: "";
+    position: absolute;
+    left: -38px;
+    width: 48px;
+    height: 16px;
+    box-sizing: border-box;
+
+    background: #999999;
+    border-radius: 999px;
+
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Upper pair — move down */
+#themes::before {
+    top: 50px;
+    box-shadow: 0 20px 0 #999999;
+    
+}
+
+/* Lower pair — move up */
+#themes::after {
+    bottom: 50px;
+    box-shadow: 0 -20px 0 #999999;
+}
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF1540" format="2">
+	<advance width="460"/>
+	<unicode hex="F1540"/>
+	<outline>
+		<component base="c"/>
+		<contour>
+			<point x="423" y="435" type="move"/>
+		</contour>
+		<contour>
+			<point x="386" y="157" type="move"/>
+			<point x="380" y="139"/>
+			<point x="372" y="123"/>
+			<point x="363" y="110" type="curve" smooth="yes"/>
+			<point x="333" y="69"/>
+			<point x="335" y="84"/>
+			<point x="321" y="29" type="curve" smooth="yes"/>
+			<point x="295" y="-71"/>
+			<point x="254" y="-256"/>
+			<point x="351" y="-406" type="curve" smooth="yes"/>
+			<point x="375" y="-442"/>
+			<point x="415" y="-467"/>
+			<point x="446" y="-496" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>c</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=c</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=q</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

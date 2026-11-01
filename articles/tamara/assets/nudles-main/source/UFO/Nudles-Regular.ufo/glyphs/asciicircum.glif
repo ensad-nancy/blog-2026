@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asciicircum" format="2">
+	<advance width="574"/>
+	<unicode hex="005E"/>
+	<outline>
+		<component base="uni0302" xOffset="30"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>math</string>
+				<key>R</key>
+				<string>math</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
