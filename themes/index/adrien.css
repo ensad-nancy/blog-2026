@@ -163,8 +163,8 @@
 
 body {
     --banner-height: 0px;
-    --col-width: 550px;
-    --col-gap: 50px;
+    --col-width: 560px;
+    --col-gap: 30px;
     font-family: "Spectral";
     font-feature-settings: "onum";
     display: grid;
@@ -178,28 +178,11 @@ body {
     margin-top: var(--banner-height);
 }
 
-/* Target Safari only */
-
-@supports (font: -apple-system-body) {
-    body {
-        --banner-height: 36px;
-    }
-
-    body::before {
-        content: "Ce thème fonctionne mieux sur un moteur de rendu comme Chromium ou Gecko !";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: var(--banner-height);
-        background-color: yellow;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-style: italic;
-    }
+#title,
+body>p {
+    padding: 0 10px;
 }
+
 
 /* Articles container */
 
@@ -246,7 +229,7 @@ main a div h3 {
     --hue-rotate: 0deg;
     font-family: "Lack";
     font-size: 38px;
-    line-height: 106%;
+    line-height: 106% !important;
     text-align: center;
     /*width: fit-content;*/
     width: 100%;
@@ -254,40 +237,16 @@ main a div h3 {
     padding: 90px;
     letter-spacing: 9%;
     /* effect  */
-    -webkit-text-stroke: 5.6px white;
-    filter: url(../../articles/adrien/assets/images/filters.svg#index-title) blur(2.5px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    filter:
+        drop-shadow(0 0 .4cap blue) drop-shadow(0 0 .6cap blue) drop-shadow(0 0 .8cap fuchsia) drop-shadow(0 0 1cap fuchsia) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) blur(.11cap) saturate(1.2) hue-rotate(var(--hue-rotate));
+    -webkit-text-stroke: .26cap white;
     order: 0;
-    margin-top: -60px;
+    margin-top: -45px;
     /*transition: all .2s ease-in-out;*/
-}
-
-@supports (font: -apple-system-body) {
-
-    /* Target Safari only */
-    main a div h3 {
-        --blur-factor: 1.1;
-        --dist-factor: 1;
-        --dist1: 0.5px;
-        --dist1-n: calc(-1 * var(--dist1));
-        --blur1: 7px;
-        --dist2: calc(var(--dist1) * var(--dist-factor));
-        --dist2-n: calc(-1 * var(--dist2));
-        --blur2: calc(var(--blur1) * var(--blur-factor));
-        --dist3: calc(var(--dist2) * var(--dist-factor));
-        --dist3-n: calc(-1 * var(--dist3));
-        --blur3: calc(var(--blur2) * var(--blur-factor));
-        filter:
-            drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3) var(--dist3-n) calc(var(--blur3) * 2) yellow) blur(3px) hue-rotate(var(--hue-rotate));
-        -webkit-text-stroke: 7.4px white;
-    }
 }
 
 main a:hover div h3 {
     --hue-rotate: 140deg;
-}
-
-main a:hover div footer {
-    font-weight: 700;
 }
 
 /*main a:hover div h3 {
@@ -301,40 +260,37 @@ main a div footer {
     order: 2;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*gap: 0 30px;*/
+    margin-top: 24px;
 }
 
 main a div footer p {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-main a div footer p:not(:last-child) {
-    border-bottom: 0.6px solid black;
+main a div footer p:has(span.tag) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-/*main a:hover div footer p {
-    border-color: white;
-}*/
+main a div footer p:first-child::after {
+    content: "---------------------------------------";
+    font-weight: 200;
+    letter-spacing: -12%;
+    margin: 0 15px;
+}
 
 main a div footer p strong {
-    flex: 1;
-    position: relative;
+    display: none;
 }
-
-/*main a div footer p strong::after {
-    content: "";
-    background-color: white;
-    height: 1em;
-    width: 1ch;
-    position: absolute;
-    right: 0;
-    top: 0;
-}*/
 
 main a div footer p:nth-child(2) {
     letter-spacing: 5%;
@@ -342,6 +298,7 @@ main a div footer p:nth-child(2) {
 
 main a div footer p span.tag {
     display: flex;
+    font-weight: 900;
 }
 
 main a div footer p span.tag:not(:last-child)::after {
@@ -422,11 +379,11 @@ main a div footer p span.tag:not(:last-child)::after {
 }
 
 #themes div label:hover {
-    /*font-weight: 700;*/
-    transform-origin: bottom right;
+    font-weight: 800;
+    /*transform-origin: bottom right;
     scale: 1.1;
     rotate: 7deg;
-    text-decoration-color: black;
+    text-decoration-color: black;*/
 }
 
 #date {
@@ -478,6 +435,7 @@ main a div footer p span.tag:not(:last-child)::after {
     background-color: black;
     border-radius: 100px;
     appearance: none;
+    border: initial;
     cursor: pointer;
     transition: all .1s ease-in-out;
 }
@@ -488,6 +446,7 @@ main a div footer p span.tag:not(:last-child)::after {
     background-color: black;
     border-radius: 100px;
     appearance: none;
+    border: initial;
     cursor: pointer;
     transition: all .1s ease-in-out;
 }
