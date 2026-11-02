@@ -1,0 +1,20 @@
+---
+title: Blog de Noa
+date: 2026-10-19
+tags: billets, train, couleurs, détails, gare
+---
+
+# Blog de Noa #5
+
+## Ce que j'imagine - 19/10/26
+
+*Je me souviens de la première fois que je les ai vu, ces fameux billets. J’étais allée à la gare pour raccompagner ma grand-mère à son train. Elle avait passé le week-end à la maison pour fêter l’anniversaire de ma mère. De ce côté-là, rien d’anormal. Avant de se diriger vers le quai, mamie s’arrête et fait : « Ah, il faudrait pas que j’oublie de prendre mon billet ! Les contrôleurs ont plus de pitié de nos jours, même pour les petites vieilles comme moi… » Sur ce, nous nous dirigeons vers les distributeurs automatiques. La petite monnaie est de sortie, ma grand-mère goinfre la machine de ses piécettes et voilà qu’elle ronronne en délivrant sa récompense.*
+LA récompense. La sublime chose. Le précieux petit papier. Le billet de TER. Et je tombe dans cette plage aux grains colorés, roses vifs. Le sable fin est doux sous mes doigts. Je le caresse et l’éparpille. Mes yeux ne peuvent plus s’en détacher. Je suis complètement hypnotisée par cette étendue rose qui s’étend jusqu’à l’horizon. N’y a-t-il rien d’autre que du beau sable à perte de vue ?
+Soudain, ma main droite heurte quelque chose enfouie dans le sable. Je gratte d’abord lentement, puis frénétiquement. Une étrange pierre blanche sort de terre. Je me relève pour prendre un peu de recule. Elle est très anguleuse, sculptée d’une main humaine. Sa forme semble représenter une série de lettres en majuscule. Un « S », un « N » suivi d’un « C » et d’un « F ». Aucune idée de ce que ça peut bien signifier… Mon regard se tourne à nouveau vers l’horizon. Se pourrait-il qu’il y ait quelque chose de plus par delà cette plage rose ?
+Je commence à m’éloigner de la pierre blanche, les yeux fixés sur un point au loin choisi au hasard. Je marche. De temps en temps, je m’accroupis, tends la main, attrape quelques grains, les relâche au vent, les regarde s’envoler et se poser quelques mètres plus loin. Et je marche encore.
+Ah, enfin ! Là-bas, tout là-bas, un mur gigantesque se dresse. J’accélère le pas et en quelques minutes, je suis au pied de la paroi. Elle est taillée dans la même pierre blanche et lisse que l’étrange symbole déterré un peu avant. En la tâtant, je découvre qu’elle a la même texture que le sable. Douce, mais solide.
+Un regard à droite, un regard à gauche. Le mur se poursuit et son extrémité vient se perdre à l’horizon. Par où aller ? La main toujours posée sur la pierre, je décide de partir à droite. Je longe le mur. Mes doigts effleurent distraitement cette surface qui guide mon parcours. Je suis bientôt confronté à un angle droit. Je tourne et continue ma balade sans m’arrêter. Nouvelle angle droit. Nouvelle direction. Encore un angle. Encore une nouvelle direction. Dernier angle. Dernière nouvelle direction. Retour au point de départ, seule face au mur. L’envie me prend soudain de l’escalader. Petit à petit, je commence mon ascension. C’est étonnement plus facile que prévu. Arrivée à mi-hauteur, je tourne ma tête pour observer une fois de plus cette étendue de sable rose. Magnifique. Mais il faut me concentrer pour atteindre le sommet, même si l’escalade reste facile.
+Ma main gauche s’agrippe enfin au bord ! Vient ensuite la droite qui m’aide à tirer le reste de mon corps. Je m’assois sur ce perchoir improvisé. De cette hauteur, la sensation est différente mais tout aussi agréable. Je prends un temps, immobile, à contempler ce qui m’entoure. C’est beau. J’apprécie.
+Soudain, quelque chose me tire en arrière. Sans pouvoir lutter, je tombe. Le monde, lui, s’éloigne et, moi, je me rapproche du sol.
+Mais quel sol ?
+*« Bon, tu me rends mon billet, à moins que tu veuilles partir à ma place ? », me lance ma grand-mère. Je le lui donne avec regrets. Embrassades et étreintes. Mamie me salue à travers la vitre du train. Il démarre. Je les vois partir, ma grand-mère et ma plage au sable fin.*

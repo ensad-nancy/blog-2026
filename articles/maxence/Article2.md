@@ -1,10 +1,85 @@
 ---
-title: Un frigo 
-date: 2026-10-12
-tags: tunnel
+title: Mardi 22h15
+date: 2026-10-05
+tags: routine , répétition
 preview: 
 ---
 
-# Anatomie d'un frigo
+# Mardi 22h15
 
-Je me demande combien de temps ça a pris de réussir à tout faire rentrer là-dedans. Parce qu'à un moment, ça doit devenir un vrai Tetris. Tu déplaces un pot pour faire de la place, sauf qu'il bloque une bouteille, qui empêche de sortir un autre truc. Dix minutes plus tard, tu as tout sorti du frigo et tu dois réussir à reproduire la configuration initiale. Avec un peu de chance, tu gagnes même trois centimètres de place. J'imagine qu'il y a une organisation derrière tout ça, même si elle n'est plus forcément compréhensible par quelqu'un d'extérieur. Un peu comme ces gens qui savent exactement où se trouve chaque vêtements sur le sol, mais seraient incapables de l'expliquer à quelqu'un d'autre. Tu déplaces un aliment et tu risques de perturber tout un système dont tu ignorais l'existence. C'est aussi le genre de frigo où tu dois réfléchir avant de prendre quelque chose. Tu ouvres la porte avec une idée précise en tête et tu finis par déplacer trois aliments pour attraper celui du fond. Et évidemment, après tout cet effort, tu manges finalement des chips. Toute cette logistique pour abandonner... Je dis ça, mais je suis mal placé pour juger. J'ai déjà du mal à optimiser l'espace dans un sac de courses. Il y a toujours un moment où je dois choisir entre écraser les tomates ou prendre un deuxième sac, et je prends systématiquement la mauvaise décision. Du coup, vraie question ? Tu as une méthode ou tu fonctionnes uniquement à l'instinct ? Parce qu'à ce stade, j'imagine qu'on finit par s'y réparer sans carte. Tu sais quel pot sortir en premier et quel aliment ne surtout pas toucher sous peine de tout faire s'effondrer. En tout cas, sacrée performance. J'espère que tu as pris une photo pour pouvoir reproduire le rangement après avoir sorti le beurre. Ce serait dommage de devoir tout recommencer à chaque fois.
+Fin de journée, je suis chez moi. J’allume mon ordinateur pour me mettre au boulot!
+( phrase prononcée avec une confiance déconcertante )
+22h15.
+J’ouvre mon cours.
+Je regarde le document.
+Le document me regarde lui aussi.
+Il faut le préparer ce cours.
+Je vais chercher des conseils sur « comment être productif? ».
+22h19. Google.
+Je clique sur un article :
+« Comment être plus productif : 10 astuces clés »
+Je referme l’article…
+( la productivité comme simple courant d’air )
+22h24. WikiHow
+Je ne sais plus comment j’ai attiré sur la page de fabrication d’une lampe à huile. Mais maintenant je sais le faire, c’est une bonne manière de continuer à ne pas travailler. 
+22h32.
+Nouvel onglet.
+« Quel est le taux de caféine mortel ? »
+Je préfère ne pas regarder les résultats.
+Vaut mieux.
+22h34. Gmail.
+2 messages de l’administration, 5 de mes élèves, et 3 de parents.
+Wow, je les regarde.
+Ils me regardent.
+Et on prend la décisions de retourner travailler, plus important.
+22h36. Twitter
+J’ai cliqué sur une notification par mes gardes…
+ ( je me mens à moi même, ça en devient humiliant )
+Je défile.
+Tiens un prof qui parle de ces élèves.
+Je défile encore.
+Quoi?! L’extrême droite serait antisémite, la non-surprise. 
+23h14.
+Je rouvre mon cours.
+Je tape : « Méthodologie … »
+Je réfléchis à la suite, ça vient pas.
+Je supprime.
+Je vais chercher des images.
+23h21. Pinterest
+Qu’est ce que je cherchais déjà ? 
+Des citations… des photos… un escargot.
+Les escargots c’est vrai j’y connais pas grand chose.
+23h26. Youtube
+Documentaire sur les escargots.
+Arte Evasion : Escargots, le grand voyage du petit-gris.
+Je lance la vidéo.
+(Je ne sais toujours pas pourquoi)
+00h09.
+Je sais maintenant qu’ils possèdent  jusqu’à 20 000 dents.
+Je ferme l’onglet avec le sentiment étrange d’avoir accompli quelque chose.
+00h11. Wikipedia
+« Les gastéropodes ( Gastropoda ) ».
+00h18.
+Gastropoda est formé à partir des mots grecs (gastêr), « ventre, estomac », et (poús), « pied » (via son génitif (podos), « du pied »).
+00h35.
+Suis-je même encore dans l’optique de travailler?
+( Le déni. )
+Je regarde l’heure.
+00h37.
+Je prends l’initiative de VRAIMENT m’y mettre.
+( À partir de maintenant )
+00h38. Twitter 
+1h19.
+Je reviens sur mon document.
+« Méthodologie … »
+Mais quelle méthodologie?
+Je complète.
+« Méthodologie ; problématisation du sujet »
+Je suis satisfait.
+Je sauvegarde.
+1h25.
+J’éteins mon ordinateur.
+Pendant quelques secondes j’y aperçois mon reflet.
+On pourrait presque croire que j’ai travaillé.
+( c’est déjà ça.)
+Et demain encore je recommencerai.

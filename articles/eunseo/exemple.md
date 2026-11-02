@@ -2,7 +2,7 @@
 title: DAY ⭐️
 date: 2026-09-21
 tags: #sansplan #improvisation #marche
-preview: assets/images/7420442-728862511.jpg
+
 ---
 
 J’ai beaucoup à faire, mais je m’efforce de ne pas y penser. On dit que la « sauce mère » est à la base de tout, mais aujourd’hui, ce paysage est ma seule base.

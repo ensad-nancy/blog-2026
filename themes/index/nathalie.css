@@ -7,7 +7,12 @@
 
 body {
     margin: 0;
-    background: white;
+    height: 100vh;
+    overflow: hidden;
+   background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -19,16 +24,15 @@ body {
 #title {
     position: fixed;
     top: 100px;
-    left: clamp(220px, 35vw, 500px);
-    width: min(590px, 55vw);
-    z-index: 2;
+    left: 500px;
+    width: 590px;
 }
 
 #title h1 {
+    margin: 0;
     font-size: 30px;
     line-height: 1.1;
     color: #ff3aa5;
-    margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -38,27 +42,11 @@ body {
 body > p {
     position: fixed;
     top: 180px;
-    left: clamp(220px, 35vw, 500px);
-    width: min(590px, 55vw);
+    left: 500px;
+    width: 590px;
     margin: 0;
     font-size: 12px;
     line-height: 1.4;
-    z-index: 2;
-}
-
-
-/* Fixed white background for header */
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 280px;
-    background: white;
-    z-index: 1;
-    pointer-events: none;
 }
 
 
@@ -67,13 +55,12 @@ body::before {
 #themes {
     position: fixed;
     top: 180px;
-    left: clamp(20px, 10vw, 150px);
+    left: 150px;
     width: 180px;
     padding: 12px;
     background: white;
     border: 1px solid black;
     font-size: 11px;
-    z-index: 3;
 }
 
 #themes legend {
@@ -111,13 +98,12 @@ body::before {
 
 #filtres {
     position: fixed;
-    top: 850px;
-    left: clamp(20px, 10vw, 150px);
+    top: 450px;
+    left: 150px;
     width: 180px;
     padding: 12px;
     background: white;
     border: 1px solid black;
-    z-index: 3;
 }
 
 #filtres h2 {
@@ -139,19 +125,24 @@ body::before {
 }
 
 
-/* Blog posts */
+/* Blog layout */
 
 main {
-    margin-left: clamp(220px, 35vw, 500px);
-    padding-top: 350px;
-    padding-bottom: 150px;
-    width: min(660px, 60vw);
+    position: absolute;
+    top: 350px;
+    bottom: 0;
+    left: 500px;
+    width: 660px;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 260px 260px;
     column-gap: 70px;
     row-gap: 150px;
-    align-items: start;
+    align-content: start;
+
+    padding-bottom: 150px;
 }
 
 
@@ -159,7 +150,7 @@ main {
 
 main > a {
     display: block;
-    width: 100%;
+    width: 260px;
     background: white;
     border: 1px solid black;
     color: black;
@@ -203,9 +194,9 @@ main > a > div:has(.thumb)::before {
 
 main h3 {
     order: 2;
+    margin: 10px 0;
     font-size: 13px;
     font-weight: normal;
-    margin: 10px 0;
 }
 
 
@@ -236,23 +227,28 @@ main > a:nth-child(even) {
 
 /* Medium screens */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 
     #title,
     body > p {
-        left: 280px;
-        width: calc(100% - 320px);
+        left: 35%;
+        width: 55%;
     }
 
     main {
-        margin-left: 280px;
-        width: calc(100% - 320px);
-        column-gap: 25px;
+        left: 35%;
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    main > a {
+        width: 100%;
     }
 
     #themes,
     #filtres {
-        left: 40px;
+        left: 5%;
     }
 }
 
@@ -262,20 +258,19 @@ main > a:nth-child(even) {
 @media (max-width: 650px) {
 
     body {
+        height: auto;
+        overflow: auto;
         padding: 20px;
-    }
-
-    body::before {
-        display: none;
     }
 
     #title,
     body > p,
     #themes,
-    #filtres {
+    #filtres,
+    main {
         position: static;
         width: 100%;
-        margin: 0 0 25px 0;
+        margin-bottom: 25px;
     }
 
     #title h1 {
@@ -283,15 +278,55 @@ main > a:nth-child(even) {
     }
 
     main {
-        margin-left: 0;
-        width: 100%;
-        padding-top: 20px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+        overflow: visible;
+        padding-bottom: 50px;
     }
 
     main > a {
+        width: 100%;
         top: 0 !important;
     }
+}
+
+/* Themes */
+
+#themes {
+    position: fixed;
+    top: 180px;
+    left: 150px;
+    width: 180px;
+    height: 350px;
+    overflow-y: auto;
+    padding: 12px;
+    background: white;
+    border: 1px solid black;
+    font-size: 11px;
+}
+
+/* Filters */
+
+#filtres {
+    position: fixed;
+    top: 540px;
+    left: 150px;
+    width: 180px;
+    padding: 12px;
+    background: white;
+    border: 1px solid black;
+}
+
+/* Description */
+
+body > p {
+    position: fixed;
+    top: 180px;
+    left: 500px;
+    width: 590px;
+    max-width: none;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
 }

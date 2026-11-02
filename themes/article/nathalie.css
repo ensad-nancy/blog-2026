@@ -7,8 +7,7 @@
 
 body {
     margin: 0;
-    background: white;
-    color: black;
+   background-color:wheat
     font-family: Arial, sans-serif;
     font-size: 13px;
     min-height: 100vh;
@@ -195,15 +194,3 @@ article a {
         margin: 0 0 60px 0;
     }
 }
-
-
-/* Background collage - add later */
-
-/*
-body {
-    background-image: url("../../assets/collage.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-*/
