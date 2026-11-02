@@ -2,7 +2,7 @@
 title: DAY ⭐️⭐️⭐️
 date: 2026-10-05
 tages: #journée
-preview:
+
 ---
 
 10:32 En fait, je ne me suis pas arrêté pendant toute la nuit. Beaucoup de vidéos ont continué à passer à cause de la lecture automatique. 

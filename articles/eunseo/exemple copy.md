@@ -2,7 +2,7 @@
 title: DAY ⭐️⭐️
 date: 2026-09-28
 tags: #stylo #papeterie
-preview: 
+ 
 
 ⭐⭐⭐⭐⭐ Enfin trouvé !
 
