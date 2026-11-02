@@ -7,7 +7,6 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    
 }
 
 h1:hover {
@@ -15,7 +14,6 @@ h1:hover {
     background-color: rgb(183, 255, 0);
     border-radius: 40px;
     color: black;
-   
 }
 
 body > p:first-of-type {
@@ -31,7 +29,6 @@ body > p:first-of-type {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    
 }
 
 body > p:first-of-type:hover {
@@ -68,25 +65,19 @@ main a {
     margin-inline-end: 20%;
     font-family: "Avara";
     overflow-wrap: break-word;
-    
     line-height : 1;
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
     height: 500px;
-    
-    
 }
 
 main a:hover{
-   
     z-index: 100;
     color: black;
     background-color: rgb(230, 255, 167);
     border-radius: 40px;
     padding-bottom: 0%;
-    
-    
 }
 
 
@@ -94,7 +85,6 @@ main a p {
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    
 }
 
 footer span {
@@ -117,7 +107,6 @@ footer span {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-  
 }
 
 #themes legend {
@@ -130,8 +119,6 @@ footer span {
     border-radius: 40px;
     color: black;
     z-index: 1000;
-    
-    
 }
 
 #filtres {
