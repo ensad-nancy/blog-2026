@@ -175,7 +175,7 @@ body:has(#themes:focus-within) #title + p {
 main {
     display: block !important; 
     column-gap: 30px;
-    column-count: 5;   
+    column-count: 6;   
 }
 
 @media (max-width: 1200px) { main { column-count: 4; } }
