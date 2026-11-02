@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 90px;
+  top: 80px;
   bottom: 55px;
   left: 0;
   right: 0;
@@ -20,7 +20,6 @@ body::before {
   background-repeat: no-repeat;
 }
 
-
 #themes,
 #filtres {
     position: relative;
@@ -30,7 +29,8 @@ body::before {
     bottom: 10px;
     padding: 78px;
     z-index: 1;
-    background: linear-gradient(white 0%, white 83%, transparent 100%);
+    box-shadow: 0 0 12px 5px white, 0 0 12px 5px white, 0 0 12px 5px white;
+    background: white;
 }
 
 h1{
