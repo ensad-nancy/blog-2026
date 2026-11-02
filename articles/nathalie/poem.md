@@ -1,5 +1,7 @@
+---
+title: poem
 date: 2026-09-28
-tags: poem
+tags: #poem
 preview:
 ---
 

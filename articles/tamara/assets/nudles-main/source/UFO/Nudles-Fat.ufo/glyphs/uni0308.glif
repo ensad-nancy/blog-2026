@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0308" format="2">
+	<advance width="547"/>
+	<unicode hex="0308"/>
+	<anchor x="206" y="450" name="_top"/>
+	<anchor x="206" y="691" name="top"/>
+	<outline>
+		<component base="period" xOffset="-22" yOffset="550"/>
+		<component base="period" xOffset="228" yOffset="550"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

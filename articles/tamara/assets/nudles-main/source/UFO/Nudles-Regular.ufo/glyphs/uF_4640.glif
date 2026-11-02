@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF4640" format="2">
+	<advance width="883"/>
+	<unicode hex="F4640"/>
+	<outline>
+		<component base="S"/>
+		<contour>
+			<point x="604" y="338" type="move"/>
+			<point x="582" y="328"/>
+			<point x="557" y="320"/>
+			<point x="535" y="318" type="curve" smooth="yes"/>
+			<point x="509" y="316"/>
+			<point x="496" y="311"/>
+			<point x="474" y="332" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="500" y="308" type="move"/>
+			<point x="470" y="228"/>
+			<point x="467" y="188"/>
+			<point x="467" y="91" type="curve" smooth="yes"/>
+			<point x="467" y="77"/>
+			<point x="461" y="67"/>
+			<point x="466" y="56" type="curve" smooth="yes"/>
+			<point x="470" y="46"/>
+			<point x="481" y="45"/>
+			<point x="490" y="43" type="curve" smooth="yes"/>
+			<point x="563" y="28"/>
+			<point x="627" y="14"/>
+			<point x="714" y="6" type="curve" smooth="yes"/>
+			<point x="737" y="4"/>
+			<point x="765" y="3"/>
+			<point x="785" y="18" type="curve" smooth="yes"/>
+			<point x="827" y="49"/>
+			<point x="811" y="106"/>
+			<point x="821" y="149" type="curve"/>
+		</contour>
+		<contour>
+			<point x="460" y="631" type="move"/>
+		</contour>
+		<contour>
+			<point x="448" y="631" type="move"/>
+			<point x="468" y="634"/>
+			<point x="501" y="637"/>
+			<point x="516" y="639" type="curve" smooth="yes"/>
+			<point x="594" y="650"/>
+			<point x="695" y="659"/>
+			<point x="763" y="612" type="curve" smooth="yes"/>
+			<point x="799" y="587"/>
+			<point x="811" y="547"/>
+			<point x="811" y="506" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>S</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=S</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=E</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

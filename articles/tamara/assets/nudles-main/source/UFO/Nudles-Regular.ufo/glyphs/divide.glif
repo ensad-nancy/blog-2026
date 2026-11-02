@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="divide" format="2">
+	<advance width="522"/>
+	<unicode hex="00F7"/>
+	<outline>
+		<component base="minus" xOffset="6"/>
+		<component base="period" xOffset="146" yOffset="90"/>
+		<component base="period" xOffset="146" yOffset="400"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>math</string>
+				<key>R</key>
+				<string>math</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

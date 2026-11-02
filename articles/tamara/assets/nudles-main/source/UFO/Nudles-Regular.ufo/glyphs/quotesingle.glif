@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quotesingle" format="2">
+	<advance width="202"/>
+	<unicode hex="0027"/>
+	<outline>
+		<component base="comma" xOffset="-9" yOffset="730"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnName</key>
+			<string>quotesingle</string>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>quotes</string>
+				<key>R</key>
+				<string>quotes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

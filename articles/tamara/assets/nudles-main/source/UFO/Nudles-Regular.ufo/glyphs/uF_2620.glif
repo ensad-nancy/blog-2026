@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF2620" format="2">
+	<advance width="1373"/>
+	<unicode hex="F2620"/>
+	<outline>
+		<component base="I"/>
+		<component base="E" xOffset="260"/>
+		<contour>
+			<point x="798" y="550" type="move"/>
+			<point x="810" y="431"/>
+			<point x="807" y="292"/>
+			<point x="807" y="185" type="curve" smooth="yes"/>
+			<point x="807" y="99"/>
+			<point x="808" y="26"/>
+			<point x="895" y="15" type="curve" smooth="yes"/>
+			<point x="1019" y="-1"/>
+			<point x="1187" y="-17"/>
+			<point x="1255" y="88" type="curve" smooth="yes"/>
+			<point x="1285" y="135"/>
+			<point x="1300" y="197"/>
+			<point x="1327" y="247" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>I</string>
+				</dict>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>E</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=I</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=L</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

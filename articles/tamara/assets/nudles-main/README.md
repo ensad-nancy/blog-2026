@@ -1,0 +1,3 @@
+# Nudles
+
+Nudles is a playful, wriggly, not quite monoline but almost, open source typeface with a lot of personality. Inspired by the shapes of noodles, Nudles will give a sense of childlike joy to your designs, or just make you a bit hungry. Slight differences in baseline position, a slight slant, and very unique type shapes allow for a peculiar rhythm. Several weights give some wiggle room for expressing your inner cook, which inclusive ligatures will only emphasize. Care for a warm cup of Nudles?
