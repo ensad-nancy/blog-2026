@@ -2,7 +2,7 @@
 title: DAY ⭐️⭐️⭐️⭐️
 date: 2026-10-12
 tags: #petitmalentendu
-preview: assets/images/7420442-728862511.jpg
+preview: 
 ---
 
 Petite vague

@@ -30,9 +30,7 @@ body {
     background: #000000;
 }
 
-/* ========================================
-   RETOUR BUTTON
-======================================== */
+/* RETOUR BUTTON*/
 
 body > a {
     grid-column: 1;
@@ -68,9 +66,7 @@ body > a:hover {
 
 
 
-/* ========================================
-   THEME SELECTOR — RIGHT SIDE
-======================================== */
+/* THEME SELECTOR — RIGHT SIDE*/
 
 #themes {
     grid-column: 2;
@@ -163,9 +159,7 @@ body > a:hover {
 }
 
 
-/* ========================================
-   NOTEBOOK — HEADER
-======================================== */
+/* NOTEBOOK — HEADER*/
 
 body > header {
     grid-column: 1;
@@ -251,9 +245,7 @@ body > header .tag {
     font-size: 11px;
 }
 
-/* ========================================
-   NOTEBOOK — SCROLLABLE CONTENT
-======================================== */
+/* NOTEBOOK — SCROLLABLE CONTENT*/
 
 body > article {
     grid-column: 1;
@@ -334,9 +326,7 @@ body > article p {
     line-height: 1.9;
 }
 
-/* ========================================
-   RESPONSIVE — TABLET
-======================================== */
+/* RESPONSIVE — TABLET */
 
 @media (max-width: 800px) {
     body {
@@ -364,9 +354,7 @@ body > article p {
     }
 }
 
-/* ========================================
-   RESPONSIVE — MOBILE
-======================================== */
+/* RESPONSIVE — MOBILE*/
 
 @media (max-width: 600px) {
     body {
@@ -426,9 +414,7 @@ body > article p {
 }
 
 
-/* ========================================
-   NOTEBOOK BINDING SPRINGS
-======================================== */
+/* NOTEBOOK BINDING SPRINGS */
 
 #themes {
     z-index: 2;
