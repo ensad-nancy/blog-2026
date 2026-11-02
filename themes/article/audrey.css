@@ -1,0 +1,119 @@
+@font-face {
+    font-family:"bbbsprat";
+    src: url(/articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-ExtendedRegular.woff);
+}
+@font-face {
+    font-family:"azeret";
+    src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-Light.ttf);
+}
+@font-face {
+    font-family: "azeret italic";
+    src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-LightItalic.ttf);
+}
+body{
+    margin: 0;
+}
+
+
+article {
+    font-family: "azeret";
+    font-size: 20pt;
+    display: block;
+    margin-left: 30%;
+    margin-right: 3%;
+    margin-top: 7%;
+    text-align: left;
+    background-image:linear-gradient(to bottom, black, rgb(96, 206, 169) 70%, aquamarine 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    font-family: "bbbsprat";
+    font-size: 20pt;
+    color: black;
+}
+
+#themes{
+    margin-top: 15px;
+    position:fixed;
+    left: 9%;
+    top: 0;
+    height: 100%;
+    font-family:"azeret";
+    color: white;
+    text-align: center;
+    font-size: 19pt;
+    line-height: 145%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+#themes label {
+    background-color: black;
+    font-size: 20pt;
+    display: block;
+    width: fit-content;
+    text-align: center;
+}
+
+#themes label:hover{
+    background-color: aquamarine;
+    /* font-size: 25pt; */
+    transform: scale(1.2);
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+#themes > legend{
+    display: none;
+}
+
+header .date, header .tags {
+    display: none;
+}
+
+header .title {
+    margin-left: 30%;
+    margin-right: 3%;
+    margin-top: 3%;
+    font-family: "bbbsprat";
+    font-size: 40pt;
+    color: aquamarine;
+    -webkit-text-stroke: 2px black;
+}
+
+body > a {
+    font-size: 0px; 
+    display : block;
+    font-family: "bbbsprat";
+    margin-left: 30%;
+    color: black;
+    text-decoration-line: none;
+    width: fit-content;
+}
+
+body > a:hover{
+   color: aquamarine;
+}
+
+body > a::first-letter {
+    font-size: 110px;
+}
+
+p > img{
+    width: 50%;
+    height: 70%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}

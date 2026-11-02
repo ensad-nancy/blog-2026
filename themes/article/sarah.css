@@ -9,6 +9,16 @@ body{
 
 body > a{
     margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 70px;
+    background-color: #001F59;
+    color: #ffffff;
+    font-family: "tiny120";
+    font-size: 25px;
+    padding-left: 15px;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
 #themes {
@@ -24,14 +34,15 @@ body > a{
 }
 
 #themes div {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "tiny120";
-    width: 150px;
+    width: 135px;
     height: 40px;
     border-radius: 70px;
     background-color: #001F59;
     color: #ffffff;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     margin-left: 5%;
     margin-top: 5%;
     margin-right: 5%;
@@ -41,7 +52,15 @@ body > a{
 header{
     grid-area: 1 / 3 / span 1 / span 3;
     font-family: "tiny80";
+    color:#ffffff;
     font-size: 20px;
+    padding-left: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 30px;
+    background-color:#001F59;
+    border-radius: 45px 45px 5px 5px;
+    z-index: 2;
 }
 
 article{
@@ -49,15 +68,22 @@ article{
     gap : 10px;
     overflow: auto;
     margin-left: 10%;
-    margin-top: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    animation-duration: 2s;
+    animation-name: slide-in;
+    z-index: 1;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 0 -140px;
+  }
 }
 
 article > h1{
