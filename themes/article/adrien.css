@@ -207,9 +207,12 @@ header {
 header .tags {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 2px 50px;
     z-index: 1;
     font-weight: 800;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header .tags .tag {
@@ -244,6 +247,7 @@ header .title {
         drop-shadow(0 0 .4cap blue) drop-shadow(0 0 .6cap blue) drop-shadow(0 0 .8cap fuchsia) drop-shadow(0 0 1cap fuchsia) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) blur(.1cap) saturate(1.2) hue-rotate(var(--hue-rotate));
     -webkit-text-stroke: .25cap white;
     /*transition: filter 3s ease-in-out;*/
+    word-wrap: break-word;
 }
 
 header .title:hover {
