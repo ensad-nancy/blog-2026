@@ -1,13 +1,20 @@
 ---
-title: Plat salé et l'Odyssée
-date: 2026-09-28
-tags: auteur.e : Miette
+title: La Tour d’Albinhac
+date: 2026-09-21
+tags: cyberfeminisme, donna haraway
 preview: assets/images/7420442-728862511.jpg
 ---
 
+# Titre de mon article
 
-Comme toute personne vivant seule, manger face à un mur semble ennuyeux alors elle profite de ce moment pour regarder un film, une vidéo ou la télé. C'est comme ça qu'elle se retrouve nez à nez avec moi, tentant désespérément de trouver de quoi alimenter sa culture du vide. Mais apparemment l’algorithme YouTube en a décidé autrement. Celui-ci lui propose une playlist de vidéos réalisée par Arte, c'est d’une série de plusieurs épisodes consacrée aux mythes de l’Odyssée et de l’Iliade.
+## Premier sous-tire
 
-Évidemment elle ne veut pas faire comme tout le monde, elle commence donc par l’épisode 10 qui s'appelle « Crépuscule des dieux ». Ca raconte l’histoire de la reine Pénélope faite prisonnière dans le but qu’elle choisisse enfin un remplaçant à Ulysse, qui, tout pousse à croire, ne reviendra pas. Après tout, cela fait 20 ans qu’elle attend son retour. [Elle est patiente dis donc] Elle doit donc faire un choix entre tous ses prétendants, pour ce faire elle va leur faire passer une épreuve inspirée de l’histoire d’Ulysse. L’épreuve consiste à se servir du grand arc d’Ulysse et à ce qu'en une seule flèche 12 fers de hache alignés soient transpercé. Un à un tous les prétendants échouent, ils n’arrivent même pas à tendre la corde de l’arc, même le fils de Pénélope et d’Ulysse, Télémaque, n’y parvient pas. Et c’est alors qu’un mendiant fait son entrée, lui aussi veut essayer malgré les protestations de tous les prétendants, car selon eux, un mendiant n’est pas digne de participer et devrait rester à sa place. Au final, il finit par avoir l’autorisation de tirer avec l’arc, et sous la surprise des prétendants, [Il manque du sel dans mon plat…] il parvient à traverser les 12 haches de fer ; c’est alors que le mendiant dévoile sa véritable identité, il est Ulysse, roi légitime d’Ithaque. Puis Ulysse mène un combat avec les prétendants, ou plutôt un massacre, car il ne laisse aucune chance de survie aux participants. Mais il ne s’arrête pas là, après le massacre il va réunir les servantes de Pénélope qui l’ont trahie et qui l’ont fait être prisonnière pour la pousser à choisir un prétendant. Ulysse laisse le sort de ses servantes à son fils Télémaque, celui-ci ordonne leur exécution. Quand le calme fut rétabli et qu’Ulysse et Pénélope se retrouvèrent, ce ne sont pas des embrassades que l’on peut voir mais bien du doute. En effet la reine doute de l’identité de celui qui l’a libérée, elle ne reconnait pas le roi qui a bien changé physiquement au cours des 20 dernières années. Mais pour s’assurer qu’il s’agit bien d’Ulysse, elle va le provoquer avec une supercherie dont la réponse ne peut être connue que par Ulysse lui-même. Évidemment celui-ci prouve qu’il est bel et bien celui qu’il prétend être de par sa réaction. Ainsi le roi peut enfin vivre les retrouvailles qu’il attendait avec sa bien-aimée.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pretium turpis. Donec et ullamcorper velit. Donec nec dui facilisis, feugiat nibh eu, maximus odio. Praesent in lacus purus. Aenean aliquet varius eros, sagittis maximus nulla ornare et. Donec in turpis vel turpis porttitor ullamcorper. Donec lacinia nisi nec turpis sagittis, ac maximus quam sagittis. Ut pretium elit sed nisl fermentum blandit. Praesent eu diam eget libero fermentum consequat nec quis felis. Proin imperdiet ligula eu ante egestas auctor. Aliquam sit amet pellentesque felis. Donec orci justo, condimentum ut arcu eu, ornare sagittis ipsum. Morbi suscipit eros vel erat aliquet, eu sagittis dui scelerisque. Fusce tempor blandit dolor sed tristique. Proin tortor nulla, blandit ut nibh at, rutrum sollicitudin ante.
 
-Je vais couper court à la vidéo, car je pense que l’histoire de l’odyssée est aujourd’hui bien connue, elle a été interprétée, répétée et transformée avec des documentaires, des livres ou bien des films comme celui qui vient de sortir récemment. 
+Ut finibus nulla ut imperdiet dignissim. Fusce convallis hendrerit felis, pellentesque cursus elit pretium at. Vestibulum commodo tincidunt mi accumsan luctus. Nullam accumsan scelerisque quam at fermentum. Nunc blandit luctus quam ut auctor. Cras tellus magna, mattis ut consectetur nec, consectetur eu arcu. Nam ultrices, neque sit amet dictum rhoncus, diam turpis maximus odio, ut sagittis augue enim sed nisi. Nunc mattis egestas erat id ultricies. Morbi et ultrices nisi. Vivamus auctor tristique urna id maximus. Vestibulum euismod felis a mi ultricies aliquam. Aenean finibus porttitor tincidunt. Praesent interdum dapibus aliquet. Integer elementum pulvinar efficitur.
+
+## Second sous-tire
+
+Integer sodales sed arcu sed aliquam. Suspendisse rutrum tempus justo vel euismod. Etiam lacinia nibh mauris, a semper justo sodales maximus. Sed quis finibus mauris. Nunc mollis sit amet orci in placerat. Vestibulum ultricies risus nec lectus euismod, eget vestibulum nibh pulvinar. Donec imperdiet accumsan eleifend.
+
+Extrait de *Manifeste Cyborg* de Donna Haraway
