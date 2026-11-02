@@ -231,39 +231,19 @@ header .title {
     order: 1;
     height: fit-content;
     font-family: "Lack";
-    font-size: 70px;
-    line-height: 106%;
+    font-size: 54px;
+    line-height: 106% !important;
     text-align: center;
     width: fit-content;
     color: white;
     padding: 90px;
     margin: var(--negative-margin) 0;
-    letter-spacing: 5%;
+    letter-spacing: 7%;
     /* effect  */
-    -webkit-text-stroke: 9px white;
-    filter: url(../../articles/adrien/assets/images/filters.svg#article-title) blur(3.8px) saturate(1.2) hue-rotate(var(--hue-rotate));
+    filter:
+        drop-shadow(0 0 .4cap blue) drop-shadow(0 0 .6cap blue) drop-shadow(0 0 .8cap fuchsia) drop-shadow(0 0 1cap fuchsia) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) blur(.1cap) saturate(1.2) hue-rotate(var(--hue-rotate));
+    -webkit-text-stroke: .25cap white;
     /*transition: filter 3s ease-in-out;*/
-}
-
-@supports (font: -apple-system-body) {
-
-    /* Target Safari only */
-    header .title {
-        --blur-factor: 1.5;
-        --dist-factor: 1;
-        --dist1: 0px;
-        --dist1-n: calc(-1 * var(--dist1));
-        --blur1: 8px;
-        --dist2: calc(var(--dist1) * var(--dist-factor));
-        --dist2-n: calc(-1 * var(--dist2));
-        --blur2: calc(var(--blur1) * var(--blur-factor));
-        --dist3: calc(var(--dist2) * var(--dist-factor));
-        --dist3-n: calc(-1 * var(--dist3));
-        --blur3: calc(var(--blur2) * var(--blur-factor));
-        filter:
-            drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1-n) var(--dist1) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist1) var(--dist1-n) var(--blur1) blue) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2) var(--dist2) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist2-n) var(--dist2-n) var(--blur2) magenta) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3-n) var(--dist3) var(--blur3) yellow) drop-shadow(var(--dist3) var(--dist3-n) calc(var(--blur3) * 2) yellow) blur(5px) hue-rotate(var(--hue-rotate));
-        -webkit-text-stroke: 11px white;
-    }
 }
 
 header .title:hover {
@@ -368,6 +348,7 @@ article {
     line-height: 138% !important;
     /*z-index: -1;*/
     grid-area: b;
+    z-index: 5;
 }
 
 article * {
