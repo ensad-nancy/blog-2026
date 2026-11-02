@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uFA120" format="2">
+	<advance width="1269"/>
+	<unicode hex="FA120"/>
+	<outline>
+		<component base="t" yOffset="-51"/>
+		<component base="h" xOffset="247"/>
+		<component base="e" xOffset="564"/>
+		<contour>
+			<point x="1193" y="505" type="move"/>
+			<point x="1193" y="411"/>
+			<point x="1184" y="353"/>
+			<point x="1152" y="265" type="curve" smooth="yes"/>
+			<point x="1141" y="235"/>
+			<point x="1049" y="185"/>
+			<point x="980" y="157" type="curve"/>
+		</contour>
+		<contour>
+			<point x="1142" y="246" type="move"/>
+			<point x="1170" y="218"/>
+			<point x="1220" y="136"/>
+			<point x="1212" y="93" type="curve" smooth="yes"/>
+			<point x="1208" y="70"/>
+			<point x="1157" y="43"/>
+			<point x="1156" y="25" type="curve" smooth="yes"/>
+			<point x="1155" y="15"/>
+			<point x="1189" y="-70"/>
+			<point x="1188" y="-131" type="curve" smooth="yes"/>
+			<point x="1186" y="-264"/>
+			<point x="1104" y="-316"/>
+			<point x="979" y="-316" type="curve" smooth="yes"/>
+			<point x="967" y="-316"/>
+			<point x="913" y="-314"/>
+			<point x="903" y="-304" type="curve" smooth="yes"/>
+			<point x="865" y="-268"/>
+			<point x="906" y="-142"/>
+			<point x="953" y="-95" type="curve" smooth="yes"/>
+			<point x="993" y="-55"/>
+			<point x="1103" y="12"/>
+			<point x="1160" y="25" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>e</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=t</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=y</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

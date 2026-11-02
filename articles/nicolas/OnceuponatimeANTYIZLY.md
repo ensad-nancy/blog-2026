@@ -1,0 +1,24 @@
+# Ultracrépidarianisme
+Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on ne sait jamais..
+J’adore donner mon avis et être dans la contradiction, passe-temps favori..
+N’hésitez pas a lire ce que je raconte, c’est verdict. 
+## ANTI IZLY
+
+7 h 47 :
+Première connexion sur son ordi, dès le matin, pas forcément conseillé directement au réveil, mais bon...
+Il y met la radio et choisit la chronique qui va annoncer l'humeur de son petit déjeuner ; aujourd'hui, il est plutôt de bonne humeur car on est lundi, et le lundi sort la rediffusion de sa chronique préférée, une vraie madeleine de Proust qu'il savoure avec sa tartine de Madame Loïk... un régal.
+8 h 45 :
+Il n'a pas le temps de finir d'écouter sa chronique, dommage...
+Pas de nouvelles jusqu'à 9 h 12, il regarde ses mails, les trie, les supprime...
+Pas très passionnant, mais bon...
+Hormis l'usage de GitHub, il passe quelques minutes sur Instagram, car oui, il s'est dit que supprimer Instagram de son téléphone lui permettrait d'arrêter de scroller ; maintenant il scrolle les réels depuis son ordi, un peu ridicule.
+12 h 32 : Après l'effort, le réconfort : il chercha indéfiniment à se connecter à son compte Izly pour y manger, impossible : « Erreur de connexion, votre compte a été bloqué, merci de nous contacter par e-mail. » 
+12 h 45 :
+Une fois de retour chez lui, il checke son WhatsApp, car oui, il a supprimé les notifications, sans réelle importance donnée aux messages lus (groupe famille, emoji cœur rose : message de tata à 8 h 12 : « Promenade du chien, ça caille », accompagné d'une photo du chien, et de 2 pouces levés et un emoji cœur dans les yeux en guise de réponse). Ne sachant pas trop quoi faire de cette information, il continua d'écouter sa chronique du matin, puis, à partir de 13 h 42, plus de nouvelles.
+17 h 50 :
+Enfin chez lui, c'est le moment pour lui d'extérioriser sa frustration. Aujourd'hui, son compte du Crous a été bloqué sans raison réelle, impossible de laisser passer ça. Il posta une story fond noir et texte en blanc sur Instagram depuis son ordinateur : « @croussdelorraine @crouss aujourd'hui mon compte a été bloqué, honte à vous de ne pas laisser les repas à un euro en espèces ou en carte, vous l'aurez sur la conscience un jour, foutu monde où l'on supprime l'argent en espèces au profit de boîtes semi-privées @izly_france », le tout accompagné d'un GIF d'une fourche en feu.
+Dix minutes avant, il regardait les highlights des manifs de la semaine, ce qui l'a sans doute motivé dans la rédaction de cette story.
+22 h 37 :
+En regardant son épisode de GTO, il semble pris soudainement d'un élan de contrariété (en tout cas, j'ai vu ça à sa tête) dû au fait d'avoir zéro réaction à son post Instagram. Ne comprenant pas pourquoi tout le monde ne s'indigne pas de son terrible sort, il décide de tout couper, téléphone, ordi ; plus de nouvelles jusqu'au lendemain matin.
+22h37 : 
+En regardant son épisode de GTO il à l’air pris soudainement d’un élan de contrariété ( en tout cas j’ai vu ça à sa tête ) du au fait d’avoir 0 réactions à son poste Instagram, en comprenant pas pourquoi tout le monde ne s’indigne pas de son terrible sors, il décide de tout couper, téléphone et ordi, pas nouvelles jusqu’au lendemain matin .

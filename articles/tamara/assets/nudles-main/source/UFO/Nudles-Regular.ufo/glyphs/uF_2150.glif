@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uF2150" format="2">
+	<advance width="832"/>
+	<unicode hex="F2150"/>
+	<outline>
+		<component base="f"/>
+		<contour>
+			<point x="814" y="508" type="move"/>
+			<point x="740" y="381"/>
+			<point x="664" y="187"/>
+			<point x="548" y="83" type="curve" smooth="yes"/>
+			<point x="522" y="60"/>
+			<point x="527" y="38"/>
+			<point x="542" y="2" type="curve"/>
+		</contour>
+		<contour>
+			<point x="322" y="470" type="move"/>
+			<point x="485" y="121" type="line" smooth="yes"/>
+			<point x="506" y="77"/>
+			<point x="517" y="73"/>
+			<point x="525" y="67" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+			<array>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>f</string>
+				</dict>
+			</array>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>=f</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>=v</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

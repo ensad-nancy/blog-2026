@@ -1,0 +1,199 @@
+#themes {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; 
+
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    max-width: 100%;
+    scrollbar-width: thin;
+}
+
+#themes > div {
+  width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: rgb(150, 150, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#date{ position: fixed;
+    top: 50%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;}
+
+h2 { position: absolute;
+    top: 400px;
+    right: 20px;
+}
+
+
+main {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+    max-height: 70vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+   scrollbar-width: none; 
+   scrollbar-width: thin;
+   transform: scaleY(-1);
+}
+
+main > * {
+    flex: 0 0 120px;
+    height: 140px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transform: scaleY(-1);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+   }
+
+#auteurices{
+    position: fixed;
+    left: 0%;
+    top: 50%
+}
+#title{
+  display: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("/blog-2026/articles/sahar/assets/images/quentin web blog [Recovered].jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(109, 141, 40);
+}
+
+
+:root { --sq: 90px; }
+
+#auteurices {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--sq);
+  height: var(--sq);
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 221, 0);
+  background-color: rgb(198, 101, 22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+#auteurices { left: 0; }
+
+
+#auteurices select,
+#auteurices select::picker(select) {
+  appearance: base-select;
+}
+
+#auteurices select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+#auteurices select::picker-icon { display: none; }
+
+/* the opened list: a column of squares */
+#auteurices select::picker(select) {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+#auteurices select::picker(select):popover-open {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#auteurices option {
+  width: var(--sq);
+  height: var(--sq);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border: 1px solid black;
+  background-color: rgb(150, 150, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+#auteurices option::checkmark { display: none; }
+#auteurices option:checked   { background-color: white; }
+#auteurices option:hover     { background-color: rgb(190, 190, 70); }
+
+/* ---------- slider: square thumb ---------- */
+#filtres input[type=range] {
+  width: 70px;
+}
+
+#filtres input[type="range"] {
+    appearance: none;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(150, 150, 36);
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+#filtres input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+#date p{
+ position: absolute;
+ top: 400px right 0;}
+ 
+body p {
+    display: none;
+}

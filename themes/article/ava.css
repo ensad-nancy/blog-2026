@@ -1,13 +1,159 @@
-body {
-  background-color: #ff0095;
+article {
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    filter: grayscale(100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(238, 255, 0);
+article:hover {
+    animation: tremble 0.15s infinite;
 }
 
-h1{
+p {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 251, 255);
+    color: black;
+}
+
+h1,
+img,
+#themes {
+    display: none;
+}
+
+::selection {
+    background: black;
+    color: black;
+}
+
+@keyframes tremble {
+    0%   { translate: 0 0; }
+    15%  { translate: 0 -3px; }
+    30%  { translate: 0 2px; }
+    45%  { translate: 0 -1px; }
+    60%  { translate: 0 4px; }
+    75%  { translate: 0 -2px; }
+    90%  { translate: 0 1px; }
+    100% { translate: 0 0; }
+}
+
+.bloc-panique {
+    animation: tremble 0.4s infinite;
+}
+
+.bloc-panique:hover {
+    animation: tremble 0.25s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bloc-panique { animation: none; }
+}
+
+p.title,
+h2 {
+    position: fixed;
+    left: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 10vh;
+    text-align: left;
+    text-transform: uppercase;
+
+    text-shadow:
+        0 10vh #000,
+        0 20vh #000,
+        0 30vh #000,
+        0 40vh #000,
+        0 50vh #000,
+        0 60vh #000,
+        0 70vh #000,
+        0 80vh #000,
+        0 90vh #000,
+        0 100vh #000;
+}
+
+h2 {
+    top: 30px;
+    width: 100vw;
+    padding: 0;
+    transform: none;
+    white-space: nowrap;
+}
+
+p.date,
+p.tags {
+    position: fixed;
+    left: -10px;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+p.date { bottom: 0; }
+p.tags { bottom: 20px; }
+
+@property --n {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+@keyframes compte {
+    to { --n: 40; }
+}
+
+article p:not(.title):not(.date):not(.tags) {
+    animation: compte 80s steps(40, start) 2s forwards;
+
+    text-shadow:
+        22vw 14vh 0 rgb(0 0 0 / clamp(0, var(--n), 1)),
+        -30vw 32vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 1), 1)),
+        12vw -28vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 2), 1)),
+        -18vw -10vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 3), 1)),
+        38vw 26vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 4), 1)),
+        -8vw 44vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 5), 1)),
+        30vw -18vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 6), 1)),
+        -36vw -4vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 7), 1)),
+        4vw 22vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 8), 1)),
+        26vw 40vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 9), 1)),
+        -24vw -34vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 10), 1)),
+        40vw -8vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 11), 1)),
+        -12vw 18vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 12), 1)),
+        16vw -40vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 13), 1)),
+        -40vw 12vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 14), 1)),
+        0vw -22vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 15), 1)),
+        34vw 6vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 16), 1)),
+        -28vw -24vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 17), 1)),
+        8vw 36vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 18), 1)),
+        -4vw -44vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 19), 1)),
+        20vw -12vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 20), 1)),
+        -42vw 28vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 21), 1)),
+        42vw -30vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 22), 1)),
+        -16vw 42vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 23), 1)),
+        28vw 20vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 24), 1)),
+        -34vw 8vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 25), 1)),
+        14vw -6vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 26), 1)),
+        -22vw -42vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 27), 1)),
+        44vw 40vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 28), 1)),
+        -6vw -16vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 29), 1)),
+        36vw -38vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 30), 1)),
+        -44vw -18vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 31), 1)),
+        10vw 28vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 32), 1)),
+        -26vw 20vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 33), 1)),
+        24vw -32vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 34), 1)),
+        -10vw 34vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 35), 1)),
+        32vw -22vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 36), 1)),
+        -38vw 40vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 37), 1)),
+        18vw 44vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 38), 1)),
+        -2vw 6vh 0 rgb(0 0 0 / clamp(0, calc(var(--n) - 39), 1));
 }

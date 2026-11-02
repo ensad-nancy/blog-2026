@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bullet" format="2">
+	<advance width="315"/>
+	<unicode hex="2022"/>
+	<outline>
+		<component base="uni030A" xScale="-0.9848" xyScale="-0.1736" yScale="-0.9848" yxScale="0.1736" xOffset="198" yOffset="1003"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>NoKerning</string>
+				<key>R</key>
+				<string>NoKerning</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="endash" format="2">
+	<advance width="609"/>
+	<unicode hex="2013"/>
+	<outline>
+		<contour>
+			<point x="52" y="248" type="move"/>
+			<point x="73" y="291"/>
+			<point x="145" y="314"/>
+			<point x="179" y="317" type="curve" smooth="yes"/>
+			<point x="295" y="317"/>
+			<point x="308" y="296"/>
+			<point x="424" y="296" type="curve" smooth="yes"/>
+			<point x="469" y="296"/>
+			<point x="515" y="305"/>
+			<point x="566" y="336" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>KernOnSpecialSpacing</key>
+			<dict>
+				<key>L</key>
+				<string>dashes</string>
+				<key>R</key>
+				<string>dashes</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
