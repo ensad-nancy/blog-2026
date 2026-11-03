@@ -174,7 +174,7 @@ body:has(#themes:focus-within) #title + p {
 
 main {
     display: block !important; 
-    column-gap: 30px;
+    column-gap: 24px;
     column-count: 6;   
 }
 
