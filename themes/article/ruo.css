@@ -1,7 +1,5 @@
 
-/* =========================================
-   0. 字体引入
-   ========================================= */
+
 
 @font-face {
     font-family: 'MyDidot';
@@ -19,9 +17,6 @@
     font-style: normal;
 }
 
-/* =========================================
-   1. 页面基础
-   ========================================= */
 
 body {
     background-color: #ffffff;
@@ -40,10 +35,7 @@ body {
     position: relative;
 }
 
-/* =========================================
-   2. 巨型像素风 Retour
-   与旋转星星
-   ========================================= */
+
 
 a[href="index.php"] {
     display: block !important;
@@ -57,7 +49,7 @@ a[href="index.php"] {
     cursor: pointer;
 }
 
-/* Retour 文字 */
+
 
 a[href="index.php"]::before {
     content: "Retour";
@@ -72,7 +64,6 @@ a[href="index.php"]::before {
     vertical-align: middle;
 }
 
-/* 标题末尾旋转星星 */
 
 a[href="index.php"]::after {
     content: "";
@@ -109,13 +100,13 @@ a[href="index.php"]::after {
     transition: background-color 0.2s ease;
 }
 
-/* 鼠标悬停时星星变红 */
+
 
 a[href="index.php"]:hover::after {
     background-color: #e53935;
 }
 
-/* 星星旋转动画 */
+
 
 @keyframes starMagicFloat {
 
@@ -132,10 +123,7 @@ a[href="index.php"]:hover::after {
     }
 }
 
-/* =========================================
-   3. 主题菜单栏
-   名单横向排列
-   ========================================= */
+
 
 #themes {
     display: flex !important;
@@ -157,7 +145,7 @@ a[href="index.php"]:hover::after {
     z-index: 100 !important;
 }
 
-/* 菜单底部黑色横条 */
+
 
 #themes::after {
     content: "" !important;
@@ -177,7 +165,7 @@ a[href="index.php"]:hover::after {
     margin-top: 0rem !important;
 }
 
-/* 鼠标悬停连接区域 */
+
 
 #themes::before {
     content: "" !important;
@@ -195,14 +183,14 @@ a[href="index.php"]:hover::after {
     z-index: -1 !important;
 }
 
-/* 隐藏 radio 和 legend */
+
 
 #themes input,
 #themes legend {
     display: none !important;
 }
 
-/* 默认隐藏作者名单 */
+
 
 #themes div {
     display: none !important;
@@ -210,7 +198,7 @@ a[href="index.php"]:hover::after {
     order: 1 !important;
 }
 
-/* 悬停 Retour 或主题区域显示名单 */
+
 
 body:has(a[href="index.php"]:hover) #themes div,
 #themes:hover div,
@@ -226,7 +214,7 @@ body:has(a[href="index.php"]:hover) #themes div,
     pointer-events: auto !important;
 }
 
-/* 作者姓名 */
+
 
 #themes label {
     font-family: 'MyDidot', serif !important;
@@ -252,7 +240,7 @@ body:has(a[href="index.php"]:hover) #themes div,
         cubic-bezier(0.15, 0.85, 0.3, 1) !important;
 }
 
-/* 鼠标悬停变红并放大 */
+
 
 #themes label:hover {
     color: #e53935 !important;
@@ -260,16 +248,12 @@ body:has(a[href="index.php"]:hover) #themes div,
     transform: scale(1.15) !important;
 }
 
-/* 选中的作者保持红色 */
 
 #themes input:checked + label {
     color: #e53935 !important;
 }
 
-/* =========================================
-   4. 文章 Header
-   作者 | 标题 | 日期 | Tags
-   ========================================= */
+
 
 header {
     display: flex;
@@ -297,21 +281,21 @@ header {
         both;
 }
 
-/* Header 中的文字 */
+
 
 header p {
     margin: 0;
     display: inline-block;
 }
 
-/* 作者排在第一位 */
+
 
 header p.author,
 header p.auteur {
     order: 0;
 }
 
-/* 标题排在第二位 */
+
 
 header p.title {
     order: 1;
@@ -331,12 +315,7 @@ header p.title {
 
 
 
-/* =========================================
-   5. 根据文章作者自动显示姓名
-   完整18位作者
-   ========================================= */
 
-/* 默认样式 */
 
 header p.title::before {
     content: "";
@@ -457,11 +436,7 @@ header p.title::before {
 
 
 
-/* =========================================
-   6. 日期及 Tags
-   ========================================= */
 
-/* 日期 */
 
 header p.date {
     order: 2;
@@ -478,12 +453,7 @@ header p.tags span.tag {
     margin-right: 0.5rem;
 }
 
-/* 分隔线 */
 
-/*
-   作者名已经包含在 title::before 中，
-   所以不要额外给 title 前面加分隔线。
-*/
 
 header p.author::after,
 header p.auteur::after,
@@ -495,16 +465,14 @@ header p.date::after {
     margin: 0 0.5rem;
 }
 
-/* 防止作者与标题之间出现重复分隔线 */
+
 
 header p.author + p.title::before,
 header p.auteur + p.title::before {
     content: "" !important;
 }
 
-/* =========================================
-   7. 文章正文
-   ========================================= */
+
 
 article {
     margin-left: 4em;
@@ -530,9 +498,7 @@ article {
         both;
 }
 
-/* =========================================
-   8. 文章各级标题
-   ========================================= */
+
 
 article h1,
 article h2,
@@ -560,11 +526,7 @@ article h6 {
         both;
 }
 
-/* =========================================
-   9. 文章进入动画
-   ========================================= */
 
-/* 从右侧进入 */
 
 @keyframes danmakuFromRight {
 
@@ -583,7 +545,7 @@ article h6 {
     }
 }
 
-/* 从左侧进入 */
+
 
 @keyframes danmakuFromLeft {
 
@@ -602,9 +564,7 @@ article h6 {
     }
 }
 
-/* =========================================
-   10. 减少动画偏好
-   ========================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -622,4 +582,12 @@ article h6 {
     article h6 {
         animation: none !important;
     }
+}
+
+  
+article img {
+    max-width: 100% !important; 
+    height: auto !important;    
+    display: block !important;
+    margin: 1.5rem 0 !important; 
 }
