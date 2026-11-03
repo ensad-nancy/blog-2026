@@ -5,5 +5,7 @@ body {
 }
 
 main {
+    background-color: rgb(250, 163, 163);
     width: 50%;
+    overflow: auto;
 }
