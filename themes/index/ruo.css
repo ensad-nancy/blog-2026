@@ -1,287 +1,2951 @@
+
+/* =========================================
+   0. 字体
+   ========================================= */
+
+@font-face {
+    font-family: 'MyDidot';
+    src: url('../../articles/ruo/assets/fonts/ReallyLTCom-Demi.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyTitleFont';
+    src: url('../../articles/ruo/assets/fonts/PistolShotLTStd-Normal.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================================
+   1. 页面基础设置
+   ========================================= */
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Helvetica, Arial, sans-serif;
+
     margin: 2rem 4vw;
     color: #000000;
-    background-color: #fcfcfc; 
-    position: relative; 
+    background-color: #fcfcfc;
+    position: relative;
 }
 
 
-body {
-    position: relative; 
+/* =========================================
+   2. TITLE / STAR / AUTHORS
+   标题、星星、作者名单独立控制
+   ========================================= */
+
+/* =========================================
+   1. 标题容器
+   ========================================= */
+
+#title {
+    position: relative !important;
+    z-index: 2 !important;
+
+    anchor-name: --blog-title;
+
+    min-height: 100px;
 }
+
+/* =========================================
+   2. 标题文字
+   ========================================= */
+
+#title h1 {
+    font-family: 'MyTitleFont', serif !important;
+
+    font-size: 100px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+
+    line-height: 1;
+    letter-spacing: -1px;
+
+    margin: 0 0 0.5rem;
+
+    position: relative;
+    z-index: 2;
+
+    cursor: default;
+
+    transform: none !important;
+
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+
+    background-image: none;
+
+    transition:
+        font-size 0.65s cubic-bezier(.22, 1, .36, 1),
+        letter-spacing 0.65s cubic-bezier(.22, 1, .36, 1),
+        line-height 0.65s cubic-bezier(.22, 1, .36, 1);
+}
+
+/* 删除原来属于 h1 的星星 */
+
+#title h1::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* =========================================
+   3. 标题悬停动画
+   放大 / 聚拢 / 渐变
+   ========================================= */
+
+#title h1:hover {
+    font-size: 120px;
+
+    letter-spacing: -0.065em !important;
+    line-height: 0.68 !important;
+
+    transform: none !important;
+
+    background-image: linear-gradient(
+        180deg,
+        #56300e 0%,
+        #50321d 20%,
+        #343943 45%,
+        #183f72 75%,
+        #0c4188 100%
+    ) !important;
+
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* =========================================
+   4. 独立红色星星
+   星星属于 #title，不属于 h1
+   ========================================= */
+
+#title::after {
+    content: "" !important;
+
+    display: block !important;
+
+    position: absolute !important;
+
+    left: 71%;
+    bottom: -2px;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #e53935 !important;
+
+    clip-path: polygon(
+        50% 0%,
+        65% 24%,
+        93.3% 25%,
+        80% 50%,
+        93.3% 75%,
+        65% 76%,
+        50% 100%,
+        35% 76%,
+        6.7% 75%,
+        20% 50%,
+        6.7% 25%,
+        35% 24%
+    );
+
+    transform: none !important;
+    animation: none !important;
+
+    pointer-events: none !important;
+
+    z-index: 4;
+}
+
+/* =========================================
+   5. 作者菜单独立容器
+   ========================================= */
 
 #themes {
-    display: block !important; 
-    margin: 0 !important; 
-    padding: 0 !important; 
+    display: block !important;
+
+    position: absolute !important;
+
+    /* 让菜单参考标题的位置 */
+    position-anchor: --blog-title;
+
+    top: anchor(bottom);
+    left: anchor(left);
+
+    translate: 0 -46px;
+
+    width: calc(100% - 8vw) !important;
+    max-width: none !important;
+
+    min-height: 105px;
+
+    margin: 0 !important;
+    padding: 58px 0 0 !important;
+
     border: none !important;
-    max-width: 80ch; 
+
+    box-sizing: border-box;
+
+    z-index: 100 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: none !important;
 }
 
+/* 旧浏览器定位兼容 */
 
-#themes:hover,
-#themes:focus-within {
-    margin-bottom: 2rem !important; 
+@supports not (top: anchor(bottom)) {
+    #themes {
+        top: 320px !important;
+        left: 4vw !important;
+        translate: none;
+    }
 }
 
+/* 隐藏原始菜单图例和单选框 */
 
+#themes legend,
 #themes input {
-    display: none !important; 
+    display: none !important;
 }
 
+/* =========================================
+   6. 星星的独立鼠标互动区域
+   ========================================= */
 
-#themes > :not(legend) {
-    display: none !important; 
+/*
+   星星本身在 #title::after。
+
+   这里用 #themes::before 建立一个
+   透明的鼠标互动区域。
+
+   两者位置重叠，但属于不同容器。
+*/
+
+#themes::before {
+    content: "" !important;
+
+    display: block !important;
+
+    position: absolute !important;
+
+    left: 71%;
+    top: 0;
+
+    width: 70px;
+    height: 76px;
+
+    background: transparent !important;
+
+    z-index: 102 !important;
+
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
+    animation: none !important;
+    transform: none !important;
 }
 
+/* =========================================
+   7. 作者姓名区域
+   ========================================= */
 
-#themes:hover > :not(legend),
-#themes:focus-within > :not(legend) {
-    display: inline-flex !important; 
+#themes > div {
+    display: inline-flex !important;
+
     align-items: center;
-    width: auto !important; 
-    margin: 0 1.2rem 0.8rem 0 !important; 
+    flex-wrap: wrap;
+
+    width: auto !important;
+
+    margin: 0 1.4rem 0.5rem 0 !important;
     padding: 0 !important;
+
     position: relative;
-    z-index: 95; 
+
+    z-index: 103 !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease !important;
 }
 
+/* 删除可能遮挡鼠标的旧伪元素 */
+
+#themes > div::before {
+    content: none !important;
+}
+
+/* =========================================
+   8. 星星悬停或按下
+   显示作者名单
+   ========================================= */
+
+#themes:is(:hover, :active, :focus-within) > div {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+}
+
+/* =========================================
+   9. 作者姓名样式
+   ========================================= */
 
 #themes label {
-    cursor: pointer;
-    font-size: 1.2rem;
+    font-family: 'MyDidot', serif !important;
+
+    font-size: 24px !important;
+    font-weight: normal !important;
+
+    line-height: 1.2 !important;
+
     color: #000000;
-    transition: color 0.2s;
 
+    position: relative;
+    z-index: 104 !important;
+
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    transition: color 0.2s ease;
 }
-#themes label:hover { color: #e53935; }
-#themes input:checked + label { color: #e53935 !important; }
 
+/* 姓名悬停变红 */
 
+#themes label:hover {
+    color: #e53935 !important;
+}
 
-#themes legend {
-    display: block !important;
+/* 选中作者变红 */
+
+#themes input:checked + label {
+    color: #e53935 !important;
+}
+
+/* =========================================
+   10. 防止鼠标移动时作者名单闪烁
+   ========================================= */
+
+/*
+   建立透明互动区域，
+   使鼠标从星星移动到姓名时
+   不容易丢失 hover 状态。
+*/
+
+#themes::after {
+    content: "";
+
+    display: block;
+
     position: absolute;
-    top: 0;
+
+    top: 40px;
+    left: 0;
     right: 0;
-    font-size: 0 !important;
-    color: transparent;
-    cursor: pointer;
+
+    height: 70px;
+
+    background: transparent;
+
+    pointer-events: none;
+
     z-index: 100;
+}
+
+/* 作者区域展开时启用互动区域 */
+
+#themes:is(:hover, :active, :focus-within)::after {
+    pointer-events: auto;
+}
+
+/* =========================================
+   11. 星星区域激活时
+   标题停止放大和渐变
+   ========================================= */
+
+body:has(
+    #themes:is(:hover, :active, :focus-within)
+) #title h1 {
+
+    font-size: 100px !important;
+
+    letter-spacing: -1px !important;
+    line-height: 1 !important;
+
+    transform: none !important;
+
+    background-image: none !important;
+
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================
+   12. 网站前言
+   ========================================= */
+
+#title + p {
+    font-family: 'MyDidot', serif;
+
+    font-weight: normal;
+
+    font-size: 24px;
+    line-height: 1;
+
+    max-width: 80ch;
+
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+
+    border-bottom: none;
+
+    display: block;
+
+    opacity: 1;
+
+    transition: opacity 0.2s ease;
+}
+
+/* 作者名单出现时隐藏前言 */
+
+body:has(
+    #themes:is(:hover, :active, :focus-within)
+) #title + p {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+/* =========================================
+   13. 响应式调整
+   ========================================= */
+
+/* 平板 */
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    #title {
+        min-height: 210px;
+    }
+
+    #title h1 {
+        font-size: 70px;
+    }
+
+    #title h1:hover {
+        font-size: 84px;
+    }
+
+    body:has(
+        #themes:is(:hover, :active, :focus-within)
+    ) #title h1 {
+        font-size: 70px !important;
+    }
+
+    #title::after {
+        left: 70%;
+        width: 38px;
+        height: 38px;
+    }
+
+    #themes {
+        translate: 0 -36px;
+        padding-top: 52px !important;
+    }
+
+    #themes::before {
+        left: 70%;
+        width: 58px;
+        height: 70px;
+    }
+}
+
+/* 手机 */
+
+@media (max-width: 500px) {
+
+    #title {
+        min-height: 144px;
+    }
+
+    #title h1 {
+        font-size: 48px;
+    }
+
+    #title h1:hover {
+        font-size: 58px;
+    }
+
+    body:has(
+        #themes:is(:hover, :active, :focus-within)
+    ) #title h1 {
+        font-size: 48px !important;
+    }
+
+    #title::after {
+        left: 69%;
+        width: 26px;
+        height: 26px;
+    }
+
+    #themes {
+        translate: 0 -25px;
+        padding-top: 40px !important;
+    }
+
+    #themes::before {
+        left: 69%;
+        width: 44px;
+        height: 54px;
+    }
+
+    #themes label {
+        font-size: 18px !important;
+    }
+
+    #title + p {
+        font-size: 18px;
+    }
+}
+
+/* =========================================
+   14. 减少动画偏好
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #title h1,
+    #themes > div {
+        transition: none !important;
+    }
+}
+
+
+/* =========================================
+   6. 黑色筛选栏
+   ========================================= */
+
+#filtres {
+    display: grid !important;
+
+    grid-template-columns:
+        360px minmax(0, 1fr) !important;
+
+    align-items: center !important;
+
+    gap: 0 !important;
+
+    background-color: #000000;
+
+    border-radius: 16px;
+    border: none;
+
+    padding: 18px 22px;
+
+    margin-bottom: 40px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+#filtres h2 {
+    display: none;
+}
+
+#filtres::after {
+    content: none !important;
+}
+
+/* =========================================
+   7. 日期区域
+   ========================================= */
+
+#date {
+    display: inline-flex;
+
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    align-items: center;
+
+    gap: 16px;
+
+    width: auto !important;
+    min-width: 0;
+
+    margin: 0 !important;
+
+    white-space: nowrap;
+}
+
+#date p,
+#date label,
+#date span,
+#date output {
+
+    font-family: 'MyDidot', serif !important;
+
+    font-size: 18px;
+    font-weight: normal;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    margin: 0;
+}
+
+/* 日期滑块 */
+
+#date input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 150px;
+    height: 6px;
+
+    background: #ffffff;
+
+    border-radius: 999px;
+    outline: none;
+
+    cursor: pointer;
+}
+
+/* Chrome / Safari */
+
+#date input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+}
+
+/* Firefox */
+
+#date input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+}
+
+#date input[type="range"]::-moz-range-track {
+    height: 6px;
+
+    background: #ffffff;
+
+    border-radius: 999px;
+    border: none;
+}
+
+/* =========================================
+   8. 作者下拉筛选
+   ========================================= */
+
+#auteurices {
+    display: inline-flex;
+
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    align-items: center;
+
+    position: relative;
+
+    width: max-content;
+    max-width: 100%;
+
+    margin: 0 !important;
+
+    min-width: 0;
+}
+
+/* 隐藏 Auteur·ices 字样 */
+
+#auteurices p {
+    display: none !important;
+}
+
+/* 下拉框 */
+
+#auteurices select {
+    font-family: 'MyDidot', serif !important;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+
+    background: transparent;
+    background-image: none;
+
+    color: #ffffff;
+
+    border: none;
+    border-bottom: 2px solid #ffffff;
+
+    padding: 0 28px 4px 0;
+
+    outline: none;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    max-width: 100%;
+}
+
+#auteurices select option {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* 下拉三角 */
+
+#auteurices::after {
+    content: "";
+
+    position: absolute;
+
+    right: 8px;
+    top: 50%;
+
+    transform: translateY(-15%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #ffffff;
+
+    pointer-events: none;
+}
+
+/* =========================================
+   9. 文章棋盘格
+   与图片2一致的排列逻辑
+   ========================================= */
+
+main {
+    --columns: 5;
+
+    /* 每个格子间距 */
+    --gap: 0px;
+
+    /* 图片与文字四周的内边距 */
+    --text-padding: 10%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(var(--columns), minmax(0, 1fr)) !important;
+
+    gap: var(--gap) !important;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    align-items: start;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   10. 每篇文章占两个正方形
+   ========================================= */
+
+main > a {
+    display: block !important;
+
+    width: 100% !important;
+
+    /* 一列宽度、两格高度 */
+    aspect-ratio: 1 / 2 !important;
+
+    height: auto !important;
+    min-width: 0;
+    min-height: 0;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-decoration: none !important;
+    color: inherit;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    /* 禁止整个文章触发点击 */
+    pointer-events: none;
+}
+
+/* 隐藏被筛选掉的文章 */
+
+main > a[style*="display: none"],
+main > a[style*="display:none"] {
+    display: none !important;
+}
+
+/* =========================================
+   11. 文章内部结构
+   使用两行 GRID
+   ========================================= */
+
+main > a > div {
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(0, 1fr) !important;
+
+    grid-template-rows:
+        minmax(0, 1fr)
+        minmax(0, 1fr) !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 0;
+    min-height: 0;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    gap: 0 !important;
+
+    background: transparent !important;
+
+    box-sizing: border-box;
+    position: relative;
+
+    overflow: visible !important;
+
+    /* 清除旧布局影响 */
+    grid-template-areas: none !important;
+}
+
+/* =========================================
+   12. 图片正方形
+   ========================================= */
+
+main > a > div > img.thumb {
+    display: block !important;
+
+    grid-column: 1 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    background-color: #000000 !important;
+
+    border-radius: 8px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box;
+
+    /* 默认黑色 */
+    filter: brightness(0) !important;
+
+    transition:
+        filter 0.25s ease,
+        background-color 0.25s ease;
+
+    /* 只有图片可以点击 */
+    pointer-events: auto !important;
+
+    cursor: pointer;
+
+    position: relative !important;
+    inset: auto !important;
+    z-index: 1;
+}
+
+/* 鼠标悬停显示原图 */
+
+main > a > div > img.thumb:hover {
+    filter: none !important;
+
+    background-color: #ffffff !important;
+
+    object-fit: contain !important;
+}
+
+/* =========================================
+   13. 无图片占位
+   ========================================= */
+
+main > a > div:not(:has(> img.thumb))::before {
+    content: "";
+
+    display: block !important;
+
+    grid-column: 1 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 0;
+    min-height: 0;
+
+    background-color: #000000;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    pointer-events: none;
+}
+
+/* 图片 src 缺失时作为黑方块处理 */
+
+main > a > div > img.thumb:not([src]),
+main > a > div > img.thumb[src=""] {
+    visibility: hidden !important;
+}
+
+/* =========================================
+   14. 文字区域
+   ========================================= */
+
+/*
+   不改 HTML 结构。
+
+   标题与 footer 共用一个正方形格子，
+   使用绝对定位的文字组布局逻辑。
+
+   文字上下排列，整体垂直居中。
+*/
+
+/* 标题 */
+
+main > a > div > h3 {
+    display: block !important;
+
+    grid-column: 1 !important;
+
+    font-family: 'MyTitleFont', serif !important;
+
+    font-size: 24px !important;
+    font-weight: normal !important;
+
+    line-height: 1.1 !important;
+
+    color: #000000 !important;
+
+    text-align: left !important;
+
+    margin: 0 !important;
+
+    padding: 0 var(--text-padding) !important;
+
+    min-width: 0;
+
+    overflow-wrap: anywhere;
+
+    transform: none !important;
+    transition: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: none !important;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* 作者、日期、标签 */
+
+main > a > div > footer {
+    display: block !important;
+
+    grid-column: 1 !important;
+
+    font-family: 'MyDidot', serif !important;
+
+    font-size: 18px !important;
+    font-weight: normal !important;
+
+    line-height: 1.2 !important;
+
+    color: #000000 !important;
+
+    text-align: left !important;
+
+    margin: 0 !important;
+
+    padding: 0 var(--text-padding) !important;
+
+    min-width: 0;
+
+    overflow-wrap: anywhere;
+
+    transform: none !important;
+    transition: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: none !important;
+
+    position: relative;
+    z-index: 2;
+}
+
+main > a > div > footer,
+main > a > div > footer * {
+    font-family: 'MyDidot', serif !important;
+    font-weight: normal !important;
+}
+
+main > a > div > footer p {
+    font-size: 18px !important;
+
+    line-height: 1.2 !important;
+
+    color: #000000 !important;
+
     margin: 0 !important;
     padding: 0 !important;
 }
 
+/* =========================================
+   15. 棋盘格文字居中方法
+   ========================================= */
 
-#themes legend::after {
+/*
+   标题与 footer 同处一个格子。
+
+   标题贴近中心上方，
+   footer 贴近中心下方。
+
+   不使用固定像素偏移，
+   避免不同文章文字重叠。
+*/
+
+/* 标题占文字格上半区域 */
+
+main > a > div > h3 {
+    align-self: end !important;
+
+    margin-bottom: 6px !important;
+}
+
+/* footer 占文字格下半区域 */
+
+main > a > div > footer {
+    align-self: start !important;
+}
+
+/* =========================================
+   16. 奇数文章
+   图片在上，文字在下
+   ========================================= */
+
+main > a:nth-child(odd) > div > img.thumb,
+main > a:nth-child(odd) > div::before {
+    grid-row: 1 !important;
+}
+
+main > a:nth-child(odd) > div > h3,
+main > a:nth-child(odd) > div > footer {
+    grid-row: 2 !important;
+}
+
+/* =========================================
+   17. 偶数文章
+   文字在上，图片在下
+   ========================================= */
+
+main > a:nth-child(even) > div > h3,
+main > a:nth-child(even) > div > footer {
+    grid-row: 1 !important;
+}
+
+main > a:nth-child(even) > div > img.thumb,
+main > a:nth-child(even) > div::before {
+    grid-row: 2 !important;
+}
+
+/* =========================================
+   18. 鼠标悬停
+   文字区域始终保持静态
+   ========================================= */
+
+main > a:hover > div > h3,
+main > a:hover > div > footer,
+main > a:active > div > h3,
+main > a:active > div > footer {
+
+    transform: none !important;
+    transition: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+main > a:hover > div > h3 {
+    color: #000000 !important;
+}
+
+main > a:hover > div > footer {
+    color: #000000 !important;
+}
+
+/* =========================================
+   19. 防止旧图片动画或样式干扰
+   ========================================= */
+
+main > a:hover > div > img.thumb {
+    position: relative !important;
+
+    inset: auto !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    object-fit: contain !important;
+
+    z-index: 1 !important;
+}
+
+/* =========================================
+   20. 响应式布局
+   ========================================= */
+
+/* 中等屏幕：4列 */
+
+@media (max-width: 1200px) {
+
+    main {
+        --columns: 4;
+    }
+
+    main > a > div > h3 {
+        font-size: 22px !important;
+    }
+
+    main > a > div > footer,
+    main > a > div > footer p {
+        font-size: 16px !important;
+    }
+}
+
+/* 平板：3列 */
+
+@media (max-width: 800px) {
+
+    main {
+        --columns: 3;
+    }
+
+    main > a > div > h3 {
+        font-size: 20px !important;
+    }
+
+    main > a > div > footer,
+    main > a > div > footer p {
+        font-size: 15px !important;
+    }
+
+    #title h1 {
+        font-size: 70px;
+    }
+
+    #filtres {
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        gap: 18px !important;
+    }
+
+    #date {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    #auteurices {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+    }
+}
+
+/* 手机：2列 */
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 1rem 3vw;
+    }
+
+    main {
+        --columns: 2;
+        --text-padding: 7%;
+    }
+
+    main > a > div > h3 {
+        font-size: 17px !important;
+        line-height: 1.05 !important;
+    }
+
+    main > a > div > footer,
+    main > a > div > footer p {
+        font-size: 12px !important;
+        line-height: 1.15 !important;
+    }
+
+    #title h1 {
+        font-size: 48px;
+    }
+
+    #title h1::after {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    #title + p {
+        font-size: 18px;
+    }
+
+    #themes label {
+        font-size: 18px !important;
+    }
+
+    #filtres {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    #date {
+        flex-wrap: wrap;
+    }
+
+    #date input[type="range"] {
+        width: 120px;
+    }
+
+    #date p,
+    #date label,
+    #date span,
+    #date output,
+    #auteurices select {
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   21. 尊重减少动画偏好
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #title h1::after {
+        animation: none !important;
+    }
+
+    main > a > div > img.thumb {
+        transition: none !important;
+    }
+}
+
+/* =========================================
+   最终修复：五列棋盘格排列
+   ========================================= */
+
+/* 每篇文章分成四个内部区域 */
+main > a > div {
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) !important;
+
+    grid-template-rows:
+        repeat(4, minmax(0, 1fr)) !important;
+}
+
+/* 默认：图片上方，文字下方 */
+
+main > a:nth-child(n) > div > img.thumb,
+main > a:nth-child(n) > div::before {
+    grid-column: 1 !important;
+    grid-row: 1 / 3 !important;
+}
+
+main > a:nth-child(n) > div > h3 {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    align-self: end !important;
+    margin: 0 0 6px 0 !important;
+}
+
+main > a:nth-child(n) > div > footer {
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+    align-self: start !important;
+    margin: 0 !important;
+}
+
+/* =========================================
+   五列布局
+   第2、4列：文字上，图片下
+   ========================================= */
+
+main > a:nth-child(5n + 2) > div > img.thumb,
+main > a:nth-child(5n + 4) > div > img.thumb,
+main > a:nth-child(5n + 2) > div::before,
+main > a:nth-child(5n + 4) > div::before {
+    grid-row: 3 / 5 !important;
+}
+
+main > a:nth-child(5n + 2) > div > h3,
+main > a:nth-child(5n + 4) > div > h3 {
+    grid-row: 1 !important;
+}
+
+main > a:nth-child(5n + 2) > div > footer,
+main > a:nth-child(5n + 4) > div > footer {
+    grid-row: 2 !important;
+}
+
+/* =========================================
+   4列响应式
+   ========================================= */
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+    main > a:nth-child(n) > div > img.thumb,
+    main > a:nth-child(n) > div::before {
+        grid-row: 1 / 3 !important;
+    }
+
+    main > a:nth-child(n) > div > h3 {
+        grid-row: 3 !important;
+    }
+
+    main > a:nth-child(n) > div > footer {
+        grid-row: 4 !important;
+    }
+
+    main > a:nth-child(4n + 2) > div > img.thumb,
+    main > a:nth-child(4n + 4) > div > img.thumb,
+    main > a:nth-child(4n + 2) > div::before,
+    main > a:nth-child(4n + 4) > div::before {
+        grid-row: 3 / 5 !important;
+    }
+
+    main > a:nth-child(4n + 2) > div > h3,
+    main > a:nth-child(4n + 4) > div > h3 {
+        grid-row: 1 !important;
+    }
+
+    main > a:nth-child(4n + 2) > div > footer,
+    main > a:nth-child(4n + 4) > div > footer {
+        grid-row: 2 !important;
+    }
+}
+
+/* =========================================
+   3列响应式
+   ========================================= */
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    main > a:nth-child(n) > div > img.thumb,
+    main > a:nth-child(n) > div::before {
+        grid-row: 1 / 3 !important;
+    }
+
+    main > a:nth-child(n) > div > h3 {
+        grid-row: 3 !important;
+    }
+
+    main > a:nth-child(n) > div > footer {
+        grid-row: 4 !important;
+    }
+
+    main > a:nth-child(3n + 2) > div > img.thumb,
+    main > a:nth-child(3n + 2) > div::before {
+        grid-row: 3 / 5 !important;
+    }
+
+    main > a:nth-child(3n + 2) > div > h3 {
+        grid-row: 1 !important;
+    }
+
+    main > a:nth-child(3n + 2) > div > footer {
+        grid-row: 2 !important;
+    }
+}
+
+/* =========================================
+   2列响应式
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    main > a:nth-child(n) > div > img.thumb,
+    main > a:nth-child(n) > div::before {
+        grid-row: 1 / 3 !important;
+    }
+
+    main > a:nth-child(n) > div > h3 {
+        grid-row: 3 !important;
+    }
+
+    main > a:nth-child(n) > div > footer {
+        grid-row: 4 !important;
+    }
+
+    main > a:nth-child(2n) > div > img.thumb,
+    main > a:nth-child(2n) > div::before {
+        grid-row: 3 / 5 !important;
+    }
+
+    main > a:nth-child(2n) > div > h3 {
+        grid-row: 1 !important;
+    }
+
+    main > a:nth-child(2n) > div > footer {
+        grid-row: 2 !important;
+    }
+}
+
+/* =========================================
+   修复黑色格子无法点击
+   ========================================= */
+
+/* 恢复文章链接的点击功能 */
+
+main > a {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* 图片可以正常点击 */
+
+main > a > div > img.thumb {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* 没有图片的黑色占位格 */
+
+main > a > div:not(:has(> img.thumb))::before {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* 文字区域不响应鼠标点击 */
+
+main > a > div > h3,
+main > a > div > footer {
+    pointer-events: none !important;
+}
+
+/* =========================================
+   缺图方块 Hover 效果
+   默认黑色，悬停显示缺图图标
+   ========================================= */
+
+/* 1. 没有 img 元素的方块：默认黑色 */
+
+main > a > div:not(:has(> img.thumb))::before {
+    background-color: #000000 !important;
+    background-image: none !important;
+
+    border: 1px solid transparent !important;
+    border-radius: 8px !important;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* 悬停时变白，并显示缺图图标 */
+
+main > a > div:not(:has(> img.thumb)):has(> h3:hover)::before {
+    background-color: #000000 !important;
+}
+
+/* 通过黑色格子位置判断悬停 */
+main > a > div:not(:has(> img.thumb))::before {
+    pointer-events: auto !important;
+}
+
+/* 悬停在没有图片的文章方块上 */
+main > a:hover > div:not(:has(> img.thumb))::before {
+    background-color: #ffffff !important;
+    border-color: #bdbdbd !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' stroke='%23aaaaaa' d='M2 1h14l6 6v16H2z'/%3E%3Cpath fill='%23dddddd' d='M16 1v6h6z'/%3E%3Cpath fill='%234caf50' d='M3 21l6-8 4 4 3-3 5 7z'/%3E%3Ccircle cx='8' cy='8' r='2' fill='%238bc5ff'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 24px 24px !important;
+    background-position: 12px 12px !important;
+}
+
+/* =========================================
+   2. img 存在，但 src 为空
+   ========================================= */
+
+/* 默认黑色 */
+
+main > a > div > img.thumb:not([src]),
+main > a > div > img.thumb[src=""] {
+    background-color: #000000 !important;
+    border: 1px solid transparent !important;
+    filter: none !important;
+}
+
+/* 悬停时变白 */
+
+main > a > div > img.thumb:not([src]):hover,
+main > a > div > img.thumb[src=""]:hover {
+    background-color: #ffffff !important;
+    border-color: #bdbdbd !important;
+    filter: none !important;
+}
+
+/* =========================================
+   3. 已生成的 fake-broken-image
+   ========================================= */
+
+/* 默认黑色，隐藏图标 */
+
+main > a > div > .fake-broken-image {
+    background-color: #000000 !important;
+    border: 1px solid transparent !important;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+main > a > div > .fake-broken-image::before {
+    opacity: 0 !important;
+    transition: opacity 0.25s ease;
+}
+
+/* 仅鼠标悬停在缺图方块时显示 */
+
+main > a > div > .fake-broken-image:hover {
+    background-color: #ffffff !important;
+    border-color: #bdbdbd !important;
+}
+
+main > a > div > .fake-broken-image:hover::before {
+    opacity: 1 !important;
+}
+
+/* 黑色筛选栏圆角调整为 10px */
+
+#filtres {
+    border-radius: 10px !important;
+}
+
+/* =========================================
+   图片等比例填满正方形
+   ========================================= */
+
+main > a > div > img.thumb {
+    width: 100% !important;
+    height: 100% !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    /* 等比例填满，不留白 */
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    border-radius: 8px !important;
+
+    /* 默认保持黑色 */
+    filter: brightness(0) !important;
+
+    background-color: #000000 !important;
+}
+
+/* 鼠标悬停：显示原图，并保持填满 */
+
+main > a > div > img.thumb:hover {
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    filter: none !important;
+    background-color: #ffffff !important;
+}
+
+/* 防止旧的 hover 规则覆盖 */
+
+main > a:hover > div > img.thumb {
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* =========================================
+   单独作者筛选：重新编排棋盘格
+   ========================================= */
+
+/* 仅在下拉框选中非第一个选项时启用 */
+
+@supports selector(body:has(select option:checked)) {
+
+    /* 所有符合条件的文章先恢复图片在上 */
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a > div > img.thumb,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a > div::before,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a > div > .fake-broken-image {
+        grid-row: 1 / 3 !important;
+    }
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a > div > h3 {
+        grid-row: 3 !important;
+    }
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a > div > footer {
+        grid-row: 4 !important;
+    }
+
+    /* 第2、4篇可见文章反转 */
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 2 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > img.thumb,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 4 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > img.thumb,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 2 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div::before,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 4 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div::before,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 2 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > .fake-broken-image,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 4 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > .fake-broken-image {
+        grid-row: 3 / 5 !important;
+    }
+
+    /* 第2、4篇标题移动到上方 */
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 2 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > h3,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 4 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > h3 {
+        grid-row: 1 !important;
+    }
+
+    /* 第2、4篇作者日期移动到上方 */
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 2 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > footer,
+
+    body:has(
+        #auteurices select option:not(:first-child):checked
+    ) main > a:nth-child(
+        5n + 4 of
+        :not([style*="display:none"])
+        :not([style*="display: none"])
+        :not([hidden])
+    ) > div > footer {
+        grid-row: 2 !important;
+    }
+}
+
+/* =========================================
+   单独作者模式：统一强制排列
+   不影响所有作者模式
+   ========================================= */
+
+@media (min-width: 1201px) {
+
+  /* 选中具体作者时，所有卡片恢复默认方向 */
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a > div > :is(img.thumb, .fake-broken-image) {
+      grid-column: 1 !important;
+      grid-row: 1 / 3 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a > div::before {
+      grid-column: 1 !important;
+      grid-row: 1 / 3 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a > div > h3 {
+      grid-column: 1 !important;
+      grid-row: 3 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a > div > footer {
+      grid-column: 1 !important;
+      grid-row: 4 !important;
+  }
+
+  /* 只针对筛选后第2、4、7、9...篇文章 */
+  /* 用 :is 合并选择器，统一优先级 */
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a:is(
+      :nth-child(5n + 2 of [style*="display: block"]),
+      :nth-child(5n + 4 of [style*="display: block"])
+  ) > div > :is(img.thumb, .fake-broken-image) {
+      grid-row: 3 / 5 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a:is(
+      :nth-child(5n + 2 of [style*="display: block"]),
+      :nth-child(5n + 4 of [style*="display: block"])
+  ) > div::before {
+      grid-row: 3 / 5 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a:is(
+      :nth-child(5n + 2 of [style*="display: block"]),
+      :nth-child(5n + 4 of [style*="display: block"])
+  ) > div > h3 {
+      grid-row: 1 !important;
+  }
+
+  body:has(#auteurices select option:not(:first-child):checked)
+  main > a:is(
+      :nth-child(5n + 2 of [style*="display: block"]),
+      :nth-child(5n + 4 of [style*="display: block"])
+  ) > div > footer {
+      grid-row: 2 !important;
+  }
+}
+
+
+/
+/* =========================================
+   INTRO ANIMATION
+   SQUARES — CHAOTIC FLYING
+   ========================================= */
+
+:root {
+    --intro-speed: 1.4s;
+    --intro-fly-speed: 2.3s;
+}
+
+/* =========================================
+   1. 全屏方格覆盖层
+   30px 方格 / 4px 圆角 / 12px 间距
+   ========================================= */
+
+body::before {
     content: "";
-    display: block;
-    width: 28px;
-    height: 28px;
-    background-color: #000000;
-    clip-path: polygon(50% 0%, 65% 24%, 93.3% 25%, 80% 50%, 93.3% 75%, 65% 76%, 50% 100%, 35% 76%, 6.7% 75%, 20% 50%, 6.7% 25%, 35% 24%);
-    
-    transition: background-color 0.2s ease;
-    transform-origin: center center; 
-    animation: starMagicFloat 8s linear infinite; 
+
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 999999 !important;
+
+    background-color: #ffffff !important;
+
+    /*
+       5组方格交错排列
+       使用126px的重复单元
+       第5组作为飞散方格
+    */
+
+    background-image:
+
+    /* GROUP 1 */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Crect x='0' y='0' width='30' height='30' rx='4' fill='black'/%3E%3Crect x='84' y='42' width='30' height='30' rx='4' fill='black'/%3E%3C/svg%3E"),
+
+    /* GROUP 2 */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Crect x='42' y='0' width='30' height='30' rx='4' fill='black'/%3E%3Crect x='0' y='84' width='30' height='30' rx='4' fill='black'/%3E%3C/svg%3E"),
+
+    /* GROUP 3 */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Crect x='84' y='0' width='30' height='30' rx='4' fill='black'/%3E%3Crect x='42' y='84' width='30' height='30' rx='4' fill='black'/%3E%3C/svg%3E"),
+
+    /* GROUP 4 */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Crect x='0' y='42' width='30' height='30' rx='4' fill='black'/%3E%3C/svg%3E"),
+
+    /* GROUP 5 — FLYING SQUARES */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Crect x='42' y='42' width='30' height='30' rx='4' fill='black'/%3E%3Crect x='84' y='84' width='30' height='30' rx='4' fill='black'/%3E%3C/svg%3E") !important;
+
+    background-size:
+        126px 126px,
+        126px 126px,
+        126px 126px,
+        126px 126px,
+        126px 126px !important;
+
+    background-repeat: repeat !important;
+
+    background-position:
+        12px 12px,
+        12px 12px,
+        12px 12px,
+        12px 12px,
+        12px 12px;
+
+    pointer-events: none !important;
+
+    opacity: 1;
+    visibility: visible;
+
+    /*
+       四组正常错位
+       第五组突然乱飞
+    */
+
+    animation:
+        squareChaos 2.3s
+        cubic-bezier(.45, 0, .55, 1)
+        infinite !important;
+
+    /*
+       点击后模拟永久隐藏
+    */
+    transition:
+        opacity 31536000s linear !important;
 }
 
-@keyframes starMagicFloat {
-    0%   { transform: rotate(0deg) scale(1); }
-    50%  { transform: rotate(180deg) scale(1.5); } 
-    100% { transform: rotate(360deg) scale(1); }   
+/* =========================================
+   2. 乱飞运动
+   ========================================= */
+
+@keyframes squareChaos {
+
+    0% {
+        background-position:
+            12px 12px,
+            12px 12px,
+            12px 12px,
+            12px 12px,
+            12px 12px;
+    }
+
+    12% {
+        background-position:
+            5px 7px,
+            21px 8px,
+            8px 21px,
+            18px 16px,
+            48px -22px;
+    }
+
+    23% {
+        background-position:
+            -6px -9px,
+            32px 5px,
+            3px 34px,
+            25px 30px,
+            -55px 67px;
+    }
+
+    31% {
+        background-position:
+            -12px -14px,
+            38px -7px,
+            -8px 39px,
+            32px 36px,
+            105px -76px;
+    }
+
+    39% {
+        background-position:
+            -3px 4px,
+            28px 13px,
+            12px 28px,
+            23px 19px,
+            -86px -94px;
+    }
+
+    47% {
+        background-position:
+            9px 10px,
+            17px 9px,
+            7px 19px,
+            15px 22px,
+            118px 81px;
+    }
+
+    55% {
+        background-position:
+            -9px -6px,
+            34px -4px,
+            -4px 35px,
+            30px 33px,
+            -113px 102px;
+    }
+
+    63% {
+        background-position:
+            -17px -16px,
+            42px -12px,
+            -12px 43px,
+            41px 40px,
+            76px -120px;
+    }
+
+    72% {
+        background-position:
+            -4px 1px,
+            29px 7px,
+            6px 31px,
+            25px 27px,
+            -39px -48px;
+    }
+
+    83% {
+        background-position:
+            7px 9px,
+            20px 10px,
+            9px 20px,
+            19px 18px,
+            96px 113px;
+    }
+
+    92% {
+        background-position:
+            3px 5px,
+            17px 9px,
+            10px 16px,
+            16px 19px,
+            -24px 39px;
+    }
+
+    100% {
+        background-position:
+            12px 12px,
+            12px 12px,
+            12px 12px,
+            12px 12px,
+            12px 12px;
+    }
 }
 
-#themes legend::before { display: none !important; }
+/* =========================================
+   3. 点击鼠标立即进入网站
+   ========================================= */
 
-#themes:hover legend::after,
-#themes:focus-within legend::after {
-    background-color: #e53935;
+html:active body::before,
+body:active::before {
+
+    animation: none !important;
+
+    opacity: 0 !important;
+
+    transition-duration: 0s !important;
 }
 
+/* =========================================
+   4. 焦点保留期间保持隐藏
+   ========================================= */
 
-#themes::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 12rem; 
-    z-index: 90;
-    display: none;
-}
-#themes:hover::before,
-#themes:focus-within::before {
-    display: block;
+body:focus-within::before {
+
+    animation: none !important;
+
+    opacity: 0 !important;
+
+    transition-duration: 0s !important;
 }
 
+/* =========================================
+   5. 防止横向滚动
+   ========================================= */
 
+html,
+body {
+    overflow-x: hidden;
+}
 
-#title h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+/* =========================================
+   6. 减少动画偏好
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body::before {
+        animation: none !important;
+    }
+}
+
+/* =========================================
+   SITE TITLE — HOVER EXPERIMENT
+   标题放大 / 聚拢 / 渐变
+   ========================================= */
+
+/* 标题默认状态 */
+
+h1 {
     position: relative;
-    z-index: 50;
+
+    color: #000000;
+
+    transform: scale(1);
+
+    transform-origin: left center;
+
+    transition:
+        transform 0.7s cubic-bezier(.22, 1, .36, 1),
+        letter-spacing 0.7s cubic-bezier(.22, 1, .36, 1),
+        line-height 0.7s cubic-bezier(.22, 1, .36, 1),
+        color 0.4s ease;
+
+    cursor: default;
 }
 
-#title + p {
-    font-size: 1.2rem;
-    max-width: 66ch;
-    line-height: 1.5;
-    padding-bottom: 0.5rem;
-    border-bottom: none;
-    margin-bottom: 2rem;
-    display: block;
+/* =========================================
+   鼠标悬停：标题聚拢
+   ========================================= */
+
+h1:hover {
+
+    /* 整个标题放大 */
+    transform: scale(1.12, 1.25);
+
+    /* 字母之间更加紧密 */
+    letter-spacing: -0.065em !important;
+
+    /* 三行文字纵向挤压 */
+    line-height: 0.68 !important;
+
+    /* 棕色到深蓝色的渐变 */
+    background-image: linear-gradient(
+        180deg,
+        #56300e 0%,
+        #50321d 20%,
+        #343943 45%,
+        #183f72 75%,
+        #0c4188 100%
+    ) !important;
+
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* =========================================
+   鼠标移开：恢复黑色
+   ========================================= */
+
+h1:not(:hover) {
+    background-image: none !important;
+    color: #000000;
+    -webkit-text-fill-color: currentColor;
+}
+
+/* =========================================
+   减少动态效果偏好
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    h1 {
+        transition: none !important;
+    }
+}
+
+/* =========================================
+   TITLE HOVER — HIDE AUTHORS
+   标题放大时隐藏作者名单
+   ========================================= */
+
+/* 作者名单默认显示 */
+
+#themes {
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+/* 鼠标悬停标题时，作者名单消失 */
+
+body:has(h1:hover) #themes {
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+}
+
+/* 鼠标移开标题后，作者名单恢复 */
+
+body:not(:has(h1:hover)) #themes {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+/* =========================================
+   TITLE STAR — AUTHOR REVEAL
+   点击标题区域时显示作者名单
+   ========================================= */
+
+/* 作者名单默认隐藏 */
+
+#themes {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease !important;
+}
+
+/* 鼠标按下标题时显示作者 */
+
+body:has(h1:active) #themes {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* 标题内有可获得焦点的元素时，
+   点击后可继续显示作者名单 */
+
+body:has(h1:focus-within) #themes {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
 }
 
 
-body:has(#themes:hover) #title + p,
-body:has(#themes:focus-within) #title + p {
+/* =========================================
+   STAR — FINAL POSITION + ANIMATION
+   星星独立旋转 / 距离黑色横条100px
+   ========================================= */
+
+/* 1. 黑色横条作为定位参考 */
+
+#filtres {
+    anchor-name: --blog-filter-bar;
+}
+
+/* 2. 删除标题内原来的星星 */
+
+#title h1::after {
+    content: none !important;
     display: none !important;
 }
 
+/* 3. 独立红色星星 */
 
+#title::after {
+    content: "" !important;
+    display: block !important;
+
+    position: absolute !important;
+
+    /* 普通定位备用方案 */
+    top: calc(100% + 45px) !important;
+    right: 0 !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    background: #e53935 !important;
+
+    clip-path: polygon(
+        50% 0%,
+        65% 24%,
+        93.3% 25%,
+        80% 50%,
+        93.3% 75%,
+        65% 76%,
+        50% 100%,
+        35% 76%,
+        6.7% 75%,
+        20% 50%,
+        6.7% 25%,
+        35% 24%
+    ) !important;
+
+    z-index: 150 !important;
+
+    pointer-events: none !important;
+
+    transform: none !important;
+    transform-origin: center center !important;
+
+    /* 使用 rotate 和 scale 独立动画 */
+    animation: starIndependentSpin
+        8s linear infinite !important;
+}
+
+/* 4. 星星旋转 + 放大缩小 */
+
+@keyframes starIndependentSpin {
+
+    0% {
+        rotate: 0deg;
+        scale: 1;
+    }
+
+    25% {
+        rotate: 90deg;
+        scale: 1.25;
+    }
+
+    50% {
+        rotate: 180deg;
+        scale: 1.5;
+    }
+
+    75% {
+        rotate: 270deg;
+        scale: 1.25;
+    }
+
+    100% {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+/* =========================================
+   5. 精确对齐黑色横条
+   星星底部距离横条顶部100px
+   ========================================= */
+
+@supports (top: anchor(top)) {
+
+    #title::after {
+        position: fixed !important;
+
+        position-anchor: --blog-filter-bar;
+
+        top: calc(anchor(top) - 148px) !important;
+        left: calc(anchor(right) - 48px) !important;
+
+        right: auto !important;
+        bottom: auto !important;
+    }
+}
+
+/* =========================================
+   6. 星星的透明鼠标感应区域
+   ========================================= */
+
+#themes::before {
+    content: "" !important;
+    display: block !important;
+
+    position: absolute !important;
+
+    top: calc(100% + 33px) !important;
+    right: -12px !important;
+
+    left: auto !important;
+    bottom: auto !important;
+
+    width: 72px !important;
+    height: 72px !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    clip-path: none !important;
+
+    transform: none !important;
+    animation: none !important;
+
+    pointer-events: auto !important;
+    cursor: pointer !important;
+
+    z-index: 151 !important;
+}
+
+/* 感应区域与星星保持同一位置 */
+
+@supports (top: anchor(top)) {
+
+    #themes::before {
+        position: fixed !important;
+
+        position-anchor: --blog-filter-bar;
+
+        top: calc(anchor(top) - 160px) !important;
+        left: calc(anchor(right) - 60px) !important;
+
+        right: auto !important;
+        bottom: auto !important;
+    }
+}
+
+/* =========================================
+   7. 星星悬停时显示作者
+   ========================================= */
+
+#themes:is(:hover, :active, :focus-within) > div {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* =========================================
+   8. 星星被悬停时标题恢复正常
+   ========================================= */
+
+body:has(
+    #themes:is(:hover, :active, :focus-within)
+) #title h1 {
+
+    font-size: 80px !important;
+
+    letter-spacing: -1px !important;
+    line-height: 1 !important;
+
+    transform: none !important;
+
+    background-image: none !important;
+
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================
+   9. 移动设备
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    #title::after {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    @supports (top: anchor(top)) {
+
+        #title::after {
+            top: calc(anchor(top) - 136px) !important;
+            left: calc(anchor(right) - 36px) !important;
+        }
+
+        #themes::before {
+            top: calc(anchor(top) - 148px) !important;
+            left: calc(anchor(right) - 48px) !important;
+
+            width: 60px !important;
+            height: 60px !important;
+        }
+    }
+
+    body:has(
+        #themes:is(:hover, :active, :focus-within)
+    ) #title h1 {
+        font-size: 70px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #title::after {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    @supports (top: anchor(top)) {
+
+        #title::after {
+            top: calc(anchor(top) - 126px) !important;
+            left: calc(anchor(right) - 26px) !important;
+        }
+
+        #themes::before {
+            top: calc(anchor(top) - 138px) !important;
+            left: calc(anchor(right) - 38px) !important;
+
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+
+    body:has(
+        #themes:is(:hover, :active, :focus-within)
+    ) #title h1 {
+        font-size: 48px !important;
+    }
+}
+
+/* =========================================
+   STAR + AUTHORS — INTERACTION FIX
+   星星变色 / 作者展开 / 防止闪屏
+   ========================================= */
+
+/* =========================================
+   1. 黑色筛选栏：定位参考
+   ========================================= */
 
 #filtres {
-    margin-bottom: 30px;
-    border-top: 2px solid #000000;
-    padding: 1rem 0;
+    anchor-name: --blog-filter-bar;
 }
 
-#filtres h2 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+/* =========================================
+   2. 星星不再属于标题文字
+   ========================================= */
 
-#date, #auteurices {
-    display: inline-flex;
-    align-items: center;
-    vertical-align: middle;
+#title h1::after {
+    content: none !important;
+    display: none !important;
 }
 
-#date { margin-right: 5rem; }
-#date p, #auteurices p { margin: 0 1rem 0 0; font-size: 1rem; }
-#date label { margin-left: 1rem; display: inline-block; width: 90px; text-align: left; }
+/* =========================================
+   3. 独立星星
+   默认黑色 + 保留旋转动画
+   ========================================= */
 
-#auteurices select {
-    border: none;
-    border-bottom: 1px solid #000000;
-    font-size: 1rem;
-    background-color: #fcfcfc; 
-    cursor: pointer;
-    padding-bottom: 2px;
-    outline: none;
+#title::after {
+    content: "" !important;
+    display: block !important;
+
+    position: fixed !important;
+
+    position-anchor: --blog-filter-bar;
+
+    /* 底部距离黑色横条100px */
+    top: calc(anchor(top) - 148px) !important;
+    left: calc(anchor(right) - 48px) !important;
+
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    background: #000000 !important;
+
+    clip-path: polygon(
+        50% 0%,
+        65% 24%,
+        93.3% 25%,
+        80% 50%,
+        93.3% 75%,
+        65% 76%,
+        50% 100%,
+        35% 76%,
+        6.7% 75%,
+        20% 50%,
+        6.7% 25%,
+        35% 24%
+    ) !important;
+
+    transform: none !important;
+    transform-origin: center !important;
+
+    animation:
+        starIndependentSpin 8s linear infinite !important;
+
+    pointer-events: none !important;
+
+    z-index: 150 !important;
 }
 
+/* 星星动画 */
 
-main {
-    display: block !important; 
-    column-gap: 24px;
-    column-count: 6;   
+@keyframes starIndependentSpin {
+
+    0% {
+        rotate: 0deg;
+        scale: 1;
+    }
+
+    50% {
+        rotate: 180deg;
+        scale: 1.5;
+    }
+
+    100% {
+        rotate: 360deg;
+        scale: 1;
+    }
 }
 
-@media (max-width: 1200px) { main { column-count: 4; } }
-@media (max-width: 800px) { main { column-count: 3; } }
-@media (max-width: 500px) { main { column-count: 2; } }
+/* =========================================
+   4. 修复 #themes 被隐藏的问题
+   ========================================= */
 
-main > a {
-    display: inline-block !important; 
-    width: 100%;
-    margin-bottom: 30px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    vertical-align: top;
-    text-decoration: none;
-    color: inherit;
-    position: relative; 
+#themes {
+    display: block !important;
+
+    position: fixed !important;
+    position-anchor: --blog-filter-bar;
+
+    /* 作者名单位于横条上方 */
+    top: calc(anchor(top) - 100px) !important;
+    left: anchor(left) !important;
+
+    right: auto !important;
+    bottom: auto !important;
+
+    width: anchor-size(width) !important;
+    max-width: none !important;
+
+    height: 100px !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+
+    translate: none !important;
+    transform: none !important;
+
+    /* 容器必须可见 */
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    /* 容器背景不拦截鼠标 */
+    pointer-events: none !important;
+
+    z-index: 10000 !important;
+
+    transition: none !important;
 }
 
-main > a[style*="none"] { display: none !important; }
+/* 隐藏图例和 radio 外观 */
 
-
-main > a > div { display: flex; flex-direction: column; }
-
-main > a > div > img.thumb {
-    order: -1;                
-    width: 100%;
-    height: auto !important;          
-    aspect-ratio: auto !important;    
-    border-radius: 8px;       
-    background-color: #d3d3d3;
-    margin-bottom: 1rem;
-    min-height: 200px;
+#themes legend,
+#themes input {
+    display: none !important;
 }
 
-main > a > div::before {
-    content: "";
-    order: -1;                
-    width: 100%;
-    aspect-ratio: 1 / 1;      
-    background-color: #d3d3d3; 
-    border-radius: 8px;       
-    margin-bottom: 1rem;
-}
-main > a > div:has(img.thumb)::before { display: none; }
+/* =========================================
+   5. 星星透明感应区
+   与实际星星精准对齐
+   ========================================= */
 
-main > a > div > h3 { order: 1; font-size: 1.15rem; font-weight: bold; margin: 0 0 0.5rem 0; }
-main > a > div > footer { order: 2; }
-main > a > div > footer p { margin: 0.2rem 0; font-size: 0.85rem; color: #333333; }
-main > a > div > footer p strong { font-weight: normal; }
+#themes::before {
+    content: "" !important;
 
+    display: block !important;
 
+    position: absolute !important;
 
-main > a::after {
-    content: "";
-    position: absolute;
-    top: 40px; 
-    left: 50%;
-    width: var(--size);
-    height: var(--size);
-    background-color: #000000;
-    border-radius: 4px;       
-    z-index: 10;
-    pointer-events: none;     
-    transform: translateX(-50%) scale(0);
-    opacity: 0;
-    animation: randomSquarePop 2.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-    animation-delay: var(--delay, 1s); 
-}
+    /* 以作者区域顶部为参考 */
+    top: -48px !important;
+    right: 0 !important;
 
-main > a > div > img.thumb,
-main > a > div::before,
-main > a > div > h3,
-main > a > div > footer {
-    opacity: 0; 
-    animation: contentFadeIn 2.2s ease-out forwards;
-    animation-delay: var(--delay, 1s); 
+    left: auto !important;
+    bottom: auto !important;
+
+    width: 64px !important;
+    height: 64px !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    clip-path: none !important;
+
+    transform: none !important;
+    animation: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+    cursor: pointer !important;
+
+    z-index: 5 !important;
 }
 
-@keyframes randomSquarePop {
-    0%   { transform: translateX(-50%) scale(0); opacity: 1; }
-    15%  { transform: translateX(-50%) scale(1.05); opacity: 1; } 
-    25%  { transform: translateX(-50%) scale(1); opacity: 1; }    
-    55%  { transform: translateX(-50%) scale(1); opacity: 1; }    
-    75%  { transform: translateX(-50%) scale(1); opacity: 0; }    
-    100% { transform: translateX(-50%) scale(1); opacity: 0; }    
+/* =========================================
+   6. 星星悬停变红
+   ========================================= */
+
+body:has(#themes:hover) #title::after,
+body:has(#themes:active) #title::after,
+body:has(#themes:focus-within) #title::after {
+
+    background-color: #e53935 !important;
 }
 
-@keyframes contentFadeIn {
-    0%, 75% { opacity: 0; } 
-    100%    { opacity: 1; } 
+/* =========================================
+   7. 作者姓名默认隐藏
+   但保持原来的排列位置
+   ========================================= */
+
+#themes > div {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    width: auto !important;
+
+    margin: 0 1.4rem 0.5rem 0 !important;
+    padding: 0 !important;
+
+    position: relative !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    z-index: 3 !important;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease !important;
 }
 
-main > a:nth-child(15n + 1)  { --delay: 0.4s; --size: 50px; }
-main > a:nth-child(15n + 2)  { --delay: 1.2s; --size: 90px; }
-main > a:nth-child(15n + 3)  { --delay: 0.7s; --size: 30px; }
-main > a:nth-child(15n + 4)  { --delay: 0.1s; --size: 110px; }
-main > a:nth-child(15n + 5)  { --delay: 1.5s; --size: 70px; }
+/* =========================================
+   8. 星星悬停 / 按下 / 作者获得焦点
+   显示全部作者姓名
+   ========================================= */
 
-main > a:nth-child(15n + 6)  { --delay: 0.9s; --size: 30px; }
-main > a:nth-child(15n + 7)  { --delay: 0.5s; --size: 110px; }
-main > a:nth-child(15n + 8)  { --delay: 1.8s; --size: 50px; }
-main > a:nth-child(15n + 9)  { --delay: 0.2s; --size: 70px; }
-main > a:nth-child(15n + 10) { --delay: 1.1s; --size: 90px; }
+#themes:hover > div,
+#themes:active > div,
+#themes:focus-within > div {
 
-main > a:nth-child(15n + 11) { --delay: 0.6s; --size: 30px; }
-main > a:nth-child(15n + 12) { --delay: 1.4s; --size: 70px; }
-main > a:nth-child(15n + 13) { --delay: 0.3s; --size: 110px; }
-main > a:nth-child(15n + 14) { --delay: 1.0s; --size: 50px; }
-main > a:nth-child(15n + 0)  { --delay: 1.7s; --size: 90px; }
+    display: inline-flex !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+}
+
+/* =========================================
+   9. 姓名可以正常点击
+   ========================================= */
+
+#themes label {
+    position: relative !important;
+
+    font-family: 'MyDidot', serif !important;
+    font-size: 24px !important;
+
+    color: #000000 !important;
+
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
+    z-index: 4 !important;
+
+    transition: color 0.2s ease !important;
+}
+
+#themes label:hover,
+#themes input:checked + label {
+    color: #e53935 !important;
+}
+
+/* =========================================
+   10. 防闪屏：透明鼠标通道
+   ========================================= */
+
+/*
+   平时不影响鼠标。
+   星星触发后，建立一块透明交互区域，
+   让鼠标顺利移动到作者姓名。
+*/
+
+#themes::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    top: -48px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    height: 148px !important;
+
+    background: transparent !important;
+
+    opacity: 1 !important;
+
+    pointer-events: none !important;
+
+    z-index: 1 !important;
+}
+
+/* 展开时启用鼠标通道 */
+
+#themes:hover::after,
+#themes:focus-within::after {
+    pointer-events: auto !important;
+}
+
+/* =========================================
+   11. 星星激活时标题恢复正常
+   ========================================= */
+
+body:has(#themes:hover) #title h1,
+body:has(#themes:active) #title h1,
+body:has(#themes:focus-within) #title h1 {
+
+    font-size: 100px !important;
+
+    line-height: 1 !important;
+    letter-spacing: -1px !important;
+
+    transform: none !important;
+
+    background-image: none !important;
+
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================
+   12. 星星激活时隐藏前言
+   ========================================= */
+
+body:has(#themes:hover) #title + p,
+body:has(#themes:active) #title + p,
+body:has(#themes:focus-within) #title + p {
+
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* =========================================
+   13. 平板适配
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    #title::after {
+        width: 36px !important;
+        height: 36px !important;
+
+        top: calc(anchor(top) - 136px) !important;
+        left: calc(anchor(right) - 36px) !important;
+    }
+
+    #themes::before {
+        width: 54px !important;
+        height: 54px !important;
+    }
+
+    body:has(#themes:hover) #title h1,
+    body:has(#themes:focus-within) #title h1 {
+        font-size: 70px !important;
+    }
+}
+
+/* =========================================
+   14. 手机适配
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    #title::after {
+        width: 26px !important;
+        height: 26px !important;
+
+        top: calc(anchor(top) - 126px) !important;
+        left: calc(anchor(right) - 26px) !important;
+    }
+
+    #themes::before {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    #themes label {
+        font-size: 18px !important;
+    }
+
+    body:has(#themes:hover) #title h1,
+    body:has(#themes:focus-within) #title h1 {
+        font-size: 48px !important;
+    }
+}
+
+/* =========================================
+   网站标题顶部留白调整
+   ========================================= */
+
+#title {
+    margin-top: 30px !important;
+}
+
+#title h1 {
+    margin-top: 0 !important;
+}
+
+/* =========================================
+   AUTHORS — HOVER SCALE ANIMATION
+   作者姓名悬停放大动画
+   ========================================= */
+
+/* 作者姓名默认状态 */
+
+#themes label {
+    display: inline-block !important;
+
+    transform: scale(1) !important;
+    transform-origin: center center !important;
+
+    transition:
+        transform 0.35s cubic-bezier(.22, 1, .36, 1),
+        color 0.25s ease !important;
+
+    cursor: pointer !important;
+}
+
+/* 鼠标悬停：放大并变红 */
+
+#themes label:hover {
+    transform: scale(1.2) !important;
+    color: #e53935 !important;
+
+    position: relative;
+    z-index: 200 !important;
+}
+
+/* 鼠标移开：自动恢复原来大小 */
+
+/* 当前选中的作者仍保持红色 */
+#themes input:checked + label {
+    color: #e53935 !important;
+}
+
+/* 减少动画偏好 */
+
+@media (prefers-reduced-motion: reduce) {
+    #themes label {
+        transition: none !important;
+    }
+}
