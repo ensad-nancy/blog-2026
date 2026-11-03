@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Redaction+70:wght@400;700&display=swap');
 /* General */
 
 * {
@@ -9,11 +9,10 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-   background-image: url("../../assets/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black;
+  background:
+    radial-gradient(#ff89c8 10px, transparent 10px)
+    0 0 / 50px 50px,
+    #defff7;
     font-family: Arial, sans-serif;
     font-size: 13px;
 }
@@ -24,12 +23,14 @@ body {
 #title {
     position: fixed;
     top: 100px;
-    left: 500px;
-    width: 590px;
+    left: 30%;
+    width: 60%;
 }
 
 #title h1 {
     margin: 0;
+    font-family: 'Redaction 70', sans-serif;
+    font-weight: bold;
     font-size: 30px;
     line-height: 1.1;
     color: #ff3aa5;
@@ -42,8 +43,9 @@ body {
 body > p {
     position: fixed;
     top: 180px;
-    left: 500px;
-    width: 590px;
+    left: 30%;
+    width: 60%;
+    max-width: none;
     margin: 0;
     font-size: 12px;
     line-height: 1.4;
@@ -55,8 +57,10 @@ body > p {
 #themes {
     position: fixed;
     top: 180px;
-    left: 150px;
+    left: 5%;
     width: 180px;
+    height: 350px;
+    overflow-y: auto;
     padding: 12px;
     background: white;
     border: 1px solid black;
@@ -64,6 +68,7 @@ body > p {
 }
 
 #themes legend {
+    font-family: 'Redaction 70', sans-serif;
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 12px;
@@ -83,13 +88,14 @@ body > p {
     line-height: 1.5;
     color: black;
     cursor: pointer;
+    transition: color 0.2s;
 }
 
-#themes label:hover {
-    color: #ff3aa5;
-}
-
+#themes label:hover,
 #themes input:checked + label {
+    font-family: 'Redaction 70', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
     color: #ff3aa5;
 }
 
@@ -98,8 +104,8 @@ body > p {
 
 #filtres {
     position: fixed;
-    top: 450px;
-    left: 150px;
+    top: 540px;
+    left: 5%;
     width: 180px;
     padding: 12px;
     background: white;
@@ -107,8 +113,8 @@ body > p {
 }
 
 #filtres h2 {
-    font-size: 15px;
     margin-top: 0;
+    font-size: 15px;
 }
 
 #filtres p {
@@ -128,18 +134,21 @@ body > p {
 /* Blog layout */
 
 main {
-    position: absolute;
-    top: 350px;
+    position: fixed;
+    top: 280px;
     bottom: 0;
-    left: 500px;
-    width: 660px;
+    left: 30%;
+    right: 5%;
+    width: auto;
+    min-height: 0;
+
     overflow-y: auto;
     overflow-x: hidden;
 
     display: grid;
-    grid-template-columns: 260px 260px;
-    column-gap: 70px;
-    row-gap: 150px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 100px;
     align-content: start;
 
     padding-bottom: 150px;
@@ -150,9 +159,10 @@ main {
 
 main > a {
     display: block;
-    width: 260px;
+    width: 100%;
+    min-width: 0;
     background: white;
-    border: 1px solid black;
+    border: 7px dotted yellowgreen; 
     color: black;
     text-decoration: none;
 }
@@ -172,7 +182,7 @@ main > a > div::before {
     order: 1;
     height: 150px;
     background: white;
-    border: 1px solid #cccccc;
+    border: 1px solid white;
 }
 
 main .thumb {
@@ -180,7 +190,7 @@ main .thumb {
     order: 1;
     width: 100%;
     height: 150px;
-    object-fit: contain;
+    object-fit: fill;
     background: white;
     border: 1px solid #cccccc;
 }
@@ -217,7 +227,7 @@ main footer strong {
 }
 
 
-/* Move every second post down */
+/* Staggered posts */
 
 main > a:nth-child(even) {
     position: relative;
@@ -227,28 +237,38 @@ main > a:nth-child(even) {
 
 /* Medium screens */
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
 
-    #title,
+    #title h1 {
+        font-size: 26px;
+    }
+
     body > p {
-        left: 35%;
-        width: 55%;
+        top: 200px;
     }
 
     main {
-        left: 35%;
-        width: 60%;
-        grid-template-columns: 1fr 1fr;
+        top: 310px;
         column-gap: 30px;
     }
+}
 
-    main > a {
-        width: 100%;
+
+/* Narrow screens */
+
+@media (max-width: 800px) {
+
+    #title h1 {
+        font-size: 23px;
     }
 
-    #themes,
-    #filtres {
-        left: 5%;
+    body > p {
+        top: 210px;
+    }
+
+    main {
+        top: 340px;
+        column-gap: 20px;
     }
 }
 
@@ -259,6 +279,7 @@ main > a:nth-child(even) {
 
     body {
         height: auto;
+        min-height: 100vh;
         overflow: auto;
         padding: 20px;
     }
@@ -274,7 +295,16 @@ main > a:nth-child(even) {
     }
 
     #title h1 {
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    body > p {
+        margin-top: 15px;
+    }
+
+    #themes {
+        height: auto;
+        overflow: visible;
     }
 
     main {
@@ -287,46 +317,9 @@ main > a:nth-child(even) {
 
     main > a {
         width: 100%;
-        top: 0 !important;
     }
-}
 
-/* Themes */
-
-#themes {
-    position: fixed;
-    top: 180px;
-    left: 150px;
-    width: 180px;
-    height: 350px;
-    overflow-y: auto;
-    padding: 12px;
-    background: white;
-    border: 1px solid black;
-    font-size: 11px;
-}
-
-/* Filters */
-
-#filtres {
-    position: fixed;
-    top: 540px;
-    left: 150px;
-    width: 180px;
-    padding: 12px;
-    background: white;
-    border: 1px solid black;
-}
-
-/* Description */
-
-body > p {
-    position: fixed;
-    top: 180px;
-    left: 500px;
-    width: 590px;
-    max-width: none;
-    margin: 0;
-    font-size: 12px;
-    line-height: 1.4;
+    main > a:nth-child(even) {
+        top: 0;
+    }
 }
