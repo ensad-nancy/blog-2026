@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Redaction+70:wght@400;700&display=swap');
 
 /* General design */
 
@@ -7,19 +8,21 @@
 
 body {
     margin: 0;
-   background-color:wheat
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #defff7, #ffb6e1);
+    color: black;
     font-family: Arial, sans-serif;
     font-size: 13px;
-    min-height: 100vh;
 }
 
 
 /* Back to the homepage */
 
 body > a {
-    position: absolute;
+    position: fixed;
     top: 100px;
-    left: 150px;
+    left: 5%;
 
     color: black;
     font-size: 13px;
@@ -34,18 +37,21 @@ body > a:hover {
 /* Theme selection */
 
 #themes {
-    position: absolute;
+    position: fixed;
     top: 180px;
-    left: 150px;
-
+    left: 5%;
     width: 180px;
-    padding: 12px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 
+    padding: 12px;
     background: white;
     border: 1px solid black;
+    font-size: 11px;
 }
 
 #themes legend {
+    font-family: 'Redaction 70', sans-serif;
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 12px;
@@ -69,6 +75,7 @@ body > a:hover {
 /* Theme names */
 
 #themes label {
+
     display: block;
     font-size: 14px;
     line-height: 1.5;
@@ -79,24 +86,31 @@ body > a:hover {
 
 #themes label:hover,
 #themes input:checked + label {
+    font-family: 'Redaction 70', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
     color: #ff3aa5;
+}
+
+
+/* Article header */
+
+header {
+    position: relative;
+    width: 100%;
+    margin: 0 0 50px 0;
 }
 
 
 /* Pink blog title */
 
-header {
-    width: min(590px, 55vw);
-    margin-top: 100px;
-    margin-left: clamp(250px, 35vw, 500px);
-}
-
 header .title {
+    margin: 0 0 20px 0;
+    font-family: 'Redaction 70', sans-serif;
     font-size: 32px;
+    line-height: 1.1;
     font-weight: bold;
     color: #ff3aa5;
-    margin: 0 0 20px 0;
-
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -105,8 +119,8 @@ header .title {
 
 header .date,
 header .tags {
-    font-size: 12px;
     margin: 5px 0;
+    font-size: 12px;
 }
 
 header .tag {
@@ -114,35 +128,51 @@ header .tag {
 }
 
 
+/* Article layout */
+
+header,
+article {
+    max-width: 590px;
+}
+
+body {
+    padding: 100px 5% 0 35%;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
 /* White article box */
 
 article {
-    width: min(590px, 55vw);
-    margin-left: clamp(250px, 35vw, 500px);
-    margin-top: 50px;
-    margin-bottom: 100px;
-
+    width: 100%;
+    margin: 0 0 100px 0;
     padding: 20px;
+
     background: white;
-    border: 1px solid black;
+    border: 7px dotted yellowgreen; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 
 /* Article heading */
 
 article h1 {
+    margin: 0 0 25px 0;
     font-size: 22px;
     font-weight: normal;
-    margin: 0 0 25px 0;
 }
 
 
 /* Article text */
 
 article p {
+    margin: 0 0 20px 0;
     font-size: 14px;
     line-height: 1.6;
-    margin: 0 0 20px 0;
 }
 
 
@@ -163,12 +193,41 @@ article a {
 }
 
 
-/* Smaller browser windows */
+/* Article scrolling */
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* Medium screens */
 
 @media (max-width: 900px) {
 
     body {
-        padding: 20px;
+        padding-left: 35%;
+        padding-right: 5%;
+    }
+
+    header .title {
+        font-size: 27px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+
+
+/* Small screens */
+
+@media (max-width: 650px) {
+
+    body {
+        height: auto;
+        overflow: auto;
+        padding: 30px 20px;
     }
 
     body > a {
@@ -180,17 +239,22 @@ article a {
     #themes {
         position: static;
         width: 100%;
-        max-width: 300px;
+        max-width: none;
+        max-height: 250px;
         margin-bottom: 40px;
     }
 
-    header {
+    header,
+    article {
         width: 100%;
-        margin: 0 0 30px 0;
+        max-width: none;
+    }
+
+    header .title {
+        font-size: 26px;
     }
 
     article {
-        width: 100%;
-        margin: 0 0 60px 0;
+        margin-bottom: 60px;
     }
 }

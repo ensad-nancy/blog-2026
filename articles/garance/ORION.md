@@ -2,7 +2,7 @@
 title: ORION
 date: 28-09-2026
 tags: poème, cathodique, 
-preview: assets/images/queen.png
+preview: assets/images/ORION.jpg
 ---
 
 # Orion Cathodique
