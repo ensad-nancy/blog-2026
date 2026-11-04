@@ -42,7 +42,7 @@ h1{
 main{
     position: absolute;
     width: 75%;
-    height: 35%;
+    height: 30%;
     bottom: 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -95,9 +95,9 @@ input[type="radio"] {
     display: none;
 }
 
-#filtres{
+/*#filtres{
     display: none;
-}
+}*/
 
 a {
     color: black;
@@ -114,9 +114,11 @@ h3{
     min-width: 200px;
 }
 
-footer{
-    line-height: 90%;
+main footer p{
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+
 main a{
     position: relative;
     margin-right: 15px;
