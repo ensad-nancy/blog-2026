@@ -1,3 +1,71 @@
+@font-face{
+    font-family:'nudles';
+    src: url("articles/tamara/assets/nudles-main/ttf/Nudles-Regular.ttf");
+}
+
 img{
-    height:250px ;
+    width: 60vw ;
+    left: 50vw;
+}
+
+body{
+    background-image: url(../../articles/tamara/assets/images/grillepetite.jpg) ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: initial;
+}
+
+#themes {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-top: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url(../../articles/tamara/assets/images/test2.jpg);
+    background-size: 478px;
+}
+
+label{
+font-family: 'nudles';
+font-size: large;
+}
+
+article{
+    padding-left: 10vw;
+   grid-column: 2/3;
+   grid-row: 4;
+   width: 60vw;
+   text-align: justify;
+}
+
+body>a{
+    position: fixed;
+    z-index: 1;
+}
+
+.title{
+display: none;
+}
+
+.date{
+display: none;
+}
+
+.tags{
+display: none;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+legend{
+    display: none;
 }
