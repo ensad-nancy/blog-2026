@@ -22,10 +22,11 @@ body{
     padding-top: 5vh;
     line-height: 5vh;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-image: url(../../articles/tamara/assets/images/test2.jpg);
-    background-size: 478px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-image: url(../../articles/tamara/assets/images/test-fond.jpg);
+    background-size: 91em;
+    background-position: -188px -12px;
 }
 
 label{
@@ -34,7 +35,7 @@ font-size: large;
 }
 
 article{
-    padding-left: 10vw;
+   padding-left: 10vw;
    grid-column: 2/3;
    grid-row: 4;
    width: 60vw;
