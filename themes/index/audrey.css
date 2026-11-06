@@ -130,7 +130,11 @@ h2{
     flex-direction: row;
     align-items: center;
 }
-
+#date label{
+    font-family: "azeret";
+    font-size: 8pt;
+    margin-left: 10px;
+}
 #date input{
     --thumb-size:15px; 
     background-color: black;
@@ -153,7 +157,6 @@ h2{
     appearance: none;
     border: initial;
     cursor: pointer;
-    transition: all .1s ease-in-out;
 }
 
 #date input>label{
@@ -179,10 +182,22 @@ h2{
 
 #auteurices select{
     width: 350px; 
+    height: 20px;
     margin-left: 15px;
-
+}
+#authors{
+    font-family: "azeret";
+    font-size: 8pt;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
 }
 
+#authors:hover{
+    color: aquamarine;
+}
 a {
     text-decoration: none;
     font-family: "azeret italic";
