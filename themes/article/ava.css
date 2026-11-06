@@ -176,3 +176,88 @@ h2,
 p.title {
     top: 70px;
 }
+
+header::after {
+  content: "";
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  width: 80px;
+  height: 80px;
+  background: url("../../articles/ava/assets/images/ritaline.png") center / contain no-repeat;
+  cursor: pointer;
+}
+/* au survol, toutes les duplications disparaissent */
+body:has(header:hover) * {
+  text-shadow: none !important;
+  animation: none !important;
+}
+
+:root {
+  --marge: 10px;
+}
+
+body > a {
+  top: var(--marge);
+  left: var(--marge);
+}
+
+header::after {
+  top: var(--marge);
+  right: var(--marge);
+}
+
+h2,
+p.title {
+  left: var(--marge);
+  right: var(--marge);
+  width: auto;
+}
+
+p.date,
+p.tags {
+  left: var(--marge);
+  right: var(--marge);
+  width: auto;
+}
+
+p.date { bottom: var(--marge); }
+p.tags { bottom: calc(var(--marge) + 20px); }
+
+body > a,
+header::after {
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  background-position-y: top;
+}
+
+body > a {
+  left: 10px;
+}
+
+header::after {
+  right: 10px;
+}
+
+:root {
+  --s: clamp(60px, 9vw, 90px);
+  --marge: 20px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --s: min(66px, 15vw);
+    --marge: 10px;
+  }
+}
+
+header,
+header * {
+  pointer-events: none;
+}
+
+header::after {
+  pointer-events: auto;
+}
