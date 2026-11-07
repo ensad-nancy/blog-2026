@@ -5,7 +5,7 @@ tags: fiction, détail graphique
 preview: 
 ---
 
-# Un rympte du corps
+# Un rythme du corps
 
 Comme à mon habitude, je me lève du lit, ouvre tous les volets de mon appart, je choisis les vêtements de la journée, m’habille, prépare mon sac, regarde l’heure, mets mon sac sur mes épaules, prends mes clés, insère la clé dans la serrure et fais 2 tours pour l’ouvrir comme d’habitude, descends la poignée mais elle s’ouvre pas… Je la redescends, c’est quoi ce bordel, les yeux plissés et l'air confus, je remets la clé dans la serrure et je retourne vers l’extérieur, un nouveau tour se fait. J’ai tourné la clé trois fois ? Je baisse la poignée et la porte s’ouvre.<br>
 
