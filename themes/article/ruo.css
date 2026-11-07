@@ -1,365 +1,593 @@
 
+
+
 @font-face {
-
-font-family: 'MyDidot';
-
-src: url('../../articles/ruo/assets/fonts/didot.ttc') format('truetype');
-
-font-size: 14px;
-
+    font-family: 'MyDidot';
+    src: url('../../articles/ruo/assets/fonts/ReallyLTCom-Demi.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-
-font-family: 'MyTitleFont';
-
-src: url('../../articles/ruo/assets/fonts/VendomeRegFO.otf') format('opentype');
-
-font-size: 20px;
-
+    font-family: 'MyTitleFont';
+    src: url('../../articles/ruo/assets/fonts/PistolShotLTStd-Normal.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 body {
+    background-color: #ffffff;
+    color: #000000;
 
-background-color: #ffffff;
+    margin: 3rem 5vw;
 
-color: #000000;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
 
-margin: 3rem 5vw;
-
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-
+    position: relative;
 }
+
+
 
 a[href="index.php"] {
+    display: block !important;
 
-display: block;
+    font-size: 0 !important;
+    text-decoration: none !important;
 
-font-size: 0;
+    margin-bottom: 0rem !important;
 
-text-decoration: none;
-
-margin-bottom: 2rem;
-
+    position: relative;
+    cursor: pointer;
 }
+
 
 
 a[href="index.php"]::before {
+    content: "Retour";
 
-content: "Retour";
+    font-family: 'MyTitleFont', serif !important;
 
-font-size: 1.5rem;
+    font-size: 100px !important;
+    font-weight: normal !important;
 
-color: #000000;
+    color: #000000;
 
+    vertical-align: middle;
 }
+
+
+a[href="index.php"]::after {
+    content: "";
+
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #000000;
+
+    clip-path: polygon(
+        50% 0%,
+        65% 24%,
+        93.3% 25%,
+        80% 50%,
+        93.3% 75%,
+        65% 76%,
+        50% 100%,
+        35% 76%,
+        6.7% 75%,
+        20% 50%,
+        6.7% 25%,
+        35% 24%
+    );
+
+    margin-left: 15px;
+    vertical-align: 15%;
+
+    transform-origin: center center;
+
+    animation: starMagicFloat 8s linear infinite;
+
+    transition: background-color 0.2s ease;
+}
+
+
+
+a[href="index.php"]:hover::after {
+    background-color: #e53935;
+}
+
+
+
+@keyframes starMagicFloat {
+
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
 
 #themes {
+    display: flex !important;
 
-position: relative;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
 
-display: flex;
+    width: 100% !important;
+    max-width: none !important;
 
-flex-wrap: wrap;
+    margin: 0 0 3rem 0 !important;
 
-gap: 1.2rem 1.5rem;
+    background-color: transparent !important;
 
+    border: none !important;
+    padding: 0 !important;
 
-padding-top: 0;
-
-padding-bottom: 0;
-
-margin-bottom: 3rem;
-
-border-bottom: 2px solid #000; 
-
+    position: relative;
+    z-index: 100 !important;
 }
+
+
+
+#themes::after {
+    content: "" !important;
+
+    display: block !important;
+
+    flex: 0 0 100% !important;
+
+    height: 60px !important;
+
+    background-color: #000000 !important;
+
+    border-radius: 10px !important;
+
+    order: 99 !important;
+
+    margin-top: 0rem !important;
+}
+
+
 
 #themes::before {
+    content: "" !important;
 
-content: "";
+    position: absolute !important;
 
-position: absolute;
+    top: -80px !important;
+    bottom: 0 !important;
 
-top: -4rem;
+    left: 0 !important;
+    right: 0 !important;
 
-left: 6rem;
+    background: transparent !important;
 
-width: 10rem;
-
-height: 4rem;
-
-z-index: 1;
-
+    z-index: -1 !important;
 }
 
+
+
+#themes input,
 #themes legend {
-
-display: block;
-
-position: absolute;
-
-top: -3.8rem;
-
-left: 7rem;
-
-font-size: 0;
-
-padding: 0;
-
-margin: 0;
-
-border: none;
-
-cursor: pointer;
-
-z-index: 2;
-
+    display: none !important;
 }
 
-
-#themes legend::after {
-
-content: "Theme";
-
-font-size: 1rem;
-
-color: #000000;
-
-text-decoration: none; 
-
-text-underline-offset: 8px;
-
-text-decoration-thickness: 2px;
-
-}
 
 
 #themes div {
+    display: none !important;
 
-display: none;
-
-align-items: center;
-
-}
-
-#themes:hover div {
-
-display: flex;
-
-}
-#themes:hover {
-
-padding-top: 0.5rem;
-
-padding-bottom: 2rem;
-
-}
-
-#themes:hover legend::after {
-
-text-decoration: underline;
-
+    order: 1 !important;
 }
 
 
-#themes input[type="radio"] {
 
-display: none;
+body:has(a[href="index.php"]:hover) #themes div,
+#themes:hover div,
+#themes:focus-within div {
 
+    display: inline-flex !important;
+
+    flex-wrap: wrap !important;
+
+    position: relative !important;
+    z-index: 101 !important;
+
+    pointer-events: auto !important;
 }
 
-#themes input[type="radio"] {
-
-display: none;
-
-}
 
 
 #themes label {
+    font-family: 'MyDidot', serif !important;
 
-cursor: pointer;
+    position: relative;
+    z-index: 102 !important;
 
-font-size: 1.15rem;
+    font-size: 1.25rem !important;
+    line-height: 1.2 !important;
 
-color: #000000;
+    color: #000000 !important;
 
-display: inline-block; 
+    cursor: pointer !important;
+    pointer-events: auto !important;
 
+    margin: 0.5rem 1.5rem 1rem 0 !important;
 
-transition: color 0.2s, transform 0.3s cubic-bezier(0.15, 0.85, 0.3, 1);
+    display: inline-block !important;
 
+    transition:
+        color 0.2s,
+        transform 0.3s
+        cubic-bezier(0.15, 0.85, 0.3, 1) !important;
 }
+
 
 
 #themes label:hover {
+    color: #e53935 !important;
 
-transform: scale(1.15);
-
+    transform: scale(1.15) !important;
 }
 
 
-#themes input[type="radio"]:checked + label {
-
-color: #e53935;
-
+#themes input:checked + label {
+    color: #e53935 !important;
 }
+
 
 
 header {
+    display: flex;
 
-display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4em;
 
-align-items: center;
+    font-family: 'MyDidot', serif !important;
 
-margin-top: 2rem;
+    font-style: normal !important;
+    font-weight: normal !important;
 
-margin-bottom: 3rem;
+    color: #000000;
 
-margin-left: 4em; 
+    font-size: 1.15rem;
 
-font-family: 'MyDidot', serif;
-
-font-style: italic;
-
-color: #000000;
-
-font-size: 1.15rem;
-
-opacity: 0;
-
-animation: danmakuFromLeft 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) forwards;
-
+    animation:
+        danmakuFromLeft
+        2.5s
+        cubic-bezier(0.15, 0.85, 0.3, 1)
+        both;
 }
+
+
 
 header p {
-
-margin: 0;
-
-display: inline-block;
-
+    margin: 0;
+    display: inline-block;
 }
+
+
+
+header p.author,
+header p.auteur {
+    order: 0;
+}
+
+
 
 header p.title {
+    order: 1;
 
-order: 1;
+    width: auto;
+    margin-top: 0;
 
-width: auto;
+    font-weight: normal !important;
+    font-style: normal !important;
 
-margin-top: 0;
+    font-size: inherit;
 
-font-weight: normal; 
+    font-family: inherit !important;
 
-font-size: inherit; 
-
-font-style: italic; 
-
-font-family: inherit !important;
-
-animation: none; 
-
-opacity: 1;
-
+    animation: none;
 }
+
+
+
+
+
+header p.title::before {
+    content: "";
+
+    font-family: 'MyDidot', serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    color: #000000 !important;
+}
+
+/* Adrien */
+html:has(head link[href="themes/adrien.css"])
+header p.title::before {
+    content: "Adrien | ";
+}
+
+/* Audrey */
+html:has(head link[href="themes/audrey.css"])
+header p.title::before {
+    content: "Audrey | ";
+}
+
+/* Ava */
+html:has(head link[href="themes/ava.css"])
+header p.title::before {
+    content: "Ava | ";
+}
+
+/* Cosmo */
+html:has(head link[href="themes/cosmo.css"])
+header p.title::before {
+    content: "Cosmo | ";
+}
+
+/* Daniel */
+html:has(head link[href="themes/daniel.css"])
+header p.title::before {
+    content: "Daniel | ";
+}
+
+/* Ester */
+html:has(head link[href="themes/ester.css"])
+header p.title::before {
+    content: "Ester | ";
+}
+
+/* Eunseo */
+html:has(head link[href="themes/eunseo.css"])
+header p.title::before {
+    content: "Eunseo | ";
+}
+
+/* Garance */
+html:has(head link[href="themes/garance.css"])
+header p.title::before {
+    content: "Garance | ";
+}
+
+/* Ilona */
+html:has(head link[href="themes/ilona.css"])
+header p.title::before {
+    content: "Ilona | ";
+}
+
+/* Maxence */
+html:has(head link[href="themes/maxence.css"])
+header p.title::before {
+    content: "Maxence | ";
+}
+
+/* Natasha */
+html:has(head link[href="themes/natasha.css"])
+header p.title::before {
+    content: "Natasha | ";
+}
+
+/* Nathalie */
+html:has(head link[href="themes/nathalie.css"])
+header p.title::before {
+    content: "Nathalie | ";
+}
+
+/* Nicolas */
+html:has(head link[href="themes/nicolas.css"])
+header p.title::before {
+    content: "Nicolas | ";
+}
+
+/* Romane */
+html:has(head link[href="themes/romane.css"])
+header p.title::before {
+    content: "Romane | ";
+}
+
+/* Ruo */
+html:has(head link[href="themes/ruo.css"])
+header p.title::before {
+    content: "Ruo | ";
+}
+
+/* Sahar */
+html:has(head link[href="themes/sahar.css"])
+header p.title::before {
+    content: "Sahar | ";
+}
+
+/* Sarah */
+html:has(head link[href="themes/sarah.css"])
+header p.title::before {
+    content: "Sarah | ";
+}
+
+/* Tamara */
+html:has(head link[href="themes/tamara.css"])
+header p.title::before {
+    content: "Tamara | ";
+}
+
+
+
+
 
 header p.date {
-
-order: 2;
-
-margin-left: 0; 
-
+    order: 2;
+    margin-left: 0;
 }
 
-header p.title::after,
-
-header p.date::after {
-
-content: " | ";
-
-margin: 0 0.5rem;
-
-}
+/* 标签 */
 
 header p.tags {
-
-order: 3;
-
+    order: 3;
 }
 
 header p.tags span.tag {
-
-margin-right: 0.5rem;
-
+    margin-right: 0.5rem;
 }
+
+
+
+header p.author::after,
+header p.auteur::after,
+header p.title::after,
+header p.date::after {
+
+    content: " | ";
+
+    margin: 0 0.5rem;
+}
+
+
+
+header p.author + p.title::before,
+header p.auteur + p.title::before {
+    content: "" !important;
+}
+
 
 
 article {
+    margin-left: 4em;
 
-margin-left: 4em;
+    line-height: 1.6;
 
-line-height: 1.6;
+    max-width: 75ch;
 
-max-width: 75ch;
+    font-weight: normal !important;
+    font-style: normal !important;
 
-font-weight: normal;
+    font-size: 1.15rem;
 
-font-style: italic;
+    font-family: 'MyDidot', serif !important;
 
-font-size: 1.15rem;
+    color: #111111;
 
-font-family: 'MyDidot', serif;
-
-color: #111111;
-
-
-opacity: 0;
-
-animation: danmakuFromLeft 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) 0.4s forwards;
-
+    animation:
+        danmakuFromLeft
+        2.5s
+        cubic-bezier(0.15, 0.85, 0.3, 1)
+        0.4s
+        both;
 }
 
 
-article h1, article h2, article h3, article h4, article h5, article h6 {
 
-margin-left: -2.5em;
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
 
-margin-bottom: 1.5rem;
+    margin-left: -2.5em !important;
 
-margin-top: 2rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 2rem !important;
 
-font-weight: bold;
+    font-weight: normal !important;
+    font-style: normal !important;
 
-font-size: 1.8rem;
+    font-size: 2.2rem !important;
 
-font-style: normal;
+    font-family: 'MyTitleFont', serif !important;
 
-font-family: 'MyTitleFont', serif;
-
-opacity: 0;
-
-animation: danmakuFromRight 2.5s cubic-bezier(0.15, 0.85, 0.3, 1) forwards;
-
+    animation:
+        danmakuFromRight
+        2.5s
+        cubic-bezier(0.15, 0.85, 0.3, 1)
+        both;
 }
+
+
 
 @keyframes danmakuFromRight {
 
-0% { opacity: 0; transform: translateX(120vw); }
+    0% {
+        opacity: 0;
+        transform: translateX(120vw);
+    }
 
-15% { opacity: 1; }
+    15% {
+        opacity: 1;
+    }
 
-100% { opacity: 1; transform: translateX(0); }
-
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+
+
 
 @keyframes danmakuFromLeft {
 
-0% { opacity: 0; transform: translateX(-120vw); }
+    0% {
+        opacity: 0;
+        transform: translateX(-120vw);
+    }
 
-15% { opacity: 1; }
+    15% {
+        opacity: 1;
+    }
 
-100% { opacity: 1; transform: translateX(0); }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    a[href="index.php"]::after {
+        animation: none !important;
+    }
+
+    header,
+    article,
+    article h1,
+    article h2,
+    article h3,
+    article h4,
+    article h5,
+    article h6 {
+        animation: none !important;
+    }
+}
+
+  
+article img {
+    max-width: 100% !important; 
+    height: auto !important;    
+    display: block !important;
+    margin: 1.5rem 0 !important; 
 }

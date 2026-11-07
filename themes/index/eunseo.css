@@ -72,7 +72,7 @@ body > p {
 
 
 
-/* 작가 선택 영역 */
+/* 작가 선택 */
 #auteurices {
     order: 1;
     width: 100%;
@@ -88,7 +88,7 @@ body > p {
 }
 
 
-/* 작가 선택 메뉴 - 레트로 픽셀 버튼 */
+/* 작가 선택 메뉴  */
 #auteurices select#authors {
     display: inline-block;
     -webkit-appearance: none;
@@ -363,7 +363,7 @@ main::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 3px 0 #c86c9e;
 }
 
-/* Firefox */
+
 #date input[type="range"]::-moz-range-thumb {
     width: 16px;
     height: 16px;
@@ -401,7 +401,7 @@ main::-webkit-scrollbar-thumb:hover {
     box-sizing: border-box;
 }
 
-/* Changer le thème 문구 */
+/* Changer le thème */
 #themes > legend {
     flex: 0 0 100%;
     text-align: center;
@@ -409,23 +409,11 @@ main::-webkit-scrollbar-thumb:hover {
     margin-bottom: 5px;
 }
 
-/* 개별 테마 선택 항목 */
 #themes > div {
     display: inline-flex;
     align-items: center;
     gap: 4px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #themes {
     order: 4;
@@ -493,7 +481,6 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* 동그란 라디오 버튼 숨기기 */
 #themes input[type="radio"] {
     position: absolute;
     opacity: 0;
@@ -521,7 +508,6 @@ body {
     overflow: hidden;
 }
 
-/* 세로 스크롤은 막고, 카드 가로 스크롤은 유지 */
 main {
     overflow-x: auto;
     overflow-y: hidden;
@@ -531,7 +517,7 @@ main {
     top: 5px;
 }
 
-/* 제목을 제외한 모든 콘텐츠 문구를 핫핑크로 */
+
 body > p,
 #auteurices,
 #date,
@@ -544,7 +530,7 @@ main > a .tag {
     color: #ff1493;
 }
 
-/* 링크에 기본 색상이 별도로 적용되는 경우 */
+
 main > a:link,
 main > a:visited {
     color: #ff1493;

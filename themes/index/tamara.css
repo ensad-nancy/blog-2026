@@ -9,14 +9,11 @@
 }
 
 footer{
-    visibility: hidden;
     display: none;
 }
 
 img{
-    
-    height: 50px;
-
+    display: none;
 }
 
 body>p{
@@ -26,21 +23,25 @@ body>p{
 main{
     
     background-image: url(../../articles/tamara/assets/images/grillepetite.jpg);
-    background-position: left -122px;;
+    background-position: left -122px;
     background-size: 70em;
     height: 100%;
+    padding-left: 2%;
     
     display: grid;
-    grid-auto-flow: column;         
-    grid-auto-columns: max-content;  
+    grid-auto-flow: column;       
+    grid-auto-columns: 30%;  
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 
+    
     flex-wrap: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
     height: 50vh;
     order: 4;
+
+    scrollbar-color: #4456ae transparent;
 }
 
 a{
@@ -48,6 +49,7 @@ a{
     font-size: smaller;
     color:  #4456ae; 
     text-decoration: none;
+    max-width: 60%;
 }
 
 a:hover{
@@ -107,12 +109,11 @@ legend{
 
 #filtres{
     order: 5;
-    display: flex;
+    display: flex; 
+    font-family: 'nudles';
+    font-size: larger;
 }
 
-#filtres>p {
-    margin-bottom: 0%;
-}
 
 input[type="radio"] {
   position: absolute;
@@ -120,4 +121,49 @@ input[type="radio"] {
   width: 0;
   height: 0;
   pointer-events: none;
+}
+
+h2{
+    font-family: 'nudles';
+    font-size:large;
+    position: absolute;
+    left: 3vw;
+    margin: none;
+    color: #4456ae;
+}
+
+input[type="range"] {
+    position:absolute;
+    left: 29vw;
+    bottom: 2vh;
+    accent-color: #4456ae;
+}
+
+#authors {
+    position: absolute;
+    right: 17vw;
+    bottom: 2%;
+}
+
+#date>p{
+    position: absolute;
+    left: 16vw;
+    margin: none;
+    bottom: -1vh;
+}
+
+#date>label{
+    position: absolute;
+    left: 39vw;
+    margin: none;
+    bottom: 2vh;
+    color: #4456ae;
+    padding: none;
+}
+
+#auteurices>p{
+    position: absolute;
+    right: 19vw;
+    bottom: -2%;
+    padding: none;
 }
