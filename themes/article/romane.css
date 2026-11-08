@@ -49,7 +49,7 @@ body {
   block-size: 150px;
   writing-mode: horizontal-tb;
   border-image: 1rem solid;
-}*/
+}
 
 body {
   margin: 0;
@@ -98,7 +98,7 @@ header .title {
     top:0;
     padding: 40px;
     position: fixed;*/
-    margin: 0;
+   /* margin: 0;
 }
 
 header .date {
@@ -118,9 +118,9 @@ article {
     padding-top: 185px;
     box-sizing: border-box;
     /* background: linear-gradient(transparent 0%, white 5%, white 95%, transparent 100%); */
-    background-color: white;
+    /*background-color: white;
     box-shadow: 0 0 12px 5px white, 0 0 12px 5px white, 0 0 12px 5px white;
-}
+}*/
 
 /* article::after {
     content: "";
@@ -144,7 +144,7 @@ article {
     filter: blur(10px);
 } */
 
-p{
+/*p{
     color :#140404;
     font-family:'Courier New', Courier, monospace;
     font-size: 16px;
@@ -159,4 +159,211 @@ p{
     top: 0;
     left: 0;
     margin: 10% 10% 0 4%;
- }
+ }*/
+
+ body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-image: linear-gradient(rgba(255, 246, 242, 0.4), rgba(255, 246, 242, 0.4)), url("../../articles/romane/assets/images/fond-lace-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* lien "← Retour" */
+a[href="index.php"] {
+  position: fixed;
+  top: 4vh;
+  left: 4%;
+  z-index: 5;
+  font-family: "DM Mono", "Courier New", monospace;
+  font-size: 15px;
+  color: #1a0d0f;
+  text-decoration: none;
+}
+a[href="index.php"]:hover {
+  color: #c8283c;
+}
+
+header {
+  width: 60%;
+  margin-right: 5%;
+  margin-top: 4vh;
+  right: 0;
+  top: 0;
+  padding: 40px;
+  position: fixed;
+  z-index: 1;
+  box-sizing: border-box;
+  background: linear-gradient(white 0%, white 83%, transparent 100%);
+}
+
+header .title {
+  font-family: "OldStandard", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #1a0d0f;
+  margin: 0 0 12px;
+}
+
+header .date {
+  margin: 0;
+  font-family: "DM Mono", "Courier New", monospace;
+  font-size: 13px;
+  color: #c8283c;
+}
+
+header .tags {
+  margin: 4px 0 0;
+  font-family: "DM Mono", "Courier New", monospace;
+  font-size: 13px;
+  color: #c8283c;
+}
+
+article {
+  width: 60%;
+  margin-right: 5%;
+  margin-top: 4vh;
+  position: fixed;
+  right: 0;
+  height: 92vh;
+  overflow-y: auto;
+  top: 0;
+  padding: 40px;
+  padding-top: 230px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 12px 5px white, 0 0 12px 5px white, 0 0 12px 5px white;
+  scrollbar-width: thin;
+  scrollbar-color: #c8283c transparent;
+}
+
+p {
+  color: #1a0d0f;
+  font-family: "OldStandard", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 1em;
+}
+
+
+/* image : capsule qui flotte à gauche, le texte l'entoure */
+article p:has(> img) {
+  float: left;
+  width: 40%;
+  margin: 4px 28px 14px 0;
+}
+article p:has(> img) img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article h2,
+article h3 {
+  clear: both;
+  font-family: "OldStandard", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #c8283c;
+}
+
+article::after {
+  content: "✦";
+  display: block;
+  clear: both;
+  margin-top: 2em;
+  text-align: center;
+  color: #c8283c;
+}
+
+/* ---------- CARRÉ BLANC DES PRÉNOMS (comme l'index) ---------- */
+#themes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 12vh 0 0 4%;
+  width: 22%;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 100px 32px 36px;
+  text-align: center;
+
+  background: rgba(255, 246, 242, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+  /* trait intérieur */
+  border: 1px solid #1a0d0f;
+  border-radius: 999px 999px 18px 18px;
+
+  /* trait extérieur, à 6px du premier 
+  outline: 1px solid #1a0d0f;
+  outline-offset: 6px;*/
+
+  color: #1a0d0f;
+  font-family: "DM Mono", "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  text-shadow: 0 0 6px rgba(255, 246, 242, 0.9);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+}
+#themes legend {
+  grid-column: 1 / -1;
+  margin: 0 0 14px;
+  font-family: "OldStandard", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #c8283c;
+}
+#themes input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+#themes label {
+  cursor: pointer;
+}
+#themes label:hover {
+  color: #c8283c;
+}
+#themes input:checked + label {
+  color: #c8283c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* écrans pas très hauts : prénoms sur deux colonnes */
+@media (max-height: 820px) {
+  #themes {
+    padding-top: 80px;
+    font-size: 13px;
+    line-height: 1.55;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 12px;
+  }
+  #themes legend {
+    font-size: 19px;
+  }
+}
