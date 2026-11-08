@@ -1,8 +1,7 @@
 ---
-title: Manifeste Cyborg
-date: 2026-09-21
-tags: cyberfeminisme, donna haraway
-preview: assets/images/7420442-728862511.jpg
+title: STOP AND PLAY
+date: 2026-09-11
+tags: auteur.e : Miette 
 ---
 
 # Titre de mon article
