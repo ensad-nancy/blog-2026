@@ -72,6 +72,7 @@ article{
    grid-column: 2/3;
    width: 60vw;
    text-align: justify;
+   word-spacing: 10%;
    overflow-y: auto;
    line-height: 200%;
    background-color: rgba(215, 196, 173, 0.422);
