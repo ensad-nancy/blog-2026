@@ -24,12 +24,12 @@ body {
 
 }
 a {
-  border: solid 2px rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
   height: 30px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-size: 15pt;
+  font-size: 20pt;
 }
 body>a {
   grid-area: a;
@@ -39,14 +39,14 @@ header {
   
 }
 #themes {
- 
-  width: 120px;
+
+width: 200px;
   grid-area: c;
       height: 100vh;
   overflow: auto;
 }
 #index.php a{
-   border: solid 2px rgb(0, 0, 0);
+   border: solid 1px rgb(0, 0, 0);
   height: 40px;
   width: 100%;
   box-sizing: border-box;
@@ -54,25 +54,34 @@ header {
 }
 
 #themes legend {
-  border: solid 2px rgb(11, 11, 11);
+  border: solid 1px rgb(11, 11, 11);
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-    font-size: 15pt;
+    font-size: 20pt;
+animation: clignote 2s steps(1) infinite;
+border-top: none;
+border-bottom: none;
 }
+
 #themes div {
-  border: solid 2px rgb(11, 11, 11);
-  height: 30px;
+  border: solid 1px rgb(11, 11, 11);
+  height: 25pt;
   width: 100%;
   box-sizing: border-box;
   text-align: left;
   text-align: center;
-  font-size: 15pt;
-
-  
-  
-
+  font-size: 20pt;
+transition: background-color 0.2s, color 0.2s, filter 0.2s;
+border-bottom: none;
 }
+#themes div:hover {
+
+cursor: pointer;
+filter: blur(2px);
+}
+
+
 input[type="radio"] {
   position: absolute;
   opacity: 0;
@@ -93,7 +102,7 @@ article {
 }
 h1+p {
 
-   border-bottom: solid 2px rgb(11, 11, 11);
+   border-bottom: solid 1px rgb(11, 11, 11);
   height: 80px;
   width: 100%;
   box-sizing: border-box;
@@ -108,6 +117,7 @@ h2+p {
  
 
   text-align: justify;
+  font-size: 20pt;
   
 }
 
@@ -126,3 +136,4 @@ p {
 h1.has-width {
   width: auto;
 }
+img { display: none !important; }
