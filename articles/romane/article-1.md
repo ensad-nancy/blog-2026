@@ -1,13 +1,14 @@
 ---
-title: Plat salé et l'Odyssée
+title: La Tour d’Albinhac
 date: 2026-09-28
-tags: auteur.e : Miette
-preview: assets/images/7420442-728862511.jpg
+tags: auteure : Miette
+preview: assets/images/img-tour.jpg
 ---
 
+# La Tour d’Albinhac
 
-Comme toute personne vivant seule, manger face à un mur semble ennuyeux alors elle profite de ce moment pour regarder un film, une vidéo ou la télé. C'est comme ça qu'elle se retrouve nez à nez avec moi, tentant désespérément de trouver de quoi alimenter sa culture du vide. Mais apparemment l’algorithme YouTube en a décidé autrement. Celui-ci lui propose une playlist de vidéos réalisée par Arte, c'est d’une série de plusieurs épisodes consacrée aux mythes de l’Odyssée et de l’Iliade.
-
-Évidemment elle ne veut pas faire comme tout le monde, elle commence donc par l’épisode 10 qui s'appelle « Crépuscule des dieux ». Ca raconte l’histoire de la reine Pénélope faite prisonnière dans le but qu’elle choisisse enfin un remplaçant à Ulysse, qui, tout pousse à croire, ne reviendra pas. Après tout, cela fait 20 ans qu’elle attend son retour. [Elle est patiente dis donc] Elle doit donc faire un choix entre tous ses prétendants, pour ce faire elle va leur faire passer une épreuve inspirée de l’histoire d’Ulysse. L’épreuve consiste à se servir du grand arc d’Ulysse et à ce qu'en une seule flèche 12 fers de hache alignés soient transpercé. Un à un tous les prétendants échouent, ils n’arrivent même pas à tendre la corde de l’arc, même le fils de Pénélope et d’Ulysse, Télémaque, n’y parvient pas. Et c’est alors qu’un mendiant fait son entrée, lui aussi veut essayer malgré les protestations de tous les prétendants, car selon eux, un mendiant n’est pas digne de participer et devrait rester à sa place. Au final, il finit par avoir l’autorisation de tirer avec l’arc, et sous la surprise des prétendants, [Il manque du sel dans mon plat…] il parvient à traverser les 12 haches de fer ; c’est alors que le mendiant dévoile sa véritable identité, il est Ulysse, roi légitime d’Ithaque. Puis Ulysse mène un combat avec les prétendants, ou plutôt un massacre, car il ne laisse aucune chance de survie aux participants. Mais il ne s’arrête pas là, après le massacre il va réunir les servantes de Pénélope qui l’ont trahie et qui l’ont fait être prisonnière pour la pousser à choisir un prétendant. Ulysse laisse le sort de ses servantes à son fils Télémaque, celui-ci ordonne leur exécution. Quand le calme fut rétabli et qu’Ulysse et Pénélope se retrouvèrent, ce ne sont pas des embrassades que l’on peut voir mais bien du doute. En effet la reine doute de l’identité de celui qui l’a libérée, elle ne reconnait pas le roi qui a bien changé physiquement au cours des 20 dernières années. Mais pour s’assurer qu’il s’agit bien d’Ulysse, elle va le provoquer avec une supercherie dont la réponse ne peut être connue que par Ulysse lui-même. Évidemment celui-ci prouve qu’il est bel et bien celui qu’il prétend être de par sa réaction. Ainsi le roi peut enfin vivre les retrouvailles qu’il attendait avec sa bien-aimée.
-
-Je vais couper court à la vidéo, car je pense que l’histoire de l’odyssée est aujourd’hui bien connue, elle a été interprétée, répétée et transformée avec des documentaires, des livres ou bien des films comme celui qui vient de sortir récemment. 
+La cité médiévale de Lectoure comptait plusieurs maisons fortes, ultimes refuges en cas d’invasion ou de prise de la ville. Ainsi, après sa
+possession des comtes d’Armagnac). C’est alors que la « maison sive tour » prend son nom. La maison est alors totalement entourée d’autres constructions 
+dans son angle nord-est d’une tourelle ronde en encorbellement. Une fenêtre arasée témoigne que la tour était plus haute et qu’elle a été arasée
+grandes demeures médiévales, elle était séparée de la rue principale par des bâtiments de faible hauteur, souvent ouverts par des arcades,
+en 1473, Jean V d'Armagnac s’était réfugié dans sa maison forte de Sainte-Gemme, ce qui ne l’empêcha pas d’en sortir et de se faire assassiner. 
