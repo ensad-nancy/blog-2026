@@ -1,5 +1,9 @@
 
-/* General design */
+@import url('https://use.typekit.net/unk2nkr.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* General */
 
 * {
     box-sizing: border-box;
@@ -7,101 +11,146 @@
 
 body {
     margin: 0;
-    b background-image: url(".jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
     min-height: 100vh;
+    padding: 0 8% 0 27%;
+    background: #bafffee2;
+    color: black;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
 }
 
 
-/* Back to the homepage */
+/* Back to homepage */
 
 body > a {
-    position: absolute;
-    top: 100px;
-    left: 150px;
+    position: fixed;
+    top: 50px;
+    left: calc(5% + 12px);
+    z-index: 40;
 
-    color: black;
-    font-size: 13px;
+    color: #ff3aa5;
+    font-family: "pf-pixelscript", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
     text-decoration: none;
 }
 
 body > a:hover {
-    color: #ff3aa5;
+    color: yellow;
+    -webkit-text-stroke: 0.7px #ff3aa5;
 }
 
 
 /* Theme selection */
 
 #themes {
-    position: absolute;
-    top: 180px;
-    left: 150px;
+    position: fixed;
+    top: 130px;
+    bottom: 0;
+    left: 5%;
+    width: 200px;
 
-    width: 180px;
-    padding: 12px;
+    padding: 120px 12px 12px;
+    border: none;
 
-    background: white;
-    border: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
+
+#themes::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Turquoise cover */
+
+#themes::before {
+    content: "";
+    position: fixed;
+    top: 130px;
+    left: 5%;
+    width: 200px;
+    height: 115px;
+    background: #bafffe;
+    z-index: 20;
+    pointer-events: none;
+}
+
+
+/* Theme heading */
 
 #themes legend {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
+    position: fixed;
+    top: 145px;
+    left: calc(5% + 12px);
+    z-index: 30;
 
-#themes div {
-    margin-bottom: 5px;
-}
+    width: 176px;
+    margin: 0;
+    padding: 0;
 
+    font-family: "pf-pixelscript", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: left;
 
-/* Hide radio buttons */
-
-#themes input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+    color: yellow;
+    -webkit-text-stroke: 0.7px #ff3aa5;
+    background: #bafffe;
 }
 
 
 /* Theme names */
 
+#themes div {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+#themes input[type="radio"] {
+    display: none;
+}
+
 #themes label {
-    display: block;
-    font-size: 14px;
+    display: inline-block;
+    padding: 2px 6px;
+
+    font-family: "pf-pixelscript", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
-    color: black;
+
+    color: #ff3aa5;
     cursor: pointer;
-    transition: color 0.2s;
 }
 
 #themes label:hover,
 #themes input:checked + label {
-    color: #ff3aa5;
+    font-size: 26px;
+    background: #ff3aa5;
+    color: yellow;
 }
 
 
-/* Pink blog title */
+/* Article header */
 
 header {
-    width: min(590px, 55vw);
-    margin-top: 100px;
-    margin-left: clamp(250px, 35vw, 500px);
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 25px;
+    text-align: right;
 }
 
 header .title {
-    font-size: 32px;
-    font-weight: bold;
+    margin: 0 0 15px 0;
+    font-family: "pf-pixelscript", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.15;
     color: #ff3aa5;
-    margin: 0 0 20px 0;
-
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 
@@ -109,8 +158,9 @@ header .title {
 
 header .date,
 header .tags {
-    font-size: 12px;
-    margin: 5px 0;
+    margin: 6px 0;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 header .tag {
@@ -118,35 +168,56 @@ header .tag {
 }
 
 
-/* White article box */
+/* Article layout */
 
 article {
-    width: min(590px, 55vw);
-    margin-left: clamp(250px, 35vw, 500px);
-    margin-top: 50px;
-    margin-bottom: 100px;
-
-    padding: 20px;
-    background: white;
-    border: 1px solid black;
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    text-align: right;
 }
 
 
-/* Article heading */
+/* Article headings */
 
-article h1 {
-    font-size: 22px;
-    font-weight: normal;
-    margin: 0 0 25px 0;
+article h1,
+article h2 {
+    margin: 30px 0 20px 0;
+    font-family: "pf-pixelscript", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #ff3aa5;
 }
 
 
 /* Article text */
 
 article p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0 0 20px 0;
+    margin: 0 0 26px 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 27px;
+    line-height: 1.55;
+    color: black;
+    text-align: right;
+}
+
+
+/* Text hover effect */
+
+article p:hover {
+    font-family: "pf-pixelscript", sans-serif;
+    color: black;
+}
+
+
+/* Last paragraph */
+
+article p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -156,23 +227,74 @@ article img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 35px 0 35px auto;
+}
+
+article img:last-child {
+    margin-bottom: 0;
 }
 
 
-/* Links inside articles */
+/* Article links */
 
 article a {
     color: #ff3aa5;
 }
 
+article a:hover {
+    color: black;
+}
 
-/* Smaller browser windows */
+
+/* Medium screens */
 
 @media (max-width: 900px) {
 
     body {
-        padding: 20px;
+        padding-left: 35%;
+        padding-right: 5%;
+    }
+
+    #themes {
+        width: 180px;
+    }
+
+    #themes::before {
+        width: 180px;
+    }
+
+    #themes legend {
+        width: 156px;
+        font-size: 24px;
+    }
+
+    header .title {
+        font-size: 40px;
+    }
+
+    header .date,
+    header .tags {
+        font-size: 14px;
+    }
+
+    article h1,
+    article h2 {
+        font-size: 26px;
+    }
+
+    article p {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+
+/* Small screens */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 30px 20px 0;
     }
 
     body > a {
@@ -182,31 +304,53 @@ article a {
     }
 
     #themes {
-        position: static;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
         width: 100%;
-        max-width: 300px;
+        height: 300px;
+        padding: 12px;
         margin-bottom: 40px;
     }
 
-    header {
-        width: 100%;
-        margin: 0 0 30px 0;
+    #themes::before {
+        display: none;
     }
 
+    #themes legend {
+        position: sticky;
+        top: 0;
+        left: auto;
+        width: auto;
+        margin-bottom: 14px;
+        padding-bottom: 14px;
+        background: #bafffe;
+    }
+
+    header,
     article {
         width: 100%;
-        margin: 0 0 60px 0;
+        max-width: none;
+    }
+
+    header .title {
+        font-size: 34px;
+    }
+
+    header .date,
+    header .tags {
+        font-size: 14px;
+    }
+
+    article h1,
+    article h2 {
+        font-size: 24px;
+    }
+
+    article p {
+        font-size: 19px;
+        line-height: 1.5;
     }
 }
 
-
-/* Background collage - add later */
-
-/*
-body {
-    background-image: url("../../assets/collage.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-*/

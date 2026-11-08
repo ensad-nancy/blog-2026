@@ -12,6 +12,12 @@
     src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-LightItalic.ttf);
 }
 
+@font-face {
+    font-family: "bbbsprat3";
+    src: url(/articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-ExtendedThin.woff);
+}
+
+
 body{
     margin:0;
     /*background-image: url(/articles/audrey/assets/Plan-de-travail-1.jpg);
@@ -29,49 +35,59 @@ body > p{
 
 h1{
     font-family:"bbbsprat";
-    font-size: 45pt;
+    font-size: 55pt;
     color: aquamarine;
     -webkit-text-stroke: 2px black;
     display: flex;
     position: absolute;
     margin-right: 30%;
     margin-left: 3%;
+    line-height: 70pt;
 }
 
 main{
     position: absolute;
     width: 75%;
-    height: 35%;
+    height: 30%;
     bottom: 0;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
 }
+
 img{
     display: none;
 }
+
 #themes{
-    margin-top: 1%;
-    position: absolute;
-    right: 0;
+    margin-top: 15px;
+    position:fixed;
+    right: 9%;
     top: 0;
     height: 100%;
-    width: 30%;
     font-family:"azeret";
     color: white;
     text-align: center;
-    font-size: 20pt;
+    font-size: 19pt;
     line-height: 145%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
 }
 
 #themes label {
     background-color: black;
     font-size: 20pt;
+    display: block;
+    width: fit-content;
+    text-align: center;
 }
 
 #themes label:hover{
     background-color: aquamarine;
-    font-size: 25pt;
+    /* font-size: 25pt; */
+    transform: scale(1.2);
 }
 
 input[type="radio"] {
@@ -87,28 +103,127 @@ input[type="radio"] {
 }
 
 #filtres{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 31%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-between;
+    width: 75%;
+}
+
+h2{
     display: none;
 }
 
-a:any-link {
+#filtres #date p{
+    font-family: "bbbsprat3";
+    font-size: 15pt;
     color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#filtres #date{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#date label{
+    font-family: "azeret";
+    font-size: 8pt;
+    margin-left: 10px;
+}
+#date input{
+    --thumb-size:15px; 
+    background-color: black;
+    width: 350px;
+    appearance: none;
+    height: 1.5px;
+    background-color: black;
+    outline: none;
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: none;
+}
+
+#date input::-webkit-slider-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: black;
+    border-radius: 100px;
+    appearance: none;
+    border: initial;
+    cursor: pointer;
+}
+
+#date input>label{
+    font-family: "azeret";
+}
+
+#date input::-webkit-slider-thumb:hover{
+    background-color: aquamarine;
+}
+
+#filtres #auteurices p{
+    font-family: "bbbsprat3";
+    font-size: 15pt;
+    color: black;
+    margin-left: 15px;
+}
+#filtres #auteurices{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#auteurices select{
+    width: 350px; 
+    height: 20px;
+    margin-left: 15px;
+}
+#authors{
+    font-family: "azeret";
+    font-size: 8pt;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
+}
+
+#authors:hover{
+    color: aquamarine;
+}
+a {
     text-decoration: none;
     font-family: "azeret italic";
     font-size: 10pt;
     text-align: left;
+    line-height: 15pt;
+    background-image:linear-gradient(to bottom, black, rgb(96, 206, 169) 80%, aquamarine 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h3{
     font-family: "azeret";
-    font-size: 15pt;
-    text-align: center;
+    font-size: 10pt;
+    min-width: 200px;
 }
 
-footer{
-    line-height: 90%;
+main footer p{
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+
 main a{
     position: relative;
     margin-right: 15px;
     margin-left: 15px;
+    margin-top: 20px;
 }

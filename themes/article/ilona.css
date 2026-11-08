@@ -22,7 +22,6 @@ a:hover{
     border-radius: 40px;
     z-index: 100000000;
     color: black;
-  
 }
 
 p.title{
@@ -43,7 +42,6 @@ p.title:hover{
     border-radius: 40px;
     z-index: 100;
     color: black;
-  
 }
 
 p.date{
@@ -57,7 +55,6 @@ p.date{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    
 }
 
 p.date:hover{
@@ -65,7 +62,6 @@ p.date:hover{
     border-radius: 40px;
     z-index: 100;
     color: black;
-  
 }
 
 p.tags{
@@ -76,10 +72,9 @@ p.tags{
     font-family: "Avara";
     margin-right: 1211px;
     color: rgb(147, 146, 146);
-      padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    
 }
 
 p.tags:hover{
@@ -87,17 +82,15 @@ p.tags:hover{
     border-radius: 40px;
     z-index: 100;
     color: black;
-  
 }
 
 article {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 2%;
-    margin-inline-end: 25%;
+    margin-inline-end: 35%;
     margin-top: 10px;
-    margin-left: 33%;
+    margin-left: 27%;
     margin-bottom: 50%;
     width: 65%;
     transform: rotate(-1.5deg) translateY(-10px);
@@ -108,8 +101,9 @@ article {
     border-radius: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 1.5;
-    
+    line-height: 2;
+    height: 780px;
+    scrollbar-width: none;
 }
 
 article:hover{

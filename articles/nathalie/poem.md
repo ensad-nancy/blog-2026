@@ -2,7 +2,7 @@
 title: poem
 date: 2026-09-28
 tags: #poem
-preview:
+preview: assets/images/idontknow.jpg
 ---
 
 # Lights
