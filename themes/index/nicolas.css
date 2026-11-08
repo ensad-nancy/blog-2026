@@ -146,6 +146,7 @@ border-bottom: solid 1px rgb(11, 11, 11);
 box-sizing: border-box;
 width: 100%;
 transition: border-bottom-width 0.2s, filter 0.2s;
+ background: url("globe.png") no-repeat 20px center / auto 80%;
 }
 
 h1:hover {
@@ -187,9 +188,10 @@ body::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 85px; /* à ajuster */
+  height: 85px; 
   background: #ffff80 url("endad-en-lutte.png") left center / auto 100% repeat-x;
   pointer-events: none;
   background: #ffff80 url("endad-en-lutte.png") left center / 1480px 80px repeat-x;
   border-top: solid 1px rgb(11, 11, 11);
+  
 }
