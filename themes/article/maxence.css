@@ -1,11 +1,11 @@
 @font-face {
   font-family: "tremplin";
-  src: url("/articles/maxence/assets/fonts/tremplinregular.otf");
+  src: url("articles/maxence/assets/fonts/tremplinregular.otf");
 }
 
 @font-face {
   font-family: "Barlow";
-  src: url("/articles/maxence/assets/fonts/barlowfold.otf");
+  src: url("articles/maxence/assets/fonts/barlowfold.otf");
 }
 
 * {
@@ -141,7 +141,7 @@ body::before {
   body::before {
     content: "";
     grid-area: vide1;
-    background: #A9D2FF url("/articles/maxence/assets/images/chat.svg") center / contain no-repeat;
+    background: #A9D2FF url("articles/maxence/assets/images/chat.svg") center / contain no-repeat;
   }
 
   #themes {
