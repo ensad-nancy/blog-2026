@@ -1,11 +1,11 @@
 @font-face {
   font-family: "tremplin";
-  src: url("articles/maxence/assets/fonts/tremplinregular.otf") format("truetype");
+  src: url("/articles/maxence/assets/fonts/tremplinregular.otf");
 }
 
 @font-face {
   font-family: "Barlow";
-  src: url("articles/maxence/assets/fonts/barlowfold.otf") format("truetype");
+  src: url("/articles/maxence/assets/fonts/barlowfold.otf");
 }
 
 * {
@@ -188,7 +188,7 @@ body::before {
 }
 
 main a:hover {
-  background: #FFB98A !important;
+  background: #FFB98A ;
   box-shadow: 0 0.25rem 0.75rem rgba(16, 45, 80, 0.3);
 }
 
@@ -207,7 +207,7 @@ main a:hover {
   body::before {
     content: "";
     grid-area: vide;
-    background: #A9D2FF url("articles/maxence/assets/images/chat.svg") format("truetype") center / contain no-repeat;
+    background: #A9D2FF url("/articles/maxence/assets/images/chat.svg") center / contain no-repeat;
   }
 
   h1 {
