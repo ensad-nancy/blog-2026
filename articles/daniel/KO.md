@@ -2,7 +2,6 @@
 title: KO
 date: 2026-11-07
 tags: 
-preview:
 ---
 
 # KO
