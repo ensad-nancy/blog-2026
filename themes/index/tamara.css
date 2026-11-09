@@ -134,27 +134,27 @@ h2{
 
 input[type="range"] {
     position:absolute;
-    left: 29vw;
+    left: 41vw;
     bottom: 2vh;
     accent-color: #4456ae;
 }
 
 #authors {
     position: absolute;
-    right: 17vw;
+    right: 3vw;
     bottom: 2%;
 }
 
 #date>p{
     position: absolute;
-    left: 16vw;
+    left: 28vw;
     margin: none;
     bottom: -1vh;
 }
 
 #date>label{
     position: absolute;
-    left: 39vw;
+    left: 51vw;
     margin: none;
     bottom: 2vh;
     color: #4456ae;
@@ -163,7 +163,7 @@ input[type="range"] {
 
 #auteurices>p{
     position: absolute;
-    right: 19vw;
+    right: 5vw;
     bottom: -2%;
     padding: none;
 }

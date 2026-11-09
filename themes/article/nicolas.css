@@ -23,13 +23,31 @@ body {
    
 
 }
+
+h1 {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 80px;
+margin: 0;
+border-bottom: solid 1px rgb(11, 11, 11);
+box-sizing: border-box;
+width: 100%;
+transition: border-bottom-width 0.2s, filter 0.2s;
+}
+
+h1:hover {
+border-bottom: solid 2px rgb(11, 11, 11);
+cursor: pointer;
+filter: blur(1px);
+}
 a {
-  border: solid 2px rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
   height: 30px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-size: 15pt;
+  font-size: 20pt;
 }
 body>a {
   grid-area: a;
@@ -39,14 +57,14 @@ header {
   
 }
 #themes {
- 
-  width: 120px;
+
+width: 200px;
   grid-area: c;
       height: 100vh;
   overflow: auto;
 }
 #index.php a{
-   border: solid 2px rgb(0, 0, 0);
+   border: solid 1px rgb(0, 0, 0);
   height: 40px;
   width: 100%;
   box-sizing: border-box;
@@ -54,25 +72,34 @@ header {
 }
 
 #themes legend {
-  border: solid 2px rgb(11, 11, 11);
+  border: solid 1px rgb(11, 11, 11);
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-    font-size: 15pt;
+    font-size: 20pt;
+animation: clignote 2s steps(1) infinite;
+border-top: none;
+border-bottom: none;
 }
+
 #themes div {
-  border: solid 2px rgb(11, 11, 11);
-  height: 30px;
+  border: solid 1px rgb(11, 11, 11);
+  height: 25pt;
   width: 100%;
   box-sizing: border-box;
   text-align: left;
   text-align: center;
-  font-size: 15pt;
-
-  
-  
-
+  font-size: 20pt;
+transition: background-color 0.2s, color 0.2s, filter 0.2s;
+border-bottom: none;
 }
+#themes div:hover {
+
+cursor: pointer;
+filter: blur(2px);
+}
+
+
 input[type="radio"] {
   position: absolute;
   opacity: 0;
@@ -93,7 +120,7 @@ article {
 }
 h1+p {
 
-   border-bottom: solid 2px rgb(11, 11, 11);
+   border-bottom: solid 1px rgb(11, 11, 11);
   height: 80px;
   width: 100%;
   box-sizing: border-box;
@@ -108,15 +135,18 @@ h2+p {
  
 
   text-align: justify;
+  font-size: 20pt;
   
 }
 
 h3 {
   text-align: justify;
+    font-size: 20pt;
 }
 
 h4 {
   text-align: justify;
+    font-size: 20pt;
 }
 
 p {
@@ -125,4 +155,16 @@ p {
 
 h1.has-width {
   width: auto;
+}
+img { display: none !important; }
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85px; /* à ajuster */
+  background: #ffff80 url("endad-en-lutte.png") left center / auto 100% repeat-x;
+  pointer-events: none;
+  background: #ffff80 url("endad-en-lutte.png") left center / 1480px 80px repeat-x;
 }
