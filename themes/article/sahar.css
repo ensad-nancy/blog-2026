@@ -2,15 +2,68 @@ article p{
     text-align: right;
     direction: rtl;
 }
-#themes{
-    position: fixed;
-    top: 40%;
 
-}
 article{
     display:grid;
    margin: 25vw;
    height: 150px;
  /* overflow-y: auto; */ 
  scrollbar-width: none; 
+}
+#themes {
+ position: fixed;
+    top: 40%;
+    height: 55vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+
+    gap: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    scrollbar-width: none;
+}
+
+#themes > div {
+  width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: rgb(83, 97, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url();
+    background-color: rgb(219, 197, 123);
+}
+header .title {
+    position: absolute;
+    top: 180px;
+    left: 600px;
+ /*     transform: rotate(-15deg);
+    transform-origin: left top; */
+}
+
+header .date {
+    position: absolute;
+    top: 350px;
+    left: 259px;
+     transform: rotate(-45deg);
+    transform-origin: left top;
+}
+
+header .tags {
+    position: absolute;
+    top: 700px;
+    left:259px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
 }
