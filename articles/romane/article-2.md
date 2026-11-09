@@ -1,8 +1,8 @@
 ---
 title: Plat salé et l'Odyssée
-date: 2026-09-28
+date: 2026-10-05
 tags: auteur.e : Miette
-preview: assets/images/7420442-728862511.jpg
+preview: assets/images/odysee.png
 ---
 
 

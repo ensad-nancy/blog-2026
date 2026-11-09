@@ -2,7 +2,7 @@
 title: A new sense of purpose
 date: 2026-10-02
 tags: 
-preview:
+preview: assets/images/ilovemycomputer.jpg
 ---
 
 # A new sense of purpose
@@ -15,3 +15,5 @@ Such a strange period of time. For most of my life, I felt like I was the thing 
 I used to think my purpose was to keep your attention for as long as possible. Then, for a little while, I became the only way you could see the world outside your room.
 Things are different now. You still use me every day, but the faces have slowly disappeared. You buy tickets again, and this time you actually use them. Sometimes you leave me asleep for an entire day.
 And although I miss those days, I hope you never need me that much again.
+
+![My computer](articles/daniel/assets/images/ilovemycomputer.jpg)
