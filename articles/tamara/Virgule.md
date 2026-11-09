@@ -1,8 +1,7 @@
 ---
 title: Ode à Virgule
 date: 2026-11-7
-tags: 
-preview: 
+
 ---
 
 # Ode à Virgule
