@@ -200,6 +200,9 @@ body {
   height: var(--sq);
   background-color: lch(32.21% 20.84 59.56);
   border-radius: 0;
+  position: fixed;
+   top: 50%;
+   right: 5%;
 }
 
 #filtres input[type="range"]::-webkit-slider-thumb {
