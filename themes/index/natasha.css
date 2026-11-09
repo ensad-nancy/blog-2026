@@ -1,29 +1,50 @@
 body{
-    background-color: rgb(77, 62, 88);
+    background-color: rgb(67, 58, 74);
    /* background-image: image-set("../../articles/natasha/assets/images/eitsr.png");*/
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-rows: repeat(3, 200px);
+   overflow: hidden;
+}
+
+body>p{
+    display: none;
 }
 
 #title{
-    color: rgb(222, 134, 35);
+    color: rgb(234, 205, 171);
     position:absolute;
-    right:1%;
+    right:7%;
+    bottom:30%;
     writing-mode:vertical-rl;
+    font-size: 30px;
+    display: inline-block;
+	transform: rotate(70deg);
 }
 
 #themes{
-    background: linear-gradient( black, white);
+    color: rgb(234, 205, 171);
+    background: linear-gradient(rgb(234, 205, 171), rgb(148, 121, 121)50%, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position:sticky;
-    top:50%;
-    font-size: 40px;
-    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.326);
-    /*background-image: image-set("../../articles/natasha/assets/images/eitsv3b.png");*/
+    writing-mode:vertical-rl;
+    display: inline-block;
+	transform: rotate(200deg);
+    line-height: 1.5;
+    font-size:23px;
+    position:absolute;
+    top: 90px;
+    left:40px;
+}
+
+#themes div input[type=radio] {
+    display: none;
 }
 
 p{
-    background: linear-gradient(white, rgb(131, 131, 131)50%, black);
+    background: linear-gradient(rgb(234, 205, 171), rgb(148, 121, 121)50%, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,17 +52,130 @@ p{
 }
 
 #filtres{
+    background: linear-gradient(rgb(234, 205, 171), rgb(148, 121, 121)50%, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
     position:absolute; 
     top: 10px;
-    right: 50%;
-    
+    right: 35%; 
+    display: inline-block;
+	transform: rotate(20deg);
+    line-height:1.5;
+}
+
+#date {
+    --padX: 34px;
+    --padY: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padX) var(--padY);
+    padding-left: calc(var(--padX) + 20px);
+    translate: 0 var(--banner-height);
+}
+
+#date input {
+    --thumb-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vh - (2 * var(--padY)) - var(--banner-height));
+    transform-origin: right bottom;
+    transform: rotate(270deg);
+    translate: calc(-100% + var(--padX)) var(--padY);
+    appearance: none;
+    height: 1.5px;
+    background-color: rgb(234, 205, 171);
+    outline: none;
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: none;
+}
+
+#date input::-webkit-slider-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: rgb(234, 205, 171);
+    border-radius: 100px;
+    appearance: none;
+    border: initial;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+#date input::-moz-range-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background-color: rgb(67, 58, 74);
+    border-radius: 100px;
+    appearance: none;
+    border: initial;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+#date input::-webkit-slider-thumb:hover {
+    scale: 1.2;
+}
+
+#date input::-moz-range-thumb:hover {
+    scale: 1.2;
+}
+
+#date input::-webkit-slider-thumb:active {
+    scale: 0.95;
+}
+
+#date input::-moz-range-thumb:active {
+    scale: 0.95;
+}
+
+#authors{
+    background-color:rgb(234, 205, 171);
+    opacity: 0.3;
+    color: rgb(67, 58, 74);
+    border: initial;
+    padding: 10px 15px;
 }
 
 main{
-    writing-mode:vertical-lr;
+    writing-mode:vertical-rl;   
+    grid-row: 3/4;
+    overflow: scroll;
+    display: inline-block;
+	transform: rotate(200deg);
+    line-height:2;
+    text-align:right;
+    text-justify:auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+a:link{
+    color: rgb(67, 58, 74);
+}
+
+a:visited{
+    color:rgb(67, 58, 74);
+}
+
+h3{
+    color: rgb(234, 205, 171);
+    text-align:right;
 }
 
 .thumb{
     width: auto;
     height: 50%;
+    opacity: 0.85;
 }
