@@ -17,7 +17,6 @@ Enfin, je subit également depuis quelques temps, notamment ces dernières semai
 
 Pour toutes ces raisons, je décide de vous quitter, peut-être pour mieux revenir. J’ajoute que je garde une profonde conviction que la nouvelle génération saura trouver d’autres façons de porter leur mouvement et leur élan de révolution, il faut dès à présent que vous traitiez internet comme terrain de guérilla, c’est à vous de créer vos règles du jeu. 
 
-Au revoir, 
-#bye
+Au revoir, #bye
 
 Signé #hashtag
