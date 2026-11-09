@@ -2,7 +2,6 @@
 title: Un frigo 
 date: 2026-10-12
 tags: tunnel
-preview: 
 ---
 
 # Anatomie d'un frigo

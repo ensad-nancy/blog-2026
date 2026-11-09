@@ -5,17 +5,31 @@ body {
 }
 
 body > p{
-    position: absolute;
-    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    max-width: none;
+    line-height: normal;
+}
+
+body > p span{
+    font-style: italic;
+}
+
+body > p span:hover{
+    background-color: black;
+    color: white;
 }
 
 main {
-    background-color: rgb(250, 163, 163);
+    background: repeating-linear-gradient(white, black, white 10em);
     width: 50%;
     overflow: auto;
     width: 50%;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     align-items: center;
     height: 100vh;
@@ -35,25 +49,97 @@ main p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18pt;
     text-align: center;
+    max-width: none;
+}
+
+main footer p {
+    text-align: center;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main a:visited{
+    color: black;
+}
+
+main a:link{
+    color: black;
+}
+
+main a div:hover{
+    background-color: black;
+    color: white;
+}
+
+main img[src*="7420442-728862511.jpg"]{
+    display: none;
+}
+
+main a:active{
+    background-color: black;
+    text-decoration: white;
+}
+
+main h3{
+    text-align: center;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+main div#image-overlay{
+    display: none;
 }
 
 #title {
-    position: absolute;
     width: 50%;
-    right: 0;
-    top: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20pt;
+    line-height: 9pt;
+    text-align: center;
+}
+
+:heading(1){
+    margin-block-end: 0;
 }
 
 #filtres{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
     width: 50%;
-    position: absolute;
-    right: 0;
-    top: 50%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12.2em;
+    justify-content: center;
 }
 
 #themes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46pt;
     width: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#themes legend, #themes div{
+    line-height: 40%;
+    text-transform: uppercase;
+    transition:  all 0.2s linear;
+    font-style: italic;
+}
+
+#themes div:hover{
+    line-height: 200%;
+    font-style: normal;
+    color: white;
+    background-color: black;
+}
+
+#themes input{
+    display: none;
 }
