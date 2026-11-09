@@ -1,7 +1,7 @@
 ---
 title: A new sense of purpose
 date: 2026-10-02
-tags: 
+tags: ilovemycomputer
 preview: assets/images/ilovemycomputer.jpg
 ---
 

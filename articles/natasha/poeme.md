@@ -2,7 +2,6 @@
 title: Posthume
 date: 2026-09-28
 tags: poème, Wikipédia
-preview:
 ---
 
 # Posthume

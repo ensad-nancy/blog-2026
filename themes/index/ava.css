@@ -435,3 +435,16 @@ main a:hover * {
     padding: var(--dg) 0 0 0;
   }
 }
+
+main a > div {
+    grid-template-columns: var(--ca) minmax(0, 1fr) var(--cd);
+  }
+
+  main footer p:nth-child(3) {
+    display: none;
+  }
+
+  main footer p:nth-child(2) {
+    grid-column: 3;
+  }
+

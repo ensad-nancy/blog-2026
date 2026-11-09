@@ -1,8 +1,7 @@
 ---
 title: Errements
 date: 2026-11-09
-tags: détail graphique, écriture automatique
-preview: 
+tags: détail graphique, écriture 
 ---
 
 # Errements
