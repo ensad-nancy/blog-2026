@@ -123,6 +123,11 @@ main a{
     cursor: pointer;
 }
 
+main a:hover{
+    animation: "couleur" 3s infinite ease;
+    border: 0.5vh white solid;
+}
+
 main a > div{
     position: relative;
     overflow: hidden;
