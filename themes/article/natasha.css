@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(234, 205, 171);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    overflow: hidden;
+}
+
+#themes{  
+    background: linear-gradient(rgb(67, 58, 74), rgb(148, 121, 121)50%, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    writing-mode:vertical-rl;
+    display: inline-block;
+	transform: rotate(180deg);
+    grid-row: 4/4;
+    line-height: 1.5;
+    font-size:23px;
+}
+
+#themes div input[type=radio] {
+    display: none;
+}
+
+header{
+    background: linear-gradient(rgb(67, 58, 74), rgb(148, 121, 121)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    grid-row:1/4;
+    font-size:23px;
+    text-align:end;
+    display: inline-block;
+	transform: rotate(30deg);
+    position:absolute;
+    right:30px;
+    top:2px;
+}
+
+article{
+    color:rgb(67, 58, 74);
+    grid-row: 2/4;
+    overflow: scroll;
+    scroll-behavior:smooth;
+    position:absolute;
+    left:5%;
+    top:120px;
+    max-height:400px;
+    max-width:90%;
+    text-align:start;
+    text-justify:auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+article>p{
+    opacity:0.5;
+}
+
+img{
+    max-height:70vh;
+    max-width:auto;
+    object-fit:fill;
+}
+
+a{
+    grid-row:4/4;
+    position:absolute;
+    bottom:5%;
+    right:5%;
+    display: inline-block;
+	transform: rotate(20deg);
+}
+
+a:link{
+    color: rgb(67, 58, 74);
+}
+
+a:visited{
+    color:rgb(67, 58, 74);
+}

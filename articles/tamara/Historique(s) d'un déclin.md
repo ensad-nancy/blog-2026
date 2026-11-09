@@ -1,11 +1,9 @@
 ---
-title: flux
+title: Historique(s) d'un déclin
 date: 2026-10-05
-tags: 
-preview:
 ---
 
-# flux
+# Historique(s) d'un déclin
 
 19h33, TikTok : un album vient de sortir, un chaton apprend à sauter, un artiste se filme en peignant, des enfants se font taper par la police, une jeune femme pleure dans sa voiture, un chaton tire sur une nappe, des stars dénoncent un violeur, des politiciens sont ouvertement racistes, un influenceur passe une journée de rêve, un prof craque en live, la police tape sur des manifestants pacifiques, un chiot se roule sur le dos, 5 signes que tu es en dépression. 
 <br>Stop
