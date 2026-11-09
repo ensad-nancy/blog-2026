@@ -113,7 +113,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4vh;
     top: 100px;
-
+    width: 73%;
 }
 
 main a{
@@ -289,7 +289,6 @@ div#themes{
     background-color: rgb(0, 0, 0);
     height: 100%;
     width: 25%;
-    border-left: white 4vh solid;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -337,6 +336,7 @@ div#themes{
     padding-top: 4.5vh;
     padding-bottom: 4vh;
     animation: "couleur" 4s infinite;
+    border-right: white 4vh solid;
 }
 
 div#title h1{
@@ -359,6 +359,7 @@ body > p{
     border-bottom: white 4vh solid;
     word-break: normal;
     display: inline;
+    border-right: white 4vh solid;
 }
 
 p{
