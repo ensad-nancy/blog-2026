@@ -10,6 +10,12 @@
     font-family: "azeret italic";
     src: url(/articles/audrey/assets/fonts/Azeret_Mono/static/AzeretMono-LightItalic.ttf);
 }
+
+@font-face {
+    font-family: "bbbsprat3";
+    src: url(/articles/audrey/assets/fonts/bbb-sprat-main/webfonts/BBBSprat-ExtendedThin.woff);
+}
+
 body{
     margin: 0;
 }
@@ -21,7 +27,6 @@ article {
     display: block;
     margin-left: 30%;
     margin-right: 3%;
-    margin-top: 7%;
     text-align: left;
     background-image:linear-gradient(to bottom, black, rgb(96, 206, 169) 70%, aquamarine 100%);
     background-clip: text;
@@ -31,8 +36,22 @@ article {
 
 h1 {
     font-family: "bbbsprat";
+    font-size: 25pt;
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 2%;
+    text-align: right;
+}
+
+h2 {
+    font-family: "bbbsprat3";
     font-size: 20pt;
     color: black;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
 #themes{
@@ -86,6 +105,7 @@ header .title {
     margin-left: 30%;
     margin-right: 3%;
     margin-top: 3%;
+    margin-bottom: 4%;
     font-family: "bbbsprat";
     font-size: 40pt;
     color: aquamarine;
@@ -100,6 +120,7 @@ body > a {
     color: black;
     text-decoration-line: none;
     width: fit-content;
+    margin-bottom: -3%;
 }
 
 body > a:hover{
@@ -114,6 +135,6 @@ p > img{
     width: 50%;
     height: 70%;
     float: left;
-    margin-right: 20px;
+    margin-right: 25px;
     margin-bottom: 10px;
 }

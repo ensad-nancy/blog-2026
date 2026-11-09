@@ -1,8 +1,7 @@
 ---
-title: Mardi 22h15
+title: Un mardi de plus
 date: 2026-10-05
-tags: routine , répétition
-preview: 
+tags: routine , absurde
 ---
 
 # Mardi 22h15

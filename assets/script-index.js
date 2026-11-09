@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
 /* Changer la date */
 
 var articles = document.querySelectorAll("main a");
-var dates = ["2025-11-10", "2025-11-17", "2025-11-24", "2025-12-01", "2025-12-08", "2025-12-15", "2026-01-05", "2026-01-12", "Tout"];
+var dates = ["2026-09-28", "2026-10-05", "2026-10-12", "2026-10-19", "2026-10-26", "2026-11-02", "2026-11-09", "2026-11-16", "2026-11-23", "2026-11-30", "Tout"];
 
 document.querySelector('input[name="date"]').addEventListener('input', (event) => {
     var value = event.target.value;

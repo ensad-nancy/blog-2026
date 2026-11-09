@@ -1,7 +1,7 @@
 ---
-title: Mommy
+title: Mommy 
 date: 2026-10-12
-tags: 
+tags: Avis Letterboxd
 preview: assets/images/188421-mommy-0-2000-0-3000-crop.jpg
 ---
 
