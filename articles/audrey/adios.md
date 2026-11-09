@@ -2,7 +2,6 @@
 title: Au revoir internet 
 date: 2026-11-08
 tags: /@everygirl_is_aweirdgirl
-preview: 
 ---
 # JE DÉCIDE DE ME RETIRER DE L’INTERNET MONDIAL 
 
