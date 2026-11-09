@@ -126,6 +126,8 @@ article > p{
 img{
     width: 50%;
     padding-left: 25%;
+    image-rendering: pixelated;
+    filter: grayscale(80%);
 }
 
 @font-face{
