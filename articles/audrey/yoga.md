@@ -2,7 +2,6 @@
 title: didn't find my peace 
 date: 2026-10-12
 tags: /@everygirl_is_aweirdgirl
-preview: 
 ---
 
 # didn't find my peace

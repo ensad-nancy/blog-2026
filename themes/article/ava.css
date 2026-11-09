@@ -188,7 +188,6 @@ header::after {
   background: url("../../articles/ava/assets/images/ritaline.png") center / contain no-repeat;
   cursor: pointer;
 }
-/* au survol, toutes les duplications disparaissent */
 body:has(header:hover) * {
   text-shadow: none !important;
   animation: none !important;

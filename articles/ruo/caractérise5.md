@@ -1,6 +1,6 @@
 ---
 title: Un guillemet
-date: 2026-10-10
+date: 2026-10-12
 tags: signes de ponctuation
 preview: assets/images/quotation.jpg
 ---
