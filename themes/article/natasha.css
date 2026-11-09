@@ -31,13 +31,13 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     grid-row:1/4;
-    font-size:23px;
+    font-size:15px;
     text-align:end;
     display: inline-block;
 	transform: rotate(30deg);
     position:absolute;
-    right:30px;
-    top:2px;
+    right:2%;
+    top:5%;
 }
 
 article{
@@ -81,6 +81,7 @@ a{
     display: inline-block;
 	transform: rotate(20deg);
     opacity:0.5;
+    font-size: 5px;
 }
 
 a:link{
