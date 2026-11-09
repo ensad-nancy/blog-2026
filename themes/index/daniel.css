@@ -486,3 +486,30 @@ main::-webkit-scrollbar-thumb,
 #date {
   margin-bottom: 36px;
 }
+
+@media (max-height: 850px) and (min-width: 801px) {
+  #title h1,
+  #themes legend,
+  #filtres h2 {
+    font-size: clamp(42px, 4vw, 68px);
+  }
+
+  #title {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  body > p {
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+
+  #themes {
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+
+  #filtres {
+    padding-top: 8px;
+  }
+}
