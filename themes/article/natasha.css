@@ -40,10 +40,7 @@ header{
 }
 
 article{
-    background: linear-gradient(rgb(148, 121, 121),rgb(67, 58, 74)50%,black);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:rgb(67, 58, 74);
     grid-row: 2/4;
     overflow: scroll;
     scroll-behavior:smooth;
@@ -55,13 +52,16 @@ article{
     text-align:start;
     text-justify:auto;
     overflow-x: hidden;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
 }
 
 article>p{
     opacity:0.5;
 }
+
 img{
-    max-height:50%;
+    max-height:70vh;
     max-width:auto;
     object-fit:fill;
 }

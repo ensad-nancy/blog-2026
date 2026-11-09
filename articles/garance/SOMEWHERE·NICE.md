@@ -1,6 +1,6 @@
 ---
 title: SOMEWHERE·NICE
-date: 2026-13-10
+date: 2026-10-13
 tags: Fish
 preview: assets/images/poisson.png
 

@@ -62,6 +62,8 @@ p{
 
 main img{
     width: 50%;
+    image-rendering: pixelated;
+    filter: grayscale(80%);
 }
 main a{
     text-decoration: none;
