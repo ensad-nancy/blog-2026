@@ -1,6 +1,11 @@
 @font-face {
   font-family: "tremplin";
-  src: url("/articles/maxence/assets/fonts/Tremplin-Regular.otf");
+  src: url("../../articles/maxence/assets/fonts/tremplinregular.otf");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../../articles/maxence/assets/fonts/barlowfold.otf");
 }
 
 * {
@@ -9,18 +14,16 @@
 
 body {
   margin: 0;
-  padding-bottom: 4rem;
+  padding: 1.5rem 1.5rem 4rem;
   font-family: "tremplin";
-  background: #DCEEFF;
   color: #102D50;
   display: grid;
   gap: 1.5rem;
 }
 
 body > * {
-  margin: 0;
   padding: 1.5rem;
-  background: #F3F8FF;
+  background: #FFFFFF;
 }
 
 body > a {
@@ -29,14 +32,25 @@ body > a {
   color: #102D50;
   text-decoration: none;
   text-align: center;
+  font-family: "Barlow";
 }
 
 body > a:hover {
-  background: #C5E7FF;
+  background: #FFB98A;
 }
 
 header {
   text-align: center;
+  background: #FFB98A;
+}
+
+.title,
+article h1,
+article h2,
+article h3,
+#themes legend {
+  font-family: "Barlow";
+  font-weight: normal;
 }
 
 .title {
@@ -61,7 +75,8 @@ header {
 .tag {
   display: inline-block;
   padding: 0.2rem 0.6rem;
-  background: #A9D2FF;
+  background: #102D50;
+  color: #FFFFFF;
 }
 
 article {
@@ -87,6 +102,13 @@ article img {
   display: none;
 }
 
+header,
+article,
+body > a,
+body::before {
+  border: 0.4rem solid #102D50;
+}
+
 #themes {
   position: fixed;
   bottom: 0;
@@ -96,37 +118,56 @@ article img {
   padding: 0.75rem 1rem;
   overflow-x: auto;
   white-space: nowrap;
-  background: #DCEEFF;
-  opacity: 0.95;
+  background: #FFFFFF;
+  border-top: 0.4rem solid #102D50;
 }
 
 @media (min-width: 800px) {
   body {
+    padding-bottom: 1.5rem;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
-      "header  vide1"
-      "article retour"
-      "article vide2";
+      "titre  vide1"
+      "texte  retour"
+      "texte  vide2";
   }
 
-  header   { grid-area: header; }
+  header   { grid-area: titre; }
+  article  { grid-area: texte; }
   body > a { grid-area: retour; }
 
   body::before {
     content: "";
     grid-area: vide1;
-    background: #F3F8FF;
+    background: #A9D2FF url("../../articles/maxence/assets/images/chat.svg") center / contain no-repeat;
   }
 
-  body::after {
-    content: "";
+  #themes {
     grid-area: vide2;
-    background: #F3F8FF;
+    position: static;
+    flex-direction: column;
+    gap: 0.5rem;
+    white-space: normal;
+    background: #FFB98A;
+    border: 0.4rem solid #102D50;
+  }
+
+  #themes legend {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  #themes legend::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 0.4rem;
+    margin-top: 0.5rem;
+    background: #102D50;
   }
 
   article {
-    grid-area: article;
     padding: 2rem 12rem;
     font-size: 1.2rem;
   }

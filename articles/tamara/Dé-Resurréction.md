@@ -1,11 +1,11 @@
 ---
-title: Le docteur n'est pas essentiel
+title: Dé-Resurréction
 date: 2026-09-28
 tags: 
 preview:
 ---
 
-# Le docteur n'est pas essentiel
+# Dé-Resurréction
 
 Briser le contrôle mental
 <br>Activer le système d’autodestruction,

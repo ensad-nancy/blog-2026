@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 175px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ body {
 
 #title {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -52,7 +52,7 @@ body {
 
 body > p {
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 1000px;
@@ -72,7 +72,6 @@ body > p {
 
 
 
-/* 작가 선택 */
 #auteurices {
     order: 1;
     width: 100%;
@@ -88,7 +87,6 @@ body > p {
 }
 
 
-/* 작가 선택 메뉴  */
 #auteurices select#authors {
     display: inline-block;
     -webkit-appearance: none;
@@ -110,7 +108,7 @@ body > p {
 
     background: #ffe3f1;
     border: 3px solid #fff5fa;
-    border-radius: 0;
+    border-radius: 4px;
 
     box-shadow:
         -3px -3px 0 #f7a8d0,
@@ -121,15 +119,15 @@ body > p {
     transition: none;
 }
 
-/* Hover */
+
 #auteurices select#authors:hover {
     color: #ffffff;
     background: #f16caf;
-
-    box-shadow:
+    border-radius: 4px;
+box-shadow:
         -3px -3px 0 #ffd5eb,
          3px 3px 0 #a94379,
-         6px 6px 0 #792c59;
+        
 }
 
 
@@ -138,7 +136,7 @@ body > p {
 
 
 
-/* 별 이미지 배경 */
+
 body::before {
     content: "";
     position: fixed;
@@ -264,20 +262,20 @@ main > a footer p {
 main > a .tag {
     display: inline-block;
     max-width: 100%;
-    overflow-wrap: anywhere;
+    overflow-wrap: anywhere
 }
 
 
 main::-webkit-scrollbar {
-    height: 13px;
+    height: 10px;
 }
 
-/* 얇고 깔끔한 트랙 */
+
 main::-webkit-scrollbar-track {
     background: #fdade199;
     border: none;}
 
-/* 입체적인 레트로 손잡이 */
+
 main::-webkit-scrollbar-thumb {
     background-color: #ff72c9;
     border: 2px solid #fff0f7;
@@ -340,7 +338,6 @@ main::-webkit-scrollbar-thumb:hover {
 
 
 
-/* Chrome · Safari */
 #date input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -377,7 +374,7 @@ main::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
 }
 
-/* Firefox Hover */
+
 #date input[type="range"]::-moz-range-thumb:hover {
     background: #f7b1d4;
 }

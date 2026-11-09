@@ -3,6 +3,11 @@
     src: url("articles/tamara/assets/nudles-main/ttf/Nudles-Regular.ttf");
 }
 
+@font-face{
+    font-family:'chubi';
+    src: url("articles/tamara/assets/Chubi_Trial/Chubi-Heavy.otf");
+}
+
 img{
     width: 60vw ;
     left: 50vw;
@@ -10,6 +15,7 @@ img{
 
 body{
     background-image: url(../../articles/tamara/assets/images/grillepetite.jpg) ;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: initial;
@@ -22,24 +28,56 @@ body{
     padding-top: 5vh;
     line-height: 5vh;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-image: url(../../articles/tamara/assets/images/test2.jpg);
-    background-size: 478px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-image: url(../../articles/tamara/assets/images/test-fond.jpg);
+    background-size: 91em;
+    background-position: -188px -12px;
 }
 
 label{
 font-family: 'nudles';
 font-size: large;
+color: rgb(91, 147, 51);   
 }
 
+#themes label:hover{
+    font-size: xx-large; 
+    color:#4456ae;   
+}
+
+a{
+font-family: 'nudles';
+font-size: large;
+color: rgb(91, 147, 51);   
+text-decoration: none;
+position: absolute;
+top: 2%;
+left: 1%;
+}
+
+a:hover{
+    font-size: xx-large; 
+    color:#4456ae;   
+}
+
+
+
 article{
-    padding-left: 10vw;
+   position: absolute;
+   top: 3%;
+   left: 15%; 
+   margin-left: 10vw;
+   padding: 2vh 3vw 0vh 1vw;
    grid-column: 2/3;
-   grid-row: 4;
    width: 60vw;
    text-align: justify;
+   word-spacing: 10%;
+   overflow-y: auto;
+   line-height: 200%;
+   background-color: rgba(215, 196, 173, 0.422);
 }
+
 
 body>a{
     position: fixed;
@@ -68,4 +106,23 @@ input[type="radio"] {
 
 legend{
     display: none;
+}
+
+h1{
+    font-family: 'chubi';
+    margin: 0%;
+    color: rgb(91, 147, 51); 
+}
+
+h2{
+    font-family: 'nudles';
+    font-size:small;
+    margin-top: 1%;
+    color: rgb(91, 147, 51); 
+}
+
+p{
+    font-family: 'nudles';
+    font-size: large;
+    color: rgb(91, 147, 51); 
 }
