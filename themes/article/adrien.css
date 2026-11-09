@@ -207,9 +207,12 @@ header {
 header .tags {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 2px 50px;
     z-index: 1;
     font-weight: 800;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header .tags .tag {
@@ -237,6 +240,7 @@ header .title {
     width: fit-content;
     color: white;
     padding: 90px;
+    /*padding: 90px 0;*/
     margin: var(--negative-margin) 0;
     letter-spacing: 7%;
     /* effect  */
@@ -244,6 +248,7 @@ header .title {
         drop-shadow(0 0 .4cap blue) drop-shadow(0 0 .6cap blue) drop-shadow(0 0 .8cap fuchsia) drop-shadow(0 0 1cap fuchsia) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) drop-shadow(0 0 .9cap yellow) blur(.1cap) saturate(1.2) hue-rotate(var(--hue-rotate));
     -webkit-text-stroke: .25cap white;
     /*transition: filter 3s ease-in-out;*/
+    word-wrap: break-word;
 }
 
 header .title:hover {
@@ -593,12 +598,57 @@ body>a,
 }
 
 
-@keyframes header-height-animation {
-    from {
-        height: 50vh;
+
+@media screen and (max-width: 1300px) {
+    body {
+        --col-width: 410px;
+        --col-gap: 90px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    body {
+        --padX: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: var(--body-top-pad) var(--padX);
     }
 
-    to {
-        height: 100vh;
+    header {
+        position: static;
+    }
+
+    article {
+        max-width: 33em !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    header .title {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        --padX: 35px;
+    }
+
+    header .title {
+        font-size: 34px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #themes {
+        --width: 80vw;
+    }
+
+    #themes div {
+        opacity: 1;
     }
 }

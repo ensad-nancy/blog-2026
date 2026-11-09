@@ -1,193 +1,455 @@
 @font-face {
     font-family: "Chaloupée";
     src: url("../../articles/garance/assets/fonts/Chaloupee-Regular.otf"), format(woff);
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Chaloupée Bold";
     src: url("../../articles/garance/assets/fonts/Chaloupee-Black.otf"), format(woff);
-    font-weight: 400;
+    font-weight: 100;
     font-style: bold;
 }
 
 @font-face {
     font-family: "NCS";
     src: url("../../articles/garance/assets/fonts/NotCourierSans.otf"), format(otf);
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: "NCS";
     src: url("../../articles/garance/assets/fonts/NotCourierSans-Bold.otf"), format(otf);
-    font-weight: 400;
+    font-weight: 100;
     font-style: bold;
 }
 
 @font-face {
     font-family: "Guilt Wafer";
     src: url("../../articles/garance/assets/fonts/SansGuiltWafer.otf"), format(otf);
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 
-@keyframes BOITES{
-    from{background-color: black;}
-    to{background-color: red;}
+@font-face {
+    font-family: "FT88B";
+    src: url("../../articles/garance/assets/fonts/FT88-Bold.otf"), format(otf);
+    font-weight: 100;
 }
 
-/*BODY*/
+@font-face {
+    font-family: "FT88I";
+    src: url("../../articles/garance/assets/fonts/FT88-Italic.otf"), format(otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "FT88G";
+    src: url("../../articles/garance/assets/fonts/FT88-Gothique.otf"), format(otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "FT88R";
+    src: url("../../articles/garance/assets/fonts/FT88-Regular.otf"), format(otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "FT88S";
+    src: url("../../articles/garance/assets/fonts/FT88-School.otf"), format(otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "FT88E";
+    src: url("../../articles/garance/assets/fonts/FT88-Serif.otf"), format(otf);
+    font-weight: 100;
+}
+
+@-webkit-keyframes couleur {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes couleur {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
 
 body {
-    font-family: "NCS";
-    font-style: normal;
-    color: chartreuse;
-    background-image:  linear-gradient( black, blue, red, rgb(255, 102, 0));
-    background-attachment: fixed;
+    scroll-snap-type: x mandatory;
     display: grid;
-    grid-template-areas: 
-        "a a a"
-        "h h i"
-        "e e i";
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "filtres filtres"
+    "titre themes"
+    "intro themes"
+    "main themes";
+    margin: 0;
+    background-color: white;
+    font-family: "FT88";
+    font-style: regular;
+}
+
+/* MAIN*/
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vh;
+    top: 100px;
 
 }
 
-/*  
- margin: 0px 200px 0px 200px;*/
+main a{
+    scroll-snap-align: start;
+    height: 40vh;
+    padding: 0;
+    cursor: pointer;
+}
 
-/*TITLE*/
+main a > div{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
 
-#title {
-    grid-area: h;
-    font-family: "Chaloupée";
+main a img{
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: soft-light;
+    filter: grayscale(100%) contrast(200%);
+    image-rendering: pixelated;
+    image-resolution: 50px;
+}
+
+main a div h3{
+    padding: 5vh;
+    padding-top: 25%;
+    margin: 0;
+    border: 0;
+    z-index: 7;
+    text-wrap: wrap;
+    font-family: "FT88B";
+    font-size: 20pt;
+    color: #ffffff;
+    width: 100%;
+    text-decoration-line: none;
+    max-width: 15ch;
+    mix-blend-mode: difference;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+footer{
+    display: none;
+}
+
+/*FILTRES*/
+
+#filtres h2{
+    display: none;
+}
+
+#filtres{
+    grid-area: filtres;
     display: flex;
-    align-items: center;
-    color: rgb(0, 255, 0);
-    opacity: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 20vh;
+    z-index: 10;
 }
 
-#title :hover{
-    opacity: 0%;
+select {
+  appearance: none;
+  top: 0;
+  background-color: black;
+  border-bottom:  white 4vh solid ;
+  color: white;
+  padding: 0;
+  margin: 0;
+  width:100%;
+  font-family: "FT88G";
+  font-size: 20pt;
+  text-wrap: wrap;
+  text-align: center;
+  height: 20vh;
+  cursor: pointer;
 }
 
-body p{
-    grid-area: h;
-    opacity: 50%;
-    width: 300px;
-    align-items: center;
+select:hover{
+    background-color: white;
+    color: black;
 }
 
+#auteurices{
+    width: 25%;
+}
 
+#auteurices > p{
+    display: none;
+}
 
+#date{
+    position: relative;
+    width: 75%;
+}
+
+#date label{
+    position: absolute;
+    color: white;
+    left: 5%;
+    font-family: "FT88G";
+    font-size: 40pt;
+    margin: none;
+    top: 7vh;
+}
+
+input[type="range"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    -webkit-appearance: none;
+    background-color: white;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: black;
+    height: 12vh;
+    border-right: white 4vh solid;
+    border-left: white 4vh solid;
+}
+
+input[type="range"]::-moz-range-progress {
+    background: black;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5vh;
+  height:12vh;
+  border: black 1vh solid;
+  background: #ffffff;
+  animation: rotate;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 4vh;
+  height:15vh;
+  background: #ffffff;
+  animation: rotate;
+  cursor: pointer;
+}
 
 /*THEMES*/
 
-#themes {
-    grid-area: i;
-    position: sticky;
-    top: 0;
-    outline: 6px;
-    outline-style: inset;
-    background-color: black;
-    color: hsl(90, 100%, 50%);
-    font-family: "NCS";
-    height: fit-content;
+div#themes{
+    z-index: 8;
+    grid-area: themes;
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 25%;
+    border-left: white 4vh solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    padding-top: 3vh;
+}
+
+#themes > div{
+    font-family: "FT88I";
+    font-size: 20pt;
+    color: white;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#themes label:hover {
-    background-color: chartreuse;
-    color: black;
-    font-family: "NCS";
-    font-style: bold;
-}
-
-#themes legend {
-    display: none;
 }
 
 #themes input[type="radio"] {
     display: none;
 }
 
-/*MAIN*/
-
-main {
-    grid-area: e;
-}
-
-main a div{
-    display: grid;
-    grid-template-areas: 
-        "k l"
-        "m l" ;
-    width : 400px;
-            animation-name: "BOITE";
-    animation-duration: 4s;
-}
-
-main a {
-    display: inline-flex ;
-    outline: inset 6px chartreuse;
-    margin: 2%;
-    color: chartreuse;
-    background-color: black;
-    height: 250px;
-    width: 400px;
-}
-
-main a h3{
-    grid-area: k;
-    font-family: "Chaloupée";
-    font-size: 15pt;
-    justify-self: center;
+#themes legend{
+    font-family: "FT88G";
+    font-size: 20pt;
+    color: white;
     text-align: center;
-    width: 150px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    padding-bottom: 2vh;
 }
 
-main a .footer{
-    grid-area: m;
-    width: 100px;
+#themes div:hover {
+    background-color: rgb(0, 255, 183);
+    color: rgb(255, 0, 0);
+    font-family: "FT88G";
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+        animation: "couleur" 2s infinite ease;
 }
 
-main a p{
-    font-size: 10pt;
-    margin: 6px;
+#title{
+    scroll-snap-align: start;
+    z-index: 3;
+    grid-area: titre;
+    font-family: "FT88G";
+    font-size: 40pt;
+    color: rgb(251, 255, 0);
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding-top: 4.5vh;
+    padding-bottom: 4vh;
+    scroll-snap-align: start;
+    animation: "couleur" 4s infinite;
 }
 
-main a img{
-    display: flex;
-    align-items: center;
-    grid-area: l;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+div#title h1{
+    z-index: 2;
+    margin: 0;
 }
 
-/* DATES AUTEURS*/
-
-#filtres {
-    grid-area: a;
-    display: grid;
-    grid-template-areas: 
-        "q q p";
-    position: sticky;
-    top: 0;
-    background: linear-gradient(black, rgba(0,0,0,0), rgba(0,0,0,0));
-    background-size: contain;
+body > p{
+    z-index: 1;
+    grid-area: intro;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    font-family: "FT88R";
+    font-size: 9pt;
+    margin: 0;
+    padding-bottom: 1vh;
+    padding-left: 2vh;
+    padding-right: 6vh;
+    border-bottom: white 4vh solid;
+    word-break: normal;
+    display: inline;
 }
 
-#filtres .date{
-    grid-area: q;
+p{
+    max-width: fit-content;
 }
 
-#filtres .auteurices{
-    grid-area: p;
+/* width */
+body::-webkit-scrollbar {
+    width: 4vh;
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+}
+
+
+/*div[data-author=] */
+
+#themes >div[data-author="garance"]{
+    background-color: rgb(249, 110, 249);
+}
+
+main a[data-author="garance"]{
+    background-color: rgb(195, 99, 230);
+}
+
+main a[data-author="adrien"]{
+    background-color: rgb(140, 213, 140);
+}
+
+main a[data-author="tamara"]{
+    background-color: rgb(230, 205, 43);
+}
+
+main a[data-author="ilona"]{
+    background-color: rgb(207, 154, 116);
+}
+
+main a[data-author="natasha"]{
+    background-color: rgb(28, 88, 228);
+}
+
+main a[data-author="sarah"]{
+    background-color: rgb(164, 81, 223);
+}
+
+main a[data-author="ruo"]{
+    background-color: rgb(228, 79, 79);
+}
+
+main a[data-author="audrey"]{
+    background-color: rgb(191, 196, 157);
+}
+
+main a[data-author="cosmo"]{
+    background-color: rgb(95, 196, 82);
+}
+
+main a[data-author="romane"]{
+    background-color: rgb(82, 200, 192);
+}
+
+main a[data-author="daniel"]{
+    background-color: rgb(208, 21, 77);
+}
+
+main a[data-author="nathalie"]{
+    background-color: rgb(213, 74, 183);
+}
+
+main a[data-author="sahar"]{
+    background-color: rgb(78, 232, 188);
+}
+
+main a[data-author="eunseo"]{
+    background-color: rgb(132, 224, 224);
+}
+
+main a[data-author="maxence"]{
+    background-color: rgb(233, 0, 0);
+}
+
+main a[data-author="ava"]{
+    background-color: rgb(218, 93, 162);
+}
+
+main a[data-author="nicolas"]{
+    background-color: rgb(138, 185, 164);
 }

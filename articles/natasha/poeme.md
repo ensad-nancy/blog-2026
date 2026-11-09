@@ -1,13 +1,11 @@
 ---
-title: Poétique
+title: Posthume
 date: 2026-09-28
 tags: poème, Wikipédia
 preview: assets/images/7420442-728862511.jpg
 ---
 
-# Titre
-
-## modification
+# Posthume
 
 Il étudie la même ville<br>
 Né le 20 janvier<br>
