@@ -164,12 +164,14 @@
 body {
     --banner-height: 0px;
     --col-width: 560px;
-    --col-gap: 30px;
+    /*--col-gap: 30px;*/
+    --col-gap: 0px;
+    --row-gap: 30px;
     font-family: "Spectral";
     font-feature-settings: "onum";
     display: grid;
     grid-template-columns: var(--col-width) var(--col-width);
-    gap: 20px var(--col-gap);
+    gap: var(--row-gap) var(--col-gap);
     padding: 30px calc((100vw - (var(--col-width) * 2 + var(--col-gap))) / 2) 130px;
     grid-template-areas:
         "a b"
@@ -178,9 +180,12 @@ body {
     margin-top: var(--banner-height);
 }
 
-#title,
-body>p {
+#title {
     padding: 0 10px;
+}
+
+body>p {
+    padding: 0 30px;
 }
 
 
@@ -202,7 +207,7 @@ main a div {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: 26px;
+    padding: 35px 0;
     /*overflow: hidden;*/
 }
 
@@ -243,6 +248,12 @@ main a div h3 {
     order: 0;
     margin-top: -45px;
     /*transition: all .2s ease-in-out;*/
+    /*word-wrap: break-word;*/
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+main a[data-author="nicolas"] div h3 {
     word-wrap: break-word;
 }
 
@@ -280,6 +291,7 @@ main a div footer p:has(span.tag) {
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 main a div footer p:first-child::after {
@@ -506,6 +518,7 @@ body>p span {
     text-align: center;
     font-feature-settings: "smcp", "c2sc";
     line-height: 100% !important;
+    font-size: 2em;
 }
 
 #filtres {
@@ -567,7 +580,7 @@ main a div footer p strong,
     }
 
     main a div h3 {
-        font-size: 30px;
+        font-size: 32px;
         padding: 45px;
         margin-top: -20px;
     }
@@ -580,15 +593,7 @@ main a div footer p strong,
 @media screen and (max-width: 1070px) {
     body {
         --col-width: 350px;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 930px) {
-    body {
-        /*--col-width: calc(100vw - 600px);*/
-        --padX: 125px;
+        --padX: 180px;
         display: flex;
         flex-direction: column;
         padding-left: var(--padX);
@@ -598,9 +603,75 @@ main a div footer p strong,
     main {
         display: flex;
         flex-direction: column;
+        gap: var(--row-gap);
+        width: 100%;
     }
 
     main a div h3 {
-        font-size: 38px;
+        font-size: 30px;
+    }
+
+    #title,
+    body>p {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        --padX: 110px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        --padX: 30px;
+    }
+
+    #filtres {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #date {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #date input {
+        position: static;
+        transform: initial;
+        translate: initial;
+        width: 100%;
+        margin: 0 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #themes {
+        --width: 80vw;
+    }
+
+    #themes div {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #title h1 {
+        font-size: 1.9em;
+    }
+
+    #auteurices p {
+        display: none;
+    }
+
+    main a div footer p:first-child::after {
+        content: "-----------------------";
     }
 }

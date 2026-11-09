@@ -1,136 +1,245 @@
 @font-face {
   font-family: "tremplin";
-src: url("/articles/maxence/assets/fonts/Tremplin-Regular.otf");
+  src: url("../../articles/maxence/assets/fonts/tremplinregular.otf");
 }
 
-body{
-font-family: "tremplin";    
-background-color: #DCEEFF;
+@font-face {
+  font-family: "Barlow";
+  src: url("../../articles/maxence/assets/fonts/barlowfold.otf");
 }
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-margin: 0;
-padding-bottom: 4rem;  
-font-family: "tremplin";
-background: #DCEEFF;     
-display: grid;
-gap: 1.5rem;         
-grid-template-areas:
-"titre"
-"intro"
-"filtres"
-"articles";
+  margin: 0;
+  padding: 1.5rem 1.5rem 4rem;
+  font-family: "tremplin";
+  color: #102D50;
+  background: #FFFFFF;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "titre"
+    "intro"
+    "filtres"
+    "articles";
 }
 
 body > * {
-margin: 0;
-padding: 1.5rem;
-background: #F3F8FF;
-text-align: center;
+  margin: 0;
+  padding: 1.5rem;
+  background: #FFFFFF;
+  text-align: center;
 }
 
 #title   { grid-area: titre; }
 body > p { grid-area: intro; }
 #filtres { grid-area: filtres; text-align: left; }
 
+h1,
+h2,
+h3,
+#themes legend {
+  font-family: "Barlow";
+  font-weight: normal;
+}
+
 h1 {
-margin: 0;
-font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 p {
-max-width: none;
+  max-width: none;
+}
+
+#filtres {
+  background: #FFB98A;
+}
+
+#filtres h2 {
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+
+#filtres p {
+  margin: 0 0 0.5rem;
+}
+
+#filtres h2::after,
+#filtres p::after {
+  content: "";
+  display: block;
+  height: 0.4rem;
+  margin-top: 0.5rem;
+  background: #102D50;
+}
+
+#filtres h2::after { width: 60%; }
+#filtres p::after  { width: 36%; }
+
+#filtres div {
+  margin-bottom: 1.5rem;
 }
 
 #filtres input,
 #filtres select {
-width: 100%;
+  width: 100%;
+}
+
+#filtres input {
+  appearance: none;
+  height: 0.4rem;
+  background: #102D50;
+}
+
+#filtres input::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background: #A9D2FF;
+  border: 0.4rem solid #102D50;
+}
+
+#filtres input::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  background: #A9D2FF;
+  border: 0.4rem solid #102D50;
+  border-radius: 0;
+}
+
+#filtres select {
+  padding: 0.5rem;
+  font-family: "tremplin";
+  color: #102D50;
+  background: #FFFFFF;
+  border: 0.2rem solid #102D50;
 }
 
 main {
-grid-area: articles;
-padding: 0;
-background: #DCEEFF;
-display: grid;
-gap: 1.5rem;           
+  grid-area: articles;
+  padding: 0;
+  background: #FFFFFF;
+  display: grid;
+  gap: 1.5rem;
 }
 
 main a {
-padding: 2.5rem 1rem;
-background: #A9D2FF;
-color: #102D50;
-text-decoration: none;
-}
-
-main a:hover {
-background: #C5E7FF;
+  padding: 2.5rem 1rem;
+  background: #A9D2FF;
+  color: #102D50;
+  text-decoration: none;
+  box-shadow: 0 0.5rem 1.5rem rgba(16, 45, 80, 0.3);
 }
 
 main h3 {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 main h3,
 main p {
-margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 main img {
-display: none;
+  display: none;
 }
 
 main h3::after,
 main p::after {
-content: "";
-display: block;
-height: 0.4rem;
-margin: 0.5rem auto 0; 
-background: #102D50;
+  content: "";
+  display: block;
+  height: 0.4rem;
+  margin: 0.5rem auto 0;
+  background: #102D50;
 }
 
 main h3::after             { width: 60%; }
-main p:nth-child(1)::after { width: 48%; }  
-main p:nth-child(2)::after { width: 36%; }  
-main p:nth-child(3)::after { width: 24%; }  
+main p:nth-child(1)::after { width: 48%; }
+main p:nth-child(2)::after { width: 36%; }
+main p:nth-child(3)::after { width: 24%; }
+
+#title {
+  background: #FFB98A;
+}
+
+#title,
+body > p,
+#filtres,
+main a,
+body::before {
+  border: 0.4rem solid #102D50;
+}
 
 #themes {
-position: fixed;      
-bottom: 0;
-width: 100%;
-display: flex;        
-gap: 1.5rem;
-padding: 0.75rem 1rem;
-overflow-x: auto;     
-white-space: nowrap;
-background: #DCEEFF;
-color: #102D50;
-opacity: 0.95;         
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: #FFFFFF;
+  border-top: 0.4rem solid #102D50;
+}
+
+main a:hover {
+  background: #FFB98A ;
+  box-shadow: 0 0.25rem 0.75rem rgba(16, 45, 80, 0.3);
 }
 
 @media (min-width: 800px) {
-body {
-grid-template-columns: 3fr 1fr;  
-grid-template-areas:
-"titre    vide"
-"intro    filtres"
-"articles filtres";
+  body {
+    padding-bottom: 1.5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "titre    vide"
+      "intro    filtres"
+      "articles filtres"
+      "articles themes";
   }
 
-body::before {
-content: "";
-grid-area: vide;
-background: #F3F8FF;
+  body::before {
+    content: "";
+    grid-area: vide;
+    background: #A9D2FF url("../../articles/maxence/assets/images/chat.svg") center / contain no-repeat;
   }
 
-h1 {
-font-size: 3.5rem;
+  h1 {
+    font-size: 3.5rem;
   }
 
-body > p {
-padding: 2rem 8rem;
+  body > p {
+    padding: 2rem 8rem;
+  }
+
+  #themes {
+    grid-area: themes;
+    position: static;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    white-space: normal;
+    background: #FFB98A;
+    border: 0.4rem solid #102D50;
+  }
+
+  #themes legend {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  #themes legend::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 0.4rem;
+    margin-top: 0.5rem;
+    background: #102D50;
   }
 }
