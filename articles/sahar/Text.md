@@ -2,7 +2,7 @@
 title: Barkhord 
 date: 2026-10-04
 tags: text
-preview: articles\sahar\assets\images\golden.jpg
+
 ---
 
 # Titre de mon article
