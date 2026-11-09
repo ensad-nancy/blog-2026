@@ -2,7 +2,7 @@
 title: Loop Switch™ 2 
 date: 2026-10-12
 tags: avis
-preview: 
+
 ---
 
 # Commentaire 

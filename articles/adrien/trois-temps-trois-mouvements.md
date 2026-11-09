@@ -2,7 +2,7 @@
 title: Trois temps, trois mouvements
 date: 2026-11-08
 tags: passé, présent, futur, fin
-# preview: assets/images/7420442-728862511.jpg
+preview: assets/images/signe-fiction-graphique.png
 ---
 
 Le soleil de 14h tapait sur la rue entière. Un monsieur était assis sur un banc en pierre claire. Il attendait son bus, ou peut-être qu’il contemplait juste les feuilles qui virevoltaient, fraîchement tombées de l’arbre juste de l’autre côté de la rue. Enfin en tout cas, il avait l’air un peu paumé. Et puis il regardait le tronc de l’arbre. Pour lui c’était une entité incroyable, un témoin de tout ce qui s’était passé autour de lui pendant des années. Un enfant passé à côté qui lui a arraché un morceau de son écorce comme un trophée ; un chien qui s’est nonchalamment soulagé à son pied ; une vieille dame qui ne regardait pas devant elle et qui a été victime d’un malheureux face à face avec l’une de ses branches. Le monsieur était assis sur le banc. Il est soudainement happé par une porte bleu électrique juste à côté de l’arbre. Elle porte fièrement ses pics longilignes, et quelques détails moins menaçants, floraux ou végétaux, sur sa partie inférieure. Entre deux monticules de feuilles métalliques, le monsieur fixe son attention sur quelques traits plutôt épais où la peinture manquait. En fait elle avait plutôt été arrachée ou grattée, et on voyait la surface grise luisante en dessous. Son bus arrive ! Il traverse la rue, trébuche sur la marche du trottoir, se retrouve brièvement face à la porte bleue et son mystérieux symbole gris et sautille jusqu’au bus, le visage grimaçant de douleur. Probablement son petit doigt du pied gauche, comme cela lui arrive environ deux fois par mois. Il râle : « Comme d’habitude ! ».

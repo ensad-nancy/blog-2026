@@ -2,7 +2,7 @@
 title: Un changement d'exclamation
 date: 2026-11-09
 tags: fiction, détail graphique
-preview: 
+
 ---
 
 # Un rythme du corps

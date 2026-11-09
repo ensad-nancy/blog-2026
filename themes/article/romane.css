@@ -20,7 +20,7 @@ body::before {
   background-repeat: no-repeat;
 }
 
-/* lien "← Retour" */
+
 a[href="index.php"] {
   position: fixed;
   top: 4vh;
@@ -100,7 +100,7 @@ p {
 }
 
 
-/* image : capsule qui flotte à gauche, le texte l'entoure */
+
 article p:has(> img) {
   float: left;
   width: 40%;
@@ -130,7 +130,7 @@ article::after {
   color: #c8283c;
 }
 
-/* ---------- CARRÉ BLANC DES PRÉNOMS (comme l'index) ---------- */
+
 #themes {
   position: fixed;
   top: 0;
@@ -146,7 +146,7 @@ article::after {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 
-  /* trait intérieur */
+  
   border: 1px solid #1a0d0f;
   border-radius: 999px 999px 18px 18px;
 
@@ -188,7 +188,6 @@ article::after {
   text-underline-offset: 3px;
 }
 
-/* écrans pas très hauts : prénoms sur deux colonnes */
 @media (max-height: 820px) {
   #themes {
     padding-top: 80px;

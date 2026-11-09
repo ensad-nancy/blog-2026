@@ -68,7 +68,7 @@ body {
   align-content: center;
 }
 
-/* la dentelle prend tout l'écran, avec un voile crème par-dessus */
+
 body::before {
   content: "";
   position: fixed;
@@ -84,7 +84,7 @@ body::before {
   background-repeat: no-repeat;
 }
 
-/* ---------- COLONNE DE GAUCHE : le carré blanc flou ---------- */
+
 #themes,
 #filtres {
   grid-column: 1;
@@ -104,7 +104,7 @@ body::before {
 #themes  { grid-row: 1 / 4; }
 #filtres { grid-row: 4; padding-top: 0; }
 
-/* prénoms sur une seule colonne */
+
 #themes {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,7 +112,6 @@ body::before {
   align-content: start;
 }
 
-/* "Changer le thème :" et "Filtres" */
 #themes legend,
 #filtres h2 {
   grid-column: 1 / -1;
@@ -125,7 +124,7 @@ body::before {
   color: #c8283c;
 }
 
-/* plus de ronds : le prénom choisi est souligné */
+
 #themes input {
   position: absolute;
   opacity: 0;
@@ -143,12 +142,12 @@ body::before {
   text-underline-offset: 3px;
 }
 
-/* ---------- FILTRES ---------- */
+
 #filtres p {
   margin: 0 0 6px;
 }
 
-/* barre de date : toute la largeur, plus facile à attraper */
+
 #date {
   display: flex;
   flex-direction: column;
@@ -209,7 +208,7 @@ body::before {
   background: transparent;
 }
 
-/* ---------- COLONNE DE DROITE : titre, intro, articles ---------- */
+
 #title {
   grid-column: 2;
   grid-row: 1;
@@ -277,7 +276,7 @@ main > a > div {
   gap: 10px;
 }
 
-/* image dans une capsule : toujours la même taille */
+
 main img {
   order: -1;
   flex: none;
@@ -288,7 +287,7 @@ main img {
   border-radius: 999px 999px 18px 18px;
 }
 
-/* pas d'image : capsule de dentelle avec un ✦, même taille */
+
 main > a > div:not(:has(img))::before {
   content: "✦";
   order: -1;
@@ -317,7 +316,7 @@ main h3 {
   line-height: 1.1;
   transition: color 0.3s;
 }
-/* numéro i. ii. iii. au-dessus du titre */
+
 main h3::before {
   content: counter(log, lower-roman) ".";
   display: block;
@@ -329,7 +328,7 @@ main h3::before {
 }
 main > a:hover h3 { color: #c8283c; }
 
-/* pied de carte : Auteur·ice et Date (les tags sont cachés) */
+
 main a footer {
   display: flex;
   flex-direction: column;
@@ -354,7 +353,7 @@ main::-webkit-scrollbar-thumb {
   background: #c8283c;
 }
 
-/* écrans pas très hauts : prénoms sur deux colonnes, texte un peu plus petit */
+
 @media (max-height: 820px) {
   #themes,
   #filtres {

@@ -2,7 +2,7 @@
 title: Natha31nael
 date: 2026-09-21
 tags: moi
-preview: 
+
 ---
 
 # Moi
