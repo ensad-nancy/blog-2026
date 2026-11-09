@@ -2,7 +2,7 @@
 title: youtube comment
 date: 2026-10-12
 tags: #comment, #thoughts
-preview: 
+preview: assets/images/youtube.jpg
 ---
 
 # youtube comment
