@@ -1,6 +1,6 @@
 ---
 title: Escape
-date: 2026-10-05
+date: 2026-11-09
 tags: Dystopie, ordinateur
 preview: assets/images/queen.png
 ---
