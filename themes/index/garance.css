@@ -128,13 +128,15 @@ main a{
     height: 40vh;
     padding: 0;
     cursor: pointer;
+    border: 0.5vh white solid;
 }
 
 main a:hover{
     animation: "couleur" 3s infinite ease;
-    border: 0.5vh white solid;
+    border-color: rgb(176, 126, 0);
+    height: 98%;
     transition: ease-in;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 main a > div{
