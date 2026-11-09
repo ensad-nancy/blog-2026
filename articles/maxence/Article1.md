@@ -2,7 +2,6 @@
 title: À peine sortie du moule
 date: 2026-09-28
 tags: composition , article
-preview:
 ---
 
 # À peine sortie du moule
