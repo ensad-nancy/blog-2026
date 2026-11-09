@@ -620,6 +620,10 @@ body>a,
         position: static;
     }
 
+    header .title {
+        margin-top: calc(var(--negative-margin) - 30px);
+    }
+
     article {
         max-width: 33em !important;
     }
@@ -627,7 +631,7 @@ body>a,
 
 @media screen and (max-width: 820px) {
     header .title {
-        font-size: 44px;
+        font-size: 46px;
     }
 }
 
@@ -637,7 +641,7 @@ body>a,
     }
 
     header .title {
-        font-size: 34px;
+        font-size: 38px;
         padding-left: 0;
         padding-right: 0;
     }
