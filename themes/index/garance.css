@@ -69,6 +69,13 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: "Handjet";
+    src: url("../../articles/garance/assets/fonts/Handjet.ttf"), format(otf);
+    font-weight: 100;
+}
+
+
 @-webkit-keyframes couleur {
     0% {
         -webkit-filter: hue-rotate(0deg);
@@ -102,8 +109,7 @@ body {
     "main themes";
     margin: 0;
     background-color: white;
-    font-family: "FT88";
-    font-style: regular;
+    font-family: "FT88R","Handjet";
 }
 
 /* MAIN*/
@@ -114,7 +120,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4vh;
     top: 100px;
-
+    width: 97.6%;
 }
 
 main a{
@@ -122,6 +128,15 @@ main a{
     height: 40vh;
     padding: 0;
     cursor: pointer;
+    border: 0.5vh white solid;
+}
+
+main a:hover{
+    animation: "couleur" 3s infinite ease;
+    border-color: rgb(176, 126, 0);
+    height: 98%;
+    transition: ease-in;
+    transition-duration: 0.2s;
 }
 
 main a > div{
@@ -140,7 +155,6 @@ main a img{
     mix-blend-mode: soft-light;
     filter: grayscale(100%) contrast(200%);
     image-rendering: pixelated;
-    image-resolution: 50px;
 }
 
 main a div h3{
@@ -185,6 +199,7 @@ select {
   appearance: none;
   top: 0;
   background-color: black;
+  border: none;
   border-bottom:  white 4vh solid ;
   color: white;
   padding: 0;
@@ -201,6 +216,11 @@ select {
 select:hover{
     background-color: white;
     color: black;
+}
+
+select option{
+    width: 100%;
+    scroll-behavior: hiddens;
 }
 
 #auteurices{
@@ -224,6 +244,7 @@ select:hover{
     font-size: 40pt;
     margin: none;
     top: 7vh;
+    mix-blend-mode: difference;
 }
 
 input[type="range"]{
@@ -255,9 +276,10 @@ input[type="range"]::-webkit-slider-thumb {
   width: 5vh;
   height:12vh;
   border: black 1vh solid;
-  background: #ffffff;
+  background: #c4de00;
   animation: rotate;
   cursor: pointer;
+  animation: "couleur" 2s infinite ease;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -265,9 +287,11 @@ input[type="range"]::-moz-range-thumb {
   appearance: none;
   width: 4vh;
   height:15vh;
-  background: #ffffff;
+  border: black 1vh solid;
+  background: #ffdd00;
   animation: rotate;
   cursor: pointer;
+  animation: "couleur" 2s infinite ease;
 }
 
 /*THEMES*/
@@ -281,7 +305,6 @@ div#themes{
     background-color: rgb(0, 0, 0);
     height: 100%;
     width: 25%;
-    border-left: white 4vh solid;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -313,7 +336,7 @@ div#themes{
     font-family: "FT88G";
     padding-bottom: 0.5vh;
     padding-top: 0.5vh;
-        animation: "couleur" 2s infinite ease;
+    animation: "couleur" 2s infinite ease;
 }
 
 #title{
@@ -322,14 +345,14 @@ div#themes{
     grid-area: titre;
     font-family: "FT88G";
     font-size: 40pt;
-    color: rgb(251, 255, 0);
+    color: rgb(255, 148, 148);
     background-color: black;
     text-align: center;
     margin: 0;
     padding-top: 4.5vh;
     padding-bottom: 4vh;
-    scroll-snap-align: start;
     animation: "couleur" 4s infinite;
+    border-right: white 4vh solid;
 }
 
 div#title h1{
@@ -352,6 +375,7 @@ body > p{
     border-bottom: white 4vh solid;
     word-break: normal;
     display: inline;
+    border-right: white 4vh solid;
 }
 
 p{
@@ -360,8 +384,8 @@ p{
 
 /* width */
 body::-webkit-scrollbar {
+    appearance: none;
     width: 4vh;
-    background: transparent;
 }
 
 /* Track */

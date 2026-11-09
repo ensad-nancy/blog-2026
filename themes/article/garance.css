@@ -72,6 +72,12 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: "Handjet";
+    src: url("../../articles/garance/assets/fonts/Handjet.ttf"), format(otf);
+    font-weight: 800;
+}
+
 @-webkit-keyframes couleur {
     0% {
         -webkit-filter: hue-rotate(0deg);
@@ -103,7 +109,7 @@ body {
     margin: 0;
     background-color: white;
     font-family: "FT88R";
-    scrollbar-width: none;
+    scroll-behavior: hidden;
 }
 
 
@@ -116,7 +122,7 @@ article {
     color: white;
     top: 20vh;
     padding: 0;
-    width: 75%;
+    width: 73%;
     margin: 0;
 }
 
@@ -132,12 +138,13 @@ article h1 {
 
 article h2 {
     font-family: "FT88G";
-    font-size: 15pt;
+    font-size: 20pt;
     padding-left: 3vh;
 }
 
 article p {
-    font-family: "FT88R";
+    font-family: "FT88R", "Handjet";
+    font-size: 15pt;
     margin: 6vh;
     margin-right: 12vh;
     line-height: 24px;
@@ -191,7 +198,6 @@ div#themes {
     background-color: rgb(0, 0, 0);
     height: 100%;
     width: 25%;
-    border-left: white 4vh solid;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -234,11 +240,12 @@ header .title {
     font-size: 20pt;
     color: white;
     text-align: left;
-    left: 2vh;
+    left: 3vh;
     padding: 0;
     width: 50%;
-    margin: 3vh;
-    max-width: 20ch;
+    margin: 2.5vh;
+    max-width:40ch;
+    max-height: 5ch;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -282,6 +289,7 @@ header {
 }
 
 /*scroll bar*/
+
 
 /* width */
 body::-webkit-scrollbar {

@@ -1,6 +1,6 @@
 ---
 title: Novembre
-date: 2026-05-10
+date: 2026-10-05
 tags: Dystopie, ordinateur
 preview: assets/images/queen.png
 ---
