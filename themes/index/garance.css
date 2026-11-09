@@ -102,8 +102,7 @@ body {
     "main themes";
     margin: 0;
     background-color: white;
-    font-family: "FT88";
-    font-style: regular;
+    font-family: "FT88R";
 }
 
 /* MAIN*/
@@ -140,7 +139,6 @@ main a img{
     mix-blend-mode: soft-light;
     filter: grayscale(100%) contrast(200%);
     image-rendering: pixelated;
-    image-resolution: 50px;
 }
 
 main a div h3{
@@ -185,6 +183,7 @@ select {
   appearance: none;
   top: 0;
   background-color: black;
+  border: none;
   border-bottom:  white 4vh solid ;
   color: white;
   padding: 0;
@@ -201,6 +200,11 @@ select {
 select:hover{
     background-color: white;
     color: black;
+}
+
+select option{
+    width: 100%;
+    scroll-behavior: hiddens;
 }
 
 #auteurices{
@@ -224,6 +228,7 @@ select:hover{
     font-size: 40pt;
     margin: none;
     top: 7vh;
+    mix-blend-mode: difference;
 }
 
 input[type="range"]{
@@ -255,9 +260,10 @@ input[type="range"]::-webkit-slider-thumb {
   width: 5vh;
   height:12vh;
   border: black 1vh solid;
-  background: #ffffff;
+  background: #c4de00;
   animation: rotate;
   cursor: pointer;
+  animation: "couleur" 2s infinite ease;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -265,9 +271,11 @@ input[type="range"]::-moz-range-thumb {
   appearance: none;
   width: 4vh;
   height:15vh;
-  background: #ffffff;
+  border: black 1vh solid;
+  background: #ffdd00;
   animation: rotate;
   cursor: pointer;
+  animation: "couleur" 2s infinite ease;
 }
 
 /*THEMES*/
@@ -313,7 +321,7 @@ div#themes{
     font-family: "FT88G";
     padding-bottom: 0.5vh;
     padding-top: 0.5vh;
-        animation: "couleur" 2s infinite ease;
+    animation: "couleur" 2s infinite ease;
 }
 
 #title{
@@ -328,7 +336,6 @@ div#themes{
     margin: 0;
     padding-top: 4.5vh;
     padding-bottom: 4vh;
-    scroll-snap-align: start;
     animation: "couleur" 4s infinite;
 }
 
@@ -360,8 +367,8 @@ p{
 
 /* width */
 body::-webkit-scrollbar {
+    appearance: none;
     width: 4vh;
-    background: transparent;
 }
 
 /* Track */
