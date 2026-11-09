@@ -8,26 +8,35 @@
     flex-direction: row; 
 
     gap: 15px;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
     max-width: 100%;
-    scrollbar-width: thin;
+    scrollbar-width: none;
+}
+#themes input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 #themes > div {
-  width: 90px;
-    height: 90px;
+  width: var(--sq);
+    height: var(--sq);
     flex-shrink: 0;
-
-    border: 1px solid black;
+   color: aliceblue;
+    /* border: 1px solid black; */
     border-radius: 0;
-    background-color: rgb(121, 9, 9);
+    background-color: lch(32.21% 20.84 59.56);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+    
 }
 
 #date{ position: fixed;
@@ -59,7 +68,7 @@ main {
     box-sizing: border-box;
 /*    scrollbar-width: none; 
    scrollbar-width: thin; */
-   transform: scaleY(-1);
+   /* transform: scaleY(-1); */
 }
 
 main::-webkit-scrollbar{
@@ -68,15 +77,16 @@ main::-webkit-scrollbar{
 }
 
 main > * {
-    flex: 0 0 120px;
-    height: 140px;
+    flex: 0 0 var(--sq);
+    width: var(--sq);
+    height: var(--sq);
     overflow: hidden;
     box-sizing: border-box;
-    transform: scaleY(-1);
+   /*  transform: scaleY(-1); */
 }
 
 main a{
-    background-color: brown;
+    background-color: lch(32.21% 20.84 59.56);
     color: white;
     text-decoration: none;
 }
@@ -101,7 +111,7 @@ body {
     min-height: 100vh;
 
     background-image: url("/blog-2026/articles/sahar/assets/images/quentin web blog [Recovered].jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -109,7 +119,7 @@ body {
 }
 
 
-:root { --sq: 90px; }
+:root { --sq: 100px; }
 
 #auteurices {
   position: fixed;
@@ -118,14 +128,15 @@ body {
   width: var(--sq);
   height: var(--sq);
   box-sizing: border-box;
-  border: 1px solid rgb(255, 221, 0);
-  background-color: rgb(198, 101, 22);
+  /* border: 1px solid rgb(255, 221, 0); */
+  background-color: lch(32.21% 20.84 59.56);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0;
+  color: aliceblue;
 }
 #auteurices { left: 0; }
 
@@ -154,7 +165,7 @@ body {
   margin: 0;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 #auteurices select::picker(select):popover-open {
   display: flex;
@@ -167,8 +178,8 @@ body {
   height: var(--sq);
   box-sizing: border-box;
   flex-shrink: 0;
-  border: 1px solid black;
-  background-color: rgb(255, 160, 6);
+  /* border: 1px solid black; */
+  background-color:lch(32.21% 20.84 59.56);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,17 +191,15 @@ body {
 #auteurices option:hover     { background-color: rgb(190, 190, 70); }
 
 /* ---------- slider: square thumb ---------- */
-#filtres input[type=range] {
-  width: 70px;
-}
 
 #filtres input[type="range"] {
-    appearance: none;
-    width: 70px;
-    height: 70px;
-    background-color: rgb(249, 170, 13);
-    border: 1px solid black;
-    border-radius: 0;
+  
+    background-color: lch(32.21% 20.84 59.56);
+   appearance: none;
+  width: var(--sq);
+  height: var(--sq);
+  background-color: lch(32.21% 20.84 59.56);
+  border-radius: 0;
 }
 
 #filtres input[type="range"]::-webkit-slider-thumb {
@@ -198,7 +207,7 @@ body {
     width: 15px;
     height: 15px;
     background-color: brown;
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     border-radius: 0;
 }
 
@@ -207,5 +216,8 @@ body {
  top: 400px right 0;}
  
 body p {
+    display: none;
+}
+#auteurices select::picker(select)::-webkit-scrollbar {
     display: none;
 }
