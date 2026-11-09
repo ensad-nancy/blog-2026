@@ -148,7 +148,8 @@ article p {
     margin: 6vh;
     margin-right: 12vh;
     line-height: 24px;
-    text-align: justify;
+    text-align: left;
+    tab-size: 2vh;
 }
 
 p>img {
