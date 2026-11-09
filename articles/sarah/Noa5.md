@@ -1,7 +1,7 @@
 ---
 title: Blog de Noa
 date: 2026-10-19
-tags: billets, train, couleurs, détails, gare
+tags: billets, train, détails, plage
 ---
 
 # Blog de Noa #5
