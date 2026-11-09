@@ -1,4 +1,6 @@
-
+title: Le vélo 🚲
+date: 2026-09-21
+tags: cyberfeminisme, donna haraway
 # Ultracrépidarianisme
 Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on ne sait jamais..
 J’adore donner mon avis et être dans la contradiction, passe-temps favori..
