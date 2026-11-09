@@ -69,6 +69,13 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: "Handjet";
+    src: url("../../articles/garance/assets/fonts/Handjet.ttf"), format(otf);
+    font-weight: 100;
+}
+
+
 @-webkit-keyframes couleur {
     0% {
         -webkit-filter: hue-rotate(0deg);
@@ -102,7 +109,7 @@ body {
     "main themes";
     margin: 0;
     background-color: white;
-    font-family: "FT88R";
+    font-family: "FT88R","Handjet";
 }
 
 /* MAIN*/
@@ -113,7 +120,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4vh;
     top: 100px;
-    width: 73%;
+    width: 97.6%;
 }
 
 main a{
@@ -336,7 +343,7 @@ div#themes{
     grid-area: titre;
     font-family: "FT88G";
     font-size: 40pt;
-    color: rgb(251, 255, 0);
+    color: rgb(255, 148, 148);
     background-color: black;
     text-align: center;
     margin: 0;
