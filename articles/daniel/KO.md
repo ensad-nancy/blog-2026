@@ -1,7 +1,7 @@
 ---
 title: KO
 date: 2026-11-07
-tags: 
+tags: letters, weirdo
 ---
 
 # KO

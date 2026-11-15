@@ -211,6 +211,10 @@ main a div {
     /*overflow: hidden;*/
 }
 
+/*main a div:not(:has(img.thumb)) {
+    justify-content: start;
+}*/
+
 /*main a:hover div {
     background-color: black;
 }

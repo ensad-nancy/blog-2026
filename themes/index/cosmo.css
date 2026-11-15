@@ -69,11 +69,11 @@ main a:link{
 }
 
 main a div:hover{
-    background-color: black;
+    background:repeating-linear-gradient(white, black, white 1em);;
     color: white;
 }
 
-main img[src*="7420442-728862511.jpg"]{
+main .thumb{
     display: none;
 }
 
@@ -129,12 +129,10 @@ main div#image-overlay{
 #themes legend, #themes div{
     line-height: 40%;
     text-transform: uppercase;
-    transition:  all 0.2s linear;
     font-style: italic;
 }
 
 #themes div:hover{
-    line-height: 200%;
     font-style: normal;
     color: white;
     background-color: black;
