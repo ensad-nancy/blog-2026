@@ -1,4 +1,5 @@
 body {
+    background: repeating-linear-gradient(transparent, transparent 20px, black 20px, black 40px );
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -12,6 +13,12 @@ body > p{
     margin-bottom: 0;
     max-width: none;
     line-height: normal;
+    margin-block-start: 0;
+}
+
+body > p:hover{
+    background-color: black;
+    color: white;
 }
 
 body > p span{
@@ -20,11 +27,11 @@ body > p span{
 
 body > p span:hover{
     background-color: black;
-    color: white;
+    color: yellow;
 }
 
 main {
-    background: repeating-linear-gradient(white, black, white 10em);
+    background: repeating-linear-gradient(white, black, white 9em );
     width: 50%;
     overflow: auto;
     width: 50%;
@@ -69,7 +76,7 @@ main a:link{
 }
 
 main a div:hover{
-    background:repeating-linear-gradient(white, black, white 1em);;
+    background-color: black;
     color: white;
 }
 
@@ -100,20 +107,38 @@ main div#image-overlay{
     text-align: center;
 }
 
-:heading(1){
-    margin-block-end: 0;
+#title h1:hover{
+    color: yellow;
 }
+
+#title:hover{
+    background-color: white;
+    color: black;
+}
+
 
 #filtres{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     width: 50%;
-    height: 100%;
     margin-top: 0;
     display: flex;
     flex-direction: row;
     gap: 12.2em;
     justify-content: center;
+}
+
+#filtres h2{
+    background-color: white;
+    margin-block: 0;
+    align-content: center;
+    display: none;
+}
+
+#filtres #date{
+}
+
+#filtres #auteurices{
 }
 
 #themes{
@@ -124,6 +149,7 @@ main div#image-overlay{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block-start: 0;
 }
 
 #themes legend, #themes div{
