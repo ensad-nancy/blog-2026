@@ -60,7 +60,6 @@ $mdContent = preg_replace(
         <?= htmlspecialchars($title) ?>
     </title>
     <script src="assets/script-article.js" defer></script>
-    <link rel="stylesheet" href="themes/<?= htmlspecialchars($student) ?>.css">
 </head>
 
 <body>

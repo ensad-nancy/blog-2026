@@ -35,13 +35,13 @@ body > a:before{
 #themes legend, #themes div{
     line-height: 40%;
     text-transform: uppercase;
-    transition: all 0.3s linear;
     font-style: italic;
 }
 
 #themes div:hover{
-    line-height: 200%;
     font-style: normal;
+    color: white;
+    background-color: black;
 }
 
 #themes input{
@@ -64,6 +64,10 @@ article {
 article p{
     overflow-wrap: break-word;
     hyphens: manual;
+    max-width: 100%;
+}
+
+article img{
     max-width: 100%;
 }
 
