@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "Barlow";
-  src: url("../../articles/maxence/assets/fonts/barlowfold.otf");
+  font-family: "lsvg";
+  src: url("../../articles/maxence/assets/fonts/LS-VG5000-BoldShifted.otf");
 }
 
 * {
@@ -42,7 +42,7 @@ h1,
 h2,
 h3,
 #themes legend {
-  font-family: "Barlow";
+  font-family: "lsvg";
   font-weight: normal;
 }
 
