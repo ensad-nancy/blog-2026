@@ -73,6 +73,12 @@
 }
 
 @font-face {
+    font-family: "FLECHE";
+    src: url("../../articles/garance/assets/fonts/pixel.ttf"), format(otf);
+    font-weight: 100;
+}
+
+@font-face {
     font-family: "Handjet";
     src: url("../../articles/garance/assets/fonts/Handjet.ttf"), format(otf);
     font-weight: 800;
@@ -148,7 +154,7 @@ article p {
     margin: 6vh;
     margin-right: 12vh;
     line-height: 24px;
-    text-align: justify;
+    tab-size: 2vh;
 }
 
 p>img {
@@ -179,7 +185,7 @@ a {
     height: 12vh;
     width: 25%;
     z-index: 10;
-    font-family: "FT88G";
+    font-family: "FT88G", "FLECHE";
     font-size: 20pt;
     align-items: center;
     padding-left: 12vh;
@@ -258,6 +264,7 @@ header .date {
     align-items: center;
     margin: 0;
     margin-top: 3vh;
+    right: 12vh;
 }
 
 header .tags {
@@ -268,6 +275,7 @@ header .tags {
     align-content: center;
     margin: 0;
     margin-bottom: 3vh;
+    right: 12vh;
 }
 
 header {
