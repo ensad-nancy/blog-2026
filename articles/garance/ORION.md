@@ -1,6 +1,6 @@
 ---
 title: ORION
-date: 2026-28-09
+date: 2026-09-28
 tags: poème, cathodique, 
 preview: assets/images/ORION.jpg
 ---

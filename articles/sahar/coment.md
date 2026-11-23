@@ -2,7 +2,6 @@
 title: coment soundcloude
 date: 2026-12-10
 tags: 
-preview: assets/images/7420442-728862511.jpg
 ---
 
 # SOUNDCLOUDE

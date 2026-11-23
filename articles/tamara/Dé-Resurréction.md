@@ -1,8 +1,6 @@
 ---
 title: Dé-Resurréction
 date: 2026-09-28
-tags: 
-preview:
 ---
 
 # Dé-Resurréction

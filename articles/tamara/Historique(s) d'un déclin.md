@@ -1,8 +1,6 @@
 ---
 title: Historique(s) d'un déclin
 date: 2026-10-05
-tags: 
-preview:
 ---
 
 # Historique(s) d'un déclin

@@ -1,6 +1,6 @@
 ---
 title: Un petit coin
-date: 2026-10-12
+date: 2026-10-10
 tags: Moleskine,Commentaire
 preview: assets/images/moleskine.jpg
 ---

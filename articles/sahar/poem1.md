@@ -2,7 +2,7 @@
 title: A heritage 
 date: 2026-09-28
 tags: Poem
-preview: articles\sahar\assets\images\golden.jpg
+
 ---
 
 # Titre de mon article
