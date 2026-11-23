@@ -112,6 +112,7 @@ box-sizing: border-box;
 text-align: center;
 border-top: none;
 margin-left: 79px;
+line-height: 10pt;
 }
 main p {
 max-width: 100%;

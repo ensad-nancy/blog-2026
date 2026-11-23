@@ -64,7 +64,7 @@ function parseFrontMatter($path)
 
         <div id="date">
             <p>Date</p>
-            <input type="range" name="date" min="0" max="8" value="8" />
+            <input type="range" name="date" min="0" max="10" value="10" />
             <label for="date">Tout</label>
         </div>
 

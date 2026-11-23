@@ -1,30 +1,17 @@
+html{
+    background: white;
+}
+
 body {
+    background: repeating-linear-gradient(transparent, transparent 20px, black 20px, black 40px );
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-body > p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24pt;
-    width: 50%;
-    margin-top: 1em;
-    margin-bottom: 0;
-    max-width: none;
-    line-height: normal;
-}
-
-body > p span{
-    font-style: italic;
-}
-
-body > p span:hover{
-    background-color: black;
-    color: white;
+    min-height: 100vh;
 }
 
 main {
-    background: repeating-linear-gradient(white, black, white 10em);
+    background: repeating-linear-gradient(white, black, white 9em );
     width: 50%;
     overflow: auto;
     width: 50%;
@@ -47,9 +34,11 @@ main img{
 
 main p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18pt;
+    font-size: 24pt;
     text-align: center;
     max-width: none;
+    margin-block: 0;
+    line-height: 40px;
 }
 
 main footer p {
@@ -69,7 +58,7 @@ main a:link{
 }
 
 main a div:hover{
-    background:repeating-linear-gradient(white, black, white 1em);;
+    background-color: black;
     color: white;
 }
 
@@ -85,7 +74,8 @@ main a:active{
 main h3{
     text-align: center;
     font-family:  Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 30pt;
+    margin-block: 0;
 }
 
 main div#image-overlay{
@@ -98,22 +88,46 @@ main div#image-overlay{
     font-size: 20pt;
     line-height: 9pt;
     text-align: center;
+    color: white;
+    mix-blend-mode: difference;
 }
 
-:heading(1){
-    margin-block-end: 0;
+#title h1:hover{
+    color: yellow;
 }
 
-#filtres{
+#title:hover{
+    mix-blend-mode: normal;
+    background-color: black;
+    color: white;
+}
+
+body > p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 24pt;
     width: 50%;
-    height: 100%;
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 12.2em;
-    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 0;
+    max-width: none;
+    line-height: normal;
+    margin-block-start: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+body > p:hover{
+    mix-blend-mode: normal;
+    background-color: black;
+    color: white;
+}
+
+body > p span{
+    font-style: italic;
+}
+
+body > p span:hover{
+    background-color: black;
+    color: yellow;
 }
 
 #themes{
@@ -124,6 +138,15 @@ main div#image-overlay{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block-start: 1em;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#themes:hover{
+    mix-blend-mode: normal;
+    background-color: black;
+    color:white;
 }
 
 #themes legend, #themes div{
@@ -134,10 +157,90 @@ main div#image-overlay{
 
 #themes div:hover{
     font-style: normal;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: yellow;
 }
 
 #themes input{
     display: none;
+}
+
+#filtres{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    width: 50%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12.2em;
+    justify-content: center;
+    flex: 1;
+    align-items: flex-start;
+    margin-block-start: 1em;
+}
+
+#filtres h2{
+    display: none;
+}
+
+#date input{
+    appearance: none;
+    background: transparent;
+    color: white;
+    mix-blend-mode: difference  ;
+}
+
+#date input::-webkit-slider-runnable-track{
+    height: 7px;
+    background: white;
+    border: none;
+}
+
+#date input::-moz-range-track{
+    height: 4px;
+    background: white;
+    border: none;
+}
+
+#date input::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: none;
+    margin-top: -8px;
+}
+
+#filtres #date > p{
+    font-size: 14pt;
+    margin-block: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#filtres, #date label{
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#filtres #auteurices > p{
+    font-size: 14pt;
+    margin-block: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#authors{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12pt;
+    border: none;
+    appearance: none;
+}
+
+#authors:hover{
+    background-color: white;
+    color: black;
 }

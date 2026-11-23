@@ -1,6 +1,7 @@
+---
 title: ANTY IZLY 🍽️
-date: 2026-09-21
-tags: cyberfeminisme, donna haraway
+date: 2026-10-12
+---
 
 # Ultracrépidarianisme
 Je ne donne pas mon vrai nom ici, J’préfère rester anonyme sur internet, on ne sait jamais..
