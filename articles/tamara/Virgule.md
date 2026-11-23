@@ -1,7 +1,7 @@
 ---
 title: Ode à Virgule
 date: 2026-11-7
-
+preview: assets/images/virgule.png
 ---
 
 # Ode à Virgule

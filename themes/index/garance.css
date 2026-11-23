@@ -115,26 +115,27 @@ body {
 /* MAIN*/
 
 main{
+    z-index: 9;
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4vh;
+    grid-gap: 2vh;
     top: 100px;
-    width: 97.6%;
+    margin-right: 30%;
 }
 
 main a{
-    scroll-snap-align: start;
     height: 40vh;
     padding: 0;
     cursor: pointer;
+    border: 1vh white solid;
 }
 
 main a:hover{
     animation: "couleur" 3s infinite ease;
-    border: 0.5vh white solid;
+    border-color: rgb(176, 126, 0);
     transition: ease-in;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 main a > div{
@@ -307,6 +308,7 @@ div#themes{
     overflow-x: hidden;
     scrollbar-width: none;
     padding-top: 3vh;
+    border-left: white 4vh solid;
 }
 
 #themes > div{
@@ -329,7 +331,7 @@ div#themes{
 }
 
 #themes div:hover {
-    background-color: rgb(0, 255, 183);
+    background-color: rgb(0, 255, 0);
     color: rgb(255, 0, 0);
     font-family: "FT88G";
     padding-bottom: 0.5vh;
@@ -338,7 +340,6 @@ div#themes{
 }
 
 #title{
-    scroll-snap-align: start;
     z-index: 3;
     grid-area: titre;
     font-family: "FT88G";
