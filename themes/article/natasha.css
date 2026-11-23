@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Aquifer";
+    src: url("../../articles/natasha/assets/fonts/Aquifer.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UglyQua";
+    src: url("../../articles/natasha/assets/fonts/UglyQua.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Freud";
+    src: url("../../articles/natasha/assets/fonts/freud.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: rgb(234, 205, 171);
     width: 100%;
@@ -5,6 +26,9 @@ body{
     display: grid;
     grid-template-rows: repeat(3, 150px);
     overflow: hidden;
+    background-image: image-set("../../articles/natasha/assets/images/20261122_2226024.png");
+    background-size: 20%;
+    background-position: 50%;   
 }
 
 #themes{  
@@ -19,6 +43,7 @@ body{
     line-height: 1.5;
     font-size:23px;
     opacity:0.5;
+    font-family: "UglyQua";
 }
 
 #themes div input[type=radio] {
@@ -38,6 +63,7 @@ header{
     position:absolute;
     right:2%;
     top:5%;
+    font-family: "UglyQua";
 }
 
 article{
@@ -55,10 +81,7 @@ article{
     overflow-x: hidden;
     -ms-overflow-style: none;  
     scrollbar-width: none;
-}
-
-article>p{
-    opacity:0.5;
+    font-family: "Aquifer";
 }
 
 img{
@@ -67,6 +90,7 @@ img{
     right:30%;
     display: inline-block;
 	transform: rotate(-30deg);
+    opacity:0.5;
 }
 
 h1{
@@ -82,6 +106,7 @@ a{
 	transform: rotate(20deg);
     opacity:0.5;
     font-size: 5px;
+    font-family: "Freud";
 }
 
 a:link{
