@@ -122,7 +122,6 @@ p {
 main {
   grid-area: articles;
   padding: 0;
-  background: #FFFFFF;
   display: grid;
   gap: 1.5rem;
 }
