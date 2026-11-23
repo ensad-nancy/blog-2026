@@ -60,8 +60,6 @@ $mdContent = preg_replace(
         <?= htmlspecialchars($title) ?>
     </title>
     <script src="assets/script-article.js" defer></script>
-    <link rel="stylesheet" href="themes/<?= htmlspecialchars($student) ?>.css">
-    <link rel="stylesheet" href="themes/<?= htmlspecialchars(preg_replace('#^article/#', 'print/', $student)) ?>.css" media="print">
 </head>
 
 <body>
