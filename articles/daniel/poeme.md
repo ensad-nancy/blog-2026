@@ -1,7 +1,7 @@
 ---
 title: A lot to live for
 date: 2026-09-28
-tags: 
+tags: wiki 
 ---
 
 # A lot to live for

@@ -2,7 +2,6 @@
 title: Errements
 date: 2026-11-09
 tags: détail graphique, écriture 
-preview: 
 ---
 
 # Errements

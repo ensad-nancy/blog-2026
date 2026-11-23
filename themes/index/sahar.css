@@ -124,7 +124,7 @@ body {
 #auteurices {
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   width: var(--sq);
   height: var(--sq);
   box-sizing: border-box;
@@ -212,6 +212,9 @@ body {
     background-color: brown;
    /*  border: 1px solid black; */
     border-radius: 0;
+     top: 50%;
+   right: 5%;
+    
 }
 
 #date p{
