@@ -1,0 +1,11 @@
+@page {
+    size: 210mm 297mm;
+    margin: 0cm;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background: rgb(245, 2, 168);
+    color: black;
+    font-size: 25px;
+}

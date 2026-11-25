@@ -1,18 +1,23 @@
 /* Changer le thème */
-    
-changeTheme = () => {
-    var theme = document.querySelector('input[name="theme"]:checked').value;
-    var actualTheme = document.querySelector('#theme-style');
-    if (actualTheme){
-        actualTheme.remove();
+
+function setThemeStylesheet(id, href, media) {
+    let link = document.getElementById(id);
+    if (!link) {
+        link = document.createElement("link");
+        link.id = id;
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        document.head.appendChild(link);
     }
 
-    var link = document.createElement("link");
-    link.id = "theme-style";
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.href = "themes/article/" + theme + ".css";
-    document.head.appendChild(link);
+    link.href = href;
+    link.media = media;
+}
+
+changeTheme = () => {
+    var theme = document.querySelector('input[name="theme"]:checked').value;
+    setThemeStylesheet('theme-style', "themes/article/" + theme + ".css", "screen");
+    setThemeStylesheet('print-theme-style', "themes/print/" + theme + ".css", "print");
 
     // Sauvegarder le thème sélectionné
     localStorage.setItem('selectedTheme', theme);
@@ -31,7 +36,9 @@ window.addEventListener('DOMContentLoaded', () => {
         const radio = document.querySelector(`input[name="theme"][value="${savedTheme}"]`);
         if (radio) {
             radio.checked = true;
-            changeTheme();
         }
+    }
+    if (document.querySelector('input[name="theme"]:checked')) {
+        changeTheme();
     }
 });

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Freud";
+    src: url("../../articles/natasha/assets/fonts/freud.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UglyQua";
+    src: url("../../articles/natasha/assets/fonts/UglyQua.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aquifer";
+    src: url("../../articles/natasha/assets/fonts/Aquifer.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@page{
+    margin:0;   
+}
+
+body{font-family:"Aquifer";
+    margin:10%;
+    color: rgb(67, 58, 74);
+    background-color: rgb(234, 205, 171);
+    background-image: image-set("../../articles/natasha/assets/images/20261122_2226024.png");
+    background-size: 125%;
+    background-position: center;
+}
+
+a{
+    font-family: "Freud";
+    font-size: 100px;
+    position: absolute;
+    right:5%;
+    top:2%;
+    transform: rotate(20deg);
+}
+
+#themes{
+    display: none;
+}
+
