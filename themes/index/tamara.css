@@ -1,11 +1,11 @@
 @font-face{
     font-family:'chubi';
-    src: url("articles/tamara/assets/Chubi_Trial/Chubi-Heavy.otf");
+    src: url("../../articles/tamara/assets/Chubi_Trial/Chubi-Heavy.woff") format("woff");
 }
 
 @font-face{
     font-family:'nudles';
-    src: url("articles/tamara/assets/nudles-main/ttf/Nudles-Regular.ttf");
+    src: url("../../articles/tamara/assets/nudles-main/webfonts/Nudles-Regular.woff2") format("woff2");
 }
 
 footer{

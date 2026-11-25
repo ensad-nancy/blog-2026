@@ -1,11 +1,11 @@
 @font-face{
-    font-family:'nudles';
-    src: url("articles/tamara/assets/nudles-main/ttf/Nudles-Regular.ttf");
+    font-family:'chubi';
+    src: url("../../articles/tamara/assets/Chubi_Trial/Chubi-Heavy.woff") format("woff");
 }
 
 @font-face{
-    font-family:'chubi';
-    src: url("articles/tamara/assets/Chubi_Trial/Chubi-Heavy.otf");
+    font-family:'nudles';
+    src: url("../../articles/tamara/assets/nudles-main/webfonts/Nudles-Regular.woff2") format("woff2");
 }
 
 img{
@@ -75,7 +75,10 @@ article{
    word-spacing: 10%;
    overflow-y: auto;
    line-height: 200%;
-   background-color: rgba(215, 196, 173, 0.422);
+   background-color: rgb(255 255 255);
+    outline-style: dotted;
+    outline-color: rgb(91, 147, 51);
+    outline-width: thin;
 }
 
 
